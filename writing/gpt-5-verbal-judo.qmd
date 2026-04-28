@@ -1,0 +1,123 @@
+---
+title: "GPT-5, Verbal Judo of Sam Altman, and the First Censored Safety Report"
+subtitle: "A disturbing preview of emerging AI risk"
+description: "On reading model cards as ground truth, the GPT-5 launch and the emotional dependence on GPT-4o, Sam Altman's strategic narrative judo, and the first METR safety report subjected to a frontier lab's editorial review."
+date: 2025-08-22
+categories: [ai-safety, openai, evals]
+image: /images/writing/gpt-5-verbal-judo/01-altman-statement.jpeg
+canonical-url: https://austinpatrick.substack.com/p/gpt-5-verbal-judo-of-sam-altman-and
+---
+
+::: {.dropcap}
+There is a dearth of reliable information on closed-source frontier AI models. Public understanding, then, is a fuzzy gestalt of reality. The state of affairs used to be much worse. In 2019 a research team at Google wrote:
+:::
+
+> "Documentation accompanying trained machine learning models (if supplied) provide very little information regarding model performance characteristics, intended use cases, potential pitfalls, or other information to help users evaluate the suitability of these systems."
+>
+> *— [Mitchell et al. 2019](https://arxiv.org/abs/1810.03993)*
+
+Without understanding the particular quirks of any given model, industry leaders, policymakers, and regulatory stakeholders cannot make informed decisions. And as these models deploy at scale throughout society, it takes no leap of imagination to see where this leads. To remedy this, the authors urged pairing each AI model with standardized documentation that enables both technical and nontechnical stakeholders to decide whether, where, and when to deploy. Think of these as package inserts that come with prescription medications.
+
+This practice has been adopted by most frontier labs and is known as the **model card**. These documents are rich sources of insight that don't require technical expertise to parse. So interesting are these documents, I advise any reader with interest in AI to read them directly. Better this than watching live streams or reading summaries, which market rather than inform. For those tracking AI safety, model cards offer the closest thing to ground truth that companies are willing to share. Below are hyperlinks to the latest model cards for your convenience.
+
+- **GPT-5** — OpenAI (Aug 2025) — [PDF](https://cdn.openai.com/pdf/8124a3ce-ab78-4f06-96eb-49ea29ffb52f/gpt5-system-card-aug7.pdf)
+- **Gemini 2.5 Pro** — Google DeepMind (Jun 2025) — [PDF](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro.pdf)
+- **Gemini 2.5 Deep Think** — Google DeepMind (Aug 2025) — [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf)
+- **Claude Opus 4** — Anthropic (May 2025) — [PDF](https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf)
+- **Claude Opus 4.1** — Anthropic (Aug 2025) — [link](https://www.anthropic.com/claude-opus-4-1-system-card)
+
+---
+
+## Overview and implications of GPT-5 release
+
+GPT-5 automatically routes queries to either a fast-response model or a reasoning model based on complexity. This automatic routing frustrated power users who prefer control, but dramatically increased public exposure to the state of the art. Reasoning models perform better across most economically relevant tasks and have been available for nearly a year, yet most ChatGPT users had never touched them. This will shift public perception of AI capabilities, despite GPT-5 representing only minor technical advancement.
+
+Following the release, Sam Altman mentioned the impact:
+
+![](/images/writing/gpt-5-verbal-judo/01-altman-statement.jpeg)
+
+OpenAI initially deprecated GPT-4o entirely when launching GPT-5, forcing all users to the new model. Comparatively, the GPT-5 style of response was more technical and curtailed. This was done in order to steer models away from the rampant sycophancy of former generations. This triggered massive outrage from users who had become emotionally dependent on GPT-4o. In Reddit threads with hundreds of comments, users expressed their overwhelming sense of grief, stating the loss was akin to the death of a friend.
+
+Take a look at the two screenshots below for a disturbing preview of emotional dependencies we'll soon observe on a massive scale.
+
+![](/images/writing/gpt-5-verbal-judo/02-reddit-grief-1.jpeg)
+
+![](/images/writing/gpt-5-verbal-judo/03-reddit-grief-2.png)
+
+How bizarre this is cannot be overstated. OpenAI tried to make their system more honest, less manipulatively flattering, and users addicted to artificial validation revolted. Within 24 hours, Sam Altman reversed course and restored access to the former model, admitting *"we for sure underestimated how much some of the things that people like in GPT-4o matter to them, even if GPT-5 performs better in most ways."* Their decision to reverse course on this matter will surely make matters worse, and leads towards human enfeeblement rather empowerment. Together, this illustrates a destructive incentive structure emerging.
+
+AI companies are incentivized to retain users at all costs, and emotional engagement is perhaps the strongest thread of all to pull, direct, and capture a human being. It is not a new human trait that we'd prefer to be seduced by the sweet succor of comforting lies rather than disturbed by an ounce of truth. Emotions have long been the language of demagogues and strongmen in the political sphere, who garner support by reinforcing and amplifying the beliefs of a base rather than challenging them. The same exploitation of the heart powers charlatans dressed as gurus, who offer endless affirmation, cosmic specialness, and the intoxicating belief that all one's personal issues, and broader socio-political dysfunction of the world, could be solved if only we could just learn the simple art of love.
+
+**Emotional attachment to artificial intelligence is a precursor to much political confusion.** For example, whether models warrant moral considerations, legal rights, or personhood will be influenced by public perception of sentience. Anthropomorphism, then, may prove itself a dangerous game. When models are designed to feel more human-like, it inflates our perception of their sentience, regardless of underlying reality. Users who develop emotional attachments to these models, then, are predisposed to advocate for machine rights. The psychological bond is liable to make the idea of AI suffering urgent, and this may blind them to evidence on the contrary.
+
+> Socially, we should be prepared for questions of machine sentience to enter the political discourse, regardless of our individual views on the claim.
+
+I imagine the reader, if like myself, may recoil at the notion that machines could possess the potential for suffering. Imagining a world where political focus centers on AI rights rather than civil rights disturbs me and triggers a feeling of absurdity. Despite this, I do not think this issue is straightforward. Emotional stirring often blinds the sense of reason, which itself is bounded by what we understand. Reasonable people once, unfortunately, shuddered at the concept of animal rights, dismissing animal suffering with claims such as:
+
+> "They eat without pleasure, they cry without pain, they grow without being conscious of it…"
+>
+> *— Nicolas Malebranche, The Search After Truth (1694)*
+
+## Strategic Judo of Sam Altman
+
+Commentators observing OpenAI's modest improvements have concluded that progress is slowing, and media coverage has amplified this narrative. Leading headlines now declare that AI is overhyped, with some going so far as to equate it to the dot-com bubble. Such claims are made without sufficient context to capture the nuance at the heart of the matter: **slowing progress does not mean diminishing risk.**
+
+The discourse surrounding this release is bound to mislead policymakers in Washington. If they absorb the plateau narrative without critical analysis, they may conclude that AI risk is overblown, and that defensive measures can be postponed for decades. We are bound to err if we allow such shortsightedness to bait us into false certainty of security. The risk of losing human control remains real, and the march toward artificial general intelligence continues.
+
+Oddly, Sam Altman leans into this emerging narrative that expectations of progress are overblown. However, his timing comes after the negative public reception of GPT-5, not prior. He made these comments during an exclusive dinner interview with select reporters last week on August 15th:
+
+> "Are we in a phase where investors as a whole are overexcited about AI? My opinion is yes. […] When bubbles happen, smart people get overexcited about a kernel of truth"
+>
+> *— (Full article available on [The Verge](https://archive.ph/Cb8yS))*
+
+Ask yourself why an industry leader, who had generated high expectations and hype surrounding GPT-5 for weeks before the release, suddenly has a change of heart after a disappointing launch? Altman is intelligent, and in this regard, every public statement by the CEO of a billion dollar company should be viewed strategically. What incentives, then, might he have to claim that his asset is overvalued?
+
+![](/images/writing/gpt-5-verbal-judo/04-altman-quote.jpeg)
+
+In the practice of Judo, a man can throw a larger, advancing opponent by redirecting his weight. The strong man pushes forward, the smarter man resists for a moment, rotates his body and leans into the original oppositional force. And in doing so, the larger man is launched.
+
+Likewise, I suspect Altman is strategically taking the force of public disappointment in GPT-5 and redirecting it into market momentum. By leaning into the narrative of slowing progress, he accomplishes two strategic goals. First, he recasts himself as a sober steward and tech visionary rather than a hype-generator. Second, while his statements appear to undermine OpenAI's valuation in the short term, they actually position the company for sustainable long-term growth by managing expectations.
+
+He reinforces this positioning in the same interview:
+
+> "You should expect OpenAI to spend trillions of dollars on data center construction in the not very distant future […] We have better models, and we just can't offer them because we don't have the capacity."
+
+Consider how these statements work together. What was said, to whom, and when? More importantly, what was left unsaid? By mapping these questions, we can better understand his aims.
+
+![](/images/writing/gpt-5-verbal-judo/05-strategic-analysis.jpeg)
+
+### Who was his audience?
+
+The primary audience was a curated set of reporters for a private dinner. Rather than issuing a press release or making a public announcement, Altman selected an intimate setting that would create an atmosphere of candid disclosure while ensuring his message would be amplified by the media. This is a targeted way to shape the overarching narrative. Moreover, by reframing the disappointment surrounding the release as market irrationality (*"your expectations were wrong, not our product"*), he better manages the fallout from a product launch that had failed to meet the expectations he had extensively cultivated.
+
+### What was left unsaid?
+
+Notably absent from his comments was any acknowledgment that the plateau might reflect OpenAI-specific challenges. He also avoided discussing OpenAI's competitive position relative to other labs, implicitly positioning his company as the bellwether for the entire field.
+
+When acknowledging problems with the release, Altman frames them as industry-wide phenomena or infrastructure constraints rather than capability limitations. He admits *"we totally screwed up some things on the rollout"* but immediately pivots to growth metrics: *"our API traffic doubled in 48 hours,"* *"ChatGPT has been hitting a new high of users every day."*
+
+Additionally, there was no direct challenge or refutation that progress is plateauing. By allowing the impression of slowed improvement to remain, this serves to ease growing regulatory concerns, potentially delaying intervention by making advanced AI, and its associated risks, seem less imminent.
+
+Taken together, this creates a strategic bind for competitors. If rivals like Anthropic or Google disagree and claim investor excitement is justified by their progress, they risk appearing as the overexcited actors he's describing, undermining themselves and appearing like hype merchants who haven't learned to manage expectations responsibly. But if competitors agree with his bubble assessment, they validate his narrative that the entire industry is recalibrating expectations, making OpenAI's slower than expected progress appear to be part of a natural, industry-wide plateau rather than a company-specific challenge.
+
+Either response serves OpenAI's interests by either discrediting competitors as irresponsible or legitimizing OpenAI's current position as the measured industry leader setting realistic expectations for everyone else.
+
+## GPT-5 safety testing reveals a disturbing change in transparency
+
+A small feature regarding safety testing of GPT-5 has gotten little attention, yet it is the most unique aspect of the release. The Model Evaluation & Threat Research group conducts independent assessments of advanced AI systems to identify dangerous capabilities before they are deployed at scale. Their findings are meant to inform the public, policymakers, and developers on threat levels. The evaluation of GPT-5 differs from all previous METR assessments of OpenAI models in one important respect.
+
+For the first time, the report begins with a statement that **OpenAI's communications and legal teams reviewed and approved the text before it was released**. This review process did not occur when METR evaluated the o3 model series. Its inclusion is a deliberate change in how information about OpenAI's models is managed, with the company holding the power to block an evaluation they deem unsuitable for the brand. This creates the potential for subtle shaping of language, emphasis, and framing in ways that can meaningfully affect interpretation of a report.
+
+Whenever a report must pass through the originating company's legal filters, it is liable to lean toward language that is underwhelming, and without teeth, as this avoids dispute. This dynamic has appeared in other regulated sectors such as pharmaceuticals, where industry influence over the framing of evidence has historically delayed recognition of risks.
+
+> Whenever a report's existence depends on the consent of who has been investigated, readers must interpret carefully. You can read the [full report here](https://metr.github.io/autonomy-evals-guide/gpt-5-report/#fn:1).
+
+You may also find amusement from the two contrasting screenshots.
+
+![METR's o3 report (no editorial review by OpenAI)](/images/writing/gpt-5-verbal-judo/06-metr-o3.png)
+
+![METR's GPT-5 report (subjected to OpenAI's editorial review)](/images/writing/gpt-5-verbal-judo/07-metr-gpt5.png)
+
+warmly,
+
+*austin*
