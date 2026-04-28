@@ -86,26 +86,29 @@ h4 {
 // Column width is set via Quarto's grid system in _quarto.yml (body-width: 720px).
 // Don't override here — that fights the CSS grid and shifts content under the TOC sidebar.
 
-// === Drop caps — gwern-scale, hand-positioned ===
+// === Raised initial cap (NOT drop cap) ===
 // Activate via .dropcap class on first paragraph, OR auto on `.essay > p:first-of-type`.
-// `display: flow-root` on .dropcap creates a new Block Formatting Context that
-// contains the floated cap — without it, subsequent short paragraphs wrap around
-// the float and look like they're part of the opening (visible on essays whose
-// opener is shorter than the cap's vertical extent, e.g. dialogue-heavy openings).
-.dropcap {
-  display: flow-root;
-}
-
+//
+// Design choice: raised cap, not drop cap. Drop caps (floated, with text wrapping
+// around them) require substantial opening paragraphs to look right — short openers
+// (e.g. dialogue) look broken because subsequent paragraphs wrap weirdly. Raised
+// caps sit on the baseline like a normal letter, just sized 4-5× larger, so they
+// rise above the line. Text continues to the right at the same baseline ("text at
+// the bottom of the A"). Works regardless of opening paragraph length.
+//
+// Implementation: no `float`, no special positioning — just font-size on
+// ::first-letter. The first letter becomes a tall inline element whose baseline
+// aligns with the rest of the line's baseline. Subsequent lines and paragraphs
+// flow normally.
 .dropcap::first-letter,
 .essay > p:first-of-type::first-letter {
-  float: left;
   font-family: $font-family-serif;
-  font-size: 5.5em;
-  line-height: 0.78;
+  font-size: 4.5em;
+  line-height: 0.85;
   font-weight: 700;
-  padding: 0.05em 0.1em 0 0;
-  margin-top: 0.08em;
-  margin-bottom: -0.1em;
+  padding-right: 0.04em;
+  /* The naming is "dropcap" for backwards-compat with .qmd front matter; the
+     actual style is a raised initial cap. */
 }
 
 // === Section breaks — horizontal rules become centered fleurons ===
