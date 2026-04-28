@@ -1,0 +1,192 @@
+---
+title: "Networking for Spies: Translating a Cyrillic Text with Claude Code"
+subtitle: "LLMs beyond the Anglosphere"
+description: "Using Claude Code to translate a Russian book by two undercover SVR officers — Нетворкинг по-русски — into English. A walk through the vibe-coding mental model (separate evidence collection from interpretation), plus passages from the book that are uncannily applicable to modern professional networking."
+date: 2025-10-18
+categories: [ai-tools, claude-code, applied-ai]
+image: /images/writing/networking-for-spies/01-code-visualization.png
+canonical-url: https://austinpatrick.substack.com/p/networking-for-spies-translating-a-cyrillic-text-with-claude-code
+---
+
+::: {.dropcap}
+Language models offer Americans an overlooked benefit: direct access to information beyond the Anglosphere. Despite the internet's global reach, we've confined ourselves to English-language sources, relying on secondhand reports we treat as authentic, but which are better understood as merely *uncontested*.
+:::
+
+Last year, I [wrote about](https://austinpatrick.substack.com/p/deepseek-openais-o3-and-the-art-of) two high-ranking Russian agents arrested in Boston after years undercover. I used their story as an analogy for Anthropic's research on sleeper agents embedded within large language models. While researching that post, I discovered the couple had written a book years after their arrest: *Нетворкинг по-русски* (roughly, "Networking for Spies"). It had no English translation.
+
+But that no longer matters. A year ago, I found their writing compelling enough that I screenshot each page of the Cyrillic PDF and translated it a few pages at a time. Compared to what is possible, it was slow, but compared to what *was* possible, it felt as if I had boarded a high-speed train to the future. I made mental note to return to the topic in writing, and then for months it left my brain. Though today, during lunch, the thought again arose: what was that text?
+
+Consider, at an experiential level, this sequence of events. I could not recall the publication. In one key press, dictation software triggers on my computer, and I ask it to find the title of *"that Russian book on networking for spies."* The search is performed for me, and the title is returned. I input that Cyrillic title into a giant open-access database for science and literature, [Anna's Archive](https://annas-archive.org/), and in seconds I receive the document. Then, I describe in natural language the task at hand to an AI, who writes and executes code in my terminal. Before I have finished my lunch, I have a translated book and reusable code, but have expended no effort, performed nearly no action, and exercised only curiosity.
+
+Can you grasp how strange that is?
+
+What follows is a brief aside on how the code works, and excerpts from the book I found interesting.
+
+---
+
+## Mental models for vibe coding
+
+How the software functions provides a reusable mental model for working with LLMs. Namely, success depends on **separation of elements**. Whether you are working with experimental data, or a foreign text, either can be conceptualized through the lens of an investigation. Thus, we must separate evidence collection from interpretation.
+
+What does this mean?
+
+Here, the ground truth are the Cyrillic text. A PDF document is like a photograph, it is made to be processed by your human eyes, it is not ideal for a machine. Thus, we need to transform a photo into machine readable text. We want this process to be reproducible, as the accuracy of anything downstream depends on it. Extracting text from a PDF requires no semantic understanding, cultural context, or linguistic judgment, not only would LLMs add no value to this step, invoking them in this phase would impede us by adding variability. **To ask an LLM to extract text and translate for you in one go is to ask too much.**
+
+![](/images/writing/networking-for-spies/01-code-visualization.png)
+
+Instead, we'll use the Python library PyPDF2 to extract the text. Given the same PDF, it'll produce identical output. Having this intermediate step makes our life easier later on, when we seek to verify translation accuracy. Following the extraction, we'll have a script divide the corpus into manageable, bite-sized chunks for the LLM. The principle here, again, is to not ask too much at once. If you follow this advice, you avoid much disappointment when working with AI. **An LLM will not tell you no.** If you provide it the full book and ask for a translation, it will give you one, and it will be bad. Exercise judgment.
+
+![](/images/writing/networking-for-spies/02-code-implementation.png)
+
+After chunking the text, it is fed piece by piece to Claude Code, the interactive terminal I use to work with an LLM on my Mac, thereby avoiding additional API costs. Should you wish to repurpose the code, or read the source text, all materials are available on my repository.
+
+- [GitHub (view the code)](https://github.com/gvmfhy/pdf-translator)
+- [DeepWiki (chat with the code)](https://deepwiki.com/gvmfhy/pdf-translator)
+
+![](/images/writing/networking-for-spies/03-terminal-output.png)
+
+---
+
+## Passages from the text
+
+### What is networking?
+
+> Networking isn't an end in itself but only a means of achieving a goal. This is a mechanism of continuous improvement of your life and self-improvement. As you surround yourself with an increasing number of people who in many respects are better, more literate, more experienced, more skillful, richer than you, you simultaneously get the opportunity to learn and enrich yourself in all senses of this word. The better and more perfect the people surrounding you, the better you yourself become and the better your life becomes.
+>
+> Allow us to paraphrase the medieval Persian philosopher and poet Omar Khayyam and remind you that your life will be such as your environment will be.
+
+### How do you start?
+
+> As young Soviet intelligence officers who had just begun work in a new country, we, of course, knew we needed a network of personal connections. But where to start? We were overwhelmed by the enormity of the task. Yes, we made many acquaintances, these new contacts required more and more of our time, attention, and care, but they didn't bring us any closer to anything interesting.
+
+The authors argue that to network strategically, you must first understand your place in the world. To move from A → B requires an awareness of the origin.
+
+> Whatever the current needs in networking, they're determined by life goals as well as immediate priorities. It's impossible to overestimate how important correct goal-setting is for success. Without clear priorities, your interactions will inevitably turn into unpleasant, directionless, aimless bustle that takes time and drains you emotionally, with extremely low returns. However, as soon as goals are set, your networking strategy immediately acquires meaning.
+
+To understand your place in the world, look around at your environment. We are social creatures. Take time to carefully map out who you know. Do so visually, and on paper. Although, you may approach this type of network analysis effectively with some code.
+
+> There are different ways to draw a social network, so we need to agree on some rules. Since each of us has our own imagination, we can draw pictures of the same social network in different ways. When we first tried to depict our networks during our mission, doing so turned out to be difficult. We made several attempts to place all our contacts on a sheet of white paper, but at first everything looked wrong.
+>
+> The realities of our relationships didn't fit into the framework of the scheme we had in mind. Try now to take a sheet of paper and draw a map of your relationships. See for yourself how difficult and unpleasant this will be. For us, the scheme began to acquire some meaning only after the fourth or fifth attempt.
+
+The authors give a detailed account on how to operationalize this type of mapping, but I've omitted it from this post. However, once your network is drawn, they recommend you to view it as an electrical circuit, where each relationship is a distinct component. They suggest you strategically identify three types of people, as within these categories your attention has an outsized reward.
+
+#### 1. Connectors
+
+These are naturally sociable people who easily establish many connections and often organize events. Think of them as junction boxes that connect you to entire new circuits. By building better relationships with connectors, you'll meet people you would never have encountered on your own.
+
+#### 2. Capacitors
+
+These are respected people who accumulate valuable resources within themselves, whether professional knowledge, insider information, or cultural capital. Like electrical capacitors that store energy, they gather and retain "something useful" over time. Once you build relationships with capacitors, they can share their accumulated wisdom with you, giving you currency to exchange with others in your network.
+
+#### 3. Gatekeepers and Bridges
+
+These people control access to other networks, organizations, or individuals. They can either block your path (gatekeepers) or open new doors (bridges), depending on your relationship with them. For example, a university professor is a gatekeeper to their lab's research opportunities, but a bridge to their entire academic network once you're their student.
+
+### You will lose 30% of contacts annually, plan accordingly.
+
+> To compensate for the inevitable loss of the mentioned 30%, you need to find a way to quickly acquire many good contacts. For example, the position of head of an interesting project is an excellent opportunity to legally and purposefully build connections with a large number of new people in a short period of time. We call this "wholesale" networking. Participate in as many projects or events as possible that unite large groups of people.
+>
+> Don't see such opportunities or projects around you yet? Try applying a creative approach: come up with something yourself! By the word "project" we mean any idea that makes people unite — from political discussion groups to running enthusiast clubs. Any such project will contribute not only to developing your network but also to your own professional and personal growth!
+>
+> Such undertakings usually carry a pleasant bonus — meeting interesting and important people. Here, by the way, is an example from our own experience: the desire to expand the network to the highest decision-making circles led us to open a software development company in the USA. We later continued this activity in Russia as well.
+
+### To be interesting, take interest in the world around you. Be interested and present with whom you are speaking.
+
+> Instead, you should focus on making the person "buy you." The goal is that your contact should find it pleasant to deal with you. People are ruled by emotions. Creating pleasant sensations in your interlocutor during conversation means demonstrating your sympathy toward them. You need to set aside your ego and sincerely focus all attention on the person before you, showing your interest in them. Make an effort and try to almost love this person. All people, even very shy ones, love to talk about themselves. You've surely heard someone called the most pleasant person and best interlocutor merely because they didn't interrupt the speaker. Think about it! How, in your opinion, do psychotherapists create an environment in which a patient feels closeness and trust?
+
+### Body-language behavior varies by culture and by person; do not mistake it as universal, do not let it cloud your perception.
+
+> Many books have been published with recommendations for reading signs of "body language." Some authors even reference their experience working in special services. However, as professionals with many years of operative work experience, we're honestly skeptical about their practical value for a beginning networker. First of all, the overwhelming majority of manifestations of people's physical reactions have not only strong cultural but also situational specificity. For example, almost universal gestures of goodwill and beginning conversation — such as a smile and direct eye contact — in some cultures can be considered excessively intrusive and even embarrassing. Reading other, even less obvious signs in people whose national origin and social behavior often have mixed character becomes increasingly difficult. In addition, we're raised from childhood to be polite and suppress true emotional reaction, especially with strangers.
+
+### Build a mental model of your contacts.
+
+> To ensure networking success, you must learn as much as possible about your contacts: about their lifestyle, characters, and motivations. In the professional jargon we used, there was such a word — *"objektívka."* It implies a brief report about a particular person. This can be anyone — from a foreign state minister arriving to discuss an important treaty to a subject under police surveillance. Usually, when our minister is going to negotiate with his colleague, intelligence provides him with two documents — one describing the supposed negotiating position of his counterparty, and another — with information about the opponent's personal character, his strengths and weaknesses — from testimony of diplomats who negotiated with him before, to what coffee he prefers, how many children and pets he has, and what he calls his mistress. Not surprisingly, the second document is often much more curious and in demand than the first.
+>
+> The same need to understand who is before you applies to any of your potential contacts. You can't truly develop a relationship if you're not interested in what kind of person this is and what their needs are. Sincere curiosity, the desire to understand your acquaintance's way of thinking, their actions — all this remains the most reliable guarantee of developing a relationship with them. Such genuine interest on your part will be automatically read by the person's emotional sensors, ensuring agreement and reciprocity. The more facts about a person you learn, the better you'll understand their character, needs, and motives. That's precisely why, especially in the early stages of relationships, it's necessary to collect a "skeleton of facts" about your "target." Without such a "skeleton" of facts, it's often difficult to correctly interpret someone's behavior. Imagine that at a party you organized, a new contact pays too much attention to the fair sex. You'll form quite polarized opinions about the person, depending on information about whether they're married or not.
+>
+> Collecting information about your contacts should become a constant routine. Try to build a mental "model" of the person and understand what drives them in life, what makes them happy or angry, whom they love and whom they can't stand, what's happening at their work, and much more of what determines their actions. An invitation to visit, visiting your interlocutor's home, or meeting their family will be especially productive from the point of view of collecting priceless facts that will help you understand them better.
+
+### Be culturally sensitive — it matters.
+
+> The dynamics of relationship development can also vary depending on the nationality of the person you're dealing with. In the period of globalization in business circles, national traits are gradually being erased. However, despite the fact that typical behavior in relationships more often reflects social status than nationality, ethnic and national origin still matters. In the course of our work, we encountered three models of relationship development connected with national characteristics. Let's conditionally call them *"peaches," "apples,"* and *"pomegranates."*
+>
+> In the "peach" model, a person easily establishes first contact and willingly develops relationships to the level of a casual acquaintance that obligates nothing. However, then considerable effort and time are required to make them open up and gain trust. To the "touch," such a person resembles a peach: they're very soft, their skin and flesh are easy to pierce, but then you run into something very hard and impenetrable. Most Americans fit this model — they're very friendly and sociable, but at the same time incredible individualists carefully guarding their personal space.
+>
+> Compared to American "peaches," Russians are more like "pomegranates." They converge with new people with far less enthusiasm, are reserved and cautious at initial stages of relationships. However, once the hard Russian "rind" is pierced, practically no corner will remain closed to you in their soul!
+>
+> The French, like many other Europeans, usually fall somewhere between "peaches" and "pomegranates" — something like "apples." More reserved than Americans at the initial stage, they prefer not to rush until mutual understanding and trust mature. Nevertheless, some areas — just like apple seeds — will remain hidden and difficult to access.
+>
+> Of course, the three models described are in pure form a product of our personal experience. Often the dominant role in relationship development is played by the character, motives, and origin of the people with whom you interact.
+
+### Create a positive atmosphere — and for the love of god and all that is good, do not be a sycophant, do not be a machine; above all else do not be a wet blanket.
+
+> Necessary prerequisites for good relationships are your positivity, openness, and confidence. The task is simple — create a light, positive atmosphere. People should enjoy being in your company. Any negativity or criticism immediately lowers the "temperature" of your interaction.
+>
+> Praise and a compliment to the person with whom you're building a relationship is one of the surest ways to create positive feelings in them toward you. We know perfectly well how effectively flattery exploits the brain's need for positive "reinforcement." However, a spy must act very carefully in this territory. Spies are fixated on working with smart people, and a smart person will recognize insincere flattery even if deep down they like it. As soon as you're caught using such crude tools, the level of trust in your relationships will fall. For praise to be effective, you need to know real achievements, positive character traits, or a person's actions. The same applies to compliments, whether about a beautiful tie or fresh appearance after vacation.
+>
+> Above all, you must be sincere and truthful. Don't pretend nothing happened if, for example, you got into an accident on the way to a meeting. Simply explain and reschedule for another time. You might even get a bonus in the form of sympathy and an offer of help, which in itself is one of the "bricks" of relationships.
+
+### Organizations are black boxes: organizational charts are not representative of power structures.
+
+> The main distinguishing feature in organizations is the degree of hierarchy. In vertical organizations, the degree of hierarchy is absolute — a higher position automatically gives you power over all subordinate employees, and at the same time better access to information that flows predominantly from above. The antipode of a hierarchical organization is "horizontal." In its extreme variant, this is a group without any structure where all members are equal. In reality, the structures of almost all organizations you encounter are mixed, that is, they combine both vertical and horizontal elements.
+>
+> The complex of relationships in an organization depends on the formal and informal power of people within it. Formal power consists of the authority given by a person's official position, their relationship to tasks performed by the organization, as well as their place in key organizational processes and access to resources. In turn, informal power is a combination of a person's will and charisma, their competence, external attractiveness, and, to a significant degree, the capabilities of their personal network of contacts.
+>
+> In an organization we observe the interaction of three different sets of relationships — bureaucratic, power-based, and personal. Bureaucratic relationships reflect official management structures. For example, a person officially occupying the position of department head can issue a bonus or give a reprimand, thereby forcing employees subordinate to them to fulfill certain requirements. Power relationships are only indirectly connected with such formal structures within organizations. They reflect strength of character, experience, personal authority, and social connections — someone's ability to influence other people. Many managers by virtue of their age and experience "radiate" more power than their position gives them. Power relationships also exist between senior and junior team members formally at the same level. Personal relationships stem from human feelings existing between people in the organization — this is love and respect, hatred and fear, friendship and competition.
+>
+> Since we're focused on relationships between people, questions of power and management are of decisive importance. It's necessary to understand how organizations actually function, regardless of what's written in their official documents. That's precisely why we must distinguish formal and real power structures written on paper and real decision-making processes. Formal management structures often don't reflect the real distribution of power within organizations, whether global business corporations or local charitable foundations. For example, a charitable organization may be led by the spouse of a business magnate formally occupying the position of deputy director for event organization, while its official head, a former minister, appears in public only a couple of times a year.
+>
+> It's impossible to work effectively with any organization without understanding its real power dynamics. You'll simply give people the opportunity to throw dust in your eyes. The essence of our advice is as follows: assume nothing about the power structure in an organization and consider it a "black box" until you carefully study it.
+>
+> Against the backdrop of formal structures in organizations, power groups tacitly exist that compete among themselves for the right to make decisions and control resources — personnel policy and budgets. Their strength rests on networks of personal connections of group members and the influence of their leaders, as well as on the ability of such a group to unite against others, master information and resources, and maximally use their personal relationships.
+>
+> It's important to note that power in organizations belongs to groups, not individuals. It's the trust of group members in each other and their collective control over the organization's vital activity that ensure preservation of their common power. If a person tries to control an organization alone, even being at its very top, they're constantly at risk. The fact is that a group of subordinates can unite to limit the power of an "arrogant" boss and at the same time win more control for themselves. Most often the boss either tries to act on the principle of "divide and rule," setting groups of subordinates against each other, or personally heads the dominant group.
+
+> Not all employees of an organization are equally important for achieving set goals. Your ultimate goal: reach those who influence the decisions you need. After initial contacts are secured and your presence in the company is ensured, your next step is identifying centers of real power and searching for influential figures. These aren't necessarily those at the top of the organizational structure. Moreover, often direct contact with the highest decision-makers can lead to problems. You'll most likely become the object of attacks from all those who are also fighting for their time and attention.
+
+### Decision-making styles: tsars, committees, and black-box bureaucratic hell.
+
+> Decision-making styles depend on the balance of power in the organization and on the influence of various groups on the process of appointing managers or selecting suppliers. Some sectors of the company may fall under the influence of various competing stakeholder groups. For example, one group may de facto block some strategic decisions through their key appointee who occupies the position of vice president of finance. Similarly, groups can control each other by appointing their employees to important governing bodies such as, for example, the procurement committee.
+>
+> Despite various mechanisms of power and regardless of management level, methods of decision-making in organizations, as a rule, fall under three styles. The first assumes the presence of a main decision-maker, sometimes even a monopolist on decision-making — a "tsar." For victory, it's usually enough to convince such a "tsar" to personally support (lobby for) a decision favorable to you. Obviously, in this case your organizational strategy should be aimed at reaching the key figure and influencing them.
+>
+> The second style is when a decision is made by a committee consisting of representatives of various functions and very often competing power groups. Having convinced one or several members of such a committee, even the most high-ranking and influential, you'll hardly achieve anything if some members oppose your proposal. Here, unlike the case with the "tsar," your calculation isn't to attract active supporters but rather not to make enemies. To achieve this goal, all committee members must view you as independent and impartial, not connected with any of the competitors.
+>
+> The third style — *"bureaucratic"* — refers to the case when there's actually no single clear decision-making instance, whether "king" or "committee." The decision becomes the result of a lengthy bureaucratic process when any proposal is considered in stages according to various criteria, that is, practically no one takes personal responsibility for the decision as a whole. Such a nightmarish scenario is increasingly observed in large companies and government organizations, requiring enormous expenditures of time, effort, and nerves from all parties. From a networking point of view, this is the most difficult case, since it requires deep knowledge of the organization in terms of both processes and personalities on the path of decision-making. It's no surprise that only a few "privileged" suppliers can assemble a rich library of personal contacts and experience working with the organization to continue successfully conducting business in such a business environment.
+>
+> For example, when it comes to government or military procurement in the United States, there are now extremely few contractors who can figure out — not to mention then comply with! — the details of tender documents that list all Congressional requirements. Thus, the only chance for an average company to get a piece of the tasty "pie" is to become a subcontractor to such giants as Boeing or Booz Allen Hamilton, who take a fat margin from contractors and maintain control over clients. And where does Boeing know how to satisfy its clients' requests? Very simply: by hiring former generals — Pentagon insiders!
+
+### Identify the visionaries and rising stars in an organization; the latter is more accessible.
+
+> We hope your plans related to this or that organization aren't limited only to pressing problems. There's no point spending months and especially years of your precious time on developing relationships if you don't have long-term plans for influencing future corporate decisions. But if such plans exist, then you'll have to build special relationships with two types of people in the organization.
+>
+> The first type is *"visionaries"* who determine the company's future. Usually they can be found among such people as the chief technology officer, head of the marketing department, or manager of new products. Each in their own capacity and all together they determine where the organization will move.
+>
+> The other type is *"rising stars."* These are people who will most likely be in power tomorrow but are still accessible today. They're not yet surrounded by a "cordon sanitaire" of deputies and assistants and haven't yet become a target for their ill-wishers. Dynamic and ambitious, these people, as our own experience shows, are usually quite open to new ideas, opportunities, and contacts.
+>
+> There's another feature common to both types that may be useful for you. Both "visionaries" and "rising stars" are very mobile and always seek opportunities for business development and advancing their own careers. Having competitors and enemies within the enterprise and often communicating with headhunters, they prefer to lead any interaction with outsiders away from their own offices. They're more likely than others to participate in conferences and educational business programs where you can get the opportunity to cross paths with them and establish contact in a calmer setting.
+
+### Pretend to be the illegitimate son to a coffee kingdom.
+
+> The famous Soviet spy Iosif Grigulevich (1913–1988) under the name Teodoro B. Castro passed himself off as the illegitimate son of a wealthy Costa Rican coffee producer. In Rome he founded an import-export company and established extensive personal contacts with local businessmen — especially those close to the Catholic Church. Over time, he managed to become a close friend and business partner of the former president of Costa Rica. As a result, in 1951 "Teodoro B. Castro" was appointed ambassador of Costa Rica to Italy and the Vatican, which made him a key insider at the top of the Catholic Church and Italian political circles.
+
+### Be ethical, you are tending to an ecosystem, you fool.
+
+> Everyone has encountered people in life who torment others and accept no refusals. Don't become one of them. For a professional, such behavior is a sure path to failure. As we've already said, in relationships with other people, spies must be "gardeners," not "hunters." If you want relationships to flourish, you must respect others' personal space and private life. Encroaching on other people's private lives or disrespecting boundaries they themselves establish is one of the fastest ways to fundamentally destroy emerging relationships. Worse, reviews of your aggressive tactics will spoil future relationships with other people. Moreover, this will happen in absentia, without your knowledge.
+>
+> Suppress in yourself the desire to apply such methods if it suddenly appears. In addition to being unethical, these methods will most likely harm you greatly in the long run. After all, your task is to strategically build healthy, productive relationships, not twist others' arms through emotional pressure or coercion.
+
+### Don't bite off more than you can chew. The game is meant to improve your life, not to achieve a high score in record time.
+
+> You build your network to improve the quality of your life, not to prove something to someone. Including not to endlessly expand your network or chase after some landmark contact. As professionals, we've had to think more than once about the meaning of networking. At the beginning of our career, an official came into our field of vision from whose opportunities and connections we, as intelligence officers, literally "salivated." We were at a distance of "one handshake" from this person and, as the rules required, prepared for our leadership at "Headquarters" a detailed plan for approaching the official. The answer from "Headquarters" literally shocked us. *"Leave him alone,"* the cipher read, *"you're not yet capable of working with such a connection."* Upset and disappointed, we tried to argue, but to no avail. A year or two later, during a secret meeting with one of our operative supervisors, we again raised the question about the official. *"Well look, guys,"* we heard in response, *"we track a huge number of contacts of your colleagues around the world. We see what works and what doesn't. We keep statistics on contacts, including yours. Even if you managed to establish this contact, you wouldn't be able to maintain it. You'd have nothing to offer a person of such high level. Your contact would stall, and its loss would put an end to the possibility of reaching this person again in the future when you're ready for it."* In other words — don't bite off more than you can chew...
+
+### Be self-aware, don't take offense, and never seek revenge.
+
+> Attention! If the same problems in relationships arise again and again, this is a reason to turn your gaze to yourself: maybe you yourself missed something...
+>
+> And sometimes it's worth simply turning the page and moving forward. Preserving the health of your ecosystem of connections is much more important than trying at any cost to preserve some of them, even the most prestigious. There are no irreplaceable people. Don't take offenses too close to heart. Don't hold onto problematic relationships. Never try to take revenge. Don't waste your time and energy in vain — move forward. In strategic networking, good mood and motivation are your main assets. After all, you have more important things to do!
+
+warmly,
+
+*austin*
