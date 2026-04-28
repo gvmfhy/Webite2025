@@ -1,0 +1,330 @@
+/*-- scss:defaults --*/
+
+// === Typography ===
+// Single-family editorial discipline: Source Serif 4 for everything except code.
+// Inter retained for navbar + UI chrome only. JetBrains Mono for code.
+// Following gwern.net's principle: serif throughout, hand-tuned scale.
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+$font-family-serif: 'Source Serif 4', Charter, 'Iowan Old Style', Georgia, serif !default;
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !default;
+$font-family-monospace: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace !default;
+
+// Body type — slightly larger for serif legibility on screen
+$font-size-base: 1.0625rem !default;     // 17px
+$line-height-base: 1.6 !default;
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.2 !default;
+
+// Reading column — gwern is ~650px max; we match
+$max-content-width: 680px !default;
+
+/*-- scss:rules --*/
+
+// === Body type — serif everywhere ===
+body {
+  font-family: $font-family-serif;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "onum" 1;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// === Headlines — serif, hand-tuned scale ===
+// Gwern uses a restrained scale; nothing screams. h1 ~1.85x body, h2 ~1.45x, h3 ~1.15x.
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+h1, .quarto-title-block h1.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+// === Subtitle — italic serif, no opacity-trick mute ===
+.subtitle, .quarto-title-block .subtitle {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+// === Reading column constraint ===
+// Column width is set via Quarto's grid system in _quarto.yml (body-width: 720px).
+// Don't override here — that fights the CSS grid and shifts content under the TOC sidebar.
+
+// === Drop caps — gwern-scale, hand-positioned ===
+// Activate via .dropcap class on first paragraph, OR auto on `.essay > p:first-of-type`
+.dropcap::first-letter,
+.essay > p:first-of-type::first-letter {
+  float: left;
+  font-family: $font-family-serif;
+  font-size: 5.5em;
+  line-height: 0.78;
+  font-weight: 700;
+  padding: 0.05em 0.1em 0 0;
+  margin-top: 0.08em;
+  margin-bottom: -0.1em;
+}
+
+// === Section breaks — horizontal rules become centered fleurons ===
+// Markdown `---` produces an <hr>; we render it as three centered asterisks
+hr {
+  border: none;
+  text-align: center;
+  margin: 2.5rem auto;
+  height: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: "* * *";
+    font-family: $font-family-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5em;
+    opacity: 0.5;
+    display: inline-block;
+  }
+}
+
+// === Code blocks ===
+pre, code {
+  font-family: $font-family-monospace;
+  font-size: 0.88rem;
+  font-feature-settings: "calt" 1, "liga" 0;
+}
+
+pre {
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  line-height: 1.55;
+  overflow-x: auto;
+}
+
+:not(pre) > code {
+  padding: 0.08em 0.32em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-feature-settings: "calt" 0, "liga" 0;
+}
+
+// === TOC sidebar — quieter, smaller, less competing for attention ===
+#TOC, .sidebar nav[role="doc-toc"] {
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.005em;
+  font-weight: 400;
+}
+
+#TOC ul {
+  border-left: 1px solid var(--bs-border-color);
+}
+
+#TOC ul li a {
+  padding: 0.2rem 0.7rem;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+  transition: all 0.12s ease;
+  text-decoration: none;
+  display: block;
+}
+
+#TOC ul li a.active {
+  font-weight: 600;
+}
+
+// === Sidenotes / margin notes — make them MORE prominent ===
+.column-margin, aside.margin-aside {
+  font-family: $font-family-serif;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  font-style: normal;
+  margin-top: 0.2rem;
+}
+
+.column-margin .footnote-ref,
+.column-margin sup {
+  font-style: normal;
+  font-weight: 600;
+}
+
+// === Navbar — minimal, less prominent ===
+// Gwern has no navbar; we keep one but make it light.
+.navbar {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.005em;
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 0.4rem 1rem;
+  min-height: 0;
+}
+
+.navbar-brand {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-size: 1rem;
+}
+
+.navbar .nav-link {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.7rem !important;
+}
+
+// === Article meta — small caps, not ALL CAPS ===
+.quarto-title-meta,
+.quarto-title-meta-heading,
+.quarto-categories,
+.listing-date,
+.listing-categories {
+  font-family: $font-family-sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  font-variant-caps: all-small-caps;
+  text-transform: lowercase;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+// Listing pages — make essay titles serif and prominent
+.listing-title {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.listing-subtitle {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+// === Blockquotes — pull-quote feel ===
+blockquote {
+  border-left: 2px solid;
+  padding: 0 0 0 1.2rem;
+  margin: 1.5rem 0 1.5rem 0;
+  font-style: italic;
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+// A larger pull-quote variant for editorial emphasis
+.pullquote {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-align: center;
+  border: none;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 540px;
+  position: relative;
+
+  &::before, &::after {
+    font-size: 1.1em;
+    opacity: 0.4;
+  }
+  &::before { content: '“ '; }
+  &::after { content: ' ”'; }
+}
+
+// === Footer — minimal ===
+.page-footer, .nav-footer {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  border-top: none;
+  padding: 1.5rem 1rem 2rem;
+  margin-top: 4rem;
+  opacity: 0.6;
+}
+
+// === Selection picks up accent ===
+::selection {
+  background-color: rgba(196, 112, 43, 0.25);
+}
+
+// === Small-caps utility class for inline use ===
+.smallcaps {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.03em;
+}
+
+// === Ensure Quarto's about-author block doesn't override our restraint ===
+.quarto-about-author-name {
+  font-family: $font-family-serif;
+  font-weight: 600;
+}
+
+// === Portrait styling — for ASCII-rendered headshot ===
+// Applied directly to <img> tags, bypassing Quarto's figure wrapping.
+
+img.hero-portrait {
+  float: right;
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 0 1.25rem 1.75rem;
+  border-radius: 3px;
+
+  @media (max-width: 768px) {
+    float: none;
+    width: 180px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+img.about-portrait {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0.5rem 0 2rem 0;
+  border-radius: 3px;
+}
+
+// Light-mode only: a subtle border helps the dark portrait separate from cream background
+[data-bs-theme="light"] {
+  img.hero-portrait,
+  img.about-portrait {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}
+

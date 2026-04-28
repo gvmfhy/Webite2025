@@ -1,0 +1,82 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "robots.txt"
+
+website:
+  title: "Austin P. Morrissey"
+  site-url: https://austinmorrissey.com
+  description: "AI safety research on biosecurity capability evaluations. Pivotal Research Fellow."
+  favicon: /images/favicon.png
+  open-graph: true
+  twitter-card: true
+  search:
+    location: navbar
+    type: textbox
+
+  navbar:
+    pinned: true
+    background: primary
+    left:
+      - text: Writing
+        href: writing/index.qmd
+      - text: Research
+        href: research.qmd
+      - text: About
+        href: about.qmd
+    right:
+      - text: Substack
+        href: https://austinpatrick.substack.com
+      - icon: github
+        href: https://github.com/gvmfhy
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/austin-p-morrissey/
+        aria-label: LinkedIn
+
+  page-footer:
+    border: false
+    left: |
+      © 2026 Austin P. Morrissey · [RSS](/writing/index.xml)
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme:
+      dark:
+        - slate
+        - styles/_brand.scss
+        - styles/custom-dark.scss
+      light:
+        - cosmo
+        - styles/_brand.scss
+        - styles/custom-light.scss
+    respect-user-color-scheme: true
+    grid:
+      sidebar-width: 240px
+      body-width: 720px
+      margin-width: 260px
+      gutter-width: 1.5rem
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-expand: 2
+    code-copy: true
+    code-overflow: wrap
+    code-link: true
+    code-annotations: hover
+    code-tools: false
+    link-external-icon: false
+    link-external-newwindow: true
+    citations-hover: true
+    crossrefs-hover: true
+    smooth-scroll: true
+    fig-cap-location: margin
+    reference-location: margin
+    citation-location: margin
+    include-in-header:
+      - _includes/json-ld-person.html
+    include-after-body:
+      - _includes/footer-meta.html

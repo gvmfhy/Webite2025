@@ -1,0 +1,127 @@
+---
+title: "What makes for good research managers, mentors, and leaders?"
+subtitle: "Eight observations"
+description: "Eight principles for effective research management, drawn from reflection on the leaders and mentors who've shaped my work — alignment, psychological safety, time protection, weekly 1:1s, development over output, candid feedback, personalization, and embodied purpose."
+date: 2026-04-21
+categories: [research, leadership, mentorship]
+image: /images/writing/research-managers/06-lisa-2026-a.jpg
+canonical-url: https://austinpatrick.substack.com/p/what-makes-for-good-research-managers
+---
+
+::: {.dropcap}
+> When your vision of what you want to do is bigger than what you can do single-handedly, then you have to move toward management. And the bigger the vision is, the farther into management you have to go.
+>
+> — Richard Hamming, *You and Your Research* (7 March 1986)
+:::
+
+Soon, I will be an old man! As we grow, we begin to contribute beyond our own technical ability, provided we are able to extend our reach through empowering others. Here, I organize my observations on effective research management, drawing from reflection on those who've helped me.
+
+---
+
+A recent 80,000 Hours article named a shortage of research managers as a bottleneck in AI safety. Capabilities are developing fast, and timelines for career development may become compressed. Encouraging such discussion collectively is within our interests.
+
+---
+
+## Eight principles for research management
+
+### 1. Align the team with your intent.
+
+For any research aim, there are tasks, and there are reasons for the task. Leaders must be clear on the latter but flexible on the former. Always we are making decisions with limited information. Our plan of execution, as it is defined at the outset, will always be under-informed, and encounter difficulties we did not foresee. Thus, good leaders, having clearly communicated the underlying intent for research objectives, will have a team that is equipped to make decisions and adapt to obstacles on the fly.
+
+Poor managers tend to flip this ordering, over-defining what they want done and how it should be executed, but keeping the why to themselves. These souls dream of a fantasy world where the perfect team is comprised of their clones, where they have centralized control over all hands, and full oversight into each moment of work. Such behavior signals a pathologic lack of trust, an overbearing need for control, and does not enable effective leadership at scale.
+
+### 2. Create psychological safety, enable a bias towards action.
+
+Action, guided by will, is what achieves outcomes. Therefore, we are served by a research culture where independence of mind, initiative, and boldness are the norm, where they are the infectious qualities we demonstrate and reinforce in each other. Cultures that nurture this are ones where it is safe to fail. One of the strongest indicators that you've set conditions that are psychologically safe is the unfettered, unabashed, transparent, and timely reporting of negative results.
+
+Other markers of a healthy research culture are when scientists suggest directions independently, think through and present several interpretations of their experimental results, and venture without hesitance to disagree with you openly.
+
+Poor managers tend to focus on results and timelines, rewarding researchers who are right, or who, better stated, report that projects are progressing precisely as planned, regardless of the underlying truth.
+
+### 3. Protect the time of your team, especially from yourself.
+
+Good managers make it easier for their team to work. Scientists need time of uninterrupted bouts of focus to progress technical tasks. A week overfilled with meetings will poison the performance of your individual contributors who need deep focus to thrive. A good research manager makes time for their team, rather than demanding it. For some communication, being in person is essential, for much, asynchronous writing will suffice. To discern between the two, ask: are these meetings helping or hurting your work?
+
+One exception is a class of meetings that have nothing to do with the work at hand, but attendance could create future opportunity for your researchers. For example, small meetings with leadership of other organizations. Meeting and observing the behavior of a diverse set of leaders plays some part in becoming one.
+
+Poor managers, with good intentions, can suffocate their staff by providing too much scaffolding. Speaking to another researcher in London, I learned of a technical manager who asks their team to write them each morning, defining 3 outcomes they will achieve by end of day, then write again at the end of day. In addition to this, they are asked to create a slideshow for their weekly 1:1s. The research team is not pleased with this arrangement.
+
+If you water a plant daily, the soil will mold, if you want to grow people — give them time and space to breathe.
+
+### 4. Have weekly 1:1s, face to face, listen more than you talk.
+
+Good managers carve out time to give their full attention to each researcher they're responsible for. Understand the state of affairs with regard to their emotions, their project, and any obstacles that are currently blocking them, or on the horizon. Take note of the ordering, for it matters. Check in on the person before the project. Come with an agenda of what you want to discuss, but these meetings are meant for your report, so make time for everything they want to cover.
+
+Since these are for the researchers, keep flexibility in how they are scheduled. If a researcher wants to postpone the 1:1 to later in the week in order to produce higher quality of work, allow this. If they prefer afternoons instead of morning meetings, accommodate them.
+
+### 5. Understand that the development of your researchers, rather than their research outputs, is your primary objective.
+
+Any research projects within a portfolio are stale artifacts if divorced from the scientists who produce them. The generative unit of the scientific enterprise is the individual, therefore, competent management should center itself on development of the person.
+
+Toyota has an internal motto of *"We build people first, and cars second."* Such a philosophy is applicable to the research domain. To build people, focus on nurturing their character, their virtues, the values needed for their long-term success. Good mentors produce researchers who outgrow them and leave. Do this.
+
+### 6. Be radically candid and direct with feedback, but have tact.
+
+A research environment is tremendously benefited by honest and open peers. If you notice something, say something. Keep in mind people can only incorporate so much at any given time, so limit feedback to the most critical areas for improvement in one go. Be discerning and tactful with regard to the timing of the delivery and the mood of the audience.
+
+### 7. Personalize your support to each researcher, keep a dashboard if you are responsible for more than a handful.
+
+Researchers will differ in their temperament. They will differ in their projects. They will differ in their points of struggle and tolerance for stress. Therefore, there is no one-size-fits-all solution to research management, beyond the manager aiming to attune themselves to each of their researchers. By listening, by observing, and by seeking to understand, you will position yourself to best support your researchers.
+
+A dashboard is better suited for tracking than personal notes, for you want the critical observations to be visible to supporting staff, quickly surfacing to them researchers who would benefit from support. Ultimately, we are one team, making one effort. Quick identification of issues allows for faster resolution.
+
+### 8. Embody your emotions, work with a sense of purpose, with full force of heart and mind. Set the norm for mission commitment.
+
+The way we carry ourselves impacts the research environment. A sense of purpose is a felt, somatic, embodied experience that changes how we live. It does not exist by default, like the experience of pain. But it is a gift that can be learned; receptivity to one's emotions is a prerequisite.
+
+When you allow the emotional body into cerebral affairs, you become more alert, perceptive, alive. It is as if you begin drawing from a higher human center, where there is a hunger for life, a lust for living, and a tenacity to throw yourself again and again into challenging problems.
+
+There are researchers who lack this vivacity, who I suspect are desperate to feel but are afraid to, stinted or stifled for whatever reason. These colleagues can be reached, at their core they are receptive. I wager this for I have experienced it myself. Through your own embodiment, you signal to them:
+
+> Here, it is normal to give of ourselves, to commit fully to our work and our mission without reserve.
+
+If you have other observations of good research management, born from your own experience, I invite you to share them. Otherwise —
+
+until we meet, or write, again
+
+warmly
+
+*austin*
+
+---
+
+## P.S. — some photos from science, and words from the past.
+
+> [Researchers] must make decisions on their own initiative, based on their understanding of their senior's intent, rather than passing information up the organizational chart and waiting for the decision to be passed down. Further, a competent [researcher] who is at the point of decision will naturally better appreciate the true situation than a senior some distance removed. Individual initiative and responsibility are of paramount importance.
+>
+> *— MCDP, Warfighting*
+
+> The essential thing is action. Action has three stages: the decision born of thought, the order or preparation for execution, and the execution itself. All three stages are governed by the will. The will is rooted in character, and for the man of action character is of more critical importance than intellect. Intellect without will is worthless, will without intellect is dangerous.
+>
+> *— Hans von Seeckt*
+
+![UMass Amherst, Biophysics, 2018](/images/writing/research-managers/01-umass-2018-a.jpg)
+
+![UMass Amherst, Biophysics, 2018](/images/writing/research-managers/02-umass-2018-b.jpg)
+
+![Chobanian & Avedisian School of Medicine, Nephrology, 2022](/images/writing/research-managers/03-bu-nephrology-2022-a.jpg)
+
+![Chobanian & Avedisian School of Medicine, Nephrology, 2022](/images/writing/research-managers/04-bu-nephrology-2022-b.jpg)
+
+![Astellas Institute for Regenerative Medicine, 2024](/images/writing/research-managers/05-astellas-2024.jpg)
+
+![London Initiative for Safe AI, 2026](/images/writing/research-managers/06-lisa-2026-a.jpg)
+
+![London Initiative for Safe AI, 2026](/images/writing/research-managers/07-lisa-2026-b.jpg)
+
+### Excerpts from *You and Your Research*
+
+1. You have to learn to write clearly and well so that people will read it, you must learn to give reasonably formal talks, and you also must learn to give informal talks.
+
+2. Once you get your courage up and believe that you can do important problems, then you can. If you think you can't, almost surely you are not going to. Courage is one of the things that Shannon had supremely. That is the characteristic of great scientists; they have courage. They will go forward under incredible circumstances; they think and continue to think.
+
+3. The average scientist, so far as I can make out, spends almost all his time working on problems which he believes will not be important and he also doesn't believe that they will lead to important problems.
+
+4. Most great scientists are completely committed to their problem. Those who don't become committed seldom produce outstanding, first-class work. The way to manage yourself is that when you have a real important problem you don't let anything else get the center of your attention — you keep your thoughts on the problem. Keep your subconscious starved so it has to work on your problem, so you can sleep peacefully and get the answer in the morning, free.
+
+5. The great scientists, when an opportunity opens up, get after it and they pursue it. They drop all other things. They get rid of other things and they get after an idea because they had already thought the thing through. Their minds are prepared; they see the opportunity and they go after it. Now of course lots of times it doesn't work out, but you don't have to hit many of them to do some great science. It's kind of easy. One of the chief tricks is to live a long time! *(lol!)*

@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+
+// === Light mode: warm cream + terracotta ===
+// Palette derived from Austin's Hugo scaffold decision
+
+$body-bg:        #FAF8F5 !default;
+$body-color:     #2D2D2D !default;
+$primary:        #C4702B !default;   // terracotta
+$secondary:      #6B6B6B !default;   // muted gray
+$light:          #F2EDE3 !default;
+$dark:           #2D2D2D !default;
+
+$link-color:           $primary !default;
+$link-hover-color:     darken($primary, 12%) !default;
+$link-decoration:      none !default;
+$link-hover-decoration: underline !default;
+
+$border-color:   #E8E2D7 !default;
+
+// Code block background — slightly creamier than body
+$code-bg:        #F2EDE3 !default;
+$pre-bg:         #F2EDE3 !default;
+
+// Navbar: subtle, not pure white
+$navbar-bg:      #F2EDE3 !default;
+$navbar-fg:      #2D2D2D !default;
+
+/*-- scss:rules --*/
+
+// Refine link hover for the warmer palette
+a:hover {
+  color: darken(#C4702B, 12%);
+}
+
+// Inline code uses cream background
+:not(pre) > code {
+  background: #F2EDE3;
+  color: #8A4F1C;  // darker terracotta for legibility on cream
+}
+
+// TOC active state — terracotta accent stripe
+#TOC ul li a.active {
+  color: #C4702B;
+  border-left-color: #C4702B;
+}
+
+// Blockquote uses muted terracotta
+blockquote {
+  border-left-color: #C4702B;
+  color: #4A3A2D;
+}
+
+// Code annotation buttons (numbered circles) use terracotta
+.code-annotation-anchor {
+  color: #C4702B !important;
+}

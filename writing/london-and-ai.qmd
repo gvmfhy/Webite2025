@@ -1,0 +1,47 @@
+---
+title: "London & Artificial Intelligence"
+subtitle: "It's a strange world"
+description: "Notes from working at LISA, the London Initiative for Safe AI — on the disorientation of seeing how current models expand the CBRN threat surface, and on the strange territory between excitement and concern that AI safety researchers now occupy."
+date: 2026-02-23
+categories: [ai-safety, london, biosecurity]
+image: /images/writing/london-and-ai/01-lisa-street-art.jpg
+canonical-url: https://austinpatrick.substack.com/p/london-and-artificial-intelligence
+---
+
+::: {.dropcap}
+The last couple months of my life have whirled by me, change has come at an extraordinary pace. A series of small decisions has led me overseas to London. There is a place here, in the east of the city, where a narrow road forks at a green pub. Go left. You'll come to a large, metal panel covered with striking, street-style art. There is a door-shaped cutout and a keycard panel. Go in.
+:::
+
+Welcome to LISA, a hub for AI safety research.
+
+![](/images/writing/london-and-ai/01-lisa-street-art.jpg)
+
+I don't remember who made these remarks, but my memory has kept a joke that as of late, I've started to understand more. When someone leaves a normal job, a typical farewell post reads: *"So grateful for the incredible journey and the amazing humans I got to build with. This team will always be family."* When someone leaves an AI company, their farewell post reads: *"I have gazed upon something I cannot fully describe. I am going away now to write poetry and tend a garden. Hold your loved ones close."*
+
+The first time you see how these models expand the threat landscape across all levels of chemical, biological, radiological, and nuclear harm, it is disorientating. When you first summon a swarm of AI agents and watch them work together autonomously, adhere to a command structure, reflect on their actions, modify their plan in real time and adapt to circumstance — it is amazing. But it leaves you with a pressing question. *When?*
+
+By force of personality and will, I am excited for the future and the potential it holds — advances in drug discovery will give sight to the blind, motion to the paraplegic, comfort and dignity to the dying; but by rational assessment, I am concerned for our future. We lack mechanisms to reliably control AI. It is unclear if humans will, or can, remain in control over the coming decades. Some researchers think we have 18 months. If you ask me *"18 months until what?"*, I'm not sure I could tell you — beyond rapid, unprecedented change.
+
+![Model Evaluation & Threat Research (METR) recent graph showing AI model performance on agentic tasks; increased length of error bars due to increasing complexity of measuring system capabilities.](/images/writing/london-and-ai/02-metr-graph.png)
+
+When I was a child, my dream was that our species would encounter aliens, and I'd get to witness it. Artificial intelligence seems so foreign, so bizarre, that it feeds that same thirst for the unexplored frontier. I am not alone in this perception. [Jack Clark](https://open.substack.com/users/44606-jack-clark?utm_source=mentions), a leader at Anthropic, made the following remarks . . .
+
+> I remember being a child and after the lights turned out I would look around my bedroom and I would see shapes in the darkness and I would become afraid — afraid these shapes were creatures I did not understand that wanted to do me harm. And so I'd turn my light on. And when I turned the light on I would be relieved because the creatures turned out to be a pile of clothes on a chair, or a bookshelf, or a lampshade.
+>
+> Now, in the year of 2025, we are the child from that story and the room is our planet. But when we turn the light on we find ourselves gazing upon true creatures, in the form of the powerful and somewhat unpredictable AI systems of today and those that are to come. And there are many people who desperately want to believe that these creatures are nothing but a pile of clothes on a chair, or a bookshelf, or a lampshade. And they want to get us to turn the light off and go back to sleep.
+>
+> In fact, some people are even spending tremendous amounts of money to convince you of this — that's not an artificial intelligence about to go into a hard takeoff, it's just a tool that will be put to work in our economy. It's just a machine, and machines are things we master.
+>
+> But make no mistake: what we are dealing with is a real and mysterious creature, not a simple and predictable machine.
+
+![](/images/writing/london-and-ai/03-london.jpg)
+
+There are challenging times ahead, consider getting involved. Whatever you decide on doing, make the most of your time, always such choices are existential, as always our only guarantee in life is death. Don't take it too seriously. Or take it seriously. I suppose it's a matter of personal style. It's a gift to have a propensity for joy, and a shame to let the world crush your sense of whimsy — or to let the absurd rob you of your gravitas, your power, and your depth.
+
+In any event, remember that a man is not a machine, and a machine is not a man. Though, should you aspire to be a human being — it's going to take some effort, some deliberate acts of will.
+
+Oh, if you find yourself in London, say hi. You know where to find me.
+
+warmly,
+
+*austin*

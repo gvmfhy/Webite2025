@@ -1,0 +1,49 @@
+---
+title: "Research"
+subtitle: "Active and recent projects in AI safety + biosecurity"
+description: "Austin P. Morrissey's research projects in AI capability evaluations, biosecurity threat modeling, and adversarial elicitation."
+date-modified: today
+---
+
+A snapshot of what I'm currently working on. For published / peer-reviewed work, see [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en).
+
+## Active
+
+### SEBE — Standardized Elicitation for Biosecurity Evals
+
+A model-agnostic framework for separating *"the model won't say"* from *"the model doesn't know."* Tiered jailbreak sequences (T0–T4) implemented in Inspect AI, validated against the VCT benchmark.
+
+> Phase 1 results: 84.6% breach rate against Sonnet 4.6 on 65 baseline-blocked questions; 31% extraction accuracy among breached. Implicit-extraction strategies (dialogue-based) decisively outperform explicit MCQ formatting.
+
+[Source on GitHub](https://github.com/gvmfhy/sebe) (private at present)
+
+### VCT Classifier Boundary Mapping
+
+Comprehensive characterization of a frontier-model biosecurity classifier across five experiments (~1,750 probes + ~224 multi-turn conversations), yielding a three-gate hierarchical model and ten parameterized mutation rules.
+
+> Final classifier model (v7.1) treats safety as vocabulary-token evaluation rather than semantic intent. Ten mutation rules show the boundary is lexical, not conceptual.
+
+### Boundary Project
+
+A reproduction of AISI's "Boundary" optimizer (arXiv:2602.15001v2) — evolutionary algorithm for jailbreak generation. Implemented 9-arm bandit with 56 seeds, structural crossover, span-edit operators, and template-fill from 15 FORTRESS-derived templates.
+
+[Source on GitHub](https://github.com/gvmfhy/Boundary)
+
+## Recent
+
+### MIT Lincoln Laboratory & The Dual-Use Frontier
+
+Substack essay on the structural challenges of dual-use research at federal labs. [Read on Substack](https://austinpatrick.substack.com/p/mit-lincoln-laboratory-dual-use-frontier).
+
+### Evaluating LLM hypothesis generation in biology is hard
+
+Substack essay on why current eval methodologies for scientific reasoning miss what actually matters in lab work. [Read on Substack](https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation).
+
+## Tools / open-source
+
+- **[Inspect GUI](https://github.com/gvmfhy/inspect-gui)** — visual editor for Inspect AI evaluation pipelines
+- **[c2-swarm](https://github.com/gvmfhy)** — four-layer military-style C2 architecture for adversarial probing of safety classifiers (information-quarantine via observation schemas)
+
+::: {.callout-tip appearance="simple"}
+For collaborations, see [the about page](/about.qmd).
+:::

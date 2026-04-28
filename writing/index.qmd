@@ -1,0 +1,25 @@
+---
+title: "Writing"
+subtitle: "Essays on AI safety, biosecurity, and methodology"
+description: "Long-form writing by Austin P. Morrissey on AI capability evaluations, biosecurity, and the philosophy of empirical science."
+listing:
+  contents: "*.qmd"
+  exclude:
+    filename: index.qmd
+  type: default
+  sort: "date desc"
+  fields: [title, subtitle, date, categories, reading-time]
+  date-format: "MMMM D, YYYY"
+  feed: true
+  categories: cloud
+page-layout: full
+toc: false
+---
+
+These essays cross-post to my [Substack](https://austinpatrick.substack.com), where they reach a wider audience. The canonical version lives here, and Substack versions point back via canonical link.
+
+::: {.column-margin}
+*Subscribe via [RSS](/writing/index.xml) or [Substack](https://austinpatrick.substack.com/subscribe).*
+:::
+
+---

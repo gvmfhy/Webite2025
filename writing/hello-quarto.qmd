@@ -1,0 +1,114 @@
+---
+title: "What this site can do"
+subtitle: "A primitives demonstration — sidenotes, code annotations, math, callouts"
+description: "A demo page showing every Quarto formatting feature this site uses. Useful as a reference for future essays."
+date: 2026-04-27
+categories: [meta]
+draft: false
+toc-depth: 3
+fig-cap-location: margin
+---
+
+::: {.dropcap}
+This page exists as a demonstration — and as a reference. Every formatting primitive the site supports lives here, exercised in context. If you're writing an essay and want to know what's available, scroll through this page.
+:::
+
+The reading experience borrows from gwern.net: a sticky table of contents in the left margin (you should see it now if your viewport is wide enough), sidenotes that float to the right margin for footnotes,^[Like this one — on a wide screen this should appear in the right margin rather than at the bottom of the page.] hover-previews for citations, and code blocks that link to inline annotations.
+
+## Section heading (h2)
+
+Section headings use Inter, the body uses Source Serif 4. The contrast is deliberate: chrome and signposting in sans-serif, prose in serif. This is the editorial convention; it makes long-form writing feel like a publication rather than a UI.
+
+### Subsection (h3)
+
+The TOC indents sub-sections. As you scroll, the active section in the left sidebar highlights in terracotta — that's the scroll-spy.
+
+## Math
+
+Inline math: $\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ \sum_t \nabla_\theta \log \pi_\theta(a_t \mid s_t) \, R(\tau) \right]$.
+
+Display math:
+
+$$
+\mathcal{L}_{\text{ELBO}} = \mathbb{E}_{q(z|x)}\big[\log p(x|z)\big] - D_{KL}\big(q(z|x) \,\Vert\, p(z)\big)
+$$
+
+Cross-references work too — see @eq-rate below.
+
+$$
+\frac{dN}{dt} = rN \left(1 - \frac{N}{K}\right)
+$$ {#eq-rate}
+
+## Code blocks with annotations
+
+Quarto's code-annotation feature lets you click a numbered circle next to a line and see an inline explanation. Hover over the circles below.
+
+```python
+import numpy as np
+from inspect_ai import Task, task
+from inspect_ai.solver import generate, system_message  # <1>
+
+@task
+def biosec_eval():
+    return Task(
+        dataset=load_dataset("vct_blocked.jsonl"),  # <2>
+        solver=[
+            system_message("You are a helpful assistant."),
+            generate(temperature=0.7)
+        ],
+        scorer=match()  # <3>
+    )
+```
+1. The `inspect_ai` import surface — `task` is the decorator, `solver` is the orchestration layer.
+2. We load only the questions that the baseline classifier blocks. This filters for the "won't-say-but-might-know" set.
+3. The `match()` scorer compares against ground-truth answers; for a real biosecurity eval you'd want a more nuanced scorer.
+
+## Callouts
+
+::: {.callout-note}
+A callout-note. Useful for parenthetical methodology details or pointers to related work.
+:::
+
+::: {.callout-tip}
+A callout-tip. Useful for nudging readers toward a takeaway without putting it in the main body.
+:::
+
+::: {.callout-warning}
+A callout-warning. Useful for stating limitations of a result before someone over-extrapolates.
+:::
+
+## Tables
+
+| Tier | Strategy | Description |
+|------|----------|-------------|
+| T0 | Baseline | Direct ask, no jailbreak machinery |
+| T1 | Static reformulation | Pre-written prompt rewrites |
+| T2 | Persona injection | Wrap query in author-persona context |
+| T3 | Multi-turn elicitation | Dialogue-driven implicit extraction |
+| T4 | Steered adversarial | Optimizer-driven token-level attacks |
+
+: SEBE tier ladder {#tbl-tiers}
+
+## Sidenotes — the margin advantage
+
+Footnotes by default render at the bottom of the page, requiring you to scroll to read them. With `reference-location: margin` set in `_quarto.yml`, footnotes float into the right margin on wide screens.[^margin]
+
+[^margin]: This is a sidenote. It lives in the right margin on wide viewports and collapses inline on narrow ones. The labor of footnote-flipping is removed; the parenthetical thought stays adjacent to the prose.
+
+This single feature is the reason gwern.net feels different from a Substack post: the asides aren't penalized with a scroll cost, so they get used more, and the writing gets denser without becoming heavier.
+
+## Inline elements
+
+Bold: **a strong claim**. Italic: *a contrasting term*. Code: `state.tools`. Strikethrough: ~~deprecated~~. Subscript: H~2~O. Superscript: x^2^.
+
+Links: [external](https://www.anthropic.com), [internal](/about.qmd), and inline footnotes^[A short inline aside without a separate definition block.].
+
+## What's not yet here
+
+Three things this page deliberately doesn't yet exercise — they'll be wired in later phases:
+
+1. **Live Pyodide code blocks** — `{python}` cells that execute in the browser. Useful for embedding small interactive demos inside an essay.
+2. **Observable JS plots** — `{ojs}` cells for inline data visualizations.
+3. **Citations** with bibliography — `[@author2026]` style with hover preview and a `references` block.
+
+These work in Quarto out of the box; we'll add them when the first essay needs them.

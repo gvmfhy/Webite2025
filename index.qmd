@@ -1,0 +1,27 @@
+---
+title: "Austin P. Morrissey"
+subtitle: "AI safety research on biosecurity capability evaluations"
+toc: false
+page-layout: full
+listing:
+  id: latest-writing
+  contents: writing
+  type: default
+  sort: "date desc"
+  max-items: 3
+  fields: [title, subtitle, date, categories]
+  date-format: "MMMM D, YYYY"
+---
+
+<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey, rendered as a portrait composed of typographic symbols" class="hero-portrait" />
+
+I'm a Pivotal Research Fellow working on AI capability evaluations for biosecurity, mentored by SecureBio. My research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology — and how to measure that empirically.
+
+Previously: mRNA scientist (UMass Amherst, Boston University) with wet-lab R&D experience. Now: writing evals that probe the boundary between what models *won't* say and what they *can't* say.
+
+[Read my writing →](/writing/) &nbsp;&nbsp; [About me →](/about.qmd) &nbsp;&nbsp; [Research projects →](/research.qmd)
+
+## Latest writing
+
+::: {#latest-writing}
+:::
