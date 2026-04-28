@@ -1,0 +1,195 @@
+---
+title: "The Sun and the Shadow of Rostam"
+subtitle: "Know yourself, or be destroyed."
+description: "A retelling of the Shahnameh's tragic encounter between Rostam and his unrecognized son Sohrab — adapted from Dick Davis's translation — read as a parable for the internal life: the unrecognized parts of self that, when forced into confrontation, demand we look inward."
+date: 2026-03-27
+categories: [philosophy, self-knowledge, literary]
+image: /images/writing/rostam-shadow/01-hero.jpg
+canonical-url: https://austinpatrick.substack.com/p/the-sun-and-the-shadow-of-rostam
+---
+
+::: {.dropcap}
+Last week was Nowruz, the Persian new year. In Iran, there is a cultural ceremony that pairs with the day. It involves eating something sweet, having a mirror, and flipping to a poem by Hafez. I heard of a story from this region. It comes from the books of kings, a sprawling epic written a thousand years ago, the [Shahnameh](https://en.wikipedia.org/wiki/Shahnameh). How it begins, I do not know, but where we will begin is with Rostam. The following is adapted from a translation by [Dick Davis](https://annas-archive.gl/slow_download/b7423ab4c737eb2b2bc710a38050b013/0/0), with my reflections at the end.
+:::
+
+![](/images/writing/rostam-shadow/01-hero.jpg)
+
+## The Sun and the Shadow of Rostam
+
+Rostam was renowned as a warrior, a champion of champions. His reputation preceded him throughout Persia. One day, after hunting on horseback, Rostam dismounted to shut his eyes and enjoy a full stomach. When he awoke, to his dismay his horse was gone. Enraged, worried, to himself he said:
+
+> "How can I escape from such mortifying shame? What will our great warriors say, *'His horse was taken from him while he slept?'* Now I must wander wretched and sick at heart, and bear my armor as I do so; perhaps I shall find some trace of him…"
+
+He tracked the footprints through the desert, following them until the trail was swallowed by a shallow river in the Kingdom of Samangan, what is now northern Afghanistan. There, the king received the champion warmly, assuring him that a stallion like his could not stay lost for long. They drink together, and he gives Rostam a room.
+
+> When one watch of the night had passed, and Venus rose into the darkened sky, a sound of muffled whispering came to Rostam's ears; gently his chamber door was pushed open. A slave entered, a scented candle in her hand, and approached the hero's pillow; like a splendid sun, a paradise of tints and scents, her mistress followed her.
+>
+> This beauty's eyebrows curved like an archer's bow, and her ringlets hung like nooses to snare the unwary; in stature she was as elegant as a cypress tree. Her mind and body were pure, and she seemed not to partake of earthly existence at all. The lionhearted Rostam gazed at her in astonishment; he asked her what her name was and what it was that she sought on so dark a night.
+
+The woman before him was Tahmineh, the daughter of the king.
+
+![](/images/writing/rostam-shadow/02-illustration.jpg)
+
+> *Like a legend I have heard the story*\
+> *Of your heroic battles and your glory,*\
+> *Of how you have no fear, and face alone*\
+> *Dragons and demons and the dark unknown,*\
+> *Of how you sneak into Turan at night*\
+> *And prowl the borders to provoke a fight,*\
+> *I bit my lip to hear such talk, and knew*\
+> *I longed for you*
+
+She told him she could find his horse, and desired to have his son, too. Together, they spent the night.
+
+> At dawn, he gave her an armband. *"If our child is a daughter,"* he said, *"she should tie this in her braids as an amulet of good fortune. But if we have a son, suffer him to wear it on his arm as a sign of his father."*
+>
+> In the morning, the local king greeted the hero with the excellent news that the horse had been found. Happy to be reunited with his loyal companion, Rostam quickly saddled his steed and said farewell to the king of Samangan. Tahmineh watched him depart with tears in her eyes. When Rostam disappeared over the horizon, she returned to her chambers with an aching heart.
+
+Nine months passed, and a baby boy was born — his mother named him Sohrab. Quickly he grew. Rostam never returned, and the son did not know his father, not even by name. Coming of age, Sohrab could no longer bear this rootless feeling, he demanded, desperately, for his mother to tell him who his father was.
+
+> *"Control your temper. You are the son of the hero Rostam. This is why your head reaches to the heavens; since the Creator made this world, there never has been such a knight like him, but if he hears of how you've grown, he'll summon you to his side and break your mother's heart."*
+>
+> Sohrab answered, *"This is not something to be kept secret; the world's chieftains tell tales of Rostam's prowess; how can it be right for me to hide such a splendid lineage? If Rostam is my father and I am his son, then no one else in all the world should wear the crown; when the sun and moon shine out in splendor, what should lesser stars do, boasting of their glory? I'll gather a boundless force of fighting Turks and drive King Kavus from his throne!"*
+
+Reckless, passionate, and bold, Sohrab set out to find his father. Soldiers from the region rallied behind him, but a group of advancing armed men cannot be kept secret. News of this unknown warrior, a leader of men, marching towards Persia reached and alarmed King Kavus — he called upon his champion, Rostam, to lead the counterforce.
+
+> Drums were bound on elephants, the treasury doors were opened, and war supplies were handed out. A hundred thousand warriors gathered and the air was darkened by their dust. Stage by stage they marched till nightfall, and their glittering weapons shone like points of fire seen through a dark curtain. Day by day they went on until at last they reached the fortress's gates, and their number was so great that not a stone or speck of earth was visible before the walls.
+>
+> Rostam rode out with his warriors beside him, bearing his banner aloft. When he saw the mighty Sohrab, whose massive frame look like his own, he challenged the warrior to face him alone. Sohrab responds to his call:
+>
+> *"Don't call any of your Persians to your aid, you and I will fight alone. But the battlefield's no place for you. Age has clipped your wings, old man!"*
+
+The sea of soldiers makes room for the two to draw close. They circle each other.
+
+> *So headstrong and so young! Warm words, and bold!*\
+> *The ground, young warrior, is both hard and cold.*\
+> *Yes, I am old, and I've seen many wars*\
+> *And laid low many mighty conquerors;*\
+> *Many a demon's perished by my hand*\
+> *And I've not known defeat, in any land.*
+>
+> *Then Sohrab said, "I'm going to question you.*\
+> *Your answer must be honest, straight, and true:*\
+> *I think that you're Rostam, and from the clan*\
+> *Of warlike Sam and noble Nariman."*\
+> *Rostam replied, "I'm not Rostam, I claim*\
+> *No kinship with that clan or noble name:*
+>
+> *Rostam's a champion, I'm a slave — I own*\
+> *No royal wealth or crown or kingly throne."*\
+> *And Sohrab's hopes were changed then to despair,*\
+> *Darkening before his gaze the sunlit air.*
+
+The two begin to fight. At first they are evenly matched, and both survive the initial clash. They return to their camps and rest for the night. The next morning, Sohrab greets Rostam with a smile on his lips.
+
+![](/images/writing/rostam-shadow/03-photograph.jpg)
+
+> *"When did you wake? How did you pass the night?*\
+> *And are you still determined we should fight?*\
+> *But throw your mace and sword down, put aside*\
+> *These thoughts of war, this truculence and pride.*\
+> *Let's sit and drink together, and the wine*\
+> *Will smooth away our frowns — both yours and mine.*
+>
+> *Come, swear an oath before our God that we*\
+> *Renounce all thoughts of war and enmity.*\
+> *Let's make a truce, and feast as allies here*\
+> *At least until new enemies appear.*\
+> *The tears that stain my face are tokens of*\
+> *My heart's affection for you, and my love;*\
+> *I know that you're of noble ancestry —*\
+> *Recite your lordly lineage to me."*
+
+Rostam refuses to speak of his night.
+
+> *"You might be still a child, but I am not. Now, let us fight, I've seen much of good and evil in my life, and I'm not a man for talk, or tricks, or treachery."*
+>
+> Sohrab replied, *"Talk like this is not fitting from an old man. I would have wished that your days would come to an end peacefully, in your bed, and that your survivors would build a tomb to hold your body while your soul flew on its way. But if your life is to be in my hands, so be it; let us fight and the outcome will be as God wills."*
+>
+> They dismounted, tethered their horses, and warily came forward, each clad in mail and helmeted. They closed in combat, wrestling hand to hand, and mingled blood and sweat poured from their bodies. Sohrab, like a maddened elephant, struck Rostam a violent blow and knocked him down. Then, like a lion leaping to bring down a wild boar, he flung himself on Rostam's chest, whose mouth and fist and face were grimed with dust.
+
+With youth comes strength, but with age comes a cutting cunningness; so when Sohrab drew a dagger to sever his head, Rostam spoke:
+
+> *O hero, lion destroyer, mighty lord,*\
+> *Master of mace and lariat and sword,*\
+> *Our customs do not count this course as right;*\
+> *According to our laws, when warriors fight,*\
+> *A hero may not strike the fatal blow*\
+> *The first time his opponent is laid low;*
+>
+> *He does this, and he's called a lion, when*\
+> *He's thrown his rival twice — and only then.*
+
+By this trick he sought to escape death at Sohrab's hands. The brave youth bowed his head at the old man's words, believing what he was told. He released his opponent and withdrew. Rostam sprang up like a man who has come back from the dead and strode to a nearby stream where he drank and washed the grime from his face and body. Briefly he sat in prayer, unaware of the fate the sun and moon held in store for him.
+
+Then, anxious and pale, he made his way from the stream back to the battlefield.
+
+Once again they tethered their horses, and once again they grappled in single combat, each grasping the other's belt and straining to overthrow him. But, for all his great strength, Sohrab seemed as though he were hindered by the heavens, and Rostam seized him by the shoulders and finally forced him to the ground; the brave youth's back was bent, his time had come, his strength deserted him. Rostam quickly drew his dagger and plunged it in the lionhearted son's chest. Sohrab writhed, then gasped for breath:
+
+> *"I brought this on myself, this is from me,*\
+> *And Fate has merely handed you the key*\
+> *To my brief life: not you but heaven's vault —*\
+> *Which raised me and then killed me — is at fault.*\
+> *Love for my father led me here to die.*\
+> *My mother gave me signs to know him by,*
+>
+> *And you could be a fish within the sea,*\
+> *Or pitch black, lost in night's obscurity,*\
+> *Or be a star in heaven's endless space,*\
+> *Or vanish from the earth and leave no trace,*\
+> *But still my father, when he knows I'm dead,*\
+> *Will bring down condign vengeance on your head.*\
+> *One from this noble band will take this sign*\
+> *To Rostam's hands, and tell him it was mine,*\
+> *And say I sought him always, far and wide,*\
+> *And that, at last, in seeking him, I died."*
+
+When Rostam heard the warrior's words, his head whirled and the earth turned dark before his eyes, and when he came back to himself, he roared in an agony of anguish and asked what it was that the youth had which was a sign from Rostam, the most cursed of all heroes.
+
+*"If then you are Rostam,"* said the youth, *"your wits were dimmed by an evil nature. I tried in every way to guide you, but no love of yours responded. Open the straps that bind my armor and look on my naked body. When the battle drums sounded before my door, my mother came to me, her eyes awash with tears, her soul in torment to see me leave. She bound a clasp on my arm and said, 'Take this in memory of your father, and watch for when it will be useful to you'; but now it shows its power too late."*
+
+When Rostam opened the boy's armor and saw the clasp, he tore at his own clothes in grief. Oh how violently he wept.
+
+::: {.pullquote}
+Know yourself, or be destroyed.
+:::
+
+---
+
+I cannot shake the interpretation that the story about father and son is but a rendition of the internal life. The singular individual experience that is the crux of our existence. Sohrab is the creation of Rostam, but there exists no relation between them, the parts are isolated and unrecognized by the whole. And when fate forces them to meet, when these illusions, these dissociations can no longer hold, man is forced into confrontation with himself. He is a stranger to this foreign creature he embodies.
+
+The consequence of this is a lucid confusion, where it is as if the locus of awareness oscillates between identification and non-identification readily and reactively. We shrink away, shove aside, or ignore the aspects of self that call out *"are you me? am I you?"*. For when we look at ourselves, we are disturbed, we are dizzy, reactively we avert our gaze.
+
+In the U.S., I knew a meditation teacher around my age. They would lead guided groups with upwards of thirty people. The exercise they taught involved visualizing soothing colors behind the eyes. Once, we were walking on an outdoor path alone. I asked them what they thought about silent vipassana retreats. These are challenging free [courses](https://www.dhamma.org/en-US/index), where you are lodged, fed, but stuck with your internal world for ten days.
+
+In response, they told me they haven't done one, because they were unsure if they were ready to surface internal content. I applaud their honesty and awareness. I cannot, and will not, say that self-soothing through visualization is a worthless practice. But, I will say, I do not think this is the way inward. To project colors onto closed eyelids, is to look at your eyelids. To look within is to gaze into the darkness that lies within the human heart. It is to examine yourself, and it is rarely pleasant. But, if you can muster the courage (you can), the curiosity (you can), and the patience (you can), to know yourself (you could), it is a worthwhile investment.
+
+The tools of self-knowledge are attention and reflection. The internal streams to access insight are events that occur at a somatic level (the sensations of the body), a behavioral level (the habits of our actions), a conscious level (patterns of thinking), and the subconscious (our nightly dreams). Emotion is intermixed throughout them all. To come into relationship with yourself, in the entirety of your being — beyond what is personally palatable to you — is to gain access to the full power of your personality.
+
+You are alive, whether you make effort to become aware of this is up to you; so too, what this all means is up to you. Come to know yourself so you can better give all of your energy to this life. The game is worth the candle.
+
+warmly,
+
+*austin*
+
+---
+
+## P.S.
+
+Esther Harding was one of Jung's earliest students, she trained as a medical doctor in London, then traveled to Zürich to work with him — seeking a cure for her own depression. The following is from her notes in 1924.
+
+![](/images/writing/rostam-shadow/04-portrait.jpg)
+
+> "….But use few words here, words that you are sure of. Do not make a long theory or you will entangle yourself in a net, in a trap."
+>
+> Next he spoke of fear. He said, *"Be afraid of the world, for it is big and strong; and fear the demons within, for they are many and brutal; but do not fear yourself, for that is your Self."*
+>
+> I said I feared to open the door for fear the demons would come out and destroy. He said, *"If you lock them up they will as surely destroy. The only way of delimiting the Self is by experiment. Go as far as your desire goes, and you will presently find that you have gone as far as your own laws allow. If you feel afraid, be brave enough to run away. Find a hole to hide in, for this is the action of a brave man, and by so doing you are exercising courage. Presently the swing of cowardice will be over, and courage will take its place."*
+>
+> I said, *"But how hopelessly unstable and changeable you will appear!"*
+>
+> He replied, *"Then be unstable. A new stability will reassert itself. Does one live for other people or for oneself? Here is the place where one must learn true unselfishness."*
+>
+> The law was made by man. We made it. It is therefore below us, and we can be above it. As St. Paul said, *"I am redeemed and am freed from the law."* He realized that, as man, he had made it. So also a contract cannot bind us, for we who made it can break it.
+>
+> Thus, vice too, if entered into sincerely as a means of finding and expressing the Self, is not vice, for the fearless honesty cuts that out. But when we are bound by an artificial barrier, or by laws and moralities that have entered into us, then we are prevented from finding, or even from seeing, that there is a real barrier of the Self outside this artificial barrier. We fear that if we break through this artificial barrier we shall find ourselves in limitless space. But within each of us is the self-regulating Self.
