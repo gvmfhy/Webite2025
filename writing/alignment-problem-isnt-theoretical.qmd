@@ -6,6 +6,8 @@ date: 2025-10-11
 categories: [ai-safety, alignment, evals]
 image: /images/writing/alignment-problem/01-petri-workflow.jpeg
 canonical-url: https://austinpatrick.substack.com/p/the-alignment-problem-isnt-theoretical
+featured: true
+featured-order: 1
 ---
 
 > It is only when machines seem to take over central processes that we grow uneasy. When they select stimuli, identify patterns, convert stimuli into forms more suitable for processing, categorize data, extract concepts, and follow problem-solving strategies, they perform functions which in man are attributed to Mind. And the functions are not trivial. […]

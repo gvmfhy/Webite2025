@@ -1,10 +1,13 @@
 ---
 title: "Biorisk & DNA fragment analysis with Claude"
-description: "Forbidden Questions and Their Answers"
+subtitle: "Forbidden Questions and Their Answers"
+description: "On the social-engineering vector for ordering pathogenic DNA fragments and what defensive dual-use evaluation actually requires. A scene-driven essay on the gap between formal safeguards and operational reality."
 date: 2025-11-18
 categories: [biosecurity, dual-use, ai-safety]
 image: /images/writing/biorisk-dna-fragment-analysis/01.png
 canonical-url: https://austinpatrick.substack.com/p/one-sure-way-to-get-banned-from-openai
+featured: true
+featured-order: 3
 ---
 
 ::: {.dropcap}

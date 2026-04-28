@@ -6,6 +6,8 @@ date: 2025-12-12
 categories: [ai-evals, biosecurity, scientific-method]
 image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg
 canonical-url: https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation
+featured: true
+featured-order: 2
 ---
 
 ::: {.dropcap}
