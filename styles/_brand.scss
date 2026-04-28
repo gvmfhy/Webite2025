@@ -87,7 +87,15 @@ h4 {
 // Don't override here — that fights the CSS grid and shifts content under the TOC sidebar.
 
 // === Drop caps — gwern-scale, hand-positioned ===
-// Activate via .dropcap class on first paragraph, OR auto on `.essay > p:first-of-type`
+// Activate via .dropcap class on first paragraph, OR auto on `.essay > p:first-of-type`.
+// `display: flow-root` on .dropcap creates a new Block Formatting Context that
+// contains the floated cap — without it, subsequent short paragraphs wrap around
+// the float and look like they're part of the opening (visible on essays whose
+// opener is shorter than the cap's vertical extent, e.g. dialogue-heavy openings).
+.dropcap {
+  display: flow-root;
+}
+
 .dropcap::first-letter,
 .essay > p:first-of-type::first-letter {
   float: left;
