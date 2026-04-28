@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "echo skipping-install",
-  "buildCommand": "set -eux && curl -fsSL https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.34/quarto-1.7.34-linux-amd64.tar.gz -o quarto.tar.gz && mkdir -p quarto-bin && tar -xzf quarto.tar.gz -C quarto-bin --strip-components=1 && quarto-bin/bin/quarto --version && quarto-bin/bin/quarto render",
+  "buildCommand": "bash build.sh",
   "outputDirectory": "_site",
   "cleanUrls": true,
   "trailingSlash": false
