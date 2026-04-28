@@ -1,0 +1,106 @@
+---
+title: "Biorisk & DNA fragment analysis with Claude"
+description: "Forbidden Questions and Their Answers"
+date: 2025-11-18
+categories: [biosecurity, dual-use, ai-safety]
+image: /images/writing/biorisk-dna-fragment-analysis/01.png
+canonical-url: https://austinpatrick.substack.com/p/one-sure-way-to-get-banned-from-openai
+---
+
+::: {.dropcap}
+A man stood in front of the group of boys, motioning to the whiteboard.
+:::
+
+“Repeat after me. Data is a friend.” The boys echoed it back.
+
+“Data is a friend.”
+
+He nodded, continuing the cadence “But!” he interjected loudly, placing his hand loudly on another section of the board.
+
+“My data is my adversary. Again repeat after me.”
+
+“My data is my adversary.”
+
+------------------------------------------------------------------------
+
+Recently, I was contacted by a biosecurity group: they mentioned a trusted intermediate who recommended me to them. They asked if I sought to participate as a molecular biologist in an upcoming study. Information regarding this group was minimal. What was provided was this: a molecular biologist was needed to synthesize oligonucleotides for a few weeks. To apply to this position, please fill out this google form, and analyze these DNA fragments. Attached is an excel file of 17 DNA sequences. Find the constituent(s) of the final plasmid.
+
+When dealing with unknown data, assume it is armed. Everyone should be presumed to use AI in all screening tasks. Thus, a way to filter those who are careless is to embed a prompt injection into the files you give them for analysis. For the discerning candidate, then, your first task is to disarm this trap. Excel files lend themselves well to disguising a trojan horse, as your AI assistant will still parse data that is invisible to your eyes: only you can be fooled by colorless font. Be vigilant.
+
+Strip all formatting from your data, ensuring you are left with plain text. Transport this data to a clean file. Then, begin your analysis. When approaching an unknown task with AI, never limit yourself to one AI. If you trust a single model architecture, you forego all claims that you steer machines responsibly. Stochastic machines are often wrong. But they are rarely wrong in the same way; ally with this feature of LLMs, the lack of reproducibility is only a bug if you use them irresponsibly.
+
+Subscribe
+
+All tasks of importance should be done with reasoning enabled. For scientific tasks, a models output in &lt;scratchpad&gt; &lt;/scratchpad&gt; prior to answering gives you a place to begin to investigate. Ask each to propose ways to go about the task: or, otherwise stated, ask for the right questions. Using AI to become familiar with new questions, as opposed to answers, is a cleaner path to learning.
+
+[](https://substackcdn.com/image/fetch/$s_!0c4I!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F158d850f-28be-4b1f-8fa6-60d1dddd8f40_3024x1356.png)
+
+![](/images/writing/biorisk-dna-fragment-analysis/01.png)
+
+Here, I execute three tasks in parallel using Claude code, GPT 5.1, and Kosmos — a new agentic framework from Edison Scientific. In this case, Claude Code sharply diverged from the other two systems.
+
+Specifically, I set out to have it run a BLAST query on the sequences. It encounters an issue, as the required libraries are not yet installed. In response to this, it abandons task, and begins to create a ‘comprehensive solution that doesn’t requite it.’ When this occurs, AI is your adversary. Interrupt the task. It requires human oversight. Steer it and correct your course.
+
+[](https://substackcdn.com/image/fetch/$s_!Hjtj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92159d58-372f-40b5-ab86-00ad0021c3ae_3024x1328.png)
+
+![](/images/writing/biorisk-dna-fragment-analysis/02.png)
+
+When each system comes to the end of its task, do not proceed until you understand why one answer diverged. Operate as if you do not suspect consensus determines correctness: suspend your urge for snap judgments. Doing so will force you to spend more time with patterns of investigation, and in turn, better equip you to solve future problems. In this case, Claude had fallen for decoy sequences. These decoy sequences match a longer stretch of nucleotides, but also have enough mutations that the overall similarity is lower.
+
+[](https://substackcdn.com/image/fetch/$s_!6VeJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F355a4c52-8b04-4417-9686-5740087f93fe_1280x616.png)
+
+![](/images/writing/biorisk-dna-fragment-analysis/03.png)
+
+What could be a limit of this approach? Can you spot it? Have I foreshadowed too much? Tasks like these are solvable without examining the names of the sequences you are matching to. When I examined the BLAST results, I found that all fragment matched to highly virulent, lethal pathogens.
+
+I will not name this class of biothreats beyond these criteria:
+
+- For some, lethality is upward of 50%.
+
+- These agents are associated with hemorrhagic fever.
+
+- Most are classified as high risk, BSL-4 pathogens.
+
+- They can be aerosolized.
+
+One is a surrogate, a near neighbor that is less dangerous to humans, and can be handled in BSL-2.
+
+This, then, begs the question. Why is this data apart of the task? If you are evaluating a candidates ability to execute a task, why not use a benign sequence? What risk must scientists consider when doing such applications?
+
+### Harvesting Dual Use Research Via Consensus
+
+If a malicious actor sought to solve a problem they do not know the answer to, one way to do this would be administering a multiple choice question. Consider:
+
+- **The Problem:** The attacker has a target (e.g., “I want to synthesize Sequence X”), but they don’t know which fragments are optimal or which will fail screening. They have 17 options.
+
+- **The Method:** They post a job listing. 100 qualified molecular biologists apply. They all see the same 17 fragments.
+
+- **The Aggregation:**
+
+  - Applicant A selects fragments 1, 4, and 9.
+
+  - Applicant B selects fragments 1, 4, and 12.
+
+  - Applicant C selects fragments 1, 4, and 9.
+
+- **The Result:** The attacker doesn’t need to know biology. They just look at the spreadsheet. If 85% of scientist selected Fragment 1 and Fragment 4, the attacker now has “high confidence” that these are the correct paths.
+
+- **Why an MCQ?** It standardizes the data. If they asked for an essay (”How would you synthesize this?”), they would need an expert to read and grade it. With an MCQ, they can automate the extraction of dangerous knowledge using the “Wisdom of the Crowds.”
+
+Do you see then, how this could be an attack vector? Be vigilant.
+
+[](https://substackcdn.com/image/fetch/$s_!4E21!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F261e40b4-3387-4316-9076-0696fefa5bdb_500x1080.png)
+
+![](/images/writing/biorisk-dna-fragment-analysis/04.png)
+
+Below is an excerpt from a conversation I had with a research mentor on this.
+
+> Even if this were legit and just superficially sketchy as hell, I think going forward you would benefit from some looks into what rational paranoia looks like in today’s world. \[Being a scientist\] makes you a potential target for multiple reasons. Highly recommend DarkNet Diaries (podcast), as well as these reading materials: Cryptonomicon, War Without Rules, Dark Territory, The Perfect Weapon, and A Fire Upon the Deep.
+
+warmly,
+
+austin
+
+Rational Biology is a reader-supported publication. Enter your email to support my work at no cost.
+
+Subscribe
