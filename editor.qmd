@@ -1,0 +1,684 @@
+---
+title: "Editor"
+subtitle: "Live preview — paste markdown, see how it'll render on the site"
+description: "Personal markdown editor for Austin P. Morrissey to preview essays before publishing."
+toc: false
+page-layout: full
+include-in-header:
+  text: |
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="googlebot" content="noindex,nofollow,noarchive">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/github.min.css">
+include-after-body:
+  text: |
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-footnote@4.0.0/dist/markdown-it-footnote.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-attrs@4.3.1/markdown-it-attrs.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-deflist@3.0.0/dist/markdown-it-deflist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/index.min.js"></script>
+---
+
+```{=html}
+<style>
+  /* Hide the default page meta on this tool page; we want the editor full-bleed */
+  body > main.content { max-width: 100% !important; padding-inline: 1.5rem !important; }
+  #title-block-header { max-width: 100% !important; margin-bottom: 1rem; }
+  .quarto-title-block { padding-bottom: 0.5rem; }
+
+  /* === Editor layout === */
+  .editor-shell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    height: calc(100vh - 220px);
+    min-height: 600px;
+  }
+  @media (max-width: 900px) {
+    .editor-shell { grid-template-columns: 1fr; height: auto; }
+    .editor-pane { min-height: 60vh; }
+  }
+  .editor-pane {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bs-body-bg);
+  }
+  .editor-pane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.85rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    background: rgba(0,0,0,0.02);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    font-variant-caps: all-small-caps;
+    text-transform: lowercase;
+    opacity: 0.85;
+  }
+  [data-bs-theme="dark"] .editor-pane-header { background: rgba(255,255,255,0.03); }
+
+  .editor-pane-header .pane-meta { font-weight: 500; }
+  .editor-pane-header button {
+    border: 1px solid var(--bs-border-color);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0.35rem;
+    transition: border-color 0.12s, color 0.12s;
+  }
+  .editor-pane-header button:hover { border-color: #C4702B; color: #C4702B; }
+  [data-bs-theme="dark"] .editor-pane-header button:hover { border-color: #D8895A; color: #D8895A; }
+
+  /* === Input textarea === */
+  #md-input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 1rem 1.25rem;
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    background: transparent;
+    color: inherit;
+    tab-size: 2;
+  }
+  #md-input::placeholder { opacity: 0.45; font-style: italic; }
+
+  /* === Preview pane: should look like a real essay page === */
+  #md-preview {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem 2rem;
+    line-height: 1.65;
+  }
+  #md-preview > .preview-content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  /* Render headings/body using site fonts (already loaded by Quarto theme) */
+  #md-preview h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.15; margin-bottom: 0.4rem; }
+  #md-preview h2 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 0.5rem; font-weight: 600; }
+  #md-preview h3 { font-size: 1.2rem; margin-top: 1.75rem; font-weight: 600; font-style: italic; }
+  #md-preview p { margin-bottom: 0.9rem; }
+  #md-preview blockquote {
+    border-left: 2px solid #C4702B;
+    padding: 0 0 0 1.2rem;
+    margin: 1.4rem 0;
+    font-style: italic;
+    font-size: 1.05em;
+    line-height: 1.55;
+  }
+  [data-bs-theme="dark"] #md-preview blockquote { border-left-color: #D8895A; }
+  #md-preview code:not(pre code) {
+    padding: 0.08em 0.32em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    background: rgba(196,112,43,0.08);
+  }
+  #md-preview pre {
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+    overflow-x: auto;
+    background: rgba(0,0,0,0.04);
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  [data-bs-theme="dark"] #md-preview pre { background: rgba(255,255,255,0.04); }
+  #md-preview hr {
+    border: none;
+    text-align: center;
+    margin: 2rem auto;
+    height: 1.5rem;
+    position: relative;
+  }
+  #md-preview hr::before {
+    content: "* * *";
+    font-size: 1.05rem;
+    letter-spacing: 0.4em;
+    opacity: 0.5;
+  }
+  #md-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.25rem auto;
+    border-radius: 3px;
+  }
+
+  /* Drop cap (raised initial cap) — same logic as site */
+  #md-preview .dropcap > p:first-of-type::first-letter,
+  #md-preview p.dropcap::first-letter {
+    font-family: 'Source Serif 4', Charter, Georgia, serif;
+    font-size: 4.5em;
+    line-height: 0.85;
+    font-weight: 700;
+    padding-right: 0.04em;
+  }
+
+  /* Callouts — matches Quarto's bootstrap callout style */
+  #md-preview .callout {
+    border-radius: 4px;
+    margin: 1.25rem 0;
+    padding: 0.8rem 1rem;
+    border-left-width: 4px;
+    border-left-style: solid;
+    background: rgba(0,0,0,0.03);
+  }
+  [data-bs-theme="dark"] #md-preview .callout { background: rgba(255,255,255,0.03); }
+  #md-preview .callout-note { border-left-color: #2780e3; }
+  #md-preview .callout-tip { border-left-color: #3aa55c; }
+  #md-preview .callout-warning { border-left-color: #ff7518; }
+  #md-preview .callout-important { border-left-color: #dc3545; }
+  #md-preview .callout-caution { border-left-color: #f0ad4e; }
+  #md-preview .callout-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.3rem; }
+  #md-preview .callout-title::before {
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+  #md-preview .callout-note .callout-title::before { content: "ⓘ"; color: #2780e3; }
+  #md-preview .callout-tip .callout-title::before { content: "💡"; }
+  #md-preview .callout-warning .callout-title::before { content: "⚠"; color: #ff7518; }
+  #md-preview .callout-important .callout-title::before { content: "❗"; color: #dc3545; }
+  #md-preview .callout-caution .callout-title::before { content: "⚡"; color: #f0ad4e; }
+
+  /* Footnotes */
+  #md-preview .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--bs-border-color);
+    font-size: 0.9rem;
+  }
+  #md-preview .footnote-ref a {
+    text-decoration: none;
+    color: #C4702B;
+  }
+  [data-bs-theme="dark"] #md-preview .footnote-ref a { color: #D8895A; }
+
+  /* === Frontmatter form === */
+  .frontmatter-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 4px;
+    background: rgba(0,0,0,0.02);
+  }
+  [data-bs-theme="dark"] .frontmatter-form { background: rgba(255,255,255,0.02); }
+  .frontmatter-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    font-variant-caps: all-small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+    gap: 0.2rem;
+  }
+  .frontmatter-form input {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 3px;
+    padding: 0.35rem 0.55rem;
+    background: var(--bs-body-bg);
+    color: inherit;
+    font: inherit;
+    font-size: 0.85rem;
+  }
+  .frontmatter-form input:focus { outline: none; border-color: #C4702B; }
+
+  /* === Toolbar === */
+  .editor-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+    padding: 0.5rem 0;
+    align-items: center;
+  }
+  .editor-toolbar button {
+    border: 1px solid var(--bs-border-color);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 0.78rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 0.12s, color 0.12s;
+  }
+  .editor-toolbar button:hover { border-color: #C4702B; color: #C4702B; }
+  [data-bs-theme="dark"] .editor-toolbar button:hover { border-color: #D8895A; color: #D8895A; }
+  .editor-toolbar button.primary {
+    border-color: #C4702B;
+    color: #C4702B;
+    font-weight: 500;
+  }
+  [data-bs-theme="dark"] .editor-toolbar button.primary { border-color: #D8895A; color: #D8895A; }
+  .editor-toolbar .stats {
+    margin-left: auto;
+    font-size: 0.72rem;
+    font-variant-caps: all-small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    opacity: 0.65;
+  }
+
+  /* Toast for ephemeral feedback */
+  .editor-toast {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6rem 1.1rem;
+    background: #1A1A1A;
+    color: #FAF8F5;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+  }
+  .editor-toast.show { opacity: 0.95; }
+
+  /* Help text */
+  .editor-help {
+    margin-top: 1.25rem;
+    padding: 0.85rem 1.1rem;
+    border: 1px dashed var(--bs-border-color);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    opacity: 0.85;
+  }
+  .editor-help summary { cursor: pointer; font-weight: 600; opacity: 0.9; }
+  .editor-help code { font-size: 0.85em; padding: 0.05em 0.3em; background: rgba(196,112,43,0.1); border-radius: 2px; }
+</style>
+```
+
+```{=html}
+<div class="frontmatter-form">
+  <label>title <input id="fm-title" type="text" placeholder="Essay title" /></label>
+  <label>subtitle <input id="fm-subtitle" type="text" placeholder="A short dek" /></label>
+  <label>date <input id="fm-date" type="date" /></label>
+  <label>categories (comma-sep) <input id="fm-categories" type="text" placeholder="ai-safety, biosecurity" /></label>
+</div>
+
+<div class="editor-toolbar">
+  <button data-action="dropcap">+ dropcap</button>
+  <button data-action="callout-note">+ note</button>
+  <button data-action="callout-tip">+ tip</button>
+  <button data-action="callout-warning">+ warning</button>
+  <button data-action="pullquote">+ pull-quote</button>
+  <button data-action="hr">+ section break</button>
+  <button data-action="image">+ paste image</button>
+  <button data-action="copy-qmd" class="primary">copy as .qmd</button>
+  <button data-action="clear">clear</button>
+  <span class="stats" id="stats">0 words · 0 min read</span>
+</div>
+
+<div class="editor-shell">
+  <div class="editor-pane">
+    <div class="editor-pane-header">
+      <span class="pane-meta">markdown</span>
+      <span><span id="autosave-marker" style="opacity:0.5">saved</span></span>
+    </div>
+    <textarea id="md-input" placeholder="Paste markdown here, or start typing.
+
+Tip: paste an image from your clipboard and it will embed inline.
+Use ::: {.dropcap} :::, ::: {.callout-note} :::, etc. for Quarto-style fences.
+
+Standard markdown works: # heading, *italic*, **bold**, [link](url), ![alt](img), etc."></textarea>
+  </div>
+  <div class="editor-pane">
+    <div class="editor-pane-header">
+      <span class="pane-meta">preview</span>
+      <span style="font-size:0.65rem; opacity:0.55">~90% fidelity · final render via Quarto on push</span>
+    </div>
+    <div id="md-preview"><div class="preview-content"></div></div>
+  </div>
+</div>
+
+<details class="editor-help">
+  <summary>Quarto syntax cheat-sheet (click to expand)</summary>
+  <p style="margin-top:0.6rem">Drop cap on first paragraph:<br><code>::: {.dropcap}<br>Opening text...<br>:::</code></p>
+  <p>Callouts:<br><code>::: {.callout-note}<br>Body of the callout.<br>:::</code> &nbsp; (also <code>callout-tip</code>, <code>callout-warning</code>, <code>callout-important</code>, <code>callout-caution</code>)</p>
+  <p>Pull-quote (custom site class):<br><code>::: {.pullquote}<br>Memorable line.<br>:::</code></p>
+  <p>Inline math: <code>$E = mc^2$</code> · Display math: <code>$$\\int_0^\\infty f(x) dx$$</code></p>
+  <p>Footnote: <code>This sentence has a footnote.[^1]</code> then later <code>[^1]: The footnote body.</code></p>
+  <p>Inline footnote (sidenote on wide screens): <code>...end of sentence^[Inline footnote text.]</code></p>
+  <p>Image: paste from clipboard (Cmd-V), or use <code>![alt](path-or-url)</code></p>
+  <p style="opacity:0.7">Drafts auto-save to your browser localStorage. Refreshing the page restores your last draft.</p>
+</details>
+
+<div class="editor-toast" id="toast">copied</div>
+```
+
+```{=html}
+<script>
+(function() {
+  // Wait for libraries to load
+  function whenReady(fn) {
+    if (window.markdownit && window.katex) return fn();
+    setTimeout(() => whenReady(fn), 50);
+  }
+
+  whenReady(function() {
+    const md = window.markdownit({
+      html: true,
+      linkify: true,
+      typographer: true,
+      highlight: function (str, lang) {
+        if (window.hljs && lang && window.hljs.getLanguage(lang)) {
+          try {
+            return '<pre><code class="hljs language-' + lang + '">' +
+                   window.hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+                   '</code></pre>';
+          } catch (e) {}
+        }
+        return '<pre><code class="hljs">' + md.utils.escapeHtml(str) + '</code></pre>';
+      }
+    });
+    if (window.markdownitFootnote) md.use(window.markdownitFootnote);
+    if (window.markdownitDeflist) md.use(window.markdownitDeflist);
+    // markdown-it-attrs intentionally disabled: it eats the blank line after
+    // </div> when our fence preprocessor outputs HTML, breaking the paragraph
+    // boundary for content following a callout/dropcap. Quarto's
+    // {.classname} syntax inside fences is handled by our preprocessor; the
+    // attrs plugin's value (heading-level attributes) isn't worth the bug.
+
+    // Add inline footnote ^[...] support (Quarto-style sidenotes)
+    md.inline.ruler.before('text', 'inline_footnote', function(state, silent) {
+      const start = state.pos;
+      if (state.src.charCodeAt(start) !== 0x5E /* ^ */) return false;
+      if (state.src.charCodeAt(start + 1) !== 0x5B /* [ */) return false;
+      let depth = 1;
+      let pos = start + 2;
+      while (pos < state.src.length && depth > 0) {
+        if (state.src.charCodeAt(pos) === 0x5B) depth++;
+        else if (state.src.charCodeAt(pos) === 0x5D) depth--;
+        if (depth === 0) break;
+        pos++;
+      }
+      if (depth !== 0) return false;
+      if (!silent) {
+        const content = state.src.slice(start + 2, pos);
+        const id = 'inline-fn-' + Math.random().toString(36).slice(2, 8);
+        const token = state.push('html_inline', '', 0);
+        token.content = '<sup class="inline-footnote" title="' +
+                        md.utils.escapeHtml(content).replace(/"/g, '&quot;') +
+                        '">[note]</sup>';
+      }
+      state.pos = pos + 1;
+      return true;
+    });
+
+    // Process Quarto fenced div syntax: ::: {.classname}\n...\n:::
+    // Important: DON'T pre-render the body. Replace fences with raw <div> markers
+    // and put blank lines after open / before close tags so markdown-it switches
+    // back to markdown mode inside. This avoids the "HTML block swallows
+    // surrounding markdown" bug from a previous version.
+    function processQuartoFences(markdown) {
+      const fenceRe = /^:::\s*\{?\.?([\w-]+)\}?\s*$([\s\S]*?)^:::\s*$/gm;
+      return markdown.replace(fenceRe, function(match, className, body) {
+        let cls = className;
+        if (cls === 'note' || cls === 'tip' || cls === 'warning' || cls === 'important' || cls === 'caution') {
+          cls = 'callout-' + cls;
+        }
+        const inner = body.trim();
+        if (cls.startsWith('callout-')) {
+          const titleType = cls.replace('callout-', '');
+          const title = titleType.charAt(0).toUpperCase() + titleType.slice(1);
+          return `\n\n<div class="callout ${cls}">\n<div class="callout-title">${title}</div>\n\n${inner}\n\n</div>\n\n`;
+        }
+        if (cls === 'dropcap') {
+          return `\n\n<div class="dropcap">\n\n${inner}\n\n</div>\n\n`;
+        }
+        if (cls === 'pullquote') {
+          return `\n\n<div class="pullquote" style="font-family:'Source Serif 4',serif;font-style:italic;font-size:1.4rem;line-height:1.4;text-align:center;border:none;padding:1.5rem 2rem;margin:2rem auto;max-width:540px">\n\n"${inner.replace(/\n/g, ' ')}"\n\n</div>\n\n`;
+        }
+        return `\n\n<div class="${cls}">\n\n${inner}\n\n</div>\n\n`;
+      });
+    }
+
+    const input = document.getElementById('md-input');
+    const previewWrap = document.getElementById('md-preview');
+    const previewContent = previewWrap.querySelector('.preview-content');
+    const stats = document.getElementById('stats');
+    const autosaveMarker = document.getElementById('autosave-marker');
+    const toast = document.getElementById('toast');
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1400);
+    }
+
+    function render() {
+      const text = input.value;
+      const preprocessed = processQuartoFences(text);
+      let html = md.render(preprocessed);
+
+      // Auto-detect "first paragraph" dropcap class on .dropcap > p
+      previewContent.innerHTML = html;
+
+      // Re-render math
+      if (window.renderMathInElement) {
+        try {
+          window.renderMathInElement(previewContent, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false }
+            ],
+            throwOnError: false
+          });
+        } catch (e) {}
+      }
+
+      // Update stats
+      const words = text.split(/\s+/).filter(Boolean).length;
+      const readMin = Math.max(1, Math.round(words / 200));
+      stats.textContent = words + ' words · ' + readMin + ' min read';
+    }
+
+    // localStorage persistence
+    const STORAGE_KEY = 'editor.draft.v1';
+    function saveDraft() {
+      const data = {
+        body: input.value,
+        title: document.getElementById('fm-title').value,
+        subtitle: document.getElementById('fm-subtitle').value,
+        date: document.getElementById('fm-date').value,
+        categories: document.getElementById('fm-categories').value,
+        ts: Date.now()
+      };
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
+      autosaveMarker.style.opacity = '0.5';
+      autosaveMarker.textContent = 'saved';
+    }
+    function loadDraft() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        input.value = data.body || '';
+        document.getElementById('fm-title').value = data.title || '';
+        document.getElementById('fm-subtitle').value = data.subtitle || '';
+        document.getElementById('fm-date').value = data.date || '';
+        document.getElementById('fm-categories').value = data.categories || '';
+      } catch (e) {}
+    }
+
+    // Set today as default date if empty
+    function setDateDefault() {
+      const dateInput = document.getElementById('fm-date');
+      if (!dateInput.value) {
+        const d = new Date();
+        const iso = d.getFullYear() + '-' +
+                    String(d.getMonth() + 1).padStart(2, '0') + '-' +
+                    String(d.getDate()).padStart(2, '0');
+        dateInput.value = iso;
+      }
+    }
+
+    let saveTimer = null;
+    function debouncedSave() {
+      if (saveTimer) clearTimeout(saveTimer);
+      autosaveMarker.textContent = 'saving';
+      autosaveMarker.style.opacity = '1';
+      saveTimer = setTimeout(saveDraft, 600);
+    }
+
+    function onInputChange() {
+      render();
+      debouncedSave();
+    }
+
+    input.addEventListener('input', onInputChange);
+    document.querySelectorAll('.frontmatter-form input').forEach(el => {
+      el.addEventListener('input', debouncedSave);
+    });
+
+    // Image paste handling
+    input.addEventListener('paste', function(e) {
+      const items = (e.clipboardData || window.clipboardData).items;
+      for (const item of items) {
+        if (item.type.startsWith('image/')) {
+          e.preventDefault();
+          const file = item.getAsFile();
+          const reader = new FileReader();
+          reader.onload = function(ev) {
+            const dataUrl = ev.target.result;
+            const insert = '\n\n![](' + dataUrl + ')\n\n';
+            const start = input.selectionStart;
+            input.value = input.value.slice(0, start) + insert + input.value.slice(start);
+            input.selectionStart = input.selectionEnd = start + insert.length;
+            onInputChange();
+          };
+          reader.readAsDataURL(file);
+          return;
+        }
+      }
+    });
+
+    // Drag-drop image
+    input.addEventListener('dragover', e => e.preventDefault());
+    input.addEventListener('drop', function(e) {
+      e.preventDefault();
+      const files = e.dataTransfer.files;
+      for (const file of files) {
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function(ev) {
+            const insert = '\n\n![' + file.name + '](' + ev.target.result + ')\n\n';
+            input.value += insert;
+            onInputChange();
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    });
+
+    // Toolbar actions
+    function insertAtCursor(text) {
+      const start = input.selectionStart;
+      const end = input.selectionEnd;
+      input.value = input.value.slice(0, start) + text + input.value.slice(end);
+      input.selectionStart = input.selectionEnd = start + text.length;
+      input.focus();
+      onInputChange();
+    }
+    document.querySelector('.editor-toolbar').addEventListener('click', function(e) {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      const action = btn.dataset.action;
+      switch (action) {
+        case 'dropcap':
+          insertAtCursor('\n\n::: {.dropcap}\nOpening paragraph here.\n:::\n\n');
+          break;
+        case 'callout-note':
+          insertAtCursor('\n\n::: {.callout-note}\nBody of the note.\n:::\n\n');
+          break;
+        case 'callout-tip':
+          insertAtCursor('\n\n::: {.callout-tip}\nA tip.\n:::\n\n');
+          break;
+        case 'callout-warning':
+          insertAtCursor('\n\n::: {.callout-warning}\nA warning.\n:::\n\n');
+          break;
+        case 'pullquote':
+          insertAtCursor('\n\n::: {.pullquote}\nA memorable line.\n:::\n\n');
+          break;
+        case 'hr':
+          insertAtCursor('\n\n---\n\n');
+          break;
+        case 'image':
+          showToast('paste an image with cmd+v');
+          input.focus();
+          break;
+        case 'copy-qmd':
+          copyAsQmd();
+          break;
+        case 'clear':
+          if (confirm('Clear the editor and frontmatter? This cannot be undone.')) {
+            input.value = '';
+            ['fm-title','fm-subtitle','fm-categories'].forEach(id => document.getElementById(id).value = '');
+            saveDraft();
+            onInputChange();
+          }
+          break;
+      }
+    });
+
+    function copyAsQmd() {
+      const title = document.getElementById('fm-title').value || 'Untitled';
+      const subtitle = document.getElementById('fm-subtitle').value;
+      const date = document.getElementById('fm-date').value || new Date().toISOString().slice(0,10);
+      const categories = document.getElementById('fm-categories').value;
+      const body = input.value;
+
+      let frontmatter = '---\n';
+      frontmatter += 'title: "' + title.replace(/"/g, '\\"') + '"\n';
+      if (subtitle) frontmatter += 'subtitle: "' + subtitle.replace(/"/g, '\\"') + '"\n';
+      frontmatter += 'date: ' + date + '\n';
+      if (categories) {
+        const catList = categories.split(',').map(c => c.trim()).filter(Boolean).join(', ');
+        frontmatter += 'categories: [' + catList + ']\n';
+      }
+      frontmatter += '---\n\n';
+
+      const qmd = frontmatter + body + '\n';
+      navigator.clipboard.writeText(qmd).then(
+        () => showToast('copied as .qmd'),
+        () => showToast('copy failed — select all, cmd+c instead')
+      );
+    }
+
+    // Keyboard shortcut: Cmd/Ctrl + Enter inserts a section break
+    input.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+        e.preventDefault();
+        insertAtCursor('\n\n---\n\n');
+      }
+    });
+
+    // Initialize
+    loadDraft();
+    setDateDefault();
+    onInputChange();
+  });
+})();
+</script>
+```
