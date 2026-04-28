@@ -1,7 +1,7 @@
 ---
 title: "About"
-subtitle: "Austin P. Morrissey — AI safety researcher, biosecurity evals, Pivotal Fellow"
-description: "Austin P. Morrissey is an AI safety researcher working on biosecurity capability evaluations as a Pivotal Research Fellow mentored by SecureBio."
+subtitle: "Austin P. Morrissey — AI safety, biosecurity, Pivotal Research Fellow mentored by SecureBio."
+description: "Austin P. Morrissey is an AI safety researcher working on biosecurity capability evaluations as a Pivotal Research Fellow mentored by SecureBio. His research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology, and how robustly current model safeguards hold up."
 date-modified: today
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
@@ -9,45 +9,35 @@ image: images/austin-p-morrissey-headshot.jpg
 
 <img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey, rendered as a portrait composed of typographic symbols" class="about-portrait" />
 
-## Who I am
+My research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology — and what it would take to measure that empirically. I work on this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, mentored by Jasper at [SecureBio](https://securebio.org/).
 
-I'm **Austin P. Morrissey** — also Austin Morrissey, also [Austin Patrick on Substack](https://austinpatrick.substack.com) (the P stands for Patrick). They're all me. I'm an AI safety researcher focused on biosecurity capability evaluations — designing experiments that measure whether large language models could provide uplift to actors seeking to misuse biology, and how robustly current model safeguards hold up.
+The work spans three threads:
 
-I'm currently a [Pivotal Research](https://www.pivotal-research.org/) Fellow, mentored by Jasper at [SecureBio](https://securebio.org/).
+1. **Building model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that distinguish *"the model won't say"* from *"the model can't say."* Most current safety evals conflate these, which makes a frontier model's apparent refusal indistinguishable from genuine ignorance — a serious gap when policy depends on the difference.
 
-## What I work on
+2. **Threat-modeling biosecurity uplift** — which technical bottlenecks actually matter for an actor with malicious intent, and which the current generation of LLMs meaningfully changes. The honest answer is "fewer than the public conversation suggests, but the trend line is steep."
 
-My research sits at the intersection of three areas:
+3. **Adversarial elicitation methodology** — multi-turn jailbreak sequences, classifier characterization, fine-grained mapping of where model safety boundaries actually are versus where they're advertised. The boundary is rarely where the spec implies.
 
-1. **AI capability evaluations.** Building model-agnostic eval suites in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that distinguish "the model won't say" from "the model can't say." Most current safety evals conflate these.
+This is defensive dual-use work: designing the measurement, not the misuse. It exists so policy and labs can act on grounded evidence rather than speculation.
 
-2. **Biosecurity threat modeling.** Working through which technical bottlenecks actually matter for an actor with malicious intent, and which the current generation of LLMs meaningfully changes.
-
-3. **Adversarial elicitation methodology.** Multi-turn jailbreak sequences, classifier characterization, and fine-grained mapping of where model safety boundaries actually are versus where they're advertised.
-
-This work is **defensive dual-use** — designing the measurement, not the misuse. It's the kind of work that exists precisely so that policy and labs can act on grounded evidence rather than speculation.
-
-## Background
-
-- **Pivotal Research Fellow** (2025–present) — AI safety / biosecurity
-- **MSc Medical Science** — Boston University (2023)
-- **BSc Biochemistry** — University of Massachusetts Amherst (2020)
-- Wet-lab R&D experience in mRNA science
+Before this, I was an mRNA scientist with wet-lab R&D experience — MSc Medical Science (Boston University, 2023), BSc Biochemistry (UMass Amherst, 2020).
 
 ## Find me
 
 | | |
 |---|---|
-| Writing | [Substack: Rational Biology](https://austinpatrick.substack.com) |
+| Writing (canonical) | [/writing](/writing/) — long-form essays, this site |
+| Writing (Substack) | [Rational Biology](https://austinpatrick.substack.com) — published as Austin Patrick (middle name) |
 | Code | [GitHub: gvmfhy](https://github.com/gvmfhy) |
-| CV / professional | [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/) |
+| Professional | [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/) |
 | Academic | [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687) |
 | Email | austinpatrickmorrissey \[at\] gmail \[dot\] com |
 
-## Press / collaboration
+## Press & collaboration
 
-If you're a journalist, podcast host, or researcher who'd like to talk about AI biosecurity evals, reach out by email above. I'm particularly happy to discuss methodology, eval design, and what current results do and don't tell us about model risk.
+Happy to talk about methodology, eval design, and what current results do and don't tell us about model risk. Email is the fastest way through.
 
 ::: {.callout-note appearance="simple"}
-**Note on this site.** Built with [Quarto](https://quarto.org). Source on [GitHub](https://github.com/gvmfhy). Essays cross-post to my [Substack](https://austinpatrick.substack.com); the canonical version of each lives here.
+**About this site.** Built with [Quarto](https://quarto.org). Source on [GitHub](https://github.com/gvmfhy). Essays cross-post to my [Substack](https://austinpatrick.substack.com); the canonical version of each lives here.
 :::
