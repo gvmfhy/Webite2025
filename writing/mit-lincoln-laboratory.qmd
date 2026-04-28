@@ -1,0 +1,69 @@
+---
+title: "MIT Lincoln Laboratory & The Dual-Use Frontier"
+subtitle: "Why I'm betting my career on consequential science"
+description: "Why dual-use research at the intersection of synthetic biology, AI, RNA therapeutics, and biosecurity matters — and why MIT's Lincoln Laboratory is uniquely equipped to do it. A career-direction statement."
+date: 2025-11-27
+categories: [biosecurity, dual-use, science-policy, mit]
+image: /images/writing/mit-lincoln-laboratory/01-divider.png
+canonical-url: https://austinpatrick.substack.com/p/massachussets-institute-of-technology
+---
+
+::: {.dropcap}
+"The nation and Laboratory are faced with several growing security threats, and there is a pressing need to focus our research and development efforts to address these challenges, [...] We strongly believe that research and development in biology, biomedical systems, biological defense, and human systems is a critically important part of national and global security," said Eric Evans in 2020, then the director of Lincoln Laboratory.
+:::
+
+The press release continues.
+
+> The laboratory began its initial work in biotechnology in 1995, through several programs that leveraged expertise in sensors and signal processing for chemical and biological defense systems.
+>
+> Work has since grown to include prototyping systems for protecting high-value facilities and transportation systems, architecting integrated early-warning biodefense systems for the U.S. Department of Defense (DoD), and applying artificial intelligence and synthetic biology technologies to accelerate the development of new drugs.
+>
+> In recent years, synthetic biology programs have expanded to include complex metabolic engineering for the production of novel materials and therapeutic molecules.
+>
+> "The ability to leverage the laboratory's deep technical expertise to solve today's challenges has long laid the foundation for the new division," says Christina Rudzinski, who is an assistant head of the division and formerly led the Counter-Weapons of Mass Destruction Systems Group.
+
+I aim to pursue my doctorate at MIT, for I believe it is one of the only places in the world equipped to support the research I want to do: science that is bold, undeterred by dogma, and ambitious in its reach; research that is unapologetically consequential, dual-use, and of great importance.
+
+Here, I gather my thoughts on the matter.
+
+---
+
+#### Synthetic biology, artificial intelligence, RNA therapeutics, and biosecurity are interrelated fields.
+
+Advancements in one support advancements in another. It is at this intersection of domains that I seek to locate and solve the most challenging problems, to ask the daring questions. Not only how do we make targeted functional therapeutics for patients, but how do we prevent the weaponization of synthetic biology? Not only how do we utilize AI in our scientific research, but how do we maintain human control over our machines? How do we protect our cognitive freedom as scientists? How do we teach and train in a rapidly degrading epistemic landscape, where powerful tools operate as black boxes?
+
+These questions are not of science fiction, nor are they of relevance only in some far-off day. They are pressing questions. They are important questions. And they are dangerous questions with implications for national security. We must equip a generation of scientists to handle them, to address them, to coordinate and collaborate. This is the driving impetus for why I seek to continue my scientific training, and why I seek to do it at MIT.
+
+#### MIT has the institutional memory, operational capacity, and oversight needed to conduct dual-use research.
+
+In World War I, William Walker, then Head of Chemical Engineering at MIT, was commissioned to lead the nation's chemical warfare program and counter German dominance. Walker succeeded because he understood that the synthesis of any chemical agent could be broken down into a series of standardized steps and scaled accordingly. He took control of the Edgewood Arsenal and turned a large swath of Maryland into a gigantic, well-oiled factory for chemical weapons. Chemical synthesis of any agent at scale is dual-use research. What enables you to synthesize poison at scale is what enables you to synthesize medicine at scale. They are inseparable.
+
+In World War II, London was vulnerable to nighttime air raids because British forces lacked technology to locate enemy planes in the dark. At sea, U-boats surfaced after dark to hunt Allied convoys. British patrol aircraft carried radar to detect submarines on the surface, but the Germans equipped their U-boats with warning receivers that could sense the radar scans and gave them time to dive before aircraft arrived. The MIT Radiation Laboratory built radar systems that operated on frequencies invisible to German warning receivers, allowing Allied aircraft to catch submarines on the surface and shoot down planes in the night sky. After the war, radar technology developed at the Rad Lab diffused outwards, and became the standard for civilian aviation, ships at sea, and weather forecasting.
+
+In the Cold War, it was research conducted by MIT that helped the United States develop a credible nuclear deterrent. In response to long-range Soviet bombers, Lincoln Laboratory developed SAGE, the first computerized air defense system. The project advanced the frontier of computing to a remarkable degree: memory systems became reliable, humans could interact with computers in real time, and multiple machines could be networked into a single system with built-in fault tolerance. When the threat shifted from bombers to ballistic missiles, MIT's Instrumentation Laboratory developed guidance systems for submarine-launched nuclear weapons, ensuring America could retaliate even if a Soviet first strike destroyed all missile silos on American soil. The same laboratory later guided Apollo astronauts to the moon.
+
+#### **The most exciting research often occurs in response to the most pressing and the most dangerous problems.**
+
+Our threats are no longer kinetic; they are biological. Our most concerning, emergent adversary is no longer a foreign power, nor an unhinged nation state, but systems that are artificial, intelligent, and autonomous. These threats are rapidly emerging in a world that is woefully unprepared. But MIT remains uniquely positioned to address them.
+
+In 2020, Lincoln Laboratory established its Biotechnology and Human Systems Division with a goal to lead the nation in research at the intersection of AI and biology while addressing emerging threats. This is the type of learning environment that attracts me, as it spans my interests: synthetic biology, artificial intelligence, autonomous scientific systems, and biosecurity.
+
+The dual-use research carried out by this division will enable our nation to detect and defeat emerging biological threats. It will enable us to better understand where and how to deploy AI to enhance our human efforts in biotechnology, and where it is untenable and too dangerous. Lastly, it will enable the intelligent development of defense-in-depth strategies and technologies to protect national infrastructure in worst-case scenarios.
+
+#### However, the knowledge generated from such research is itself a threat if the work is conducted haphazardly.
+
+Consider a team developing an early detection system for biological threats. Widely sharing their findings would allow an adversary to design a weapon that evades the system entirely. Therefore, what distinguishes these pursuits from other endeavors in science is how tightly information must be controlled. Whereas a leak in drug development may sacrifice competitive advantage, a leak in dual-use research can cost lives.
+
+I want to train at an institution that understands this, among those who see science as a social responsibility. Who know that there may come a time when all of the incentives that drive us forward may bring us to the edge of a cliff. And at such a moment, we must have the courage to say no, the wisdom to advocate for restraint.
+
+The bet I am making with my career is that scientists who train at this intersection, who are cognizant of the risks and the rewards on the horizon, will be better prepared to lead our nation as we approach these uncertain times. And that a little foresight, a little imagination, can help us avoid existential threats as we walk backwards into the future.
+
+But the dream I have in mind is this: that a team willing to seize every advance in technology, to test ideas others find too strange, can discover a new class of drugs whose impact on medicine will rival antibiotics. I doubt the laws of nature forbid it.
+
+warmly,
+
+*austin*
+
+---
+
+*If this work resonated with you, subscribe. If you do this type of work, reach out.*
