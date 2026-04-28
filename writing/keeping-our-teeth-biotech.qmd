@@ -1,0 +1,53 @@
+---
+title: "Keeping our Teeth in Biotech; prelude"
+subtitle: "Personal visions and other heretical hearsay"
+description: "On the dilution of 'vision' as a corporate term and its absence at the individual level. Why originality is the antithesis of safety, why founders must wager themselves, and the cost of the divided self."
+date: 2025-09-24
+categories: [biotech, philosophy, vision]
+image: /images/writing/keeping-our-teeth-biotech/01-image.png
+canonical-url: https://austinpatrick.substack.com/p/keeping-our-teeth-in-biotech-prelude
+---
+
+::: {.dropcap}
+Vision, like patient-focus, is a popular term in biotech. And being fashionable, marketable, and of course profitable, I fear it grows diluted through repetition. While we see these terms employed at the level of a group, espoused by company memos and mission statements, we seldom see them spoken at the level of the individual. [Tony Hung](https://www.linkedin.com/feed/update/urn:li:activity:7375903741423656960/), below, writes to this point: how he held a biotech vision that was beyond business, residing at the level of faith, originating from the heart.
+:::
+
+> While some may say it makes business sense to triage and spend time only on "viable prospects", my faith and heart told me that if we are to be aligned with our mission of creating a more successful and vibrant biotech community, we have to meet people where they currently are.
+
+![](/images/writing/keeping-our-teeth-biotech/01-image.png)
+
+My intention in sharing his post is to boost its visibility, as our engagement with each other, though mediated by this lifeless LinkedIn algorithm, does power the outcomes we can glean from the platform. But more importantly, I want to amplify the human sentiment at the core of his message: **individual vision in biotech.** I bring this into conversation because it is the most overspoken yet underutilized asset for competitive advantage.
+
+Let me illustrate, through an example, why the word has grown stale to our ears, and why we ourselves are afraid it will die upon leaving our lips. At a TED talk years ago, I listened to a founder present on the origin of his company, a wearable healthcare product. His motivation, his vision, the product — all were born from a personal experience as a patient. The origin story of his company, born from the challenge of his life — what then did the man endure? From what circumstance did this emerge?
+
+He recounted, with gravitas, without humor: at 28 years old, his doctor told him he had hypertension.
+
+That was the whole story. Told with pacing and language that, in theatre or in oration, you'd expect to be reserved for stories that stir our heart, that speak to our flesh and bone, our ability to suffer, to endure, and to wrest from circumstance the nectar of human resolve. But despite the discordance between content and delivery, the crowd was silent, neither laughing, nor gasping, nor showing a single sign of stirring at all. The emotional stagnation, the stability of the crowd, arose because this story was unsurprising. It is business as usual in biotech, and this normalization I find tragic.
+
+I do not remember the man's name, his product, nor the company he led, though I do wish them well, as despite his story sounding to me patently absurd, he was staking himself. But I do remember the stillness of the crowd, of which you and I are a part. For it is we who are indicted, guilty of this tragedy, for it is we who have left our dreams at home. If you're unconvinced, note a room's reflexive, resistant reaction to a wild or foreign idea. To assess whether it's possible, we instinctively look if it's been done before. We look to the past to determine the future, and steer towards that future as if in a stupor, driving backwards in a topsy-turvy delirium, unaware that our tendency to think in this way arises by a failure to dream.
+
+![](/images/writing/keeping-our-teeth-biotech/02-absent-minded-professor.png)
+
+Professionally, to evaluate ventures in such a way is to perform due diligence, to better safeguard institutional resources you may steward. But the game is different for the innovator than it is for the investor. And if a team, or a founder, were to reason as if they were an institution briefly parted from their fortune, yes, they could de-risk their projects, but only if they defang the individual. **Originality is the antithesis of safety.**
+
+::: {.pullquote}
+Our projects, if we believe in them at all, deserve our teeth, as if to say: you must wager, you must risk, you must stake yourself to determine what's possible.
+:::
+
+New ventures, new drugs, all will require new visions. Such visions are born of dreams, by nature they spring from the imagination of the individual. It is a creative act, and thus, cannot be forced upon you by a group. Nor can we flee the personal responsibility of cultivating our own, as recognized or not, we ignore it to our own peril. Without a personal vision, without our dream,
+
+> We make men without chests and expect of them virtue and enterprise. We laugh at honour and are shocked to find traitors in our midst. We castrate and bid the geldings be fruitful.
+>
+> *— C. S. Lewis*
+
+If you wish to examine this tragedy clearly, in your life and in our culture, examine the norm of the divided self, the work-life separation that neatly splits us in two. Our dreams are walled away from work. Our imagination remains a private, neglected affair. Without it, the body at work becomes mechanical, and the capacity to dream atrophies, regarded forever to the realm of an ever increasingly, fuzzy, and far away fantasy.
+
+We need not labor nor dream in such a half-hearted way, we need not split ourselves. If we can get clear on who we are, if we can come to our senses, we are better equipped to encounter reality, to create ourselves and to collaborate with others.
+
+All traits within a personality can serve a creative vision. We exist, in different moments, as different ways — exclude none of them for your goal. Your virtue is no better than your vice. Your awe and your enchantment are no better than your criticalness and cynicism. Your cunningness, no more than your generosity. And your intensity, no more than your grace.
+
+Bring your whole self to this life. There is nothing to save for later. We are not getting out alive. Be conscious of your bets, and I look forward to seeing what you chose to create.
+
+warmly,
+
+*austin*
