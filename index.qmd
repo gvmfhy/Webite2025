@@ -21,6 +21,10 @@ Previously: mRNA scientist (UMass Amherst, Boston University) with wet-lab R&D e
 
 [Read my writing →](/writing/) &nbsp;&nbsp; [About me →](/about.qmd) &nbsp;&nbsp; [Research projects →](/research.qmd)
 
+> *One does not do research in a cathedral.*
+>
+> — from [On Thinking About the Unthinkable](/writing/thinking-about-the-unthinkable.qmd)
+
 ## Latest writing
 
 ::: {#latest-writing}

@@ -6,8 +6,6 @@ date: 2026-02-23
 categories: [ai-safety, london, biosecurity]
 image: /images/writing/london-and-ai/01-lisa-street-art.jpg
 canonical-url: https://austinpatrick.substack.com/p/london-and-artificial-intelligence
-featured: true
-featured-order: 4
 ---
 
 ::: {.dropcap}

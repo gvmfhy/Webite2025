@@ -5,6 +5,8 @@ description: "On Herman Kahn's argument that catastrophic-risk research should b
 date: 2026-04-28
 categories: [biosecurity, voice, philosophy]
 image: /images/austin-p-morrissey-headshot.jpg
+featured: true
+featured-order: 4
 ---
 
 ::: {.dropcap}
