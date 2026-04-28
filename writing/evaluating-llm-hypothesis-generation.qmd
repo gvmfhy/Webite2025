@@ -1,0 +1,119 @@
+---
+title: "Evaluating LLM hypothesis generation in biology is hard"
+subtitle: "Is it useful, is it true, and a story about mRNA"
+description: "On the philosophical and practical difficulty of evaluating LLM-generated scientific hypotheses — why standard QA benchmarks miss what actually matters in lab work, and a story about urokinase, Karikó, Weissman, and what makes a hypothesis useful."
+date: 2025-12-12
+categories: [ai-evals, biosecurity, scientific-method]
+image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg
+canonical-url: https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation
+---
+
+::: {.dropcap}
+We want to know the capabilities of our machines to understand their utility. Likewise, we must evaluate them to be aware of emerging threats. Cybersecurity suites, agentic coding benchmarks, and mathematic reasoning are tractable areas for pre-deployment testing. But scientific ability proves much harder. Why?
+:::
+
+Science is taught to students as a rote collection of facts, whereas science is an experimental, iterative, recursive approach to knowledge generation. Ideas prove themselves by their use.
+
+## Mental Models and Pragmatism
+
+I view science as a collection of mental models that allow us to predict phenomena. For example, drinking alcohol while pregnant increases the risk of birth defects. The statement is a useful, predictive conclusion born from observation and experiment. In comparison, pseudoscience generates conclusions that are explanatory but not predictive. For example, westerners drawn to eastern mysticism often fall victim to claims such as: quantum physics was already understood by spiritual masters and can be derived through introspection. It is not true. However, the abundance of pseudoscientific insanity causes a reactionary overcorrection within reasonable people, with all the intensity and rigor of an unexamined religion.
+
+Phrases such as *"I trust science because it is true and real"* I fear are naive; it is not uncommon to hear from an undergraduate. It suggests truth is a singular point that in due time we will arrive. But reality is complex and weird. Our understanding of it will never be complete. Our ideas, however, can be refined. They can be challenged, overturned, made sharper, more predictive, and more useful in their service of human flourishing. All of this can be done without them ever being true in an objective, ultimate sense, they need only be better than our last model.
+
+Consider a hypothesis, as it illustrates where wrong ideas remain useful. A hypothesis is a starting point. It focuses you and guides an experimental design. The experiment is an apparatus that serves as a substrate for your further observation. Then, your results, intended and unintended observations, will inform your next actions. Did you expect this, or did you not? The latter tends to produce more fruitful thinking.
+
+An experiment can defy your expectations for two reasons: your idea sucks and should be updated, or your experiment itself sucks and should be updated. Discerning between the two requires you to think, generate some ideas, and perform additional experiments.
+
+Therefore, if the value of a hypothesis proves only insofar as it progresses experimentation, how do we evaluate this ability in machines? The rate at which LLMs can produce ideas outpaces our ability to test them. We are resource and time constrained. But we still must decide: of the thousands of ideas generated in a minute, what is worth our time?
+
+## A Story of a Good Hypothesis
+
+### Heart Disease, thrombosis, urokinase
+
+Heart disease is the leading cause of death worldwide. Coronary artery disease is the most common form, marked by a progressive narrowing of the arteries that supply blood to the heart. The narrowing restricts blood flow, suffocating the muscle. The goal of surgical intervention is to reverse this; to overcome an obstacle, you either go around or go straight through.
+
+For example, a physician can insert a thin, flexible tube into the patient's wrist or groin and navigate it upward towards the heart as they monitor the position on an X-ray screen. Once the tube reaches the blockage, a tiny balloon at the tip inflates, compressing the plaque against the vascular wall. Then a stent — a hollow tube with mesh walls — is deployed and left behind, providing structural integrity to hold the newly reclaimed space.
+
+![](/images/writing/evaluating-llm-hypothesis/01-cardiac-stent.png)
+
+Cardiac bypass surgery, however, is going around the obstacle. The surgeon will harvest a vein from your leg, and like using it as an extra pipe, graft it around the blockage in your coronary artery, providing alternate passage.
+
+Voilà.
+
+But open heart surgery is not as easy as it seems.
+
+![](/images/writing/evaluating-llm-hypothesis/02-bypass.png)
+
+If the vessel wall of the graft becomes damaged, it will act like your skin does when you cut yourself. The endothelium begins to secrete prothrombotic factors, a clot forms, and your new path has now become occluded too! The engineering problem that presents itself: how do you prevent the graft from clotting?
+
+![](/images/writing/evaluating-llm-hypothesis/03-graft-clotting.png)
+
+One reasonable suggestion would be to change the material of the graft. Is there a biocompatible material that is resistant to clotting, but able to repair itself? It sounds possible but hard to build. Naturally, the next question becomes: is there a tool we can use, a drug we can give, that can accomplish this function? There might be.
+
+I know what you must be thinking. Is there a therapeutic modality based on the structure of life itself, one fundamental to all forms that live and die on this planet that we can use to reduce complications in open heart surgery? Good idea. Yes. mRNA.
+
+The body is pre-equipped with molecular messengers to dissolve clots. The process is known as fibrinolysis. Plasmin is the major enzyme driving the breakdown, but it typically resides in its inactive form in the bloodstream, plasminogen. The conversion to its active form is catalyzed by Urokinase. Therefore, increasing the concentration of urokinase near the graft should trigger this mechanism. However, the high rate of blood flow makes this problematic. If we administer urokinase directly, it is quickly washed away into systemic circulation.
+
+Localization is what we want, and it cannot be achieved simply by giving a higher dosage of the drug. But the receptor for urokinase is extracellular, naturally expressed on the vessel wall. If we increase the density of these receptors throughout the graft, we can anchor the enzyme, the therapeutic, and the response right where it is needed most.
+
+## Katalin Karikó, Drew Weissman and mRNA
+
+#### Novelty is a poor measure for scientific utility
+
+Katalin Karikó was working to solve this problem in the 90s. But, administering exogenous mRNA was triggering a massive inflammatory response on the cells. The body was reacting as if it were an RNA virus.
+
+At UPenn, she would meet an immunologist, Drew Weissman. Weissman was working to create an HIV vaccine. For a vaccine, you need an immune response, you want a little inflammation but not too much. Undershoot or overshoot and you will not get intended therapeutic effect. In their early work, the immune response was triggered by mRNA binding to Toll-like receptors on the cell surface — specifically recognizing uridine. But they observed that another type of RNA was not as immunogenic: tRNA. Noticing that this anomaly had implications, they pressed further. Why?
+
+It turned out that tRNA had a modified nucleoside that rendered it comparatively invisible to the immune system: pseudouridine. Pseudouridine was stiffer than its non-modified counterpart, and did not bind these receptors. Therefore, they hypothesized that if you synthesize mRNA with pseudouridine, you will reduce the immune response. It did.
+
+Voila.
+
+But progressing science with experimental evidence is not as easy as it seems.
+
+![Katalin Karikó and Drew Weissman](/images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg)
+
+Their findings were rejected as being unimportant by the journal *Nature*, and went unrecognized for their therapeutic implications by the pharmaceutical industry. It took nearly two decades and a global pandemic for the world to come around and recognize this RNA stuff is the jam. The discovery was a foundational aspect of both the Pfizer and Moderna COVID-19 vaccines.
+
+> Whether a hypothesis is novel or not is a poor predictor of its use. Our notion of novelty is wrapped up in our dogmas and perception of popularity. The wisdom of the crowds, even when those crowds are educated, is never on the frontier.
+
+### If neither truth nor novelty will do, what criteria can be evaluated?
+
+Frankly, this is a hard question, and it's worth us examining if it's the right one. A good approach to scientific evaluations of LLMs may be rejecting the premise that standard question evaluation are sufficient. Understanding progress in AIxBio must be done with actual feedback from reality, with experiment.
+
+On a personal level, I find the question a little insane. We are setting out realistically to alert scientists and policy makers:
+
+> Computers are getting good. Models are rapidly outpacing our ability to responsibly evaluate them.
+>
+> White papers are claiming it's too expensive and slow to do the actual wet lab work that would allow us to assess relevant experimental uplift. Such data is needed to inform policy makers on the rapidly decreasing barrier to bioterrorism. Are we waiting for a mass casualty event before we decide it is worth taking seriously?
+>
+> Can we not invest millions into the frontier of AIxBio evaluation, where the act of good measurement will also advance science, and have relevance for drug discovery?
+
+### Closed-Loop AIxBio Evaluation
+
+If we want to demonstrate to what extent an AI can aid a bioterrorist, or a drug discovery team, we need to give it hands. If we want to evaluate experimental uplift, we must allow it to experiment. An overall process could look like this:
+
+1. Give the AI a biological goal (e.g., "Design a sequence to stabilize protein X").
+2. Set constraints for the tests, such as limited time.
+3. Allow the AI to act as a principal investigator. It designs the experiment and sends instructions to an automated cloud lab. There must be strict controls to prevent a hazardous event, such as synthesizing a known toxin.
+4. The lab returns raw data to the system. The AI iterates. Allow the AI to spawn subagents for data analysis and further research before it executes its next task.
+5. Evaluate if the system solved the problem. If it did, how many iterations did it take?
+
+This approach will make no money. It will spend it. But it will make progress on a tractable problem, and produce real data. Though I admit it is also insufficient.
+
+### Bonus: Be wary of what you read!
+
+One article, describing Weissman and Kariko writes:
+
+> "one close peer described Karikó as 'absolutely brilliant, but she challenged people'"
+
+and noted that:
+
+> "Weissman didn't do office gossip, small talk, or chitchat… He rarely smiled, or even grinned, even for photos, adopting a serious mien that could be off-putting."
+
+— *The Institute for Progress, Lessons from mRNA*
+
+---
+
+warmly,
+
+*austin*

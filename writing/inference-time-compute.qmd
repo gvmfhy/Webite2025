@@ -1,0 +1,37 @@
+---
+title: "Inference time compute helps agents but hurts writing"
+subtitle: "On AI prose and the absence of musical structure"
+description: "Why scaling inference budget improves AI agents on cybersecurity and coding tasks, but produces increasingly hollow prose at the paragraph level — and what this reveals about the architecture of reflective thought."
+date: 2026-04-05
+categories: [ai, writing, prose]
+image: /images/writing/inference-time-compute/01-image.jpg
+canonical-url: https://austinpatrick.substack.com/p/inference-time-compute-helps-agents
+---
+
+::: {.dropcap}
+AI performance tends to improve with inference time compute, but not with writing. On agentic tasks in cybersecurity, increasing your budget from 10 million tokens to 20 million tokens will improve the probability of success. With writing, I find AI tremendously helpful when it comes to phrasing a single sentence, if I provide variants of my struggling, tongue-tied iterations.
+:::
+
+However, as I increase the token budget, and I see it venture into two sentences, they are a little worse, worthy only of being nestled or disguised into supporting points of a paragraph, not suitable for the first two points or the last. The problem gets worse the longer you go. If it outputs paragraphs, they are without music; the points lack connective tissue, there is no crescendo.
+
+I suspect the cause of this is that each word generated influences the probability of what follows. There are no surprising turns, no perplexity, it is a searching algorithm circling itself, you gaze at it like a drain. Being sent AI slop feels like getting a photograph of someone's sewage. Why do you make me gaze at this vacuous, stinky abyss?
+
+![](/images/writing/inference-time-compute/01-image.jpg)
+
+At another level, AI writing scales a nasty aspect of human nature. Namely, an unreflective life lived only forward. Token streams do not reflect on themselves as they generate. So too, at our worst, and our most common, do we lack reflection.
+
+warmly,
+
+*austin*
+
+---
+
+**P.S.** Want to see what this looks like? We can provide a model the opening and closing of the above reflection, and see how it compares.
+
+> You are given the first sentence and the last two sentences of a short essay (~233 words, 4 paragraphs, 14 sentences). Fill in the remaining ~197 words (11 sentences) between them. The essay should read as a single coherent piece with a clear arc from the opening observation to the closing turn.
+>
+> **1.** AI performance tends to improve with inference time compute, but not with writing.
+>
+> **2.** Token streams do not reflect on themselves as they generate. So too, at our worst, and our most common, do we lack reflection.
+
+[Transcript of the experiment →](https://claude.ai/share/3171f9ca-7461-4c61-adce-1533c6c346c2)
