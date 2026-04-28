@@ -1,0 +1,18 @@
+---
+title: "On Thinking About the Unthinkable"
+subtitle: "On writing plainly about hard things"
+description: "On Herman Kahn's argument that catastrophic-risk research should be written in factual, even colorful language — not in awe-laden academic prose that renders the danger illegible to the ordinary reader or cross-discipline peer."
+date: 2026-04-28
+categories: [biosecurity, voice, philosophy]
+image: /images/austin-p-morrissey-headshot.jpg
+---
+
+::: {.dropcap}
+There is growing and warranted concern that as AI capabilities advance, so too may the capability of non-state actors who seek to carry out a biological or chemical attack. But to think about this is unpleasant, to speak about it uncouth, and to write about it seems only permissible if one's true concern has been so neutered and obscured by academic language that it is rendered illegible to the ordinary person, or the cross-discipline peer.
+:::
+
+> Some feel that we should consider these problems but view them with such awe and horror that we should not discuss them in normal, neutral, professional everyday language. I tend to disagree, at least so far as technical discussions and research are concerned. One does not do research in a cathedral. Awe is fine for those who come to worship or admire, but for those who come to analyze, to tamper, to change, to criticize, a factual and dispassionate, and sometimes even colorful, approach is to be preferred. And if the use of everyday language jars, that is all the more reason for using it. Why would one expect it not to be disturbing?
+>
+> *— Herman Kahn, [Thinking About the Unthinkable](https://en.wikipedia.org/wiki/Thinking_About_the_Unthinkable) (1962)*
+
+The weaponization of science is a serious risk; the current trajectory, without intervention, appears dismal. But the situation can be improved, as these are tractable problems. We can create a society that is resilient. One that is capable of detecting, deterring, and defeating actors who seek to weaponize science, before they have the chance to do widespread harm. If we recognize that we can succeed on this front, we will achieve a society that flourishes in the face of pandemics and infectious disease.
