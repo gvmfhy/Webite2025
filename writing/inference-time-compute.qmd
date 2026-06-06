@@ -25,7 +25,7 @@ warmly,
 
 ---
 
-**P.S.** Want to see what this looks like? We can provide a model the opening and closing of the above reflection, and see how it compares.
+p.s: want to see what this looks like? we can provide a model the opening and closing of the above reflection, and see how it compares.
 
 > You are given the first sentence and the last two sentences of a short essay (~233 words, 4 paragraphs, 14 sentences). Fill in the remaining ~197 words (11 sentences) between them. The essay should read as a single coherent piece with a clear arc from the opening observation to the closing turn.
 >
@@ -33,4 +33,4 @@ warmly,
 >
 > **2.** Token streams do not reflect on themselves as they generate. So too, at our worst, and our most common, do we lack reflection.
 
-[Transcript of the experiment →](https://claude.ai/share/3171f9ca-7461-4c61-adce-1533c6c346c2)
+[Transcript](https://claude.ai/share/3171f9ca-7461-4c61-adce-1533c6c346c2)

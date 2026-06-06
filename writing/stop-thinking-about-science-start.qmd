@@ -24,5 +24,7 @@ Through this humbling process, the young scientist learns what his education cou
 The most effective scientists share a common trait: they maintain a bias toward action. They think deeply, yes, but they don't let thinking become a substitute for doing. They understand that each experiment, regardless of outcome, is a step forward – either confirming what we think we know or revealing what we don't. Nature speaks not to those who would render her in perfect theorems, but to those who dare to ask her simple, direct questions - and listen, truly listen, to her replies.
 
 > It has been said that the experimenter must force nature to unveil herself. Yes, the experimenter doubtless forces nature to unveil herself by attacking her with all manner of questions; he must never answer for her nor listen partially to her answers by taking, from the results of an experiment, only those which support or confirm his hypothesis.
->
-> *— Claude Bernard, French physiologist and pioneer of experimental medicine (1813–1878)*
+
+**Claude Bernard**
+
+**(French physiologist and pioneer of experimental medicine, 1813-1878)**

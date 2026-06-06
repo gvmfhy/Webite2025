@@ -24,17 +24,17 @@ What follows is a brief aside on how the code works, and excerpts from the book 
 
 ---
 
-## Mental models for vibe coding
+### Mental models for vibe coding
 
-How the software functions provides a reusable mental model for working with LLMs. Namely, success depends on **separation of elements**. Whether you are working with experimental data, or a foreign text, either can be conceptualized through the lens of an investigation. Thus, we must separate evidence collection from interpretation.
+How the software functions provides a reusable mental model for working with LLMs. Namely, success depends on separation of elements. Whether you are working with experimental data, or a foreign text, either can be conceptualized through the lens of an investigation. Thus, we must separate evidence collection from interpretation.
 
 What does this mean?
 
-Here, the ground truth are the Cyrillic text. A PDF document is like a photograph, it is made to be processed by your human eyes, it is not ideal for a machine. Thus, we need to transform a photo into machine readable text. We want this process to be reproducible, as the accuracy of anything downstream depends on it. Extracting text from a PDF requires no semantic understanding, cultural context, or linguistic judgment, not only would LLMs add no value to this step, invoking them in this phase would impede us by adding variability. **To ask an LLM to extract text and translate for you in one go is to ask too much.**
+Here, the ground truth are the Cyrillic text. A PDF document is like a photograph, it is made to be processed by your human eyes, it is not ideal for a machine. Thus, we need to transform a photo into machine readable text. We want this process to be reproducible, as the accuracy of anything downstream depends on it. Extracting text from a PDF requires no semantic understanding, cultural context, or linguistic judgment, not only would LLMs add no value to this step, invoking them in this phase would impede us by adding variability. To ask an LLM to extract text and translate for you in one go is to ask too much.
 
 ![](/images/writing/networking-for-spies/01-code-visualization.png)
 
-Instead, we'll use the Python library PyPDF2 to extract the text. Given the same PDF, it'll produce identical output. Having this intermediate step makes our life easier later on, when we seek to verify translation accuracy. Following the extraction, we'll have a script divide the corpus into manageable, bite-sized chunks for the LLM. The principle here, again, is to not ask too much at once. If you follow this advice, you avoid much disappointment when working with AI. **An LLM will not tell you no.** If you provide it the full book and ask for a translation, it will give you one, and it will be bad. Exercise judgment.
+Instead, we'll use the Python library PyPDF2 to extract the text. Given the same PDF, it'll produce identical output. Having this intermediate step makes our life easier later on, when we seek to verify translation accuracy. Following the extraction, we'll have a script divide the corpus into manageable, bite-sized chunks for the LLM. The principle here, again, is to not ask too much at once. If you follow this advice, you avoid much disappointment when working with AI. An LLM will not tell you no. If you provide it the full book and ask for a translation, it will give you one, and it will be bad. Exercise judgment.
 
 ![](/images/writing/networking-for-spies/02-code-implementation.png)
 
@@ -47,15 +47,15 @@ After chunking the text, it is fed piece by piece to Claude Code, the interactiv
 
 ---
 
-## Passages from the text
+## **Passages from the text**
 
-### What is networking?
+***What is networking?***
 
 > Networking isn't an end in itself but only a means of achieving a goal. This is a mechanism of continuous improvement of your life and self-improvement. As you surround yourself with an increasing number of people who in many respects are better, more literate, more experienced, more skillful, richer than you, you simultaneously get the opportunity to learn and enrich yourself in all senses of this word. The better and more perfect the people surrounding you, the better you yourself become and the better your life becomes.
 >
 > Allow us to paraphrase the medieval Persian philosopher and poet Omar Khayyam and remind you that your life will be such as your environment will be.
 
-### How do you start?
+How do you start?
 
 > As young Soviet intelligence officers who had just begun work in a new country, we, of course, knew we needed a network of personal connections. But where to start? We were overwhelmed by the enormity of the task. Yes, we made many acquaintances, these new contacts required more and more of our time, attention, and care, but they didn't bring us any closer to anything interesting.
 
@@ -71,15 +71,15 @@ To understand your place in the world, look around at your environment. We are s
 
 The authors give a detailed account on how to operationalize this type of mapping, but I've omitted it from this post. However, once your network is drawn, they recommend you to view it as an electrical circuit, where each relationship is a distinct component. They suggest you strategically identify three types of people, as within these categories your attention has an outsized reward.
 
-#### 1. Connectors
+**1. Connectors**
 
 These are naturally sociable people who easily establish many connections and often organize events. Think of them as junction boxes that connect you to entire new circuits. By building better relationships with connectors, you'll meet people you would never have encountered on your own.
 
-#### 2. Capacitors
+**2. Capacitors**
 
 These are respected people who accumulate valuable resources within themselves, whether professional knowledge, insider information, or cultural capital. Like electrical capacitors that store energy, they gather and retain "something useful" over time. Once you build relationships with capacitors, they can share their accumulated wisdom with you, giving you currency to exchange with others in your network.
 
-#### 3. Gatekeepers and Bridges
+**3. Gatekeepers and Bridges**
 
 These people control access to other networks, organizations, or individuals. They can either block your path (gatekeepers) or open new doors (bridges), depending on your relationship with them. For example, a university professor is a gatekeeper to their lab's research opportunities, but a bridge to their entire academic network once you're their student.
 
@@ -127,7 +127,7 @@ These people control access to other networks, organizations, or individuals. Th
 >
 > Above all, you must be sincere and truthful. Don't pretend nothing happened if, for example, you got into an accident on the way to a meeting. Simply explain and reschedule for another time. You might even get a bonus in the form of sympathy and an offer of help, which in itself is one of the "bricks" of relationships.
 
-### Organizations are black boxes: organizational charts are not representative of power structures.
+## Organizations are black boxes: organizational charts are not representative of power structures
 
 > The main distinguishing feature in organizations is the degree of hierarchy. In vertical organizations, the degree of hierarchy is absolute — a higher position automatically gives you power over all subordinate employees, and at the same time better access to information that flows predominantly from above. The antipode of a hierarchical organization is "horizontal." In its extreme variant, this is a group without any structure where all members are equal. In reality, the structures of almost all organizations you encounter are mixed, that is, they combine both vertical and horizontal elements.
 >
@@ -145,7 +145,7 @@ These people control access to other networks, organizations, or individuals. Th
 
 > Not all employees of an organization are equally important for achieving set goals. Your ultimate goal: reach those who influence the decisions you need. After initial contacts are secured and your presence in the company is ensured, your next step is identifying centers of real power and searching for influential figures. These aren't necessarily those at the top of the organizational structure. Moreover, often direct contact with the highest decision-makers can lead to problems. You'll most likely become the object of attacks from all those who are also fighting for their time and attention.
 
-### Decision-making styles: tsars, committees, and black-box bureaucratic hell.
+## Decision-Making Styles: Tsars, Committees, and Black Box bureaucratic hell
 
 > Decision-making styles depend on the balance of power in the organization and on the influence of various groups on the process of appointing managers or selecting suppliers. Some sectors of the company may fall under the influence of various competing stakeholder groups. For example, one group may de facto block some strategic decisions through their key appointee who occupies the position of vice president of finance. Similarly, groups can control each other by appointing their employees to important governing bodies such as, for example, the procurement committee.
 >

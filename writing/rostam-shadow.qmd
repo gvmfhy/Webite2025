@@ -14,7 +14,7 @@ Last week was Nowruz, the Persian new year. In Iran, there is a cultural ceremon
 
 ![](/images/writing/rostam-shadow/01-hero.jpg)
 
-## The Sun and the Shadow of Rostam
+# The Sun and the Shadow of Rostam
 
 Rostam was renowned as a warrior, a champion of champions. His reputation preceded him throughout Persia. One day, after hunting on horseback, Rostam dismounted to shut his eyes and enjoy a full stomach. When he awoke, to his dismay his horse was gone. Enraged, worried, to himself he said:
 
@@ -150,9 +150,7 @@ When Rostam heard the warrior's words, his head whirled and the earth turned dar
 
 When Rostam opened the boy's armor and saw the clasp, he tore at his own clothes in grief. Oh how violently he wept.
 
-::: {.pullquote}
-Know yourself, or be destroyed.
-:::
+# Know yourself, or be destroyed.
 
 ---
 
@@ -174,7 +172,7 @@ warmly,
 
 ---
 
-## P.S.
+P.S
 
 Esther Harding was one of Jung's earliest students, she trained as a medical doctor in London, then traveled to Zürich to work with him — seeking a cure for her own depression. The following is from her notes in 1924.
 

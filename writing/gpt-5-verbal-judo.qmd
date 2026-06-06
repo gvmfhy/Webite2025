@@ -18,7 +18,7 @@ There is a dearth of reliable information on closed-source frontier AI models. P
 
 Without understanding the particular quirks of any given model, industry leaders, policymakers, and regulatory stakeholders cannot make informed decisions. And as these models deploy at scale throughout society, it takes no leap of imagination to see where this leads. To remedy this, the authors urged pairing each AI model with standardized documentation that enables both technical and nontechnical stakeholders to decide whether, where, and when to deploy. Think of these as package inserts that come with prescription medications.
 
-This practice has been adopted by most frontier labs and is known as the **model card**. These documents are rich sources of insight that don't require technical expertise to parse. So interesting are these documents, I advise any reader with interest in AI to read them directly. Better this than watching live streams or reading summaries, which market rather than inform. For those tracking AI safety, model cards offer the closest thing to ground truth that companies are willing to share. Below are hyperlinks to the latest model cards for your convenience.
+This practice has been adopted by most frontier labs and is known as the model card. These documents are rich sources of insight that don't require technical expertise to parse. So interesting are these documents, I advise any reader with interest in AI to read them directly. Better this than watching live streams or reading summaries, which market rather than inform. For those tracking AI safety, model cards offer the closest thing to ground truth that companies are willing to share. Below are hyperlinks to the latest model cards for your convenience.
 
 - **GPT-5** — OpenAI (Aug 2025) — [PDF](https://cdn.openai.com/pdf/8124a3ce-ab78-4f06-96eb-49ea29ffb52f/gpt5-system-card-aug7.pdf)
 - **Gemini 2.5 Pro** — Google DeepMind (Jun 2025) — [PDF](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro.pdf)
@@ -28,7 +28,7 @@ This practice has been adopted by most frontier labs and is known as the **model
 
 ---
 
-## Overview and implications of GPT-5 release
+**OVERVIEW AND IMPLICATIONS OF GPT-5 RELEASE**
 
 GPT-5 automatically routes queries to either a fast-response model or a reasoning model based on complexity. This automatic routing frustrated power users who prefer control, but dramatically increased public exposure to the state of the art. Reasoning models perform better across most economically relevant tasks and have been available for nearly a year, yet most ChatGPT users had never touched them. This will shift public perception of AI capabilities, despite GPT-5 representing only minor technical advancement.
 
@@ -56,11 +56,11 @@ I imagine the reader, if like myself, may recoil at the notion that machines cou
 
 > "They eat without pleasure, they cry without pain, they grow without being conscious of it…"
 >
-> *— Nicolas Malebranche, The Search After Truth (1694)*
+> **— Nicolas Malebranche,** ***The Search After Truth (1694)***
 
-## Strategic Judo of Sam Altman
+## **Strategic Judo of Sam Altman**
 
-Commentators observing OpenAI's modest improvements have concluded that progress is slowing, and media coverage has amplified this narrative. Leading headlines now declare that AI is overhyped, with some going so far as to equate it to the dot-com bubble. Such claims are made without sufficient context to capture the nuance at the heart of the matter: **slowing progress does not mean diminishing risk.**
+Commentators observing OpenAI's modest improvements have concluded that progress is slowing, and media coverage has amplified this narrative. Leading headlines now declare that AI is overhyped, with some going so far as to equate it to the dot-com bubble. Such claims are made without sufficient context to capture the nuance at the heart of the matter: Slowing progress does not mean diminishing risk.
 
 The discourse surrounding this release is bound to mislead policymakers in Washington. If they absorb the plateau narrative without critical analysis, they may conclude that AI risk is overblown, and that defensive measures can be postponed for decades. We are bound to err if we allow such shortsightedness to bait us into false certainty of security. The risk of losing human control remains real, and the march toward artificial general intelligence continues.
 
@@ -86,11 +86,11 @@ Consider how these statements work together. What was said, to whom, and when? M
 
 ![](/images/writing/gpt-5-verbal-judo/05-strategic-analysis.jpeg)
 
-### Who was his audience?
+**Who Was His Audience?**
 
 The primary audience was a curated set of reporters for a private dinner. Rather than issuing a press release or making a public announcement, Altman selected an intimate setting that would create an atmosphere of candid disclosure while ensuring his message would be amplified by the media. This is a targeted way to shape the overarching narrative. Moreover, by reframing the disappointment surrounding the release as market irrationality (*"your expectations were wrong, not our product"*), he better manages the fallout from a product launch that had failed to meet the expectations he had extensively cultivated.
 
-### What was left unsaid?
+**What Was Left Unsaid?**
 
 Notably absent from his comments was any acknowledgment that the plateau might reflect OpenAI-specific challenges. He also avoided discussing OpenAI's competitive position relative to other labs, implicitly positioning his company as the bellwether for the entire field.
 
@@ -106,7 +106,7 @@ Either response serves OpenAI's interests by either discrediting competitors as 
 
 A small feature regarding safety testing of GPT-5 has gotten little attention, yet it is the most unique aspect of the release. The Model Evaluation & Threat Research group conducts independent assessments of advanced AI systems to identify dangerous capabilities before they are deployed at scale. Their findings are meant to inform the public, policymakers, and developers on threat levels. The evaluation of GPT-5 differs from all previous METR assessments of OpenAI models in one important respect.
 
-For the first time, the report begins with a statement that **OpenAI's communications and legal teams reviewed and approved the text before it was released**. This review process did not occur when METR evaluated the o3 model series. Its inclusion is a deliberate change in how information about OpenAI's models is managed, with the company holding the power to block an evaluation they deem unsuitable for the brand. This creates the potential for subtle shaping of language, emphasis, and framing in ways that can meaningfully affect interpretation of a report.
+For the first time, the report begins with a statement that OpenAI's communications and legal teams reviewed and approved the text before it was released. This review process did not occur when METR evaluated the o3 model series. Its inclusion is a deliberate change in how information about OpenAI's models is managed, with the company holding the power to block an evaluation they deem unsuitable for the brand. This creates the potential for subtle shaping of language, emphasis, and framing in ways that can meaningfully affect interpretation of a report.
 
 Whenever a report must pass through the originating company's legal filters, it is liable to lean toward language that is underwhelming, and without teeth, as this avoids dispute. This dynamic has appeared in other regulated sectors such as pharmaceuticals, where industry influence over the framing of evidence has historically delayed recognition of risks.
 

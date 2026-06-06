@@ -16,7 +16,9 @@ This post is intended for the non-technical audience who wish to experiment with
 
 ---
 
-![Information that is not captured well slips through the cracks and is missed.](/images/writing/making-software-for-non-tech/01-coordination-diagram.png)
+## Information that is not captured well slips through the cracks and is missed.
+
+![](/images/writing/making-software-for-non-tech/01-coordination-diagram.png)
 
 ---
 
@@ -56,7 +58,7 @@ Bring to mind a category of digital tasks you do routinely. Anything done more t
 2. Open [Gemini](https://gemini.google.com/app), or whatever frontier model you have access to.
 3. Use Superwhisper to speak freely about your task and its steps into a Gemini chat window. Allow yourself to be confused and contradictory: you have just set out to solve a problem, you have only the faintest idea of what that looks like, or how the solution may take shape. If you don't know what to say, that's okay, such is the nature of new beginnings.
 
-### Generating your source documentation from rough ideas: examples of lazy vs. reusable prompts
+### Generating your source documentation from rough ideas: Examples of lazy vs. reusable prompts
 
 I will show you what an initial message for me looks like. If it were not an honest representation of my process, I would not subject you to the mental abuse of ingesting such loose language. After it, I'll provide you a standardized, quick-start prompt for you to initialize your conversation with. By contrasting the two, I suspect you will form a better mental scaffold of underlying patterns.
 
@@ -86,7 +88,7 @@ Prompts like the above used to be incapable of producing results with early mode
 
 ---
 
-### Read this if you struggle to output anything at the start.
+# Read this if you struggle to output anything at the start.
 
 #### Mental blocks aren't what they seem.
 
@@ -116,11 +118,11 @@ If when you set out to dictate your thoughts, you still feel like you have nothi
 
 ![](/images/writing/making-software-for-non-tech/03-replit-2.png)
 
-Congratulations. This is making software in 2025.
+## Congratulations. This is making software in 2025.
 
 ---
 
-The Replit agent will orchestrate a plan and execute it. It handles front-end, back-end, and all integrations with third-party services. There will be some conversational back and forth between you and the agent as it iterates on your vision. Full functionality occurs rapidly. I have used the main AI-enabled development tools such as Cursor, Claude Code, Codex, Manus, and Lovable. **Replit outperforms Manus and Lovable in all aspects.** With regard to creating full apps for non-technical users, it outperforms Cursor, Codex, and Claude Code because of ease of use.
+The Replit agent will orchestrate a plan and execute it. It handles front-end, back-end, and all integrations with third-party services. There will be some conversational back and forth between you and the agent as it iterates on your vision. Full functionality occurs rapidly. I have used the main AI-enabled development tools such as Cursor, Claude Code, Codex, Manus, and Lovable. Replit outperforms Manus and Lovable in all aspects. With regard to creating full apps for non-technical users, it outperforms Cursor, Codex, and Claude Code because of ease of use.
 
 One enjoyable feature is that the autonomy of Replit's AI agents are adjustable by the user. Often when an AI agent is given unbounded autonomy it wastes your time and its tokens, comprehensively completing the wrong task. Errors compound without human intervention and oversight. Manus, at least its earlier iterations, was particularly vulnerable to this flaw.
 

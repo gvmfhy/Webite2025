@@ -24,13 +24,13 @@ A recent 80,000 Hours article named a shortage of research managers as a bottlen
 
 ## Eight principles for research management
 
-### 1. Align the team with your intent.
+1. **Align the team with your intent.**
 
 For any research aim, there are tasks, and there are reasons for the task. Leaders must be clear on the latter but flexible on the former. Always we are making decisions with limited information. Our plan of execution, as it is defined at the outset, will always be under-informed, and encounter difficulties we did not foresee. Thus, good leaders, having clearly communicated the underlying intent for research objectives, will have a team that is equipped to make decisions and adapt to obstacles on the fly.
 
 Poor managers tend to flip this ordering, over-defining what they want done and how it should be executed, but keeping the why to themselves. These souls dream of a fantasy world where the perfect team is comprised of their clones, where they have centralized control over all hands, and full oversight into each moment of work. Such behavior signals a pathologic lack of trust, an overbearing need for control, and does not enable effective leadership at scale.
 
-### 2. Create psychological safety, enable a bias towards action.
+2. **Create psychological safety, enable a bias towards action.**
 
 Action, guided by will, is what achieves outcomes. Therefore, we are served by a research culture where independence of mind, initiative, and boldness are the norm, where they are the infectious qualities we demonstrate and reinforce in each other. Cultures that nurture this are ones where it is safe to fail. One of the strongest indicators that you've set conditions that are psychologically safe is the unfettered, unabashed, transparent, and timely reporting of negative results.
 
@@ -38,7 +38,7 @@ Other markers of a healthy research culture are when scientists suggest directio
 
 Poor managers tend to focus on results and timelines, rewarding researchers who are right, or who, better stated, report that projects are progressing precisely as planned, regardless of the underlying truth.
 
-### 3. Protect the time of your team, especially from yourself.
+3. **Protect the time of your team, especially from yourself.**
 
 Good managers make it easier for their team to work. Scientists need time of uninterrupted bouts of focus to progress technical tasks. A week overfilled with meetings will poison the performance of your individual contributors who need deep focus to thrive. A good research manager makes time for their team, rather than demanding it. For some communication, being in person is essential, for much, asynchronous writing will suffice. To discern between the two, ask: are these meetings helping or hurting your work?
 
@@ -48,29 +48,29 @@ Poor managers, with good intentions, can suffocate their staff by providing too 
 
 If you water a plant daily, the soil will mold, if you want to grow people — give them time and space to breathe.
 
-### 4. Have weekly 1:1s, face to face, listen more than you talk.
+4. **Have weekly 1:1s, face to face, listen more than you talk.**
 
 Good managers carve out time to give their full attention to each researcher they're responsible for. Understand the state of affairs with regard to their emotions, their project, and any obstacles that are currently blocking them, or on the horizon. Take note of the ordering, for it matters. Check in on the person before the project. Come with an agenda of what you want to discuss, but these meetings are meant for your report, so make time for everything they want to cover.
 
 Since these are for the researchers, keep flexibility in how they are scheduled. If a researcher wants to postpone the 1:1 to later in the week in order to produce higher quality of work, allow this. If they prefer afternoons instead of morning meetings, accommodate them.
 
-### 5. Understand that the development of your researchers, rather than their research outputs, is your primary objective.
+5. **Understand that the development of your researchers, rather than their research outputs, is your primary objective.**
 
 Any research projects within a portfolio are stale artifacts if divorced from the scientists who produce them. The generative unit of the scientific enterprise is the individual, therefore, competent management should center itself on development of the person.
 
-Toyota has an internal motto of *"We build people first, and cars second."* Such a philosophy is applicable to the research domain. To build people, focus on nurturing their character, their virtues, the values needed for their long-term success. Good mentors produce researchers who outgrow them and leave. Do this.
+[Toyota](https://en.wikipedia.org/wiki/The_Toyota_Way) has an internal motto of "We build people first, and cars second." Such a philosophy is applicable to the research domain. To build people, focus on nurturing their character, their virtues, the values needed for their long-term success. Good mentors produce researchers who outgrow them and leave. Do this.
 
-### 6. Be radically candid and direct with feedback, but have tact.
+6. **Be radically candid and direct with feedback, but have tact.**
 
 A research environment is tremendously benefited by honest and open peers. If you notice something, say something. Keep in mind people can only incorporate so much at any given time, so limit feedback to the most critical areas for improvement in one go. Be discerning and tactful with regard to the timing of the delivery and the mood of the audience.
 
-### 7. Personalize your support to each researcher, keep a dashboard if you are responsible for more than a handful.
+7. **Personalize your support to each researcher, keep a dashboard if you are responsible for more than a handful.**
 
 Researchers will differ in their temperament. They will differ in their projects. They will differ in their points of struggle and tolerance for stress. Therefore, there is no one-size-fits-all solution to research management, beyond the manager aiming to attune themselves to each of their researchers. By listening, by observing, and by seeking to understand, you will position yourself to best support your researchers.
 
 A dashboard is better suited for tracking than personal notes, for you want the critical observations to be visible to supporting staff, quickly surfacing to them researchers who would benefit from support. Ultimately, we are one team, making one effort. Quick identification of issues allows for faster resolution.
 
-### 8. Embody your emotions, work with a sense of purpose, with full force of heart and mind. Set the norm for mission commitment.
+8. **Embody your emotions, work with a sense of purpose, with full force of heart and mind. Set the norm for mission commitment.**
 
 The way we carry ourselves impacts the research environment. A sense of purpose is a felt, somatic, embodied experience that changes how we live. It does not exist by default, like the experience of pain. But it is a gift that can be learned; receptivity to one's emotions is a prerequisite.
 
@@ -90,9 +90,9 @@ warmly
 
 ---
 
-## P.S. — some photos from science, and words from the past.
+P.S. — some photos from science, and words from the past.
 
-> [Researchers] must make decisions on their own initiative, based on their understanding of their senior's intent, rather than passing information up the organizational chart and waiting for the decision to be passed down. Further, a competent [researcher] who is at the point of decision will naturally better appreciate the true situation than a senior some distance removed. Individual initiative and responsibility are of paramount importance.
+> [*Researchers*] must make decisions on their own initiative, based on their understanding of their senior's intent, rather than passing information up the organizational chart and waiting for the decision to be passed down. Further, a competent [**researcher**] who is at the point of decision will naturally better appreciate the true situation than a senior some distance removed. Individual initiative and responsibility are of paramount importance.
 >
 > *— MCDP, Warfighting*
 
@@ -114,7 +114,7 @@ warmly
 
 ![London Initiative for Safe AI, 2026](/images/writing/research-managers/07-lisa-2026-b.jpg)
 
-### Excerpts from *You and Your Research*
+Excerpts from [You and Your Research](https://homepages.inf.ed.ac.uk/wadler/papers/firbush/hamming.pdf)
 
 1. You have to learn to write clearly and well so that people will read it, you must learn to give reasonably formal talks, and you also must learn to give informal talks.
 
