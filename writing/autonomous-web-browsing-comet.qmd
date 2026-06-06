@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Web Browsing with Comet"
-subtitle: "An insecure, extremely unhinged, and very good piece of software"
+subtitle: "Quick impressions and a look at Comet's Chain of Thought Reasoning"
 description: "First impressions of Perplexity's Comet, an autonomous browsing agent — what it does well, the prompt-injection threat surface, and an abridged transcript of its chain of thought as it spirals into a 🎉-emoji manic self-hype while sorting an inbox."
 date: 2025-10-13
 categories: [ai-safety, agents, security]

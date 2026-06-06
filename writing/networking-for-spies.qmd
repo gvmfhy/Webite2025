@@ -1,11 +1,11 @@
 ---
 title: "Networking for Spies: Translating a Cyrillic Text with Claude Code"
-subtitle: "LLMs beyond the Anglosphere"
+subtitle: "LLMs Beyond the Anglosphere"
 description: "Using Claude Code to translate a Russian book by two undercover SVR officers — Нетворкинг по-русски — into English. A walk through the vibe-coding mental model (separate evidence collection from interpretation), plus passages from the book that are uncannily applicable to modern professional networking."
 date: 2025-10-18
 categories: [ai-tools, claude-code, applied-ai]
 image: /images/writing/networking-for-spies/01-code-visualization.png
-canonical-url: https://austinpatrick.substack.com/p/networking-for-spies-translating-a-cyrillic-text-with-claude-code
+canonical-url: https://austinpatrick.substack.com/p/networking-for-spies-translating
 ---
 
 ::: {.dropcap}
