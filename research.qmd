@@ -1,7 +1,7 @@
 ---
 title: "Research"
 subtitle: "[ in construction ]"
-description: "Austin P. Morrissey's research overview is being rebuilt."
+description: "My research on AI biosecurity evaluations. This overview is being rebuilt; for now, the essays under Writing cover the current work."
 toc: false
 ---
 

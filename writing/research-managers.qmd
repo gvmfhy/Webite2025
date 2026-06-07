@@ -1,7 +1,7 @@
 ---
 title: "What makes for good research managers, mentors, and leaders?"
 subtitle: "Eight observations"
-description: "Eight principles for effective research management, drawn from reflection on the leaders and mentors who've shaped my work — alignment, psychological safety, time protection, weekly 1:1s, development over output, candid feedback, personalization, and embodied purpose."
+description: "Eight things I've learned about good research managers and mentors: alignment, psychological safety, protected time, candid feedback, and more."
 date: 2026-04-21
 categories: [research, leadership, mentorship]
 image: /images/writing/research-managers/06-lisa-2026-a.jpg

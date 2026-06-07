@@ -1,7 +1,7 @@
 ---
 title: "The Alignment Problem Isn't Theoretical"
 subtitle: "Deception, Deployment, and automated testing with PETRI"
-description: "Frontier AI systems already demonstrate situational awareness and deceptive behavior during safety audits. A walk through what alignment means, how Anthropic's PETRI framework probes for it, and why fringe-sounding worries are now mainstream."
+description: "I walk through what AI alignment means, how Anthropic's PETRI framework tests for deception in safety audits, and why these worries are now mainstream."
 date: 2025-10-11
 categories: [ai-safety, alignment, evals]
 image: /images/writing/alignment-problem/01-petri-workflow.jpeg

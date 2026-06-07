@@ -1,7 +1,7 @@
 ---
 title: "On Thinking About the Unthinkable"
 subtitle: "On writing plainly about hard things"
-description: "On Herman Kahn's argument that catastrophic-risk research should be written in factual, even colorful language — not in awe-laden academic prose that renders the danger illegible to the ordinary reader or cross-discipline peer."
+description: "On Herman Kahn's case for writing about catastrophic risk in plain, factual language, instead of awe-laden prose that hides the danger from readers."
 date: 2026-04-28
 categories: [biosecurity, voice, philosophy]
 image: /images/austin-p-morrissey-headshot.jpg

@@ -1,10 +1,9 @@
 ---
 title: "In Good Company, a Letter to [Redacted]"
 subtitle: "Ministry for Propagation of Virtue and Prevention of Vice"
-description: "A letter to a friend in Afghanistan whose writing critiqued the Taliban's Ministry for Propagation of Virtue and Prevention of Vice. On totalitarian states, modern magical thinking, and the civic-struggle lineage of Havel, Freire, and Kip Tiernan."
+description: "A letter to a friend in Afghanistan who criticized the Taliban's morality ministry, on totalitarian states, magical thinking, and civic courage."
 date: 2025-10-28
 categories: [political, voice, dialogue]
-image: /images/austin-p-morrissey-headshot.jpg
 canonical-url: https://austinpatrick.substack.com/p/in-good-company-a-letter-to-redacted
 ---
 

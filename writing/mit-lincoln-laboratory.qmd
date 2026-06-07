@@ -1,7 +1,7 @@
 ---
 title: "MIT Lincoln Laboratory & The Dual-Use Frontier"
 subtitle: "Why I'm betting my career on consequential science"
-description: "Why dual-use research at the intersection of synthetic biology, AI, RNA therapeutics, and biosecurity matters — and why MIT's Lincoln Laboratory is uniquely equipped to do it. A career-direction statement."
+description: "Why I'm betting my career on dual-use research across synthetic biology, AI, RNA therapeutics, and biosecurity, and why MIT Lincoln Laboratory fits."
 date: 2025-11-27
 categories: [biosecurity, dual-use, science-policy, mit]
 image: /images/writing/mit-lincoln-laboratory/01-divider.png

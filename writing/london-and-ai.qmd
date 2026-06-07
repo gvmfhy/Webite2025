@@ -1,7 +1,7 @@
 ---
 title: "London & Artificial Intelligence"
 subtitle: "It's a strange world"
-description: "Notes from working at LISA, the London Initiative for Safe AI — on the disorientation of seeing how current models expand the CBRN threat surface, and on the strange territory between excitement and concern that AI safety researchers now occupy."
+description: "Notes from working at LISA in London, on seeing how current AI models widen the CBRN threat surface, and the strange ground AI safety work occupies."
 date: 2026-02-23
 categories: [ai-safety, london, biosecurity]
 image: /images/writing/london-and-ai/01-lisa-street-art.jpg

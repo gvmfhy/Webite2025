@@ -1,7 +1,7 @@
 ---
 title: "Evaluating LLM hypothesis generation in biology is hard"
 subtitle: "Is it useful, is it true, and a story about mRNA"
-description: "On the philosophical and practical difficulty of evaluating LLM-generated scientific hypotheses — why standard QA benchmarks miss what actually matters in lab work, and a story about urokinase, Karikó, Weissman, and what makes a hypothesis useful."
+description: "Why evaluating AI-generated scientific hypotheses is so hard, why standard benchmarks miss what matters in the lab, and a story about mRNA and Karikó."
 date: 2025-12-12
 categories: [ai-evals, biosecurity, scientific-method]
 image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg

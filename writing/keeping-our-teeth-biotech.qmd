@@ -1,7 +1,7 @@
 ---
 title: "Keeping our Teeth in Biotech; prelude"
 subtitle: "Personal visions other heretical hearsay"
-description: "On the dilution of 'vision' as a corporate term and its absence at the individual level. Why originality is the antithesis of safety, why founders must wager themselves, and the cost of the divided self."
+description: "On how \"vision\" got diluted into a corporate word, why originality is the opposite of safety, and why founders have to wager themselves to build."
 date: 2025-09-24
 categories: [biotech, philosophy, vision]
 image: /images/writing/keeping-our-teeth-biotech/01-image.png

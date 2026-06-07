@@ -1,7 +1,7 @@
 ---
 title: "About"
 subtitle: "AI safety researcher — Pivotal Research Fellow, working with SecureBio."
-description: "Austin P. Morrissey designs AI biosecurity evaluations as a Pivotal Research Fellow. His work measures how much current AI models could help a malicious actor misuse biology, and how reliably model safeguards hold."
+description: "Pivotal Research Fellow, formerly an mRNA scientist. I write here about AI safety, biosecurity, dual-use research, and the science of evaluating models."
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
 ---
@@ -22,7 +22,7 @@ Before this I was an mRNA scientist with wet-lab R&D experience — MSc Medical 
 
 ## Find me
 
-- **Writing (canonical):** [/writing](/writing/) — long-form essays, on this site
+- **Writing (canonical):** [Essays on this site](/writing/)
 - **Writing (Substack):** [Rational Biology](https://austinpatrick.substack.com) — published as Austin Patrick (middle name)
 - **Code:** [GitHub: gvmfhy](https://github.com/gvmfhy)
 - **Professional:** [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/)

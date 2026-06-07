@@ -1,7 +1,7 @@
 ---
 title: "Kandahar, Afghanistan: Prelude"
 subtitle: "Stories of the Horizon of Being"
-description: "On Malalai of Maiwand, the stories that move us, and the seven months I spent witnessing and working with Afghan women whose education is criminalized. A prelude on the power and prison of narrative."
+description: "On Malalai of Maiwand and the seven months I spent working with Afghan women whose education is criminalized: a prelude on the power of narrative."
 date: 2025-10-21
 categories: [travel, afghanistan, personal]
 image: /images/writing/kandahar-afghanistan-prelude/01-kandahar.jpg

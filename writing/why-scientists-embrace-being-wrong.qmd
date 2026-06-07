@@ -1,9 +1,9 @@
 ---
 title: "Why Scientists Embrace Being Wrong"
+description: "Why scientists treat being wrong as the engine of learning, and how the same words mean different things at the bench, the bedside, and the boardroom."
 subtitle: "Embracing Ignorance to Further Learning"
 date: 2024-11-26
 categories: [science, philosophy, epistemics]
-image: /images/austin-p-morrissey-headshot.jpg
 canonical-url: https://austinpatrick.substack.com/p/why-scientists-embrace-being-wrong
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Biorisk & DNA fragment analysis with Claude"
 subtitle: "Forbidden Questions and Their Answers"
-description: "On the social-engineering vector for ordering pathogenic DNA fragments and what defensive dual-use evaluation actually requires. A scene-driven essay on the gap between formal safeguards and operational reality."
+description: "How I think about the social-engineering route to ordering pathogenic DNA, and what defensive dual-use AI evaluation actually has to account for."
 date: 2025-11-18
 categories: [biosecurity, dual-use, ai-safety]
 image: /images/writing/biorisk-dna-fragment-analysis/01.png

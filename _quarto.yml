@@ -5,6 +5,7 @@ project:
     - "*.qmd"
     - "writing/*.qmd"
     - "!editor.qmd"
+    - "!research.qmd"
     - "!writing/hello-quarto.qmd"
   resources:
     - "robots.txt"

@@ -1,9 +1,9 @@
 ---
 title: "Stop Thinking About Science (Start Doing It)"
+description: "Why young scientists overthink at the bench, how layers of interpretation pull us away from real observation, and why science is finally about doing."
 subtitle: "The Hidden Cost of Overthinking in Scientific Practice"
 date: 2024-11-21
 categories: [science, philosophy, voice]
-image: /images/austin-p-morrissey-headshot.jpg
 canonical-url: https://austinpatrick.substack.com/p/stop-thinking-about-science-start
 ---
 

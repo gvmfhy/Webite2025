@@ -1,7 +1,7 @@
 ---
 title: "The Sun and the Shadow of Rostam"
 subtitle: "Know yourself, or be destroyed."
-description: "A retelling of the Shahnameh's tragic encounter between Rostam and his unrecognized son Sohrab — adapted from Dick Davis's translation — read as a parable for the internal life: the unrecognized parts of self that, when forced into confrontation, demand we look inward."
+description: "My retelling of the Shahnameh's tragedy of Rostam and his unrecognized son Sohrab, read as a parable for the parts of ourselves we refuse to see."
 date: 2026-03-27
 categories: [philosophy, self-knowledge, literary]
 image: /images/writing/rostam-shadow/01-hero.jpg
