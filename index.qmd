@@ -6,6 +6,8 @@ page-layout: full
 listing:
   id: latest-writing
   contents: writing
+  exclude:
+    filename: "{index,hello-quarto}.qmd"
   type: default
   sort: "date desc"
   max-items: 3
@@ -13,17 +15,9 @@ listing:
   date-format: "MMMM D, YYYY"
 ---
 
-<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey, rendered as a portrait composed of typographic symbols" class="hero-portrait" />
+<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="hero-portrait" />
 
-I'm a Pivotal Research Fellow working on AI capability evaluations for biosecurity, mentored by SecureBio. My research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology — and how to measure that empirically.
-
-Previously: mRNA scientist (UMass Amherst, Boston University) with wet-lab R&D experience. Now: writing evals that probe the boundary between what models *won't* say and what they *can't* say.
-
-[Read my writing →](/writing/) &nbsp;&nbsp; [About me →](/about.qmd) &nbsp;&nbsp; [Research projects →](/research.qmd)
-
-> *One does not do research in a cathedral.*
->
-> — from [On Thinking About the Unthinkable](/writing/thinking-about-the-unthinkable.qmd)
+I build evaluations that measure whether today's AI models give a real advantage to someone trying to misuse biology.
 
 ## Latest writing
 

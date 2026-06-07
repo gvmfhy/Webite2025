@@ -1,43 +1,41 @@
 ---
 title: "About"
-subtitle: "Austin P. Morrissey — AI safety, biosecurity, Pivotal Research Fellow mentored by SecureBio."
-description: "Austin P. Morrissey is an AI safety researcher working on biosecurity capability evaluations as a Pivotal Research Fellow mentored by SecureBio. His research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology, and how robustly current model safeguards hold up."
+subtitle: "AI safety researcher — Pivotal Research Fellow, working with SecureBio."
+description: "Austin P. Morrissey designs AI biosecurity evaluations as a Pivotal Research Fellow. His work measures how much current AI models could help a malicious actor misuse biology, and how reliably model safeguards hold."
 date-modified: today
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
 ---
 
-<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey, rendered as a portrait composed of typographic symbols" class="about-portrait" />
+<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="about-portrait" />
 
-My research asks whether large language models meaningfully lower the bar for actors seeking to misuse biology — and what it would take to measure that empirically. I work on this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, mentored by Jasper at [SecureBio](https://securebio.org/).
+I build evaluations that measure whether AI models give a meaningful advantage to someone trying to misuse biology. I do this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, in collaboration with [SecureBio](https://securebio.org/).
 
-The work spans three threads:
+The work runs in three threads:
 
-1. **Building model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that distinguish *"the model won't say"* from *"the model can't say."* Most current safety evals conflate these, which makes a frontier model's apparent refusal indistinguishable from genuine ignorance — a serious gap when policy depends on the difference.
+1. **Model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that separate when a model *won't* answer from when it *can't*. Most safety evals score these the same way, so a refusal and genuine ignorance look identical in the results.
 
-2. **Threat-modeling biosecurity uplift** — which technical bottlenecks actually matter for an actor with malicious intent, and which the current generation of LLMs meaningfully changes. The honest answer is "fewer than the public conversation suggests, but the trend line is steep."
+2. **Threat-modeling biosecurity uplift** — sorting which technical bottlenecks a malicious actor actually faces, and which ones today's models change.
 
-3. **Adversarial elicitation methodology** — multi-turn jailbreak sequences, classifier characterization, fine-grained mapping of where model safety boundaries actually are versus where they're advertised. The boundary is rarely where the spec implies.
+3. **Adversarial elicitation methodology** — multi-turn jailbreak sequences, classifier characterization, and mapping where a model's safety boundaries sit versus where its documentation says they sit.
 
-This is defensive dual-use work: designing the measurement, not the misuse. It exists so policy and labs can act on grounded evidence rather than speculation.
+This is defensive dual-use work. The evals measure risk so labs and policymakers can act on evidence.
 
-Before this, I was an mRNA scientist with wet-lab R&D experience — MSc Medical Science (Boston University, 2023), BSc Biochemistry (UMass Amherst, 2020).
+Before this I was an mRNA scientist with wet-lab R&D experience — MSc Medical Science (Boston University, 2023), BSc Biochemistry (UMass Amherst, 2020).
 
 ## Find me
 
-| | |
-|---|---|
-| Writing (canonical) | [/writing](/writing/) — long-form essays, this site |
-| Writing (Substack) | [Rational Biology](https://austinpatrick.substack.com) — published as Austin Patrick (middle name) |
-| Code | [GitHub: gvmfhy](https://github.com/gvmfhy) |
-| Professional | [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/) |
-| Academic | [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687) |
-| Email | austinpatrickmorrissey \[at\] gmail \[dot\] com |
+- **Writing (canonical):** [/writing](/writing/) — long-form essays, on this site
+- **Writing (Substack):** [Rational Biology](https://austinpatrick.substack.com) — published as Austin Patrick (middle name)
+- **Code:** [GitHub: gvmfhy](https://github.com/gvmfhy)
+- **Professional:** [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/)
+- **Academic:** [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687)
+- **Email:** austinpatrickmorrissey \[at\] gmail \[dot\] com
 
 ## Press & collaboration
 
-Happy to talk about methodology, eval design, and what current results do and don't tell us about model risk. Email is the fastest way through.
+Email is the fastest way to reach me — happy to talk about methodology, eval design, and what current results do and don't tell us about model risk.
 
 ::: {.callout-note appearance="simple"}
-**About this site.** Built with [Quarto](https://quarto.org). Source on [GitHub](https://github.com/gvmfhy). Essays cross-post to my [Substack](https://austinpatrick.substack.com); the canonical version of each lives here.
+**About this site.** Built with [Quarto](https://quarto.org); source on [GitHub](https://github.com/gvmfhy).
 :::
