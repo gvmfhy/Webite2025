@@ -8,7 +8,7 @@ image: images/austin-p-morrissey-headshot.jpg
 
 <img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="about-portrait" />
 
-I'm a [Pivotal Research](https://www.pivotal-research.org/) Fellow working with [SecureBio](https://securebio.org/). My research measures how much current AI models could help someone misuse biology, and how reliably model safeguards hold up. It runs in three threads:
+My research measures how much current AI models could help someone misuse biology, and how reliably model safeguards hold up. I do this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, working with [SecureBio](https://securebio.org/). It runs in three threads:
 
 1. **Model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that separate when a model *won't* answer from when it *can't*. Most safety evals score these the same way, so a refusal and genuine ignorance look identical in the results.
 

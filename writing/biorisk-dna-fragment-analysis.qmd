@@ -5,6 +5,7 @@ description: "How I think about the social-engineering route to ordering pathoge
 date: 2025-11-18
 categories: [biosecurity, dual-use, ai-safety]
 image: /images/writing/biorisk-dna-fragment-analysis/01.png
+image-alt: "Dark terminal screenshot titled \"Conceptual Approach\" outlining a methodology for sequencing fragments against a known target plasmid, with sections on fragment mapping strategy (align each fragment, look for high-identity matches, check coverage) and key questions to ask (does the fragment sequence match the plasmid, where does it map, what orientation, are there gaps or overlaps)."
 canonical-url: https://austinpatrick.substack.com/p/one-sure-way-to-get-banned-from-openai
 featured: true
 featured-order: 3

@@ -5,6 +5,7 @@ description: "Why evaluating AI-generated scientific hypotheses is so hard, why 
 date: 2025-12-12
 categories: [ai-evals, biosecurity, scientific-method]
 image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg
+image-alt: "Outdoor selfie of two smiling men in front of a mirrored glass building, one younger with a beard and glasses, the other older and bald in a navy blazer over a light blue shirt."
 canonical-url: https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation
 featured: true
 featured-order: 2
