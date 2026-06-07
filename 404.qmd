@@ -1,0 +1,10 @@
+---
+title: "Page not found"
+toc: false
+---
+
+That page isn't here. It may have moved, or it never existed.
+
+- [Home](/)
+- [Writing](/writing/)
+- [About](/about)

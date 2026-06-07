@@ -2,16 +2,13 @@
 title: "About"
 subtitle: "AI safety researcher — Pivotal Research Fellow, working with SecureBio."
 description: "Austin P. Morrissey designs AI biosecurity evaluations as a Pivotal Research Fellow. His work measures how much current AI models could help a malicious actor misuse biology, and how reliably model safeguards hold."
-date-modified: today
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
 ---
 
 <img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="about-portrait" />
 
-I build evaluations that measure whether AI models give a meaningful advantage to someone trying to misuse biology. I do this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, in collaboration with [SecureBio](https://securebio.org/).
-
-The work runs in three threads:
+I'm a [Pivotal Research](https://www.pivotal-research.org/) Fellow working with [SecureBio](https://securebio.org/). My research measures how much current AI models could help someone misuse biology, and how reliably model safeguards hold up. It runs in three threads:
 
 1. **Model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that separate when a model *won't* answer from when it *can't*. Most safety evals score these the same way, so a refusal and genuine ignorance look identical in the results.
 

@@ -245,6 +245,9 @@ pre {
   line-height: 1.4;
 }
 
+// Posts without a subtitle (kept subtitle-less to match Substack) shouldn't leave an empty gap
+.listing-subtitle:empty { display: none; }
+
 // === Featured rail (writing/index.qmd) ===
 // Quiet curation, not promotion. Section header is restrained, cards are slightly
 // more spacious than archive entries, hover gives a subtle terracotta accent.

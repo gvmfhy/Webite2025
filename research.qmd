@@ -5,4 +5,4 @@ description: "Austin P. Morrissey's research overview is being rebuilt."
 toc: false
 ---
 
-*This page is being rebuilt. While it's down, [my writing](/writing/) covers most of the current threads, and the [about page](/about.qmd) has the short version.*
+*This page is being rebuilt. While it's down, [my writing](/writing/) covers most of the current threads, and the [about page](/about) has the short version.*

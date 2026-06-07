@@ -4,7 +4,7 @@ subtitle: "A primitives demonstration — sidenotes, code annotations, math, cal
 description: "A demo page showing every Quarto formatting feature this site uses. Useful as a reference for future essays."
 date: 2026-04-27
 categories: [meta]
-draft: false
+draft: true
 toc-depth: 3
 fig-cap-location: margin
 ---

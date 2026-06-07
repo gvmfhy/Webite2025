@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Editor"
 subtitle: "Live preview — paste markdown, see how it'll render on the site"
 description: "Personal markdown editor for Austin P. Morrissey to preview essays before publishing."

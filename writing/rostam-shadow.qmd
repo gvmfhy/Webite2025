@@ -9,12 +9,10 @@ canonical-url: https://austinpatrick.substack.com/p/the-sun-and-the-shadow-of-ro
 ---
 
 ::: {.dropcap}
-Last week was Nowruz, the Persian new year. In Iran, there is a cultural ceremony that pairs with the day. It involves eating something sweet, having a mirror, and flipping to a poem by Hafez. I heard of a story from this region. It comes from the books of kings, a sprawling epic written a thousand years ago, the [Shahnameh](https://en.wikipedia.org/wiki/Shahnameh). How it begins, I do not know, but where we will begin is with Rostam. The following is adapted from a translation by [Dick Davis](https://annas-archive.gl/slow_download/b7423ab4c737eb2b2bc710a38050b013/0/0), with my reflections at the end.
+Last week was Nowruz, the Persian new year. In Iran, there is a cultural ceremony that pairs with the day. It involves eating something sweet, having a mirror, and flipping to a poem by Hafez. I heard of a story from this region. It comes from the books of kings, a sprawling epic written a thousand years ago, the [Shahnameh](https://en.wikipedia.org/wiki/Shahnameh). How it begins, I do not know, but where we will begin is with Rostam. The following is adapted from a translation by [Dick Davis](https://en.wikipedia.org/wiki/Dick_Davis_(translator)), with my reflections at the end.
 :::
 
-![](/images/writing/rostam-shadow/01-hero.jpg)
-
-# The Sun and the Shadow of Rostam
+![A group of about fifteen people posed smiling behind a wooden table in an open-plan office, with a Haft-Sin Nowruz spread of blue bowls, a small mirror, green sprouted grass, an apple, and purple hyacinth flowers laid out in front of them.](/images/writing/rostam-shadow/01-hero.jpg)
 
 Rostam was renowned as a warrior, a champion of champions. His reputation preceded him throughout Persia. One day, after hunting on horseback, Rostam dismounted to shut his eyes and enjoy a full stomach. When he awoke, to his dismay his horse was gone. Enraged, worried, to himself he said:
 
@@ -28,7 +26,7 @@ He tracked the footprints through the desert, following them until the trail was
 
 The woman before him was Tahmineh, the daughter of the king.
 
-![](/images/writing/rostam-shadow/02-illustration.jpg)
+![A Persian miniature painting framed by columns of calligraphy, depicting robed figures gathered among colorful flowering trees and rocks on a mountainside, with a central enthroned figure near the top.](/images/writing/rostam-shadow/02-illustration.jpg)
 
 > *Like a legend I have heard the story*\
 > *Of your heroic battles and your glory,*\
@@ -55,7 +53,7 @@ Reckless, passionate, and bold, Sohrab set out to find his father. Soldiers from
 
 > Drums were bound on elephants, the treasury doors were opened, and war supplies were handed out. A hundred thousand warriors gathered and the air was darkened by their dust. Stage by stage they marched till nightfall, and their glittering weapons shone like points of fire seen through a dark curtain. Day by day they went on until at last they reached the fortress's gates, and their number was so great that not a stone or speck of earth was visible before the walls.
 >
-> Rostam rode out with his warriors beside him, bearing his banner aloft. When he saw the mighty Sohrab, whose massive frame look like his own, he challenged the warrior to face him alone. Sohrab responds to his call:
+> Rostam rode out with his warriors beside him, bearing his banner aloft. When he saw the mighty Sohrab, whose massive frame looked like his own, he challenged the warrior to face him alone. Sohrab responds to his call:
 >
 > *"Don't call any of your Persians to your aid, you and I will fight alone. But the battlefield's no place for you. Age has clipped your wings, old man!"*
 
@@ -82,7 +80,7 @@ The sea of soldiers makes room for the two to draw close. They circle each other
 
 The two begin to fight. At first they are evenly matched, and both survive the initial clash. They return to their camps and rest for the night. The next morning, Sohrab greets Rostam with a smile on his lips.
 
-![](/images/writing/rostam-shadow/03-photograph.jpg)
+![A close-up of hands at a Haft-Sin table: one person in red holds up a red candle and makes a thumbs-up, while another adjusts a round standing mirror beside a dish of sprouted green grass, blue bowls, apples, and purple hyacinth flowers.](/images/writing/rostam-shadow/03-photograph.jpg)
 
 > *"When did you wake? How did you pass the night?*\
 > *And are you still determined we should fight?*\
@@ -172,11 +170,11 @@ warmly,
 
 ---
 
-P.S
+P.S.
 
 Esther Harding was one of Jung's earliest students, she trained as a medical doctor in London, then traveled to Zürich to work with him — seeking a cure for her own depression. The following is from her notes in 1924.
 
-![](/images/writing/rostam-shadow/04-portrait.jpg)
+![A Persian miniature painting topped with calligraphy, showing a crowned king seated on a throne beneath a domed canopy, surrounded by courtiers and attendants, with elephants and figures in the lower register.](/images/writing/rostam-shadow/04-portrait.jpg)
 
 > "….But use few words here, words that you are sure of. Do not make a long theory or you will entangle yourself in a net, in a trap."
 >

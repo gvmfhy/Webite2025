@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "writing/*.qmd"
+    - "!editor.qmd"
+    - "!writing/hello-quarto.qmd"
   resources:
     - "robots.txt"
 
@@ -8,7 +13,6 @@ website:
   title: "Austin P. Morrissey"
   site-url: https://austinmorrissey.com
   description: "AI safety research on biosecurity capability evaluations. Pivotal Research Fellow."
-  favicon: /images/favicon.png
   open-graph: true
   twitter-card: true
   search:
@@ -21,8 +25,6 @@ website:
     left:
       - text: Writing
         href: writing/index.qmd
-      - text: Research
-        href: research.qmd
       - text: About
         href: about.qmd
     right:

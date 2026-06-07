@@ -7,6 +7,8 @@ listing:
     contents: "*.qmd"
     include:
       featured: true
+    exclude:
+      filename: hello-quarto.qmd
     type: grid
     sort: "featured-order asc"
     grid-columns: 2
@@ -18,7 +20,7 @@ listing:
   - id: all-writing
     contents: "*.qmd"
     exclude:
-      filename: index.qmd
+      filename: "{index,hello-quarto}.qmd"
     type: default
     sort: "date desc"
     fields: [title, subtitle, date, categories, reading-time]
@@ -29,7 +31,7 @@ page-layout: full
 toc: false
 ---
 
-These essays cross-post to my [Substack](https://austinpatrick.substack.com), where they reach a wider audience. The canonical version lives here, and Substack versions point back via canonical link.
+These essays cross-post to my [Substack](https://austinpatrick.substack.com). The canonical version lives here, and Substack versions point back via canonical link.
 
 ::: {.column-margin}
 *Subscribe via [RSS](/writing/index.xml) or [Substack](https://austinpatrick.substack.com/subscribe).*
