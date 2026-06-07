@@ -15,9 +15,12 @@ listing:
   date-format: "MMMM D, YYYY"
 ---
 
-<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="hero-portrait" />
-
+::: {.hero-row}
+::: {.hero-lede}
 I build evaluations that measure whether today's AI models give a real advantage to someone trying to misuse biology.
+:::
+<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="hero-portrait" />
+:::
 
 ## Latest writing
 

@@ -50,9 +50,9 @@ h1, .quarto-title-block h1.title {
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 2.75rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  margin-top: 3.25rem;
+  margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
@@ -380,18 +380,39 @@ blockquote {
 // === Portrait styling — for ASCII-rendered headshot ===
 // Applied directly to <img> tags, bypassing Quarto's figure wrapping.
 
+// Hero row — portrait beside the lede as one composed unit (no floated void)
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  margin: 1.25rem 0 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.hero-lede {
+  flex: 1 1 auto;
+  font-size: 1.4rem;
+  line-height: 1.45;
+
+  p { margin: 0; }
+}
+
 img.hero-portrait {
-  float: right;
-  width: 220px;
+  flex: 0 0 auto;
+  width: 240px;
   height: auto;
   display: block;
-  margin: 0 0 1.25rem 1.75rem;
+  margin: 0;
   border-radius: 3px;
 
   @media (max-width: 768px) {
-    float: none;
     width: 180px;
-    margin: 0 auto 1.5rem;
+    margin: 0;
   }
 }
 

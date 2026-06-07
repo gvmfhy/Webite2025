@@ -39,8 +39,6 @@ website:
     border: false
     left: |
       © 2026 Austin P. Morrissey · [RSS](/writing/index.xml)
-    right: |
-      Built with [Quarto](https://quarto.org)
 
 format:
   html:
