@@ -1,6 +1,6 @@
 ---
 title: "Making Software for Your Non-Tech Small Business"
-subtitle: "Personalized software no longer takes tremendous time and money"
+subtitle: "Personalized software no longer takes tremendous time and money."
 description: "A walkthrough for non-technical owners building custom software for a small business with Superwhisper, Gemini, and Replit, in under 30 minutes."
 date: 2025-11-24
 categories: [ai-tools, software, productivity]
