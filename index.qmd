@@ -15,11 +15,23 @@ listing:
   date-format: "MMMM D, YYYY"
 ---
 
-::: {.hero-row}
-::: {.hero-lede}
-I build evaluations that measure whether today's AI models give a real advantage to someone trying to misuse biology.
+::: {.dossier-masthead}
+::: {.dossier-texture aria-hidden="true"}
 :::
-<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="hero-portrait" />
+::: {.dossier-inner}
+::: {.dossier-copy}
+[AI Safety — Biosecurity]{.dossier-kicker}
+
+# Austin P. Morrissey {.dossier-name}
+
+[Pivotal Research Fellow]{.dossier-eyebrow}
+
+[How much could today's AI help someone trying to weaponize biology?]{.dossier-lede}
+:::
+::: {.dossier-portrait}
+<img src="images/portrait-art-dark.png" alt="Dot-matrix portrait of Austin P. Morrissey" />
+:::
+:::
 :::
 
 ## Latest writing

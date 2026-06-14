@@ -1,24 +1,18 @@
 ---
 title: "About"
-subtitle: "AI safety researcher — Pivotal Research Fellow, working with SecureBio."
-description: "Pivotal Research Fellow, formerly an mRNA scientist. I write here about AI safety, biosecurity, dual-use research, and the science of evaluating models."
+description: "Austin P. Morrissey is an AI-safety researcher working on biosecurity."
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
 ---
 
-<img src="images/austin-p-morrissey-headshot.jpg" alt="Austin P. Morrissey" class="about-portrait" />
+<img src="images/portrait-art.png" alt="Dot-matrix portrait of Austin P. Morrissey" class="about-portrait portrait-light" />
+<img src="images/portrait-art-dark.png" alt="Dot-matrix portrait of Austin P. Morrissey" class="about-portrait portrait-dark" />
 
-My research measures how much current AI models could help someone misuse biology, and how reliably model safeguards hold up. I do this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, working with [SecureBio](https://securebio.org/). It runs in three threads:
+My research focuses on assessing whether AI systems might meaningfully lower the barriers to weaponizing biology. My motivation is to reduce the risk of it happening.
 
-1. **Model-agnostic eval suites** in [Inspect AI](https://inspect.ai-safety-institute.org.uk/) that separate when a model *won't* answer from when it *can't*. Most safety evals score these the same way, so a refusal and genuine ignorance look identical in the results.
+I began this as a [Pivotal Research](https://www.pivotal-research.org/) Fellow, with mentorship from [SecureBio](https://securebio.org/). My first project looked at adversarial elicitation in [Inspect AI](https://inspect.aisi.org.uk/): how do you take a query a model has refused and still get it to answer? I suspect chemical and biological risk needs to adopt the concept of attacker intuition from our colleagues in cyber.
 
-2. **Threat-modeling biosecurity uplift** — sorting which technical bottlenecks a malicious actor actually faces, and which ones today's models change.
-
-3. **Adversarial elicitation methodology** — multi-turn jailbreak sequences, classifier characterization, and mapping where a model's safety boundaries sit versus where its documentation says they sit.
-
-This is defensive dual-use work. The evals measure risk so labs and policymakers can act on evidence.
-
-Before this I was an mRNA scientist with wet-lab R&D experience — MSc Medical Science (Boston University, 2023), BSc Biochemistry (UMass Amherst, 2020).
+Before this I was an mRNA scientist, doing wet-lab R&D. I hold an MSc in Medical Science from Boston University (2023) and a BSc in Biochemistry from UMass Amherst (2020).
 
 ## Find me
 
@@ -28,10 +22,6 @@ Before this I was an mRNA scientist with wet-lab R&D experience — MSc Medical 
 - **Professional:** [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/)
 - **Academic:** [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687)
 - **Email:** austinpatrickmorrissey \[at\] gmail \[dot\] com
-
-## Press & collaboration
-
-Email is the fastest way to reach me — happy to talk about methodology, eval design, and what current results do and don't tell us about model risk.
 
 ::: {.callout-note appearance="simple"}
 **About this site.** Built with [Quarto](https://quarto.org); source on [GitHub](https://github.com/gvmfhy).

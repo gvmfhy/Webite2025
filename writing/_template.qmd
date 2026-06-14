@@ -1,0 +1,28 @@
+---
+title: "Your title here"
+subtitle: ""                       # optional one-liner under the title; delete if unused
+description: "One sentence for Google and social-share previews."
+date: 2026-01-01                   # YYYY-MM-DD
+categories: [topic, topic]         # lowercase tags — power the Archive cloud and Related essays
+# image: /images/writing/your-slug/01.jpg          # optional hero / thumbnail
+# canonical-url: https://austinpatrick.substack.com/p/your-post   # if cross-posted to Substack
+# featured: true                   # pin to the Featured rail on the Writing page
+# featured-order: 1                # lower = higher up in Featured
+---
+
+::: {.dropcap}
+Your opening paragraph. The first letter becomes a large raised cap automatically, so start with a real sentence (not a heading).
+:::
+
+Write the rest in plain Markdown. Leave a blank line between paragraphs.
+
+## A section heading
+
+You only need a handful of marks: **bold**, *italic*, a [link](https://example.com), and:
+
+> a blockquote for a line you want to pull out.
+
+- bullet
+- list
+
+Use `---` on its own line for a section break (it renders as the dot-matrix divider).

@@ -1,0 +1,92 @@
+{
+  "/writing/thinking-about-the-unthinkable.html": {
+    "title": "On Thinking About the Unthinkable",
+    "blurb": "On Herman Kahn's case for writing about catastrophic risk in plain, factual language, instead of awe-laden prose that hides the danger from readers.",
+    "date": "2026-04-28"
+  },
+  "/writing/research-managers.html": {
+    "title": "What makes for good research managers, mentors, and leaders?",
+    "blurb": "Eight things I've learned about good research managers and mentors: alignment, psychological safety, protected time, candid feedback, and more.",
+    "date": "2026-04-21"
+  },
+  "/writing/inference-time-compute.html": {
+    "title": "Inference time compute helps agents but hurts writing",
+    "blurb": "Why a larger inference budget helps AI agents on coding and security tasks but makes their prose hollower, and what I think that says about real thought.",
+    "date": "2026-04-05"
+  },
+  "/writing/rostam-shadow.html": {
+    "title": "The Sun and the Shadow of Rostam",
+    "blurb": "My retelling of the Shahnameh's tragedy of Rostam and his unrecognized son Sohrab, read as a parable for the parts of ourselves we refuse to see.",
+    "date": "2026-03-27"
+  },
+  "/writing/london-and-ai.html": {
+    "title": "London & Artificial Intelligence",
+    "blurb": "Notes from working at LISA in London, on seeing how current AI models widen the CBRN threat surface, and the strange ground AI safety work occupies.",
+    "date": "2026-02-23"
+  },
+  "/writing/evaluating-llm-hypothesis-generation.html": {
+    "title": "Evaluating LLM hypothesis generation in biology is hard",
+    "blurb": "Why evaluating AI-generated scientific hypotheses is so hard, why standard benchmarks miss what matters in the lab, and a story about mRNA and Karikó.",
+    "date": "2025-12-12"
+  },
+  "/writing/mit-lincoln-laboratory.html": {
+    "title": "MIT Lincoln Laboratory & The Dual-Use Frontier",
+    "blurb": "Why I'm betting my career on dual-use research across synthetic biology, AI, RNA therapeutics, and biosecurity, and why MIT Lincoln Laboratory fits.",
+    "date": "2025-11-27"
+  },
+  "/writing/making-software-for-non-tech.html": {
+    "title": "Making Software for Your Non-Tech Small Business",
+    "blurb": "A walkthrough for non-technical owners building custom software for a small business with Superwhisper, Gemini, and Replit, in under 30 minutes.",
+    "date": "2025-11-24"
+  },
+  "/writing/biorisk-dna-fragment-analysis.html": {
+    "title": "Biorisk & DNA fragment analysis with Claude",
+    "blurb": "How I think about the social-engineering route to ordering pathogenic DNA, and what defensive dual-use AI evaluation actually has to account for.",
+    "date": "2025-11-18"
+  },
+  "/writing/in-good-company-letter-to-redacted.html": {
+    "title": "In Good Company, a Letter to [Redacted]",
+    "blurb": "A letter to a friend in Afghanistan who criticized the Taliban's morality ministry, on totalitarian states, magical thinking, and civic courage.",
+    "date": "2025-10-28"
+  },
+  "/writing/kandahar-afghanistan-prelude.html": {
+    "title": "Kandahar, Afghanistan: Prelude",
+    "blurb": "On Malalai of Maiwand and the seven months I spent working with Afghan women whose education is criminalized: a prelude on the power of narrative.",
+    "date": "2025-10-21"
+  },
+  "/writing/networking-for-spies.html": {
+    "title": "Networking for Spies: Translating a Cyrillic Text with Claude Code",
+    "blurb": "I used Claude Code to translate a Russian book by two undercover SVR officers, on the vibe-coding mental model and what it says about networking.",
+    "date": "2025-10-18"
+  },
+  "/writing/autonomous-web-browsing-comet.html": {
+    "title": "Autonomous Web Browsing with Comet",
+    "blurb": "My first impressions of Perplexity's Comet browsing agent: what it does well, its prompt-injection risk, and a transcript of its reasoning going manic.",
+    "date": "2025-10-13"
+  },
+  "/writing/alignment-problem-isnt-theoretical.html": {
+    "title": "The Alignment Problem Isn't Theoretical",
+    "blurb": "I walk through what AI alignment means, how Anthropic's PETRI framework tests for deception in safety audits, and why these worries are now mainstream.",
+    "date": "2025-10-11"
+  },
+  "/writing/keeping-our-teeth-biotech.html": {
+    "title": "Keeping our Teeth in Biotech; prelude",
+    "blurb": "On how \"vision\" got diluted into a corporate word, why originality is the opposite of safety, and why founders have to wager themselves to build.",
+    "date": "2025-09-24"
+  },
+  "/writing/gpt-5-verbal-judo.html": {
+    "title": "GPT-5, Verbal Judo of Sam Altman, and the First Censored Safety Report",
+    "blurb": "I read AI model cards as ground truth: the GPT-5 launch, Sam Altman's framing, and the first METR safety report a frontier lab edited before release.",
+    "date": "2025-08-22"
+  },
+  "/writing/why-scientists-embrace-being-wrong.html": {
+    "title": "Why Scientists Embrace Being Wrong",
+    "blurb": "Why scientists treat being wrong as the engine of learning, and how the same words mean different things at the bench, the bedside, and the boardroom.",
+    "date": "2024-11-26"
+  },
+  "/writing/stop-thinking-about-science-start.html": {
+    "title": "Stop Thinking About Science (Start Doing It)",
+    "blurb": "Why young scientists overthink at the bench, how layers of interpretation pull us away from real observation, and why science is finally about doing.",
+    "date": "2024-11-21"
+  }
+}

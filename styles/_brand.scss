@@ -31,6 +31,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  // Guard against the homepage full-bleed masthead (100vw) producing a
+  // horizontal scrollbar on platforms where the scrollbar takes layout width.
+  overflow-x: hidden;
 }
 
 // === Headlines — serif, hand-tuned scale ===
@@ -111,23 +114,23 @@ h4 {
      actual style is a raised initial cap. */
 }
 
-// === Section breaks — horizontal rules become centered fleurons ===
-// Markdown `---` produces an <hr>; we render it as three centered asterisks
+// === Section breaks — horizontal rules become a dot-matrix divider ===
+// Markdown `---` produces an <hr>; we render it as a short, centered row of
+// small dots — echoing the dot-matrix portrait. Subtle, terracotta-tinted.
 hr {
   border: none;
-  text-align: center;
-  margin: 2.5rem auto;
-  height: 1.5rem;
-  position: relative;
-
-  &::before {
-    content: "* * *";
-    font-family: $font-family-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.5em;
-    opacity: 0.5;
-    display: inline-block;
-  }
+  width: 100%;
+  height: 7px;
+  margin: 2.75rem auto;
+  background-image: radial-gradient(currentColor 1.4px, transparent 1.6px);
+  background-size: 13px 13px;
+  background-position: center;
+  background-repeat: repeat-x;
+  // Fade the row at both ends so it reads as a contained motif, not a band
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+  color: $primary;
+  opacity: 0.55;
 }
 
 // === Code blocks ===
@@ -248,65 +251,83 @@ pre {
 // Posts without a subtitle (kept subtitle-less to match Substack) shouldn't leave an empty gap
 .listing-subtitle:empty { display: none; }
 
-// === Featured rail (writing/index.qmd) ===
-// Quiet curation, not promotion. Section header is restrained, cards are slightly
-// more spacious than archive entries, hover gives a subtle terracotta accent.
-// No "Featured" badges, no engagement metrics, no "Read more →" affordances —
-// the title carries the click affordance.
-#featured.quarto-listing,
-.quarto-listing#featured {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+// === Featured list (writing/index.qmd) ===
+// Text-forward curation: no thumbnails. Featured pieces get a quiet terracotta
+// rule on the left and a touch more size than the archive, so they read as
+// "start here" without shouting. The title carries the click affordance.
+//
+// Quarto's `type: default` listing renders `.quarto-post` rows (body + metadata),
+// NOT a table — so we scope to `#featured .quarto-post` (the Featured section
+// only; Archive is `#all-writing`).
+#featured {
+  .quarto-listing { margin-top: 1rem; margin-bottom: 3rem; }
 
-  .card {
-    border: 1px solid var(--bs-border-color);
-    border-radius: 4px;
-    transition: border-color 0.15s ease, transform 0.15s ease;
-    overflow: hidden;
+  // Kill any thumbnail chrome the default template might emit
+  .thumbnail-image,
+  .listing-item-img-placeholder,
+  .quarto-post .image-right > a > img,
+  .quarto-post img { display: none; }
+
+  .quarto-post {
+    // Each featured row: a deliberate curation card with a terracotta left rule
+    // at rest (reads as "start here"), lifting to full strength on hover.
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    padding: 1.05rem 1.1rem;
+    margin: 0;
+    border: none;
+    border-left: 2px solid rgba(196, 112, 43, 0.5);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+
+    & + .quarto-post { margin-top: 0.4rem; }
 
     &:hover {
-      border-color: $primary;
+      border-left-color: $primary;
+      background-color: rgba(196, 112, 43, 0.05);
+      .listing-title a { color: $primary; }
+    }
+
+    .body { order: 2; flex: 1 1 auto; }
+
+    // Reading-time sits as a quiet left-aligned chip, fixed-width so titles align
+    .metadata {
+      order: 1;
+      flex: 0 0 4.5rem;
+      text-align: left;
     }
   }
 
-  .card-img-top, .card-img {
-    object-fit: cover;
-    border-radius: 0;
+  .listing-title {
+    margin-bottom: 0.25rem;
+    a {
+      font-family: $font-family-serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: -0.008em;
+      transition: color 0.15s ease;
+    }
   }
 
-  .card-body {
-    padding: 1.1rem 1.25rem 1.25rem;
-  }
-
-  .listing-title,
-  .card-title {
-    font-family: $font-family-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 1.25;
-    margin-bottom: 0.4rem;
-    letter-spacing: -0.005em;
-  }
-
-  .listing-subtitle,
-  .card-text {
+  .listing-subtitle {
     font-family: $font-family-serif;
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 1.02rem;
     line-height: 1.4;
-    opacity: 0.85;
+    opacity: 0.82;
+    margin-bottom: 0;
   }
 
-  // Reading-time chip in the featured rail — small caps, restrained
+  // Reading-time chip — small caps, restrained
   .listing-reading-time {
     font-family: $font-family-sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-variant-caps: all-small-caps;
     text-transform: lowercase;
     letter-spacing: 0.04em;
     font-weight: 500;
     opacity: 0.6;
-    margin-top: 0.6rem;
   }
 }
 
@@ -380,59 +401,210 @@ blockquote {
   font-weight: 600;
 }
 
-// === Portrait styling — for ASCII-rendered headshot ===
-// Applied directly to <img> tags, bypassing Quarto's figure wrapping.
+// === Themed dot-matrix portraits ===
+// Two variants ship in images/. The dark-ink portrait reads on the cream/light
+// background; the light-ink + terracotta portrait reads on the dark background.
+// This Quarto theme signals mode via a body class (quarto-light / quarto-dark),
+// NOT data-bs-theme on <html>, so we key off that. Both selectors included for
+// robustness in case a future config switches to the data-bs-theme attribute.
+body.quarto-light .portrait-dark,
+[data-bs-theme="light"] .portrait-dark { display: none; }
+body.quarto-dark .portrait-light,
+[data-bs-theme="dark"]  .portrait-light { display: none; }
 
-// Hero row — portrait beside the lede as one composed unit (no floated void)
-.hero-row {
-  display: flex;
-  align-items: center;
-  gap: 2.25rem;
-  margin: 1.25rem 0 3rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-}
-
-.hero-lede {
-  flex: 1 1 auto;
-  font-size: 1.4rem;
-  line-height: 1.45;
-
-  p { margin: 0; }
-}
-
-img.hero-portrait {
-  flex: 0 0 auto;
-  width: 240px;
-  height: auto;
-  display: block;
-  margin: 0;
-  border-radius: 3px;
-
-  @media (max-width: 768px) {
-    width: 180px;
-    margin: 0;
-  }
-}
-
+// About-page portrait — themed dot-matrix, large enough that the dot detail reads
 img.about-portrait {
   display: block;
   width: 100%;
-  max-width: 320px;
+  max-width: 300px;
   height: auto;
   margin: 0.5rem 0 2rem 0;
-  border-radius: 3px;
 }
 
-// Light-mode only: a subtle border helps the dark portrait separate from cream background
-[data-bs-theme="light"] {
-  img.hero-portrait,
-  img.about-portrait {
-    border: 1px solid rgba(0, 0, 0, 0.08);
+// =========================================================================
+// DOSSIER MASTHEAD (homepage only) — full-bleed dark band
+// =========================================================================
+// The masthead IS the homepage hero, so suppress Quarto's default title block
+// (the duplicate "Austin P. Morrissey" + subtitle) only on the page that has it.
+body:has(.dossier-masthead) .quarto-title-block,
+body:has(.dossier-masthead) header#title-block-header {
+  display: none;
+}
+// Reclaim the space the (now hidden) title block left at the top of the column.
+body:has(.dossier-masthead) #quarto-document-content > *:first-child,
+body:has(.dossier-masthead) main.content > *:first-child {
+  margin-top: 0;
+}
+// Quarto wraps page content in a centered container. To span edge-to-edge we
+// break out with the classic full-bleed trick: width:100vw + a negative margin
+// that re-centers the block on the viewport. overflow-x is guarded on <body>.
+.dossier-masthead {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  // Pull up to sit flush under the navbar (kill the page's top padding/title gap)
+  margin-top: -1.5rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #1A1A1A;
+  background-image:
+    radial-gradient(120% 90% at 82% 28%, rgba(216, 137, 90, 0.12), rgba(216, 137, 90, 0) 56%),
+    linear-gradient(180deg, #1F1F1F 0%, #181818 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  color: #E8E4DD;
+}
+
+// Dot texture echoing the portrait — pure CSS, fading downward
+.dossier-texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(232, 228, 221, 0.16) 1px, transparent 1.4px);
+  background-size: 13px 13px;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
+}
+
+.dossier-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3.5rem 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 376px;
+  gap: 3rem;
+  align-items: end;
+}
+
+// Keep copy lifted off the band's bottom edge; portrait rises flush to it
+.dossier-copy { padding-bottom: 3.75rem; }
+
+.dossier-kicker {
+  display: block;
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #D8895A;
+  margin-bottom: 1.4rem;
+}
+
+// The H1 inside the masthead — large, warm white, overriding the global title rule
+h1.dossier-name,
+.dossier-copy > h1.dossier-name {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  color: #F5F1EA;
+  margin: 0 0 0.7rem;
+}
+
+.dossier-eyebrow {
+  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: rgba(232, 228, 221, 0.68);
+  margin-bottom: 1.8rem;
+}
+
+.dossier-lede {
+  display: block;
+  font-family: $font-family-serif;
+  font-size: clamp(1.25rem, 2.3vw, 1.55rem);
+  font-weight: 380;
+  line-height: 1.42;
+  letter-spacing: -0.005em;
+  color: #F0ECE4;
+  max-width: 30ch;
+  margin-bottom: 2rem;
+}
+
+.dossier-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+.dossier-tag {
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: rgba(232, 228, 221, 0.52);
+}
+// Inline terracotta dot separator before every tag after the first; survives wrap.
+// Symmetric horizontal gap so the dot sits between the words, not hugging the
+// preceding one ("scientist · Inspect AI", not "scientist· Inspect AI").
+.dossier-tag + .dossier-tag::before {
+  content: "·";
+  margin: 0 0.85rem;
+  color: rgba(216, 137, 90, 0.7);
+}
+
+.dossier-portrait {
+  align-self: end;
+  justify-self: center;
+  position: relative;
+  // Soft warm halo lifts the dark-ink portrait off the near-black band so the
+  // figure's dark suit/hair doesn't dissolve into the background. Sits behind
+  // the image (z-index), centered on the head/shoulders.
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    bottom: 0;
+    width: 125%;
+    height: 115%;
+    transform: translateX(-50%);
+    background: radial-gradient(
+      62% 58% at 50% 38%,
+      rgba(216, 137, 90, 0.22) 0%,
+      rgba(216, 137, 90, 0.08) 42%,
+      rgba(216, 137, 90, 0) 72%
+    );
+    pointer-events: none;
   }
+}
+.dossier-portrait img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 376px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; // flush to the band's bottom edge
+}
+
+// Latest-writing heading needs a little air below the masthead
+.dossier-masthead + h2,
+.dossier-masthead + h2.title {
+  margin-top: 3rem;
+}
+
+@media (max-width: 860px) {
+  .dossier-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.75rem 1.75rem 0;
+  }
+  .dossier-copy { padding-bottom: 2.75rem; }
+  // Portrait above the copy on narrow screens — reads like a dossier card
+  .dossier-portrait { order: -1; justify-self: start; }
+  .dossier-portrait img { width: 168px; }
+  .dossier-lede { max-width: 40ch; }
+}
+
+@media (max-width: 480px) {
+  .dossier-inner { padding: 2.25rem 1.25rem 0; }
+  .dossier-copy { padding-bottom: 2.25rem; }
+  .dossier-kicker { font-size: 0.65rem; letter-spacing: 0.16em; }
+  .dossier-portrait img { width: 150px; }
 }
 
