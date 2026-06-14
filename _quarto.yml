@@ -49,6 +49,8 @@ website:
     border: false
     left: |
       © 2026 Austin P. Morrissey · [RSS](/writing/index.xml)
+    center: |
+      This site is in development; to learn more, take a look at my [Substack](https://austinpatrick.substack.com), or [reach out to meet](https://www.linkedin.com/in/austin-p-morrissey/)!
 
 format:
   html:

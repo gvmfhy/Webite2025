@@ -1,7 +1,5 @@
 ---
 title: "Writing"
-subtitle: "Essays on AI safety, biosecurity, and methodology"
-description: "My essays on AI safety, biosecurity, and dual-use research, alongside pieces on science, travel, and the books and stories I keep returning to."
 listing:
   - id: featured
     contents: "*.qmd"
@@ -28,8 +26,6 @@ listing:
 page-layout: full
 toc: false
 ---
-
-These essays cross-post to my [Substack](https://austinpatrick.substack.com). The canonical version lives here, and Substack versions point back via canonical link.
 
 ::: {.column-margin}
 *Subscribe via [RSS](/writing/index.xml) or [Substack](https://austinpatrick.substack.com/subscribe).*
