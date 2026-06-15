@@ -113,9 +113,9 @@ Whenever a report must pass through the originating company's legal filters, it 
 
 You may also find amusement from the two contrasting screenshots.
 
-![METR's o3 report (no editorial review by OpenAI)](/images/writing/gpt-5-verbal-judo/06-metr-o3.png)
+![METR's GPT-5 report and its note that OpenAI reviewed it](/images/writing/gpt-5-verbal-judo/06-metr-o3.png)
 
-![METR's GPT-5 report (subjected to OpenAI's editorial review)](/images/writing/gpt-5-verbal-judo/07-metr-gpt5.png)
+![GPT-5, asked about it, denies the review happened](/images/writing/gpt-5-verbal-judo/07-metr-gpt5.png)
 
 warmly,
 

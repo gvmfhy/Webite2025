@@ -4,7 +4,7 @@ subtitle: "Is it useful, is it true, and a story about mRNA"
 date: 2025-12-12
 categories: [ai-evals, biosecurity, scientific-method]
 image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg
-image-alt: "Katalin Kariko and Drew Weissman"
+image-alt: "Austin Morrissey with Drew Weissman"
 canonical-url: https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation
 featured: true
 featured-order: 2
@@ -72,7 +72,7 @@ Voila.
 
 But progressing science with experimental evidence is not as easy as it seems.
 
-![Katalin Karikó and Drew Weissman](/images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg)
+![With Drew Weissman](/images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg)
 
 Their findings were rejected as being unimportant by the journal *Nature*, and went unrecognized for their therapeutic implications by the pharmaceutical industry. It took nearly two decades and a global pandemic for the world to come around and recognize this RNA stuff is the jam. The discovery was a foundational aspect of both the Pfizer and Moderna COVID-19 vaccines.
 
