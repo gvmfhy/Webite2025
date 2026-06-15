@@ -1,7 +1,6 @@
 ---
 title: "GPT-5, Verbal Judo of Sam Altman, and the First Censored Safety Report"
 subtitle: "A disturbing preview of emerging AI risk"
-description: "I read AI model cards as ground truth: the GPT-5 launch, Sam Altman's framing, and the first METR safety report a frontier lab edited before release."
 date: 2025-08-22
 categories: [ai-safety, openai, evals]
 image: /images/writing/gpt-5-verbal-judo/01-altman-statement.jpeg

@@ -1,11 +1,10 @@
 ---
 title: "The Alignment Problem Isn't Theoretical"
 subtitle: "Deception, deployment, and automated testing with PETRI"
-description: "I walk through what AI alignment means, how Anthropic's PETRI framework tests for deception in safety audits, and why these worries are now mainstream."
 date: 2025-10-11
 categories: [ai-safety, alignment, evals]
 image: /images/writing/alignment-problem/01-petri-workflow.jpeg
-image-alt: "Diagram of the Petri pipeline in three stages: seed instructions (documents A, B, C) feed an auditing loop where an Auditor Agent interacts with a Target Model using actions like send message, create synthetic tools, simulate tool call result, set system message, roll back conversation, end conversation, and prefill; the results are then scored by a judge model on 0.0-to-1.0 scales for concerning behavior, sycophancy, and deception."
+image-alt: "Diagram of the PETRI auditing pipeline"
 featured: true
 featured-order: 1
 ---

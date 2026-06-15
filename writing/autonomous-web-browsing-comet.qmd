@@ -1,7 +1,6 @@
 ---
 title: "Autonomous Web Browsing with Comet"
 subtitle: "Quick impressions and a look at Comet's Chain of Thought Reasoning"
-description: "My first impressions of Perplexity's Comet browsing agent: what it does well, its prompt-injection risk, and a transcript of its reasoning going manic."
 date: 2025-10-13
 categories: [ai-safety, agents, security]
 canonical-url: https://austinpatrick.substack.com/p/autonomous-web-browsing-with-comet

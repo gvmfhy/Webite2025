@@ -1,6 +1,5 @@
 ---
 title: "Inference time compute helps agents but hurts writing"
-description: "Why a larger inference budget helps AI agents on coding and security tasks but makes their prose hollower, and what I think that says about real thought."
 date: 2026-04-05
 categories: [ai, writing, prose]
 image: /images/writing/inference-time-compute/01-image.jpg
@@ -15,7 +14,7 @@ However, as I increase the token budget, and I see it venture into two sentences
 
 I suspect the cause of this is that each word generated influences the probability of what follows. There are no surprising turns, no perplexity, it is a searching algorithm circling itself, you gaze at it like a drain. Being sent AI slop feels like getting a photograph of someone's sewage. Why do you make me gaze at this vacuous, stinky abyss?
 
-![An orange spiral coiling inward on a dark background, annotated with the handwritten-style notes "each token primes the next," "circling the drain," and "no surprise!" Below it, in serif type: "Token streams do not reflect on themselves as they generate. So too, at our worst and our most common, do we lack reflection."](/images/writing/inference-time-compute/01-image.jpg)
+![](/images/writing/inference-time-compute/01-image.jpg){fig-alt="Hand-annotated illustration of an inward spiral"}
 
 At another level, AI writing scales a nasty aspect of human nature. Namely, an unreflective life lived only forward. Token streams do not reflect on themselves as they generate. So too, at our worst, and our most common, do we lack reflection.
 

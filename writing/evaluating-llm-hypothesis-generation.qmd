@@ -1,11 +1,10 @@
 ---
 title: "Evaluating LLM hypothesis generation in biology is hard"
 subtitle: "Is it useful, is it true, and a story about mRNA"
-description: "Why evaluating AI-generated scientific hypotheses is so hard, why standard benchmarks miss what matters in the lab, and a story about mRNA and Karikó."
 date: 2025-12-12
 categories: [ai-evals, biosecurity, scientific-method]
 image: /images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg
-image-alt: "Outdoor selfie of two smiling men in front of a mirrored glass building, one younger with a beard and glasses, the other older and bald in a navy blazer over a light blue shirt."
+image-alt: "Katalin Kariko and Drew Weissman"
 canonical-url: https://austinpatrick.substack.com/p/evaluating-llm-hypothesis-generation
 featured: true
 featured-order: 2

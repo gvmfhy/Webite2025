@@ -1,7 +1,6 @@
 ---
 title: "Networking for Spies: Translating a Cyrillic Text with Claude Code"
 subtitle: "LLMs Beyond the Anglosphere"
-description: "I used Claude Code to translate a Russian book by two undercover SVR officers, on the vibe-coding mental model and what it says about networking."
 date: 2025-10-18
 categories: [ai-tools, claude-code, applied-ai]
 image: /images/writing/networking-for-spies/01-code-visualization.png
@@ -32,18 +31,18 @@ What does this mean?
 
 Here, the ground truth is the Cyrillic text. A PDF document is like a photograph, it is made to be processed by your human eyes, it is not ideal for a machine. Thus, we need to transform a photo into machine readable text. We want this process to be reproducible, as the accuracy of anything downstream depends on it. Extracting text from a PDF requires no semantic understanding, cultural context, or linguistic judgment, not only would LLMs add no value to this step, invoking them in this phase would impede us by adding variability. To ask an LLM to extract text and translate for you in one go is to ask too much.
 
-![Russian Cyrillic book text extracted to a dark terminal, with "[PAGE 14]" and "[PAGE 15]" markers separating the chapter "О чем мы расскажем" — the raw output of the PyPDF2 extraction step.](/images/writing/networking-for-spies/01-code-visualization.png)
+![](/images/writing/networking-for-spies/01-code-visualization.png){fig-alt="Terminal showing extracted Cyrillic book text"}
 
 Instead, we'll use the Python library PyPDF2 to extract the text. Given the same PDF, it'll produce identical output. Having this intermediate step makes our life easier later on, when we seek to verify translation accuracy. Following the extraction, we'll have a script divide the corpus into manageable, bite-sized chunks for the LLM. The principle here, again, is to not ask too much at once. If you follow this advice, you avoid much disappointment when working with AI. An LLM will not tell you no. If you provide it the full book and ask for a translation, it will give you one, and it will be bad. Exercise judgment.
 
-![Anna's Archive search-result page for the book "Нетворкинг для разведчиков. Как извлечь пользу из любого знакомства" by Елена Вавилова and Андрей Безруков, showing the listing details, table of contents, and a small cover thumbnail.](/images/writing/networking-for-spies/02-code-implementation.png)
+![](/images/writing/networking-for-spies/02-code-implementation.png){fig-alt="Anna's Archive listing for the book"}
 
 After chunking the text, it is fed piece by piece to Claude Code, the interactive terminal I use to work with an LLM on my Mac, thereby avoiding additional API costs. Should you wish to repurpose the code, or read the source text, all materials are available on my repository.
 
 - [GitHub (view the code)](https://github.com/gvmfhy/pdf-translator)
 - [DeepWiki (chat with the code)](https://deepwiki.com/gvmfhy/pdf-translator)
 
-![A Claude Code terminal session (v2.0.15, Sonnet 4.5) where Austin describes screenshotting and translating each page of a Cyrillic PDF and asks how to automate the task, with Claude offering to break the problem down.](/images/writing/networking-for-spies/03-terminal-output.png)
+![](/images/writing/networking-for-spies/03-terminal-output.png){fig-alt="Claude Code terminal session"}
 
 ---
 

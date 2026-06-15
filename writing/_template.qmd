@@ -1,7 +1,6 @@
 ---
 title: "Your title here"
 subtitle: ""                       # optional one-liner under the title; delete if unused
-description: "One sentence for Google and social-share previews."
 date: 2026-01-01                   # YYYY-MM-DD
 categories: [topic, topic]         # lowercase tags — power the Archive cloud and Related essays
 # image: /images/writing/your-slug/01.jpg          # optional hero / thumbnail

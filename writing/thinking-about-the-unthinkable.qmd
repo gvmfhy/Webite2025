@@ -1,6 +1,5 @@
 ---
 title: "On Thinking About the Unthinkable"
-description: "On Herman Kahn's case for writing about catastrophic risk in plain, factual language, instead of awe-laden prose that hides the danger from readers."
 date: 2026-04-28
 categories: [biosecurity, voice, philosophy]
 ---

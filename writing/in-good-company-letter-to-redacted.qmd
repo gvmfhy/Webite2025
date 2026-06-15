@@ -1,7 +1,6 @@
 ---
 title: "In Good Company, a Letter to [Redacted]"
 subtitle: "Ministry for Propagation of Virtue and Prevention of Vice"
-description: "A letter to a friend in Afghanistan who criticized the Taliban's morality ministry, on totalitarian states, magical thinking, and civic courage."
 date: 2025-10-28
 categories: [political, voice, dialogue]
 canonical-url: https://austinpatrick.substack.com/p/in-good-company-a-letter-to-redacted

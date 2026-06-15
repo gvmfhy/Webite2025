@@ -1,7 +1,6 @@
 ---
 title: "The Sun and the Shadow of Rostam"
 subtitle: "Know yourself, or be destroyed."
-description: "My retelling of the Shahnameh's tragedy of Rostam and his unrecognized son Sohrab, read as a parable for the parts of ourselves we refuse to see."
 date: 2026-03-27
 categories: [philosophy, self-knowledge, literary]
 image: /images/writing/rostam-shadow/01-hero.jpg
@@ -12,7 +11,7 @@ canonical-url: https://austinpatrick.substack.com/p/the-sun-and-the-shadow-of-ro
 Last week was Nowruz, the Persian new year. In Iran, there is a cultural ceremony that pairs with the day. It involves eating something sweet, having a mirror, and flipping to a poem by Hafez. I heard of a story from this region. It comes from the books of kings, a sprawling epic written a thousand years ago, the [Shahnameh](https://en.wikipedia.org/wiki/Shahnameh). How it begins, I do not know, but where we will begin is with Rostam. The following is adapted from a translation by [Dick Davis](https://en.wikipedia.org/wiki/Dick_Davis_(translator)), with my reflections at the end.
 :::
 
-![A group of about fifteen people posed smiling behind a wooden table in an open-plan office, with a Haft-Sin Nowruz spread of blue bowls, a small mirror, green sprouted grass, an apple, and purple hyacinth flowers laid out in front of them.](/images/writing/rostam-shadow/01-hero.jpg)
+![](/images/writing/rostam-shadow/01-hero.jpg){fig-alt="Office team behind a Nowruz Haft-Sin table"}
 
 Rostam was renowned as a warrior, a champion of champions. His reputation preceded him throughout Persia. One day, after hunting on horseback, Rostam dismounted to shut his eyes and enjoy a full stomach. When he awoke, to his dismay his horse was gone. Enraged, worried, to himself he said:
 
@@ -26,7 +25,7 @@ He tracked the footprints through the desert, following them until the trail was
 
 The woman before him was Tahmineh, the daughter of the king.
 
-![A Persian miniature painting framed by columns of calligraphy, depicting robed figures gathered among colorful flowering trees and rocks on a mountainside, with a central enthroned figure near the top.](/images/writing/rostam-shadow/02-illustration.jpg)
+![](/images/writing/rostam-shadow/02-illustration.jpg){fig-alt="Persian miniature painting from the Shahnameh"}
 
 > *Like a legend I have heard the story*\
 > *Of your heroic battles and your glory,*\
@@ -80,7 +79,7 @@ The sea of soldiers makes room for the two to draw close. They circle each other
 
 The two begin to fight. At first they are evenly matched, and both survive the initial clash. They return to their camps and rest for the night. The next morning, Sohrab greets Rostam with a smile on his lips.
 
-![A close-up of hands at a Haft-Sin table: one person in red holds up a red candle and makes a thumbs-up, while another adjusts a round standing mirror beside a dish of sprouted green grass, blue bowls, apples, and purple hyacinth flowers.](/images/writing/rostam-shadow/03-photograph.jpg)
+![](/images/writing/rostam-shadow/03-photograph.jpg){fig-alt="Hands arranging a Nowruz Haft-Sin table"}
 
 > *"When did you wake? How did you pass the night?*\
 > *And are you still determined we should fight?*\
@@ -174,7 +173,7 @@ P.S.
 
 Esther Harding was one of Jung's earliest students, she trained as a medical doctor in London, then traveled to Zürich to work with him — seeking a cure for her own depression. The following is from her notes in 1924.
 
-![A Persian miniature painting topped with calligraphy, showing a crowned king seated on a throne beneath a domed canopy, surrounded by courtiers and attendants, with elephants and figures in the lower register.](/images/writing/rostam-shadow/04-portrait.jpg)
+![](/images/writing/rostam-shadow/04-portrait.jpg){fig-alt="Persian miniature of an enthroned king"}
 
 > "….But use few words here, words that you are sure of. Do not make a long theory or you will entangle yourself in a net, in a trap."
 >
