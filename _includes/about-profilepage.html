@@ -21,3 +21,14 @@ header#title-block-header .description,
 .quarto-title-block .description,
 .quarto-title .description { display: none; }
 </style>
+
+<script>
+// Email is assembled client-side, so the address never appears in the page
+// source -- defeats scrapers and the static-HTML fetchers most LLM crawlers use.
+document.addEventListener('DOMContentLoaded', function () {
+  var s = document.getElementById('contact-email');
+  if (!s) return;
+  var addr = atob('YXVzdGlucGF0cmlja21vcnJpc3NleQ==') + String.fromCharCode(64) + atob('Z21haWwuY29t');
+  s.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
+});
+</script>

@@ -22,10 +22,10 @@ The best way to understand how I think is to read my writing — here, or on my 
 
 ## Find me
 
-- **Code:** [GitHub: gvmfhy](https://github.com/gvmfhy)
 - **Professional:** [LinkedIn](https://www.linkedin.com/in/austin-p-morrissey/)
 - **Academic:** [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687)
-- **Email:** austinpatrickmorrissey \[at\] gmail \[dot\] com
+- **Code:** [GitHub: gvmfhy](https://github.com/gvmfhy)
+- **Email:** <span id="contact-email"><a href="https://www.linkedin.com/in/austin-p-morrissey/">via LinkedIn</a></span>
 
 ::: {.callout-note appearance="simple"}
 **About this site.** Built with [Quarto](https://quarto.org); source on [GitHub](https://github.com/gvmfhy).
