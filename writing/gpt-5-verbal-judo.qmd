@@ -113,9 +113,9 @@ Whenever a report must pass through the originating company's legal filters, it 
 
 You may also find amusement from the two contrasting screenshots.
 
-![METR's GPT-5 report and its note that OpenAI reviewed it](/images/writing/gpt-5-verbal-judo/06-metr-o3.png)
+![](/images/writing/gpt-5-verbal-judo/06-metr-o3.png){fig-alt="METR's GPT-5 evaluation page, with a highlighted note that OpenAI's comms and legal teams reviewed and approved it before release"}
 
-![GPT-5, asked about it, denies the review happened](/images/writing/gpt-5-verbal-judo/07-metr-gpt5.png)
+![](/images/writing/gpt-5-verbal-judo/07-metr-gpt5.png){fig-alt="A GPT-5 chat reply claiming there is no evidence the METR report was reviewed by OpenAI"}
 
 warmly,
 

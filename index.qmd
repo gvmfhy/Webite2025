@@ -22,14 +22,12 @@ listing:
 ::: {.dossier-copy}
 [AI Safety — Biosecurity]{.dossier-kicker}
 
-# Austin P. Morrissey {.dossier-name}
+# How much could today's AI help someone trying to weaponize biology? {.dossier-question}
 
-[Pivotal Research Fellow]{.dossier-eyebrow}
-
-[How much could today's AI help someone trying to weaponize biology?]{.dossier-lede}
+[Austin P. Morrissey · Pivotal Research Fellow]{.dossier-byline}
 :::
-::: {.dossier-portrait}
-<img src="images/portrait-art-dark.png" alt="Dot-matrix portrait of Austin P. Morrissey" />
+::: {.dossier-portrait .dossier-mark}
+<img src="images/sebe-mark.png" alt="SEBE biosecurity emblem: a gas mask within a biohazard trefoil" />
 :::
 :::
 :::

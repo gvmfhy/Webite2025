@@ -30,12 +30,12 @@ website:
   navbar:
     pinned: true
     background: primary
-    left:
+    title: false
+    right:
       - text: Writing
         href: writing/index.qmd
       - text: About
         href: about.qmd
-    right:
       - text: Substack
         href: https://austinpatrick.substack.com
       - icon: github

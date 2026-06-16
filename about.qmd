@@ -1,8 +1,12 @@
 ---
 title: "About"
-description: "Austin P. Morrissey is an AI-safety researcher working on biosecurity."
+description: "Austin P. Morrissey is an AI-safety researcher building capability evaluations that test whether AI lowers the barrier to biological misuse. Pivotal Research Fellow."
 toc: false
 image: images/austin-p-morrissey-headshot.jpg
+format:
+  html:
+    include-in-header:
+      - _includes/about-profilepage.html
 ---
 
 <img src="images/portrait-art.png" alt="Dot-matrix portrait of Austin P. Morrissey" class="about-portrait portrait-light" />

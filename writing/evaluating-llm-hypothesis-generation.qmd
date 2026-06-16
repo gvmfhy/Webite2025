@@ -72,7 +72,7 @@ Voila.
 
 But progressing science with experimental evidence is not as easy as it seems.
 
-![With Drew Weissman](/images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg)
+![](/images/writing/evaluating-llm-hypothesis/04-kariko-weissman.jpg){fig-alt="Austin Morrissey with Drew Weissman"}
 
 Their findings were rejected as being unimportant by the journal *Nature*, and went unrecognized for their therapeutic implications by the pharmaceutical industry. It took nearly two decades and a global pandemic for the world to come around and recognize this RNA stuff is the jam. The discovery was a foundational aspect of both the Pfizer and Moderna COVID-19 vaccines.
 

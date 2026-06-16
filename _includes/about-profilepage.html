@@ -1,0 +1,23 @@
+<!--
+  ProfilePage schema for the About page (Google's 2025 shape for a person's page).
+  mainEntity references the site-wide Person (#person) defined in json-ld-person.html,
+  so this layers on top of it rather than replacing it. Validate via
+  https://search.google.com/test/rich-results after deploy.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateModified": "2026-06-16",
+  "mainEntity": { "@id": "https://austinmorrissey.com/#person" }
+}
+</script>
+<style>
+/* The page description ("...building capability evaluations that test whether AI
+   lowers the barrier to biological misuse...") is kept as the machine-readable
+   meta/OG description, but hidden as a visible title-block line because the body
+   already says it. It mirrors visible content — not net-new hidden prose. */
+header#title-block-header .description,
+.quarto-title-block .description,
+.quarto-title .description { display: none; }
+</style>

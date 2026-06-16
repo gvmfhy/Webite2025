@@ -504,6 +504,49 @@ h1.dossier-name,
   margin: 0 0 0.7rem;
 }
 
+// Question-led ("low identity") masthead
+h1.dossier-question,
+.dossier-copy > h1.dossier-question {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #F5F1EA;
+  max-width: 19ch;
+  margin: 0 0 1.7rem;
+}
+.dossier-byline {
+  display: inline-block;
+  position: relative;
+  font-family: $font-family-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.07em;
+  color: rgba(232, 228, 221, 0.72);
+  padding-top: 1.3rem;
+}
+.dossier-byline::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 32px; height: 1px;
+  background: rgba(216, 137, 90, 0.6);
+}
+
+// SEBE emblem in the hero slot: centered, not bottom-flush like the portrait
+.dossier-portrait.dossier-mark { align-self: center; }
+.dossier-portrait.dossier-mark::before {
+  top: 50%; bottom: auto;
+  transform: translate(-50%, -50%);
+  width: 96%; height: 96%;
+  background: radial-gradient(56% 56% at 50% 50%, rgba(216,137,90,0.15) 0%, rgba(216,137,90,0.05) 46%, rgba(216,137,90,0) 72%);
+}
+.dossier-portrait.dossier-mark img { width: 340px; vertical-align: middle; }
+// SEBE mark as a small navbar logo
+.navbar-brand-container .navbar-logo { max-height: 30px; width: auto; }
+
 .dossier-eyebrow {
   display: block;
   font-family: $font-family-sans-serif;
