@@ -29,3 +29,10 @@ __pycache__/
 .RData
 .Rproj.user/
 .gstack/
+
+# Session ledgers (meta, not site content)
+session_ledger_*.md
+
+# AI-agent working docs (private notes, repo is public)
+AGENTS.md
+CODEX_PORT_PLAN.md
