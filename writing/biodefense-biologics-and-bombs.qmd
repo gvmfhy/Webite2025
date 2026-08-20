@@ -1,0 +1,124 @@
+---
+title: "Biodefense, Biologics, and Bombs"
+subtitle: "Commercial opportunity amidst crisis"
+date: 2026-07-12
+author-meta: "Austin P. Morrissey"
+categories: [biosecurity, dual-use, science-policy, biotech]
+image: /images/writing/biodefense-biologics-and-bombs/02.png
+image-alt: "Four-panel collage showing chemical products and machine tools inside Aum Shinrikyo facilities, a confiscated rifle, and an aerial view of the cult compound."
+canonical-url: https://austinpatrick.substack.com/p/biodefense-biologics-and-bombs
+featured: true
+featured-order: 4
+related:
+  - securemaxx
+  - evaluating-llm-hypothesis-generation
+  - who-wins-in-a-fight-our-good-ai-or
+---
+
+**WHAT:** Plant 'fund biodefense' into the infosphere of venture capital partners.
+
+**WHY:** Biological risk, successful weaponization of science by non-state actors, is becoming more possible. From the perspective of VCs, these threats also present neglected market opportunity, though the interventions do stratify by feasibility, with some being more VC-shaped than others
+
+**HOW:** Problem context (starting with the why), historical case study (Tokyo attacks), concrete recommendation (know your customer screening and on-shoring manufacturing), early signals of mounting political will ([National Security Commission on Emerging Biotechnology](https://www.biotech.senate.gov/wp-content/uploads/2026/06/NSCEB-Full-Report-%E2%80%93-Single-Pg-%E2%80%93-June-2026.pdf))
+
+------------------------------------------------------------------------
+
+## PROBLEM CONTEXT {#problem-context}
+
+::: {.dropcap}
+Americans should be prepared for a Mythos-like moment for biology, where the national security apparatus wakes up to increasingly drastic and far reaching risks posed by frontier artificial intelligence. [SecureBio](https://securebio.org/benchmarks/), a nonprofit organization focused on securing the future against catastrophic pandemics, writes "On most biology tasks that have been measured, leading AI models perform at or above human-expert level, and have been doing so on most biology benchmarks since 2024. Examples include troubleshooting laboratory experiments, designing DNA sequences for working with viral pathogens, and writing code to drive protein-design tools and lab automation."
+:::
+
+While it remains unclear how or when these abilities will diffuse to threat actors, they will. Chemical and biological weapons have fallen out of fashion in peer to peer warfare between nation states, for the dynamics and incentives of modern conflict do not favor it. A pernicious, if not naive, misconception is that use of these weapons has dropped because of ethical concerns. Those holding this belief should examine how armed forces favor military utility in combat. Our ethical revulsion to these weapons, I believe, is disingenuous. Asking what weapons are ethical for killing is a deeply confused question, like asking whether it's more ethical for one parent to beat their child rather than the other. Regardless, when it comes to examining a terrorist group with the goal of uncontrollable mass harm, where the incentives of peer combat no longer apply, biological weapons are on the table.
+
+Likewise, another misconception is that it is extraordinarily rare for humans to seek to cause unbounded harm; this is not true in the way that it matters. Even if the base rate of such personalities is 0.1% of the global population, when you are considering a planet with billions of people, you wind up with a substantial number of actors. To illustrate this, take a look at the figure below, which showcases location of school shootings across America. A subset of these attacks were indiscriminate, where the actor aims to kill as many as possible.
+
+![](/images/writing/biodefense-biologics-and-bombs/01.png){fig-alt="Map of the United States with blue points marking school-shooting incidents." loading="lazy" decoding="async"}
+
+Now, consider that there exists, and will continue to exist, threat actors across the globe who organize themselves into terrorist cells, pooling their resources to achieve more than one could alone. Previously, a lack of expert knowledge served as a barrier against non-state actors who sought to create their own bioweaponization programs, such as [Aum Shinrikyo and Al-Qaeda](https://www.cnas.org/publications/reports/aum-shinrikyo-insights-into-how-terrorists-develop-biological-and-chemical-weapons). But now, aspiring bioterrorists have on demand access to infinitely patient, artificial mentors, who possess near superhuman levels of cross-domain expertise. It takes no leap of faith to see where this is headed. When threat actors have access to expertise and tutelage, they will be more likely to succeed in attacks; this has already been observed with [peer mentorship and attacks using improvised explosive devices](https://www.start.umd.edu/research-projects/comparing-failed-foiled-completed-and-successful-terrorist-attacks).
+
+Even if I am wrong in this conjecture, and the base rate of attack success remains unchanged, the perception that artificial intelligence could help a terrorist cell overcome barriers of biological expertise, more will be willing to try, and thus by nature of more attempts, more will succeed.
+
+[What then should we do, with the knowledge that biological attacks are coming?]{.mark} How do we defend ourselves when we do not know who will be responsible for such an attack, where it will first occur, or what agent will be weaponized?
+
+First, we must recognize we are vulnerable, this requires collective awakening of civil, commercial, and political bodies to the new threats that put our (relative) peace and prosperity at risk. Each of these sectors has a role to play in our national preparedness. When collectively coordinated and operating together, an obscene amount of resources, in the form of capital, brainpower, and manpower are unlocked and can be put to good use.
+
+**In brief, how should we think through defending against a biological attack?**
+
+## DETECT the threat actor before an attack occurs {#detect}
+
+One of the reasons Aum Shinrikyo failed to cause more harm than it did with the release of sarin in Tokyo's subways was [mounting police pressure](https://www.opcw.org/media-centre/news/2001/06/sarin-gas-attack-japan-and-related-forensic-investigation). Police were investigating who was responsible for an earlier sarin attack in the city of Matsumoto. As part of that investigation, they examined chemical sales records to trace purchases of sarin precursors and analyzed soil collected near Aum's compound after residents reported a foul odor. When public reporting revealed that police had detected a compound associated with sarin degradation in the soil, Aum's leadership ordered the destruction of its existing sarin supply to destroy evidence, suspecting a police raid would occur. It did not immediately manifest, but this severely reduced the operational capacity of Aum's chemical weaponization program.
+
+![](/images/writing/biodefense-biologics-and-bombs/02.png){fig-alt="Four-panel collage showing chemical products and machine tools inside Aum Shinrikyo facilities, a confiscated rifle, and an aerial view of the cult compound." loading="lazy" decoding="async"}
+
+*Source: [National Police Agency, Japan](https://www.npa.go.jp/hakusyo/h08/h080102.html)*
+
+**\[A\]** Chemical products inside the cult's facility; **\[B\]** Machine tools inside the cult's facility; **\[C\]** Confiscated rifle **\[D\]** The cult facility in Kamikuishiki Village, Yamanashi Prefecture, where the body of a notary-office director was reportedly cremated.
+
+Months later, police were investigating Aum's for other criminal activities, suspecting them as being responsible for the kidnapping of a local notary, Kiyoshi Kariya. Aum became aware of the progress of this investigation through public reporting that police had recovered the vehicle used in the kidnapping and found fingerprints. Now, the threat of police closing in was imminent.
+
+In haste, Aum's leadership planned an attack on the Tokyo subway, believing this would divert police resources and delay the raid. The attack was planned only two days before it occurred, and given that Aum had destroyed its stock of sarin months earlier, it had to begin production again, starting from a chemical precursor one member had hidden. The lack of time resulted in a poorly purified product, [yielding sarin that was only 35% pure](https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/CNAS_AumShinrikyo_SecondEdition_English_2026-06-03-173702_wuth.pdf), roughly half that used in their first attacks. Had they not acted in haste, or had they retained their former operational capacity, the attack in Tokyo would have been much worse; the dose makes the poison.
+
+**What lesson can we draw from the attacks in Tokyo for Biodefense?**
+
+1.  [Credible threat of early detection ]{.mark} increases the risks for attackers, rendering them less effective.
+
+2.  Upstream detection of chemical and biological weapons [begins with tracking who is buying what and from where.]{.mark} The precursors to these threats are known, partnership between commercial scientific vendors and authorities allows for coordinated threat surveillance, as an attacker who splits precursor orders between vendors can be flagged when the monitoring system is centralized.
+
+3.  [Regulatory pressures could create]{.mark} conditions where commercial companies are required by law to participate in coordinated oversight and customer vetting.
+
+4.  The need for compliance creates [opportunities for third party companies]{.mark} to emerge who specialize in know your customer screening, or who are licensed to perform compliance audits.
+
+![*[Safely.bio,](https://safely.bio/) a recent startup in the biological know your customer space.*](/images/writing/biodefense-biologics-and-bombs/03.png){fig-alt="Screenshot of a DNA-order customer-screening interface showing verification checks and a pass result." loading="lazy" decoding="async"}
+
+## EARLY WARNING FOR MORE DANGEROUS BIOLOGICAL THREATS {#early-warning}
+
+Chemical threats are dangerous, but can pale in comparison to transmissible biological threats, which, as a result of contagion, can be globally catastrophic. Making matters worse, it can be challenging to discern whether an outbreak is the result of natural causes or malicious intent. Additionally, the more lag time between when an attack is deployed and when harm manifests, the harder attribution becomes. The longer it takes to apprehend the attacker, the more they can attack. Chemical attacks often have a fast onset of harm, as with acute poisoning. Attacks with infectious biological agents can be slower to manifest, given that there is a delay between acquiring an infection, becoming contagious, and becoming symptomatic. Presymptomatic and asymptomatic transmission occurred during COVID-19, and worsened the pandemic. If you screen only the sick, you will miss these early intervention points. Additionally, attackers can optimize for these two variables, obscuring attribution and creating more chaos and confusion.
+
+### Metagenomic sequencing for bio-surveillance {#metagenomic-surveillance}
+
+Wastewater surveillance using metagenomic sequencing allows you to sample a wide swath of the urban population, including people who are not yet symptomatic, though its public-good nature makes it challenging to commercialize. Wastewater surveillance will not capture suburban and rural homes with their own septic tanks. It may also underrepresent outbreaks concentrated among infants, such as RSV, because babies piss in diapers. However, make no mistake, this technology has unprecedented utility as an early warning system if deployed nationally. Thus, if you are so inclined, or have philanthropic connections, this is a good place to direct money.
+
+## DEFEND against the limited physical routes through which a pathogen can be transmitted. {#defend}
+
+While we cannot predict with specificity which biological agent will be used in an attack, we can predict the most important route of exposure: [respiratory transmission.]{.mark}
+
+Our problem area thus narrows to WHERE and WHAT we breathe. Our national security would benefit from stockpiling masks, though this is unlikely to be VC-shaped. Conceptually, I view these measures as physical defenses. Here, we can organize them by moving from the inside out:
+
+1.  Masks and respirators
+
+2.  Air purification systems
+
+3.  Biohardening of infrastructure
+
+![](/images/writing/biodefense-biologics-and-bombs/04.png){fig-alt="Split black-and-white image of Japanese soldiers in gas masks during the 1937 Battle of Shanghai and British civilians wearing gas masks at the outset of World War II." loading="lazy" decoding="async"}
+
+Ensuring your civilian population has ready access to personal protective equipment in advance of an emergency makes them more resilient. Likewise, it may be possible for them to [bioharden their homes](https://defensesindepth.bio/it-may-be-possible-to-improvise-a-high-grade-bioshelter/), reducing the chance that environmental hazards infect members of the household. However, while these interventions are of tremendous social good and have high utility for biodefense, it is unclear how they could be commercialized.
+
+## DEVELOP underlying technologies and companies with non-emergency markets. {#develop}
+
+**Expect that regulatory pressures and mounting political will for national resilience will create new opportunities in this space.**
+
+In April, the Senate released a [National Security Commission on Emerging Biotechnology](https://www.biotech.senate.gov/wp-content/uploads/2026/06/NSCEB-Full-Report-%E2%80%93-Single-Pg-%E2%80%93-June-2026.pdf). In it, they conclude the U.S. government should dedicate a minimum of \$15 billion over the next five years to unleash more private capital into our national biotechnology sector. Additionally, they recommend that . . .
+
+1.  Congress must establish and fund an Independence Investment Fund, led by a non-governmental manager, that would invest in technology startups that strengthen U.S. national and economic security.
+
+2.  Congress must direct the Department of Defense to work with private companies to build commercial facilities across the country to biomanufacture products that are critical for Department of Defense needs.
+
+3.  Congress must prohibit companies that work with U.S. national security agencies and the Department of Health and Human Services from using certain Chinese biotechnology suppliers deemed to pose a national security threat.
+
+The full report goes into more detail with these recommendations, along with providing the broader national security context, where they identify an arms race critical for continued state sovereignty and prosperity. Part of this means onshoring manufacturing capacity for key chemicals and biologics, as these underpin our ability to manufacture explosive ordnance and medicine. Another is eliminating supply chain risks, where key reagents and chemical precursors are currently sourced primarily from China, enabling them to have leverage over the United States in the event of an escalated conflict.
+
+There is already evidence of well positioned, VC backed companies taking advantage of these opportunities. Manus Bio received [\$32.4 million in 2024](https://www.manusbio.com/articles/manus-awarded-32-million-in-government-funding) and another [\$15 million in 2026](https://www.aspr.gov/news-updates/newsroom/2026-02/invests-15m-secure-first-us-source-critical), both through HHS's Defense Production Act Title III program. The first award funded a domestic manufacturing platform whose first product would be artemisinin, a key starting material for antimalarial medicines. At the time, [\~97%](https://media.path.org/documents/SSA_2-pager_v2_FINAL_clean_Proofed_08Oct2024.pdf) of the artemisinin used in global-health supply chains came from China. The second award was to onshore shikimic acid, a precursor to Tamiflu, a medical countermeasure for influenza. Again, at the time, the American supply for this medical precursor was coming entirely from China.
+
+Now, turning our attention to chemical precursors for explosive ordnance, the U.S. Army awarded a [\$435 million contract](https://www.army.mil/article/281247/u_s_army_awards_contract_for_domestic_tnt_production) to Paligen Technologies, then known as [Repkon](https://www.defenseandmunitions.com/news/repkon-usa-reborn-as-paligen-technologies/), to onshore TNT production. An existing gap could be onshoring the production of nitrocellulose. As the [Army Science Board](https://asb.army.mil/Portals/105/Reports/2020s/ASB%20FY%2023%20DMIB%20Report%20%28E%29.pdf?ver=jZRw9v2VxCIqIvsBFsDG4g%3D%3D) writes, "energetics production (a major component in Army and Joint munitions production) and nitrocellulose production are single points of failure and require immediate attention." They specify that nitrocellulose production underpins one type of laser-guided rocket, the [Advanced Precision Kill Weapon System](https://en.wikipedia.org/wiki/Advanced_Precision_Kill_Weapon_System).
+
+Taken together, this suggests that [startups that can identify a supply-chain risk]{.mark} involving a critical precursor relevant to either defense or public health, and mobilize the domestic expertise needed to onshore its production, [would be well positioned to take advantage of this trend.]{.mark}
+
+------------------------------------------------------------------------
+
+the future will be strange!
+
+warmly,
+
+austin

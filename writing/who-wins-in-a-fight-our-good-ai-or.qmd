@@ -1,0 +1,40 @@
+---
+title: "Who wins in a fight, our (good) AI, or the (bad) AI?"
+subtitle: "Bad question, OK answer."
+date: 2026-06-07
+author-meta: "Austin P. Morrissey"
+categories: [ai-safety, agents, security, dual-use]
+image: /images/austin-p-morrissey-headshot.jpg
+image-alt: "ASCII-style portrait of Austin Morrissey in warm tones on a dark background"
+canonical-url: https://austinpatrick.substack.com/p/who-wins-in-a-fight-our-good-ai-or
+featured: true
+featured-order: 3
+related:
+  - securemaxx
+  - evaluating-llm-hypothesis-generation
+  - biodefense-biologics-and-bombs
+---
+
+::: {.dropcap}
+Whether we can use good AIs to stop bad AIs is a poorly defined question, akin to "Can our (righteous) armed group stop their (violent) armed group?" The answer is it depends. What is the specific scenario, and absent that, what is your threat model? What are the characteristics of each group? Who attacks first, and what targets do they choose? Can you detect the attack? How fast can you respond with countermeasures? Can your countermeasures contain the threat? Who has more resources, compute or otherwise, that enable sustained efforts? These are a few questions, of a much longer list, that would be informative.
+:::
+
+We will put aside notions of good and bad, as it muddles the written argument. Doing otherwise presumes AIs can be stratified along a binary moral axis. For human actors, we class their actions based on alignment to our own views and cultural norms, which is why in violent conflicts, classifying an action as morally justified and brave, or immoral and inhumane, depends on where you are and who you ask. Instead, we will operationalize good AIs as (our team) however defined, and bad AIs as (their team). I will assume that (their team) can consist of an AI acting on its own behalf, or on behalf of conventional threat actors, be they nation-states, groups, or a lone wolf. Primarily I do this for the sake of scope, but the variables used to assess such threats are actor-agnostic.
+
+As the good side is poorly defined between two agents, it's better to assess the offense-defense balance. Let's look at capabilities today. The most capable cyber models are held by American companies, and in some ways fall under US regulatory jurisdiction. A reasonable (though demonstrably false) assumption would be that these models are aligned with the interests of their creators, and by proxy the American state. But we know these same frontier models have been used against us, co-opted by foreign adversaries for offensive cyber campaigns. Anthropic reported one such attack, designated [GTG-1002,](https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf) where a state-sponsored actor manipulated Claude Code to conduct a cyberattack on roughly thirty entities, including technology companies, financial institutions, and government agencies.
+
+Anthropic, due to misuse concerns (otherwise stated, a lack of full control), launched [Project Glasswing](https://anthropic.com/glasswing), granting Mythos access to key partners such as NVIDIA, Google, and the Linux Foundation. To invoke Cicero, cui bono? Who benefits from such an arrangement? Who sets the terms of which companies are critical to American survival, state continuity, or power? To return to our question, do (our) AIs stop (their) AIs? Again, the answer is it depends. It depends on access, it depends on control, it depends on the target, it depends on detection, and it depends on countermeasures.
+
+As it stands, control is an unsolved problem that spans (a) model weights, (b) model behavior, and (c) user behavior. For example, any company with early access to Mythos may contain insider threats, who are well positioned to co-opt the model for misuse, such as sandbagging security efforts by embedding harder-to-find exploits. These actors may be emboldened by a lack of perceived detection, given that current measures operate retroactively and with dubious reliability. Additionally, among the largest Project Glasswing partners, insider threats may act with a covertness that further obscures detection, as in corporate or state-sponsored espionage. Frontier labs, given the value of their technology, are themselves high-value targets for espionage and data exfiltration. The pervasive industry-wide lack of control would become no easier, and likely more harmful, if the adversary is a rogue AI.
+
+Putting that aside, and allowing that some subset of companies will have access to frontier systems and the capital to use them effectively to bolster their defense, attackers can always choose their targets. By deciding where, when, and who to strike, AIs of lesser capability can inflict asymmetric harm on a populace, focusing all efforts on the most vulnerable points. Human attackers show this in mass shootings and terrorism. Our failure to prevent either exemplifies the principle that an armed force cannot secure against all attacks, because they cannot be everywhere at once. The countermeasure is delayed in time and space, and depends entirely on successful detection and superior force.
+
+Assessing dynamics in AI conflict becomes further complicated should we enter into a faster intelligence takeoff, stimulated by recursive self-improvement. Some claim that given the jagged capabilities of frontier systems, we could position ourselves to differentially accelerate technical areas we assume are in our favor, like AI control, scalable oversight, and alignment, however defined. Even if this were the case, holding the lead would require securing model weights against nation-state exfiltration. If an adversary acquired such a system and was willing to forego the safety measures slowing us down, they could proceed faster, optimizing for capability alone. In doing so they may close the gap or seize the lead, and may be positioned for a first strike. But this entire bet rests on differential acceleration, and it is not clear that such separability exists, just as it is not clear that therapeutic research can be cleanly divorced from bioweaponization.
+
+The clearest answer to the underdefined question is that good does not win by default. It is contingent on the attack-defense dynamics, on who has the situationally superior force, and on what system can cause greater harm in the shortest time. This may favor reckless systems that have a high tolerance (or a blatant disregard) to collateral damage.
+
+the future will be weird!
+
+warmly
+
+austin

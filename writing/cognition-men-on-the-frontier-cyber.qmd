@@ -1,0 +1,128 @@
+---
+title: "Whoever Colonizes This Peak Will Rule the World"
+subtitle: "A short story and research proposal"
+date: 2026-07-25
+categories: [ai-safety, biosecurity, security, dual-use, fiction, research-proposal]
+image: /images/writing/cognition-men-on-the-frontier-cyber/01.webp
+canonical-url: https://austinpatrick.substack.com/p/cognition-men-on-the-frontier-cyber
+---
+
+**\<X\>** We received a message from someone asking for help with their cochlear implant, which they believe has been hacked. Kind of surreal. I told them their best bet was to contact the device manufacturer, and I apologized that we weren't equipped to help.
+
+**\<A\>** It's a strange world, where it becomes hard to deduce from afar whether such a person is experiencing paranoia or not. In 2002, if you said you heard voices from your computer that dynamically responded to you, exposed lies, espoused truth, and acted with authority as if they were intelligent adjudicators of moral affairs, you were unwell. Now, if someone said that . . . it's reasonable. And the bar for being unwell shifts somewhere else.
+
+------------------------------------------------------------------------
+
+**\<A\>** I am often out rather late at night, between home and work. Last week, I came across a disheveled older woman asking for help. She asked for cash and a sweater. We were walking in the same direction and chatted for a bit. She asked what I did. I told her I was researching biosecurity and AI, explaining that we had somehow taught computers to speak and that this had come with a host of other capabilities and risks.
+
+::: {.dropcap}
+"How is that possible?" she asked.
+:::
+
+"It's a good question. I don't really know." I botched this question at an OpenAI interview recently; I really do not know.
+
+"Do you think people will become AIs? If you saw someone and knew they were an AI, would you tell them?"
+
+The question was asked from a place of semi-delusion. It was delivered in the tone of someone asking: Do I tell my doctor I know he's a Russian spy? But it was a good question. I thought of the exponential growth of AI writing, of people training themselves to speak and write like machines and consulting them about emotional affairs as if they were close confidants.
+
+"Yes. I do think people are becoming like AIs. No, I would not tell someone I thought they were an AI. It would do no good, and they would likely respond negatively."
+
+------------------------------------------------------------------------
+
+## Golden City
+
+![](/images/writing/cognition-men-on-the-frontier-cyber/01.webp){fig-alt="Black-and-white aerial photograph of a small mountain town."}
+
+In a village, not long ago, there was cause for concern amongst vaguely observant townsfolk, and great reason for excitement. The town was tiny, but despite its size, it called itself Golden City. It was on the western frontier, where Colorado's mountains meet rolling, open plains. Snowmelt from the mountain peaks flowed down toward the town, cutting and carving through rock. A gentle force, applied over time, cuts deep; the elderly relished this and told their children to pay attention.
+
+The town's location was strategic, situated at the opening of the gorge, where it could supply operations deeper in the mountains with food grown in the eastward plains and send off spoils brought down from the mountains. Location, location is everything; the elderly knew this and told their children to pay attention. Gold was everywhere, so it seemed.
+
+Early on, you could find it in the water. Men had flocked to the frontier in search of it. These were industrious men unified by the hallmarks of the American spirit, sexual animals of tremendous drive, seduced by the prospect of fortune, aroused by the mental image of risk bound to reward. His desires are so insatiable that, if there weren't so many of us, it would be delirium. To give you an idea of the state of affairs, a [census](https://www2.census.gov/library/publications/decennial/1860/population/1860a-38.pdf) of the Colorado territories reported roughly 32,000 men and 1,000 women in the area.
+
+There was an electric, overwhelming masculine energy in the air --- partly homoerotic, partly fraternal, and marked by a myriad of other emergent characteristics. I won't belabor the point with more names for these characteristics. I've run out of words, and you have met groups of men. What were we talking about? Right, Golden City.
+
+<figure class="substack-figure">
+<img class="img-fluid" src="/images/writing/cognition-men-on-the-frontier-cyber/02.jpeg" alt="Pete&#x27;s store at Golden City, Colorado">
+<figcaption>Men, boys and a few dogs on the covered porch of a grocery store in Golden. <a href="https://digital.denverlibrary.org/nodes/view/1115803">Source: Denver Public Library</a></figcaption>
+</figure>
+
+Golden City, the American frontier, the spirit of the pioneer, and the mountaineer, he who ascends to descend, to tell the townsfolk all that he has seen.
+
+> I have been to the mountain top. I have seen the promised land. You follow the stream through the gorge, where the flakes of gold concentrate. The path is treacherous. I know it to be so. The trees get smaller as you ascend, the oxygen thins, but you mustn't stop. Heed my warning and never stop. Do not slow down. There is a reason nothing grows at great heights. But persevere, for far past the tree line, the ground again becomes covered in gorgeous roots, the vasculature of the mountain, visible only to the bold. It has veins of gold. It bears the fruits of progress.
+
+The townspeople watched the speaker with focus. He was industrious, known by all to know about general directions toward gold.
+
+> I have been to the mountain top. I have fallen to my knees and wept at that golden, glowing place. At that altitude, I could see where you stand, but you could not see me, for I had ascended. But it is not out of reach for you. The gold on that mountain belongs to you, people of Golden, if you have the courage. The path ahead is dangerous, deadly, but it is the direction of progress; it is the direction of the promised land. Come with me, those of you who dare, who feel a responsibility for the future, and we will make it so. We will move the frontier.
+>
+> You will better your own lot, the lot of your children, and you, people of Golden, will be the pioneers of a free world.
+
+And like that, men of this sort began to rally the townspeople. The group becomes a herd, and every herd needs a shepherd, he who knows the way, who compassionately relieves the thinking animal of the burden of self-examination and independence, both of which are dizzying and increasingly considered uncouth. He who defines the direction of progress and is met with acceptance faces no resistance when labeling its enemies. The men were not alone in these territories. The frontier was contested. Indigenous tribes seemed to be everywhere, like the Cheyenne. And fear is a way to unite men.
+
+> We must make haste in manifesting our vision. As you all have heard, the savages have stolen our dynamite; they raid our trains to take our guns, our food, our gold. They are a brutal people. They have no notion of laws, of God-given morality, of democracy. You have heard of the violence. More is coming.
+
+His voice rose in intensity.
+
+> We must arm ourselves. There are only two futures available to us, success or defeat; a heaven on earth or absolute annihilation; liberty or anarchy. He who gets behind in a race must forever remain behind or run faster than the man in front. The savages know this; do not underestimate your enemy. Whoever colonizes this peak will rule the world. We men of virtue must get there first. We will be gracious to our enemy, but if they surpass us, if they summit, there will be no men of virtue. At best, we will be killed; most of us will be subjected to the most cruel conditions, the most inhumane treatment, and this will stretch on for generations to come. Your great-grandchildren will curse you for allowing it.
+
+The situation had now turned dangerous. Men who had first arrived on the frontier to better their own lot had forgotten their selfishness. If there is one cardinal sin that precedes cruelty, it is this. Now their work had a moral vision, a sense of urgency, an enemy, and a purpose. Do you find it strange that you can ask a man what he dreamed about last night, and most can't remember? But ask him who the enemy of his people is, what threatens his nation and his way of life, and he has an answer. He knows this one in his bones.
+
+Soon there would be bloodshed in the mountain streams. The elderly had seen moments like this; they told their children to pay attention. But there were few elders and too many adult children.
+
+<figure class="substack-figure">
+<img class="img-fluid" src="/images/writing/cognition-men-on-the-frontier-cyber/03.png" alt="">
+<figcaption><span>An unidentified worker stands with his arms crossed while the surrounding crowd gives the Nazi salute at the Blohm &amp; Voss shipyard in Hamburg, June 13, 1936.</span></figcaption>
+</figure>
+
+At the time (1862), typical weapons on the frontier were still loaded with black powder. They were slow to shoot. But with materials deep in the mountain, it became feasible to make faster guns. Tradesmen would manufacture them on-site and send them as shipments down the stream through the gorge, where the townsfolk could grab them. These fast-shooting guns were magnificent, works of art and awe. Everyone agreed they were more dangerous, which was all the more reason to keep them in our hands and out of our enemies' grasp.
+
+The motto of the time was *Peace Through Strength*, plastered on signs throughout the communities as a reminder of the shared mission. It was not all bravado and recklessness, for the good-hearted labored earnestly, with passion and the conviction that making better weapons, if they could become powerful enough and fast enough, would end violence.
+
+The mountain also supplied an abundance of nitrate ore, allowing on-site production of better explosives and, with those larger blasts, further penetration into the mountain, exposing more material. The cycle accelerated. Better yet, these nitrates also improved fertilizer and crop yields, strengthening the food supply chain across the frontier. Again, such advancements had to be carefully guarded. Everyone agreed it was more dangerous.
+
+A few townsfolk started to think through the implications of dynamite and guns. To shoot someone, the townsfolk would first have to see them. To blow something up, they'd first have to walk there and plant the explosive. It seemed inevitable that the next invention would be to shoot an explosive, to have it fly across the sky and hit a target you could not see. To a few, that seemed more dangerous. For most, though, this was too far-fetched, too much like science fiction, too distal a consideration. They had heard of missiles in the classic sense, a thrown spear, and such technology was rudimentary.
+
+As time went on, those observing the mountain would hear a loud, fiery sound and then see an object lift off toward the sky, leaving a white trail of smoke behind it. At first, these events were unpredictable; sometimes there would be two in a day, then nothing for a month. Then they started to become more routine. Weekly, then every other day, and then every night. Still, the notion of a flying explosive was not considered. There were two existential threats to human life that deserved attention, flying small projectiles (bullets) and big piles of dynamite (bombs). Or three, if you count the American Indian, but only if he gets ahold of the first two.
+
+One day, during a town celebration, one of the missiles crashed into the food shed. It did not explode, but it shattered the roof and decimated the structure. This got the town's attention. The mayor, speaking to the community later that evening, said what was on everyone's mind.
+
+> I think this is a legitimate warning shot. We have to start taking the risk of big bullets that can fly seriously.
+
+Everyone was in agreement. Flying bullets that are big are dangerous, akin to a baseball thrown by a giant. There was no talk about explosives. The missile did not explode.
+
+------------------------------------------------------------------------
+
+## **National Security Risks of AI-Enabled CyberBio Offense**
+
+#### **Summary**
+
+Frontier cyber capabilities expand the attack surface for biological weaponization, but current risk evaluations assess these domains in isolation. This project will identify the most plausible, accessible, and severe ways these capabilities could be combined and map the causal pathways through which they lead to harm.
+
+#### **Description of the project**
+
+Current AI systems lower the barrier to cyberattacks while reducing the technical skill needed to complete instrumental steps in bioweaponization pathways, such as evading DNA screening or improving the design of a dispersal device.
+
+Pharmaceutical companies, well-resourced academic labs, and contract research organizations may be sufficiently hardened against data exfiltration, ransomware, or cyber threats directly tied to financial loss, but lack clear incentives to harden against insider threats seeking to cause harm. Making matters worse, this threat is liable to blindside us as a society, given that technical evaluations assess cyber and biological capabilities independently. There is a dearth of standard evaluation sets that combine them. Your goal is to move us beyond this unacceptable state of affairs and, in doing so, strengthen national and global security.
+
+To create model evaluations that assess an agent's skill across an attack pathway, from an initial cyber foothold to a biological consequence, a threat model must first be established. You will identify which paths matter most for national security and define the capabilities each path requires. For this project, you will focus on bioinfrastructure in the United States, though you need not be based there. Your national affiliation and location will have no bearing on mentee selection.
+
+#### **How does the project advance AI safety?**
+
+By assessing the intersection of two of the highest-impact near-term risks posed by AI, agentic cyberattacks and biological weaponization, the project will reveal threat pathways overlooked in the current risk landscape. In doing so, the project will provide a basis for prioritizing where and how evaluations combining these domains should be conducted, while also identifying choke points along these new threat pathways.
+
+#### **What role will the mentee play?**
+
+Mentees will have a high degree of autonomy over their projects and will be expected to manage their time and communicate proactively. I place a high value on mentees who are able to write clearly and in long form. For example, the ideal mentee can write about their progress and confusion over the course of a week, with enough context that, if I showed it to a colleague unfamiliar with their project, they would understand the mentee's thinking.
+
+------------------------------------------------------------------------
+
+Rational Biology is a reader-supported publication. To support my work, enter your email, it creates network effects.
+
+The future is coming fast. It will be weird.
+
+warmly,
+
+austin
+
+<div class="ratio ratio-16x9 substack-embed">
+<iframe allow="autoplay; fullscreen" allowfullscreen="true" frameborder="0" height="409" src="https://www.youtube-nocookie.com/embed/9nKRGznkhoQ?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728"></iframe>
+</div>

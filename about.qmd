@@ -1,16 +1,16 @@
 ---
 title: "About"
-description: "Austin P. Morrissey is an AI-safety researcher building capability evaluations that test whether AI lowers the barrier to biological misuse. Pivotal Research Fellow."
+description: "Austin P. Morrissey is an AI-safety researcher building capability evaluations that test whether AI lowers the barrier to biological misuse."
 toc: false
-image: images/austin-p-morrissey-headshot.jpg
+body-classes: utility-page about-page
+image: images/austin-p-morrissey-professional-headshot.jpg
 format:
   html:
     include-in-header:
       - _includes/about-profilepage.html
 ---
 
-<img src="images/portrait-art.png" alt="Dot-matrix portrait of Austin P. Morrissey" class="about-portrait portrait-light" />
-<img src="images/portrait-art-dark.png" alt="Dot-matrix portrait of Austin P. Morrissey" class="about-portrait portrait-dark" />
+<img src="images/austin-p-morrissey-professional-headshot.jpg" alt="Austin P. Morrissey in a professional studio portrait" class="about-photo" />
 
 My research focuses on assessing whether AI systems might meaningfully lower the barriers to weaponizing biology. My motivation is to reduce the risk of it happening.
 
@@ -26,7 +26,3 @@ The best way to understand how I think is to read my writing — here, or on my 
 - **Academic:** [Google Scholar](https://scholar.google.com/citations?user=uMwJNXEAAAAJ&hl=en) · [ORCID 0009-0007-8578-2687](https://orcid.org/0009-0007-8578-2687)
 - **Code:** [GitHub: gvmfhy](https://github.com/gvmfhy)
 - **Email:** <span id="contact-email"><a href="https://www.linkedin.com/in/austin-p-morrissey/">via LinkedIn</a></span>
-
-::: {.callout-note appearance="simple"}
-**About this site.** Built with [Quarto](https://quarto.org); source on [GitHub](https://github.com/gvmfhy).
-:::

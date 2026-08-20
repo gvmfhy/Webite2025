@@ -5,8 +5,9 @@ Emits two JSON files committed into the repo as static resources:
 
   related-index.json
       { "<slug>": [ {title, url, date, categories:[...]}, ... ], ... }
-      For each essay, its top 3 related essays by number of shared
-      categories (tie-break: more shared first, then more recent date).
+      For each essay, either the explicit slugs in its `related` frontmatter
+      or its top 3 related essays by number of shared categories (tie-break:
+      more shared first, then more recent date).
 
   link-index.json
       { "/writing/<slug>.html": {title, blurb, date}, ... }
@@ -135,6 +136,20 @@ def normalize_categories(fm: dict):
     return []
 
 
+def normalize_related(fm: dict):
+    """Return an optional, ordered list of manually curated essay slugs."""
+    related = fm.get("related")
+    if isinstance(related, str):
+        related = [related]
+    if not isinstance(related, list):
+        return []
+    return [
+        str(slug).strip()
+        for slug in related
+        if slug is not None and str(slug).strip()
+    ]
+
+
 def date_str(fm: dict) -> str:
     d = fm.get("date")
     if d is None:
@@ -164,6 +179,7 @@ def collect_essays():
             "url": f"/writing/{slug}.html",
             "date": date_str(fm),
             "categories": normalize_categories(fm),
+            "related": normalize_related(fm),
             "blurb": make_blurb(fm, body),
         })
     # Newest first; missing dates sort last.
@@ -173,7 +189,30 @@ def collect_essays():
 
 def build_related(essays):
     related = {}
+    by_slug = {essay["slug"]: essay for essay in essays}
+
+    def public_item(essay):
+        return {
+            "title": essay["title"],
+            "url": essay["url"],
+            "date": essay["date"],
+            "categories": essay["categories"],
+        }
+
     for a in essays:
+        manual = []
+        seen = set()
+        for slug in a.get("related", []):
+            if slug == a["slug"] or slug in seen or slug not in by_slug:
+                continue
+            seen.add(slug)
+            manual.append(by_slug[slug])
+            if len(manual) == 3:
+                break
+        if manual:
+            related[a["slug"]] = [public_item(essay) for essay in manual]
+            continue
+
         a_cats = set(a["categories"])
         scored = []
         for b in essays:
@@ -188,15 +227,7 @@ def build_related(essays):
         top = scored[:3]
         if not top:
             continue
-        related[a["slug"]] = [
-            {
-                "title": b["title"],
-                "url": b["url"],
-                "date": b["date"],
-                "categories": b["categories"],
-            }
-            for _, _, b in top
-        ]
+        related[a["slug"]] = [public_item(b) for _, _, b in top]
     return related
 
 

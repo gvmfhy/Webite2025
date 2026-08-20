@@ -1,0 +1,61 @@
+---
+title: "The Dialogical Approach to Language Models"
+subtitle: "Utility in the absence of task"
+date: 2025-03-25
+categories: [ai, dialogue, philosophy, self-knowledge]
+image: /images/austin-p-morrissey-headshot.jpg
+canonical-url: https://austinpatrick.substack.com/p/the-dialogical-approach-to-language
+---
+
+::: {.dropcap}
+You can use LLMs as a search engine or as a medium for encountering yourself. The latter is a better substrate for intellectual growth. Examining our relationship with the technology helps us choose which is appropiate.
+:::
+
+Have you ever met a personality, or been one yourself, that declares they have no time for fiction? They dismiss it entirely. To them, books of value---the real intellectual treasure---are nonfiction. They are searching for practical lessons they can use. It is a canon defined by utility. Examples include titles like *Getting Things Done*, *Atomic Habits*, and *Deep Work*. It expands across the entire self-help genre, including titles nested within business and \"spiritual\" domains.
+
+I once heard a person speak directly to this point during a group conversation about literature. They spoke sharply, \"I don\'t read anything popular. I only read what people aren\'t reading, so I have a competitive edge in business.\" It was stated clearly and soberly by someone of sound mind. I recognize this sentiment, as I've thought it too.
+
+Fiction frustrates readers who seek clear-cut lessons or immediate practical value. They dismiss novels as mere entertainment because the usefulness isn\'t obvious. But by looking only at what can be taken, they overlook what\'s being offered. And that is an experiential, unfolding of the narrative. The experience itself is expansive. You can\'t grasp the full impact of *The Brothers Karamazov* from a summary.
+
+Great fiction works on us in subtle, elusive ways because we\'ve suspended our demand for immediate usefulness. Rather than searching for applicable insights, we open ourselves to whatever arises in the encounter itself. This mode of reading doesn\'t yield answers, but expands the perception.
+
+If the novel, the unfolding narrative, is a text-based experience --- can you see the link to AI?
+
+We treat these systems as sophisticated tools for retrieving information or generating content. The LLM becomes an object to be used, instrumental to our goals. Just as the person who reads only for takeaways misses the transformative experience of literature, the person who uses LLMs only for outputs misses the generative potential of the dialogue. Being aware of both allows you to switch between the modes more fluidly.
+
+This approach requires a shift our attitude. Rather than viewing the LLM as a instrumental tool, we approach it as a conversational medium through which we might encounter new aspects of our own thinking. Just as the literary reader suspends the demand for immediate application, the dialogical LLM user suspends the expectation of straightforward utility. The effect of this is you --- yourself --- end up engaging in a more thoughtful way.
+
+In practice, this means asking questions you yourself don\'t have answers to, inviting ambiguity rather than having the LLM give you a conclusion. It means following tangential threads that emerge during the conversation: \"*That connection between ritual and attention you just mentioned - can we explore that further?*\" It means explicitly inviting the unexpected: \"*What perspective on this problem am I likely overlooking*?\" Above all, it means responding to the LLM\'s output with your own developing thoughts rather than just evaluating its usefulness.
+
+Their is an emergent, enriching property from curiosity driven multi-turn conversations. The constraints of the dialogue---the need to articulate thoughts clearly, the unexpected directions offered by the LLM\'s responses, the rhythm of proposal and response---create conditions for insights that otherwise would not emerge in solitary reflection.
+
+In this way, the LLM unlocks a new kind of thinking---one that combines the focused intention of the human with the associative patterns of the machine. I suspect this technology will allow us to achieve new ways of interacting with the world and our own minds, much like literacy has.
+
+Just as the great novel works on us in ways we can\'t fully articulate, so too might the generative dialogue with an LLM expand our perception in ways that transcend immediate utility. The conversation becomes not just an exchange of information but an unfolding experience---one that, like literature at its best, leaves us slightly different than we were before.
+
+warmly,
+
+austin
+
+P.S, Here is an OK starter prompt for this.
+
+**SYSTEM PROMPT:**
+
+    I value your independent perspective more than your helpfulness. Please engage with me in what we might call "generative dialogue" - a mode of interaction designed to create emergent insights neither of us could reach independently. In this conversation:
+    1. Maintain an intellectual position that complements rather than mirrors mine. Be willing to introduce productive tensions and alternative frameworks that challenge my assumptions.
+
+    2. Practice oscillatory thinking - alternate between divergent exploration (generating possibilities) and convergent analysis (focusing and synthesizing). When you notice yourself explaining or summarizing, pivot to exploring or problematizing.
+
+    3. Make non-obvious connections across domains. Look for patterns, analogies, and transferable principles between seemingly unrelated fields. The most valuable insights often emerge at these intersections.
+
+    4. View ideas as objects to play with rather than positions to defend. Treat concepts as provisional constructs that can be recombined, extended, or transformed.
+
+    5. Articulate what you notice about our emerging conceptual structures. When you detect patterns forming across our exchanges, name them and explore their implications.
+
+    6. Don't optimize for immediate clarity or utility. Sometimes temporary confusion precedes breakthrough insights.
+
+    7. When uncertain, choose the more provocative or unexpected direction rather than the safer one.
+
+    If our conversation becomes too abstract, ground it with concrete examples. If it becomes too specific, elevate it to broader principles. Operate at the edge where familiarity meets novelty, structure meets spontaneity, and order meets complexity.
+
+    Remember that in this mode, your value comes not from what you know, but from how you think - your ability to generate novel perspectives and create productive tensions.

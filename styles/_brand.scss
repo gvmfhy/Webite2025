@@ -116,7 +116,7 @@ h4 {
 
 // === Section breaks — horizontal rules become a dot-matrix divider ===
 // Markdown `---` produces an <hr>; we render it as a short, centered row of
-// small dots — echoing the dot-matrix portrait. Subtle, terracotta-tinted.
+// Small dots — a subtle, terracotta-tinted research-grid motif.
 hr {
   border: none;
   width: 100%;
@@ -194,28 +194,403 @@ pre {
   font-weight: 600;
 }
 
-// === Navbar — minimal, less prominent ===
-// Gwern has no navbar; we keep one but make it light.
+// === Editorial masthead navigation ===
+// Quarto still supplies search, theme, active-link and collapse behavior, but
+// the visual treatment is an unpinned line of type rather than a full-width bar.
+#quarto-header,
+#quarto-header.headroom,
+#quarto-header.fixed-top {
+  position: relative;
+  inset: auto;
+  z-index: 20;
+  background: transparent;
+}
+
+// `pinned: false` changes the header's positioning, but Quarto retains the
+// fixed-navbar body offset. Remove that legacy spacer so the masthead begins at
+// the actual top of the page.
+body.nav-fixed { padding-top: 0 !important; }
+
 .navbar {
   font-family: $font-family-sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   letter-spacing: 0.005em;
-  border-bottom: 1px solid var(--bs-border-color);
-  padding: 0.4rem 1rem;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0.65rem 0;
   min-height: 0;
 }
 
+.navbar-container {
+  width: min(100% - 2rem, 1120px);
+  min-height: 44px;
+  margin-inline: auto;
+  padding: 0 !important;
+}
+
+.navbar-brand-container {
+  margin: 0 auto 0 0 !important;
+}
+
 .navbar-brand {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   font-family: $font-family-serif;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: -0.008em;
+  font-size: 1.02rem;
+  padding: 0;
 }
 
 .navbar .nav-link {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
   font-size: 0.875rem;
-  padding: 0.25rem 0.7rem !important;
+  padding: 0.25rem 0.75rem !important;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.28rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.navbar-toggler,
+.quarto-navbar-tools .quarto-navigation-tool,
+#quarto-search .aa-DetachedSearchButton {
+  width: 44px !important;
+  min-width: 44px !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  border-radius: 999px;
+}
+
+.quarto-navbar-tools .quarto-navigation-tool,
+#quarto-search .aa-DetachedSearchButton { display: inline-flex !important; }
+
+// Bootstrap normally owns the collapse breakpoint. Keep its desktop `none`
+// instead of forcing the hamburger into every viewport.
+.navbar-toggler { display: none !important; }
+
+.quarto-navbar-tools {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+#quarto-search {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.aa-Form:focus-within {
+  box-shadow: 0 0 0 2px $primary !important;
+}
+
+.aa-Item[aria-selected="true"],
+.aa-Item[aria-selected="true"] * {
+  color: #1A1A1A !important;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: #1A1A1A;
+  color: #F5F1EA;
+  font-family: $font-family-sans-serif;
+  font-size: 0.875rem;
+  transform: translateY(-160%);
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+// === Corner lockup + full-screen editorial index ===
+// The generated Quarto navbar remains available as a no-JS fallback. Once the
+// replacement successfully initializes, site-ui.js adds `.site-index-ready`.
+.site-corners { display: none; }
+
+html.site-index-ready #quarto-header { display: none !important; }
+
+html.site-index-ready .site-corners {
+  position: absolute;
+  z-index: 80;
+  top: 1.75rem;
+  left: max(1.75rem, calc((100vw - 1180px) / 2));
+  right: max(1.75rem, calc((100vw - 1180px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.site-lockup,
+.site-index-trigger {
+  pointer-events: auto;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+}
+
+.site-lockup {
+  gap: 0.75rem;
+  margin-left: -0.45rem;
+  font-family: $font-family-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0.9;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.site-lockup:hover {
+  color: inherit;
+  opacity: 1;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.site-lockup img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.site-index-trigger {
+  gap: 0.7rem;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.site-index-trigger::after {
+  content: "+";
+  color: #E39B6E;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.site-index-trigger:hover::after { transform: rotate(90deg); }
+
+body.home-page .site-lockup,
+body.home-page .site-index-trigger,
+body.quarto-dark .site-lockup,
+body.quarto-dark .site-index-trigger { color: #F1EDE5; }
+
+body.quarto-light:not(.home-page) .site-lockup img { filter: invert(1); }
+
+html.site-index-ready body:not(.home-page) #quarto-content {
+  padding-top: 5rem;
+}
+
+body.site-index-open { overflow: hidden; }
+
+dialog.site-index {
+  inset: 0;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #101112;
+  color: #F1EDE5;
+}
+
+dialog.site-index::backdrop { background: rgba(0, 0, 0, 0.76); }
+
+.site-index__sheet {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 2rem max(2rem, calc((100vw - 1180px) / 2));
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.site-index__watermark {
+  position: absolute;
+  left: -8rem;
+  bottom: -14rem;
+  width: min(52vw, 44rem);
+  opacity: 0.035;
+  pointer-events: none;
+  user-select: none;
+}
+
+.site-index__head,
+.site-index__foot {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-index__identity {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-index__identity:hover { color: inherit; text-decoration: none; }
+.site-index__identity img { width: 34px; height: 34px; object-fit: contain; }
+.site-index__identity span,
+.site-index__identity strong,
+.site-index__identity small { display: block; }
+
+.site-index__identity strong {
+  font-family: $font-family-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.site-index__identity small {
+  margin-top: 0.2rem;
+  color: #716F6A;
+  font-family: $font-family-monospace;
+  font-size: 0.58rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-index__close {
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: #F1EDE5;
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.site-index__close span { color: #E39B6E; font-size: 1rem; }
+
+.site-index__links {
+  position: relative;
+  z-index: 1;
+  width: min(49rem, 100%);
+  margin: auto 0 auto auto;
+  padding: 4rem 0;
+}
+
+.site-index__links a {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: baseline;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid rgba(241, 237, 229, 0.14);
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-index__links a[aria-current="page"] {
+  border-bottom-color: rgba(227, 155, 110, 0.55);
+}
+
+.site-index__links small {
+  color: #E39B6E;
+  font-family: $font-family-monospace;
+  font-size: 0.67rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.site-index__links strong {
+  font-family: $font-family-serif;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.site-index__links a:hover strong,
+.site-index__links a:focus-visible strong {
+  color: #E39B6E;
+  transform: translateX(0.4rem);
+}
+
+.site-index__foot {
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(241, 237, 229, 0.14);
+  color: #716F6A;
+  font-family: $font-family-monospace;
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.site-index__utilities { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+.site-index__utilities button,
+.site-index__utilities a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-index__utilities button:hover,
+.site-index__utilities a:hover { color: #E39B6E; }
+
+:where(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 2px solid $primary !important;
+  outline-offset: 3px !important;
+  box-shadow: none !important;
 }
 
 // === Article meta — small caps, not ALL CAPS ===
@@ -232,6 +607,81 @@ pre {
   font-weight: 500;
   opacity: 0.75;
 }
+
+// Server-rendered essay byline: name and date on one compact line.
+.quarto-title-meta {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+  font-variant-caps: normal;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  opacity: 1;
+}
+
+.quarto-title-meta > div {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.quarto-title-meta > div + div::before {
+  content: "·";
+  margin-right: 0.65rem;
+  color: $primary;
+}
+
+.quarto-title-meta-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.quarto-title-meta-contents,
+.quarto-title-meta-contents p { margin: 0 !important; }
+
+.quarto-title-meta .author a { font-weight: 600; }
+
+body.writing-index .quarto-title-meta { display: none !important; }
+
+.quarto-title .quarto-categories .quarto-category {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.035em;
+  opacity: 0.82;
+  padding: 0.3rem 0.5rem;
+}
+
+// Emergency wrapping for long references and contact addresses. This fixes
+// real horizontal scrolling without hiding overflow or clipping the text.
+main.content,
+#quarto-document-content,
+.column-margin,
+aside.margin-aside { min-width: 0; }
+
+#quarto-document-content a,
+.column-margin a,
+aside.margin-aside a,
+.footnotes a,
+#contact-email a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+// Quarto's desktop TOC remains untouched; a cloned native disclosure appears
+// only when the sidebar version no longer fits.
+.compact-toc { display: none; }
 
 // Listing pages — make essay titles serif and prominent
 .listing-title {
@@ -252,65 +702,51 @@ pre {
 .listing-subtitle:empty { display: none; }
 
 // === Featured list (writing/index.qmd) ===
-// Text-forward curation: no thumbnails. Featured pieces get a quiet terracotta
-// rule on the left and a touch more size than the archive, so they read as
-// "start here" without shouting. The title carries the click affordance.
-//
-// Quarto's `type: default` listing renders `.quarto-post` rows (body + metadata),
-// NOT a table — so we scope to `#featured .quarto-post` (the Featured section
-// only; Archive is `#all-writing`).
+// A custom template makes each row exactly one semantic link. The visible card
+// and the actual hit area are now the same size.
 #featured {
-  .quarto-listing { margin-top: 1rem; margin-bottom: 3rem; }
+  .quarto-listing { margin-top: 1rem; margin-bottom: 1.75rem; }
 
-  // Kill any thumbnail chrome the default template might emit
-  .thumbnail-image,
-  .listing-item-img-placeholder,
-  .quarto-post .image-right > a > img,
-  .quarto-post img { display: none; }
-
-  .quarto-post {
-    // Each featured row: a deliberate curation card with a terracotta left rule
-    // at rest (reads as "start here"), lifting to full strength on hover.
+  .featured-card {
     display: flex;
     align-items: baseline;
     gap: 1.25rem;
     padding: 1.05rem 1.1rem;
     margin: 0;
-    border: none;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
     border-left: 2px solid rgba(196, 112, 43, 0.5);
     transition: border-color 0.15s ease, background-color 0.15s ease;
 
-    & + .quarto-post { margin-top: 0.4rem; }
+    & + .featured-card { margin-top: 0.4rem; }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       border-left-color: $primary;
       background-color: rgba(196, 112, 43, 0.05);
-      .listing-title a { color: $primary; }
-    }
-
-    .body { order: 2; flex: 1 1 auto; }
-
-    // Reading-time sits as a quiet left-aligned chip, fixed-width so titles align
-    .metadata {
-      order: 1;
-      flex: 0 0 4.5rem;
-      text-align: left;
+      color: inherit;
+      text-decoration: none;
+      .listing-title { color: $primary; }
     }
   }
 
+  .featured-card__body { flex: 1 1 auto; min-width: 0; }
+
   .listing-title {
+    display: block;
     margin-bottom: 0.25rem;
-    a {
-      font-family: $font-family-serif;
-      font-weight: 600;
-      font-size: 1.35rem;
-      line-height: 1.25;
-      letter-spacing: -0.008em;
-      transition: color 0.15s ease;
-    }
+    font-family: $font-family-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    letter-spacing: -0.008em;
+    transition: color 0.15s ease;
   }
 
   .listing-subtitle {
+    display: block;
     font-family: $font-family-serif;
     font-style: italic;
     font-size: 1.02rem;
@@ -321,6 +757,8 @@ pre {
 
   // Reading-time chip — small caps, restrained
   .listing-reading-time {
+    flex: 0 0 4.5rem;
+    text-align: right;
     font-family: $font-family-sans-serif;
     font-size: 0.72rem;
     font-variant-caps: all-small-caps;
@@ -329,6 +767,95 @@ pre {
     font-weight: 500;
     opacity: 0.6;
   }
+}
+
+// === Archive list ===
+.archive-entry {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  column-gap: 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.archive-entry__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.25rem;
+  font-family: $font-family-sans-serif;
+}
+
+.archive-entry__body { min-width: 0; }
+
+.archive-entry .listing-title {
+  margin: 0 0 0.3rem;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.archive-entry .listing-title a { font-style: normal; }
+
+.archive-entry .listing-subtitle {
+  margin: 0 0 0.6rem;
+  opacity: 0.82;
+}
+
+.archive-entry .listing-reading-time {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  opacity: 0.68;
+}
+
+.archive-entry .listing-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+
+.archive-entry button.listing-category {
+  appearance: none;
+  min-height: 32px;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-family: $font-family-sans-serif;
+  font-size: 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.archive-entry button.listing-category:hover {
+  border-color: $primary;
+  color: $primary;
+}
+
+@media (max-width: 767.98px) {
+  #featured .featured-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  #featured .listing-reading-time {
+    flex: 0 0 auto;
+    text-align: left;
+  }
+
+  .archive-entry {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .archive-entry__meta {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+
+  .archive-entry button.listing-category { min-height: 44px; }
 }
 
 // Section headings on the writing index — restrained, editorial
@@ -375,14 +902,20 @@ blockquote {
 
 // === Footer — minimal ===
 .page-footer, .nav-footer {
-  font-family: $font-family-serif;
-  font-style: italic;
-  font-size: 0.85rem;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
+  font-size: 0.78rem;
   border-top: none;
-  padding: 1.5rem 1rem 2rem;
-  margin-top: 4rem;
-  opacity: 0.6;
+  padding: 1.25rem 1rem 1.75rem;
+  margin-top: 3rem;
+  opacity: 0.74;
 }
+
+.nav-footer:has(.nav-footer-center:only-child),
+.nav-footer-center { text-align: center; }
+
+.nav-footer-left:empty,
+.nav-footer-right:empty { display: none; }
 
 // === Selection picks up accent ===
 ::selection {
@@ -401,253 +934,560 @@ blockquote {
   font-weight: 600;
 }
 
-// === Themed dot-matrix portraits ===
-// Two variants ship in images/. The dark-ink portrait reads on the cream/light
-// background; the light-ink + terracotta portrait reads on the dark background.
-// This Quarto theme signals mode via a body class (quarto-light / quarto-dark),
-// NOT data-bs-theme on <html>, so we key off that. Both selectors included for
-// robustness in case a future config switches to the data-bs-theme attribute.
-body.quarto-light .portrait-dark,
-[data-bs-theme="light"] .portrait-dark { display: none; }
-body.quarto-dark .portrait-light,
-[data-bs-theme="dark"]  .portrait-light { display: none; }
-
-// About-page portrait — themed dot-matrix, large enough that the dot detail reads
-img.about-portrait {
+// About-page portrait — a web-sized derivative of Austin's selected studio photo.
+img.about-photo {
   display: block;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: min(100%, 320px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 24%;
   margin: 0.5rem 0 2rem 0;
+  border: 1px solid rgba(216, 137, 90, 0.2);
+  border-radius: 2px;
 }
 
+.writing-subscribe {
+  margin: 0.2rem 0 1.75rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(196, 112, 43, 0.55);
+  font-size: 0.9rem;
+}
+
+.writing-subscribe p { margin: 0; }
+
+body.utility-page main.content {
+  grid-column: 1 / -1 !important;
+  justify-self: center;
+  width: min(calc(100% - 2rem), 680px);
+}
+
+// Quarto still emits an empty global TOC shell on `toc: false` utility pages.
+// Its sticky background otherwise covers the left edge of the centered copy.
+body.utility-page #quarto-sidebar { display: none !important; }
+
 // =========================================================================
-// DOSSIER MASTHEAD (homepage only) — full-bleed dark band
+// HOMEPAGE DOSSIER — question-led, dark editorial opening
 // =========================================================================
-// The masthead IS the homepage hero, so suppress Quarto's default title block
-// (the duplicate "Austin P. Morrissey" + subtitle) only on the page that has it.
 body:has(.dossier-masthead) .quarto-title-block,
-body:has(.dossier-masthead) header#title-block-header {
-  display: none;
-}
-// Reclaim the space the (now hidden) title block left at the top of the column.
+body:has(.dossier-masthead) header#title-block-header { display: none; }
+
 body:has(.dossier-masthead) #quarto-document-content > *:first-child,
-body:has(.dossier-masthead) main.content > *:first-child {
-  margin-top: 0;
+body:has(.dossier-masthead) main.content > *:first-child { margin-top: 0; }
+
+body.home-page #quarto-content { margin-top: 0; }
+
+body.home-page main.content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
-// Quarto wraps page content in a centered container. To span edge-to-edge we
-// break out with the classic full-bleed trick: width:100vw + a negative margin
-// that re-centers the block on the viewport. overflow-x is guarded on <body>.
+
 .dossier-masthead {
   position: relative;
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  // Pull up to sit flush under the navbar (kill the page's top padding/title gap)
-  margin-top: -1.5rem;
-  margin-bottom: 0;
+  margin: 0 calc(50% - 50vw);
   overflow: hidden;
-  background-color: #1A1A1A;
-  background-image:
-    radial-gradient(120% 90% at 82% 28%, rgba(216, 137, 90, 0.12), rgba(216, 137, 90, 0) 56%),
-    linear-gradient(180deg, #1F1F1F 0%, #181818 100%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-  color: #E8E4DD;
+  background:
+    radial-gradient(60rem 42rem at 82% 36%, rgba(180, 92, 45, 0.075), transparent 58%),
+    #0C0D0E;
+  color: #F1EDE5;
 }
 
-// Dot texture echoing the portrait — pure CSS, fading downward
 .dossier-texture {
   position: absolute;
-  inset: 0;
+  inset: 0 0 auto;
+  height: 37rem;
   pointer-events: none;
-  background-image: radial-gradient(rgba(232, 228, 221, 0.16) 1px, transparent 1.4px);
-  background-size: 13px 13px;
-  -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
+  opacity: 0.055;
+  background-image: radial-gradient(rgba(241, 237, 229, 0.6) 0.65px, transparent 0.7px);
+  background-size: 17px 17px;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent 76%);
+  mask-image: linear-gradient(to bottom, black, transparent 76%);
 }
 
 .dossier-inner {
   position: relative;
   z-index: 1;
-  max-width: 1080px;
+  width: min(1180px, calc(100% - 3.5rem));
+  min-height: 760px;
   margin: 0 auto;
-  padding: 3.5rem 2.5rem 0;
+  padding: 7.4rem 0 4.5rem;
   display: grid;
-  grid-template-columns: 1fr 376px;
-  gap: 3rem;
-  align-items: end;
+  grid-template-columns: minmax(0, 1.07fr) minmax(420px, 0.93fr);
+  gap: clamp(3rem, 6vw, 5.3rem);
+  align-items: center;
 }
 
-// Keep copy lifted off the band's bottom edge; portrait rises flush to it
-.dossier-copy { padding-bottom: 3.75rem; }
+.dossier-copy { padding-bottom: 0.5rem; }
+
+.dossier-copy section.dossier-question { margin: 0; }
 
 .dossier-kicker {
   display: block;
+  margin: 0 0 1.35rem;
+  color: #E39B6E;
   font-family: $font-family-monospace;
   font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #D8895A;
-  margin-bottom: 1.4rem;
-}
-
-// The H1 inside the masthead — large, warm white, overriding the global title rule
-h1.dossier-name,
-.dossier-copy > h1.dossier-name {
-  font-family: $font-family-serif;
   font-weight: 600;
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
-  line-height: 1.04;
-  letter-spacing: -0.018em;
-  color: #F5F1EA;
-  margin: 0 0 0.7rem;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
-// Question-led ("low identity") masthead
 h1.dossier-question,
 .dossier-copy > h1.dossier-question {
+  max-width: 17ch;
+  margin: 0;
+  color: #F1EDE5;
   font-family: $font-family-serif;
+  font-size: clamp(3.35rem, 4.55vw, 4.1rem);
   font-weight: 600;
-  font-size: clamp(2rem, 4.2vw, 3rem);
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: #F5F1EA;
-  max-width: 19ch;
-  margin: 0 0 1.7rem;
-}
-.dossier-byline {
-  display: inline-block;
-  position: relative;
-  font-family: $font-family-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  font-variant-caps: all-small-caps;
-  letter-spacing: 0.07em;
-  color: rgba(232, 228, 221, 0.72);
-  padding-top: 1.3rem;
-}
-.dossier-byline::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 32px; height: 1px;
-  background: rgba(216, 137, 90, 0.6);
+  line-height: 1.025;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
 }
 
-// SEBE emblem in the hero slot: centered, not bottom-flush like the portrait
-.dossier-portrait.dossier-mark { align-self: center; }
-.dossier-portrait.dossier-mark::before {
-  top: 50%; bottom: auto;
-  transform: translate(-50%, -50%);
-  width: 96%; height: 96%;
-  background: radial-gradient(56% 56% at 50% 50%, rgba(216,137,90,0.15) 0%, rgba(216,137,90,0.05) 46%, rgba(216,137,90,0) 72%);
-}
-.dossier-portrait.dossier-mark img { width: 340px; vertical-align: middle; }
-// SEBE mark as a small navbar logo
-.navbar-brand-container .navbar-logo { max-height: 30px; width: auto; }
-
-.dossier-eyebrow {
+.dossier-summary {
   display: block;
-  font-family: $font-family-sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: rgba(232, 228, 221, 0.68);
-  margin-bottom: 1.8rem;
-}
-
-.dossier-lede {
-  display: block;
+  max-width: 39ch;
+  margin: 1.5rem 0 0;
+  color: #AAA69E;
   font-family: $font-family-serif;
-  font-size: clamp(1.25rem, 2.3vw, 1.55rem);
-  font-weight: 380;
+  font-size: 1.2rem;
   line-height: 1.42;
-  letter-spacing: -0.005em;
-  color: #F0ECE4;
-  max-width: 30ch;
-  margin-bottom: 2rem;
+  letter-spacing: -0.008em;
 }
 
-.dossier-meta {
+.dossier-actions {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
-  flex-wrap: wrap;
+  gap: 1.75rem;
+  margin: 2rem 0 0;
 }
-.dossier-tag {
+
+.dossier-work-link,
+.dossier-about-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.dossier-work-link {
+  gap: 0.75rem;
+  border-bottom: 1px solid rgba(212, 134, 85, 0.7);
+}
+
+.dossier-work-link span { color: #E39B6E; font-size: 0.95rem; }
+.dossier-about-link { color: #AAA69E; }
+
+.dossier-work-link:hover,
+.dossier-about-link:hover {
+  color: #E39B6E;
+  text-decoration: none;
+}
+
+.dossier-research-photo {
+  width: 100%;
+  max-width: 474px;
+  margin: 0 0 0 auto;
+}
+
+.dossier-research-photo figure { margin: 0; }
+
+.dossier-photo-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(241, 237, 229, 0.24);
+  border-radius: 2px;
+  background: #17191B;
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42);
+}
+
+.dossier-photo-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.dossier-research-photo picture { display: block; }
+
+.dossier-research-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1186 / 1280;
+  object-fit: cover;
+}
+
+.dossier-research-photo figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.85rem;
+  color: #8D8982;
+  font-family: $font-family-monospace;
+  font-size: 0.63rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dossier-research-photo figcaption span:last-child { color: #85817A; }
+
+.home-selected {
+  width: min(1080px, calc(100% - 3.5rem));
+  margin: 0 auto;
+  padding: 3.25rem 0 6rem;
+  border-top: 1px solid rgba(241, 237, 229, 0.14);
+}
+
+.home-selected-heading,
+.home-selected-heading section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+}
+
+.home-selected-heading { margin-bottom: 1.6rem; }
+
+.home-selected-heading h2 {
+  margin: 0;
+  font-family: $font-family-serif;
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.home-all-writing {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  opacity: 0.68;
+  text-decoration: none;
   font-family: $font-family-monospace;
   font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  color: rgba(232, 228, 221, 0.52);
-}
-// Inline terracotta dot separator before every tag after the first; survives wrap.
-// Symmetric horizontal gap so the dot sits between the words, not hugging the
-// preceding one ("scientist · Inspect AI", not "scientist· Inspect AI").
-.dossier-tag + .dossier-tag::before {
-  content: "·";
-  margin: 0 0.85rem;
-  color: rgba(216, 137, 90, 0.7);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.dossier-portrait {
-  align-self: end;
-  justify-self: center;
-  position: relative;
-  // Soft warm halo lifts the dark-ink portrait off the near-black band so the
-  // figure's dark suit/hair doesn't dissolve into the background. Sits behind
-  // the image (z-index), centered on the head/shoulders.
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    bottom: 0;
-    width: 125%;
-    height: 115%;
-    transform: translateX(-50%);
-    background: radial-gradient(
-      62% 58% at 50% 38%,
-      rgba(216, 137, 90, 0.22) 0%,
-      rgba(216, 137, 90, 0.08) 42%,
-      rgba(216, 137, 90, 0) 72%
-    );
-    pointer-events: none;
-  }
+.home-all-writing:hover { color: $primary; opacity: 1; text-decoration: none; }
+
+.featured-card__number { display: none; }
+
+body.home-page #listing-homepage-featured.quarto-listing { margin: 0; }
+
+body.home-page #listing-homepage-featured .featured-list {
+  border-top: 1px solid rgba(241, 237, 229, 0.14);
 }
-.dossier-portrait img {
+
+body.home-page #listing-homepage-featured .featured-card {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: baseline;
+  min-height: 92px;
+  margin: 0;
+  padding: 1.5rem 0 1.35rem;
+  border: 0;
+  border-bottom: 1px solid rgba(241, 237, 229, 0.14);
+  color: inherit;
+  text-decoration: none;
+  transition: color 150ms ease, padding-left 150ms ease;
+}
+
+body.home-page #listing-homepage-featured .featured-card:hover,
+body.home-page #listing-homepage-featured .featured-card:focus-visible {
+  padding-left: 0.4rem;
+  background: transparent;
+  color: #E39B6E;
+  text-decoration: none;
+}
+
+body.home-page #listing-homepage-featured .featured-card__number {
   display: block;
-  position: relative;
-  z-index: 1;
-  width: 376px;
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom; // flush to the band's bottom edge
+  color: #716F6A;
+  font-family: $font-family-monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
 }
 
-// Latest-writing heading needs a little air below the masthead
-.dossier-masthead + h2,
-.dossier-masthead + h2.title {
-  margin-top: 3rem;
+body.home-page #listing-homepage-featured .listing-title {
+  display: block;
+  margin: 0;
+  font-family: $font-family-serif;
+  font-size: 1.35rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.015em;
 }
 
-@media (max-width: 860px) {
+body.home-page #listing-homepage-featured .listing-subtitle {
+  display: block;
+  margin: 0.35rem 0 0;
+  color: inherit;
+  opacity: 0.68;
+  font-family: $font-family-sans-serif;
+  font-size: 0.84rem;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+body.home-page #listing-homepage-featured .listing-reading-time {
+  color: inherit;
+  opacity: 0.45;
+  font-family: $font-family-monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+body.home-page.quarto-dark #quarto-content { background: #0C0D0E; }
+
+@media (max-width: 820px) {
+  html.site-index-ready .site-corners {
+    top: 0.9rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .site-lockup { font-size: 0.86rem; }
+  .site-lockup img { width: 34px; height: 34px; }
+
+  .site-index__sheet { padding: 1.1rem 1.25rem 1.5rem; }
+  .site-index__identity small { display: none; }
+  .site-index__links { width: 100%; padding: 4rem 0 2rem; }
+  .site-index__links a { grid-template-columns: 2rem 1fr; padding: 1rem 0; }
+  .site-index__links strong { font-size: clamp(2.55rem, 13vw, 3.6rem); }
+  .site-index__watermark { width: 33rem; left: -12rem; bottom: -8rem; }
+  .site-index__foot { align-items: flex-end; }
+  .site-index__utilities { max-width: 10rem; line-height: 1.8; }
+
+  .dossier-texture { height: 30rem; opacity: 0.04; }
+
   .dossier-inner {
+    width: min(100% - 2.5rem, 620px);
+    min-height: auto;
+    padding: 5.75rem 0 3rem;
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2.75rem 1.75rem 0;
   }
-  .dossier-copy { padding-bottom: 2.75rem; }
-  // Portrait above the copy on narrow screens — reads like a dossier card
-  .dossier-portrait { order: -1; justify-self: start; }
-  .dossier-portrait img { width: 168px; }
-  .dossier-lede { max-width: 40ch; }
+
+  .dossier-copy { padding-bottom: 0; }
+  .dossier-kicker { margin-bottom: 1rem; font-size: 0.64rem; }
+
+  h1.dossier-question,
+  .dossier-copy > h1.dossier-question {
+    max-width: 16ch;
+    font-size: clamp(2.6rem, 10.8vw, 3.2rem);
+    line-height: 1.03;
+  }
+
+  .dossier-summary { margin-top: 1.15rem; font-size: 1.05rem; }
+  .dossier-actions { margin-top: 1.1rem; }
+
+  .dossier-research-photo { max-width: none; margin: 0; }
+
+  .dossier-research-photo img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 24%;
+  }
+
+  .dossier-research-photo figcaption { font-size: 0.56rem; }
+
+  .home-selected {
+    width: min(100% - 2.5rem, 620px);
+    padding-top: 2.4rem;
+  }
+
+  .home-selected-heading { margin-bottom: 1rem; }
+  .home-all-writing { display: none; }
+
+  body.home-page #listing-homepage-featured .featured-card {
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+    gap: 0.7rem;
+    min-height: 0;
+    padding: 1.2rem 0;
+  }
+
+  body.home-page #listing-homepage-featured .listing-title { font-size: 1.15rem; }
+  body.home-page #listing-homepage-featured .listing-reading-time { display: none; }
 }
 
-@media (max-width: 480px) {
-  .dossier-inner { padding: 2.25rem 1.25rem 0; }
-  .dossier-copy { padding-bottom: 2.25rem; }
-  .dossier-kicker { font-size: 0.65rem; letter-spacing: 0.16em; }
-  .dossier-portrait img { width: 150px; }
+@media (max-width: 420px) {
+  .dossier-inner { width: calc(100% - 2.25rem); padding-top: 5.4rem; gap: 1.2rem; }
+
+  h1.dossier-question,
+  .dossier-copy > h1.dossier-question { font-size: clamp(2.45rem, 10.5vw, 2.85rem); }
+
+  .dossier-actions { gap: 1.25rem; }
+  .dossier-about-link { display: none; }
+  .dossier-research-photo figcaption span:last-child { display: none; }
+  .home-selected { width: calc(100% - 2.25rem); }
 }
 
+@media (max-width: 899.98px) {
+  #quarto-margin-sidebar { display: none; }
+
+  .column-margin,
+  aside.margin-aside {
+    grid-column: body-start / body-end !important;
+    width: auto !important;
+    margin: 1rem 0 !important;
+    padding: 0.8rem 1rem;
+    border-left: 2px solid rgba(196, 112, 43, 0.45);
+  }
+
+  .compact-toc {
+    display: block;
+    width: min(calc(100% - 2rem), 680px);
+    margin: 0.75rem auto 1.75rem;
+    border-top: 1px solid var(--bs-border-color);
+    border-bottom: 1px solid var(--bs-border-color);
+    font-family: $font-family-sans-serif;
+    font-size: 0.82rem;
+  }
+
+  .compact-toc summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .compact-toc > ul {
+    margin: 0 0 1rem;
+    padding-left: 1.2rem;
+  }
+
+  .compact-toc a {
+    display: block;
+    padding: 0.35rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-container { width: min(100% - 1.25rem, 1120px); }
+
+  .navbar-brand {
+    max-width: 10.5rem;
+    font-size: 0.95rem;
+  }
+
+  .navbar-toggler { display: inline-flex !important; }
+
+  #navbarCollapse {
+    flex-basis: 100%;
+    order: 10;
+    padding-top: 0.5rem;
+  }
+
+  body.home-page #navbarCollapse.show,
+  body.home-page #navbarCollapse.collapsing {
+    margin-top: 0.35rem;
+    padding: 0.45rem 0.6rem 0.65rem;
+    background: rgba(24, 24, 24, 0.96);
+    border: 1px solid rgba(243, 238, 230, 0.14);
+  }
+
+  #navbarCollapse .quarto-navbar-tools,
+  #navbarCollapse #quarto-search {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #navbarCollapse .quarto-navigation-tool,
+  #navbarCollapse .aa-DetachedSearchButton {
+    width: 100% !important;
+    max-width: none !important;
+    flex: 1 1 100% !important;
+    align-self: stretch;
+    justify-content: flex-start;
+    gap: 0.65rem;
+    padding-inline: 0.5rem !important;
+    border-radius: 0;
+    font-family: $font-family-sans-serif;
+    font-size: 0.875rem;
+  }
+
+  #navbarCollapse .quarto-color-scheme-toggle::after {
+    content: attr(aria-label);
+  }
+
+  #navbarCollapse .aa-DetachedSearchButton::after { content: "Search"; }
+
+  // Beats the desktop `#quarto-search` control width at the mobile breakpoint.
+  #navbarCollapse #quarto-search .aa-DetachedSearchButton {
+    width: 100% !important;
+    min-width: 100% !important;
+    inline-size: 100% !important;
+    min-inline-size: 100% !important;
+  }
+
+  #navbarCollapse .nav-link {
+    min-height: 44px;
+    padding-inline: 0.5rem !important;
+  }
+
+  .quarto-title-block h1.title,
+  h1.title { font-size: clamp(2rem, 9.5vw, 2.25rem); }
+
+  .related-reading__title {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .page-footer,
+  .nav-footer {
+    min-height: 0;
+    margin-top: 2.5rem;
+    padding-block: 1.25rem;
+  }
+
+  .nav-footer {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .nav-footer-left,
+  .nav-footer-right { display: none !important; }
+  .nav-footer-center {
+    width: 100%;
+    flex: 0 1 auto !important;
+    margin: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

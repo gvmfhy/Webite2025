@@ -1,0 +1,67 @@
+<!--
+  The visible site navigation. Quarto's generated navbar remains in the page as
+  progressive fallback and as the search/theme engine; site-ui.js hides it only
+  after this replacement has initialized successfully.
+-->
+<nav class="site-corners" aria-label="Site">
+  <a class="site-lockup" href="/" aria-label="Austin P. Morrissey — Home">
+    <img src="/images/sebe-mark.png" alt="" width="40" height="40">
+    <span>Austin P. Morrissey</span>
+  </a>
+  <button
+    id="site-index-trigger"
+    class="site-index-trigger"
+    type="button"
+    aria-haspopup="dialog"
+    aria-controls="site-index-dialog"
+    aria-expanded="false"
+  >Index</button>
+</nav>
+
+<dialog
+  id="site-index-dialog"
+  class="site-index"
+  aria-labelledby="site-index-title"
+>
+  <div class="site-index__sheet">
+    <img class="site-index__watermark" src="/images/sebe-mark.png" alt="" aria-hidden="true">
+
+    <header class="site-index__head">
+      <a class="site-index__identity" href="/">
+        <img src="/images/sebe-mark.png" alt="" width="40" height="40">
+        <span>
+          <strong>Austin P. Morrissey</strong>
+          <small>AI Safety / Biosecurity</small>
+        </span>
+      </a>
+      <h2 id="site-index-title" class="visually-hidden">Site index</h2>
+      <button class="site-index__close" type="button">Close <span aria-hidden="true">×</span></button>
+    </header>
+
+    <nav class="site-index__links" aria-label="Primary">
+      <a href="/#featured" data-index-section="selected">
+        <small aria-hidden="true">01</small>
+        <strong>Selected work</strong>
+      </a>
+      <a href="/writing/" data-index-section="writing">
+        <small aria-hidden="true">02</small>
+        <strong>Writing</strong>
+      </a>
+      <a href="/about.html" data-index-section="about">
+        <small aria-hidden="true">03</small>
+        <strong>About</strong>
+      </a>
+    </nav>
+
+    <footer class="site-index__foot">
+      <div class="site-index__utilities">
+        <button type="button" data-site-search>Search</button>
+        <button type="button" data-site-theme>Light mode</button>
+        <a href="/about.html#find-me">Contact</a>
+      </div>
+      <span>London · 2026</span>
+    </footer>
+  </div>
+</dialog>
+
+<script defer src="/assets/site-ui.js"></script>

@@ -1,92 +1,132 @@
 {
+  "/writing/cognition-men-on-the-frontier-cyber.html": {
+    "title": "Whoever Colonizes This Peak Will Rule the World",
+    "blurb": "A short story and research proposal",
+    "date": "2026-07-25"
+  },
+  "/writing/biodefense-biologics-and-bombs.html": {
+    "title": "Biodefense, Biologics, and Bombs",
+    "blurb": "Commercial opportunity amidst crisis",
+    "date": "2026-07-12"
+  },
+  "/writing/drawing-big-bright-lines-for-cyber.html": {
+    "title": "Drawing Big Bright Lines for Cyber & Biological AI",
+    "blurb": "Notes from a Cannon Man",
+    "date": "2026-06-11"
+  },
+  "/writing/who-wins-in-a-fight-our-good-ai-or.html": {
+    "title": "Who wins in a fight, our (good) AI, or the (bad) AI?",
+    "blurb": "Bad question, OK answer.",
+    "date": "2026-06-07"
+  },
+  "/writing/securemaxx.html": {
+    "title": "SecureMaxx: A Lightweight Sequence Screening Tool for Agents",
+    "blurb": "A group of bionerds assembled at the London Initiative for Safe AI for a hackathon aimed at reducing biorisk. Our team produced this in under 48 hours. TL;DR…",
+    "date": "2026-04-28"
+  },
   "/writing/thinking-about-the-unthinkable.html": {
     "title": "On Thinking About the Unthinkable",
-    "blurb": "On Herman Kahn's case for writing about catastrophic risk in plain, factual language, instead of awe-laden prose that hides the danger from readers.",
+    "blurb": "There is growing and warranted concern that as AI capabilities advance, so too may the capability of non-state actors who seek to carry out a biological or…",
     "date": "2026-04-28"
   },
   "/writing/research-managers.html": {
     "title": "What makes for good research managers, mentors, and leaders?",
-    "blurb": "Eight things I've learned about good research managers and mentors: alignment, psychological safety, protected time, candid feedback, and more.",
+    "blurb": "Eight observations",
     "date": "2026-04-21"
   },
   "/writing/inference-time-compute.html": {
     "title": "Inference time compute helps agents but hurts writing",
-    "blurb": "Why a larger inference budget helps AI agents on coding and security tasks but makes their prose hollower, and what I think that says about real thought.",
+    "blurb": "AI performance tends to improve with inference time compute, but not with writing. On agentic tasks in cybersecurity, increasing your budget from 10 million…",
     "date": "2026-04-05"
   },
   "/writing/rostam-shadow.html": {
     "title": "The Sun and the Shadow of Rostam",
-    "blurb": "My retelling of the Shahnameh's tragedy of Rostam and his unrecognized son Sohrab, read as a parable for the parts of ourselves we refuse to see.",
+    "blurb": "Know yourself, or be destroyed.",
     "date": "2026-03-27"
   },
   "/writing/london-and-ai.html": {
     "title": "London & Artificial Intelligence",
-    "blurb": "Notes from working at LISA in London, on seeing how current AI models widen the CBRN threat surface, and the strange ground AI safety work occupies.",
+    "blurb": "It's a strange world",
     "date": "2026-02-23"
   },
   "/writing/evaluating-llm-hypothesis-generation.html": {
-    "title": "Evaluating LLM hypothesis generation in biology is hard",
-    "blurb": "Why evaluating AI-generated scientific hypotheses is so hard, why standard benchmarks miss what matters in the lab, and a story about mRNA and Karikó.",
+    "title": "Evaluating LLM hypothesis generation in biology is hard.",
+    "blurb": "Is it useful, is it true, and a story about mRNA.",
     "date": "2025-12-12"
   },
   "/writing/mit-lincoln-laboratory.html": {
     "title": "MIT Lincoln Laboratory & The Dual-Use Frontier",
-    "blurb": "Why I'm betting my career on dual-use research across synthetic biology, AI, RNA therapeutics, and biosecurity, and why MIT Lincoln Laboratory fits.",
+    "blurb": "Why I'm betting my career on consequential science",
     "date": "2025-11-27"
   },
   "/writing/making-software-for-non-tech.html": {
     "title": "Making Software for Your Non-Tech Small Business",
-    "blurb": "A walkthrough for non-technical owners building custom software for a small business with Superwhisper, Gemini, and Replit, in under 30 minutes.",
+    "blurb": "Personalized software no longer takes tremendous time and money.",
     "date": "2025-11-24"
   },
   "/writing/biorisk-dna-fragment-analysis.html": {
     "title": "Biorisk & DNA fragment analysis with Claude",
-    "blurb": "How I think about the social-engineering route to ordering pathogenic DNA, and what defensive dual-use AI evaluation actually has to account for.",
+    "blurb": "Forbidden Questions and Their Answers",
     "date": "2025-11-18"
   },
   "/writing/in-good-company-letter-to-redacted.html": {
     "title": "In Good Company, a Letter to [Redacted]",
-    "blurb": "A letter to a friend in Afghanistan who criticized the Taliban's morality ministry, on totalitarian states, magical thinking, and civic courage.",
+    "blurb": "Ministry for Propagation of Virtue and Prevention of Vice",
     "date": "2025-10-28"
   },
   "/writing/kandahar-afghanistan-prelude.html": {
     "title": "Kandahar, Afghanistan: Prelude",
-    "blurb": "On Malalai of Maiwand and the seven months I spent working with Afghan women whose education is criminalized: a prelude on the power of narrative.",
+    "blurb": "Stories of the Horizon of Being",
     "date": "2025-10-21"
   },
   "/writing/networking-for-spies.html": {
     "title": "Networking for Spies: Translating a Cyrillic Text with Claude Code",
-    "blurb": "I used Claude Code to translate a Russian book by two undercover SVR officers, on the vibe-coding mental model and what it says about networking.",
+    "blurb": "LLMs Beyond the Anglosphere",
     "date": "2025-10-18"
   },
   "/writing/autonomous-web-browsing-comet.html": {
     "title": "Autonomous Web Browsing with Comet",
-    "blurb": "My first impressions of Perplexity's Comet browsing agent: what it does well, its prompt-injection risk, and a transcript of its reasoning going manic.",
+    "blurb": "Quick impressions and a look at Comet's Chain of Thought Reasoning",
     "date": "2025-10-13"
   },
   "/writing/alignment-problem-isnt-theoretical.html": {
     "title": "The Alignment Problem Isn't Theoretical",
-    "blurb": "I walk through what AI alignment means, how Anthropic's PETRI framework tests for deception in safety audits, and why these worries are now mainstream.",
+    "blurb": "Deception, deployment, and automated testing with PETRI",
     "date": "2025-10-11"
   },
   "/writing/keeping-our-teeth-biotech.html": {
     "title": "Keeping our Teeth in Biotech; prelude",
-    "blurb": "On how \"vision\" got diluted into a corporate word, why originality is the opposite of safety, and why founders have to wager themselves to build.",
+    "blurb": "Personal visions other heretical hearsay",
     "date": "2025-09-24"
   },
   "/writing/gpt-5-verbal-judo.html": {
     "title": "GPT-5, Verbal Judo of Sam Altman, and the First Censored Safety Report",
-    "blurb": "I read AI model cards as ground truth: the GPT-5 launch, Sam Altman's framing, and the first METR safety report a frontier lab edited before release.",
+    "blurb": "A disturbing preview of emerging AI risk",
     "date": "2025-08-22"
+  },
+  "/writing/mentorship-and-death-a-decade-later.html": {
+    "title": "Mentorship and Death a Decade Later",
+    "blurb": "Shilem, Shalom, Salaam",
+    "date": "2025-06-06"
+  },
+  "/writing/the-dialogical-approach-to-language.html": {
+    "title": "The Dialogical Approach to Language Models",
+    "blurb": "Utility in the absence of task",
+    "date": "2025-03-25"
   },
   "/writing/why-scientists-embrace-being-wrong.html": {
     "title": "Why Scientists Embrace Being Wrong",
-    "blurb": "Why scientists treat being wrong as the engine of learning, and how the same words mean different things at the bench, the bedside, and the boardroom.",
+    "blurb": "Embracing Ignorance to Further Learning",
     "date": "2024-11-26"
   },
   "/writing/stop-thinking-about-science-start.html": {
     "title": "Stop Thinking About Science (Start Doing It)",
-    "blurb": "Why young scientists overthink at the bench, how layers of interpretation pull us away from real observation, and why science is finally about doing.",
+    "blurb": "The Hidden Cost of Overthinking in Scientific Practice",
     "date": "2024-11-21"
+  },
+  "/writing/the-azad-tree-a-tale-of-two-freedoms.html": {
+    "title": "The Azad Tree: A Tale of Two Freedoms",
+    "blurb": "From the Gardens of Persia to the Shelters of Boston",
+    "date": "2024-05-04"
   }
 }

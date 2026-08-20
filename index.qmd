@@ -1,18 +1,25 @@
 ---
 title: "Austin P. Morrissey"
-subtitle: "AI safety research on biosecurity capability evaluations"
+subtitle: "AI safety research focused on biosecurity capability evaluations"
+description: "AI safety research focused on biosecurity capability evaluations."
 toc: false
 page-layout: full
+body-classes: home-page
+image: images/austin-p-morrissey-sebe-poster.jpg
 listing:
-  id: latest-writing
+  id: homepage-featured
   contents: writing
+  include:
+    featured: true
   exclude:
     filename: "{index,hello-quarto}.qmd"
-  type: default
-  sort: "date desc"
-  max-items: 3
-  fields: [title, subtitle, date, categories]
-  date-format: "MMMM D, YYYY"
+  type: custom
+  template: _listings/featured.ejs.md
+  sort: "featured-order asc"
+  max-items: 4
+  fields: [title, subtitle, reading-time]
+  field-display-names:
+    reading-time: ""
 ---
 
 ::: {.dossier-masthead}
@@ -20,19 +27,43 @@ listing:
 :::
 ::: {.dossier-inner}
 ::: {.dossier-copy}
-[AI Safety — Biosecurity]{.dossier-kicker}
+<p class="dossier-kicker">AI Safety / Biosecurity</p>
 
-# How much could today's AI help someone trying to weaponize biology? {.dossier-question}
+# How much could today’s AI help someone trying to weaponize biology? {.dossier-question}
 
-[Austin P. Morrissey · Pivotal Research Fellow]{.dossier-byline}
+<p class="dossier-summary">AI safety research focused on biosecurity capability evaluations.</p>
+
+<p class="dossier-actions">
+  <a class="dossier-work-link no-external" href="#featured">View selected work <span aria-hidden="true">↓</span></a>
+  <a class="dossier-about-link no-external" href="/about.html">About Austin</a>
+</p>
 :::
-::: {.dossier-portrait .dossier-mark}
-<img src="images/sebe-mark.png" alt="SEBE biosecurity emblem: a gas mask within a biohazard trefoil" />
+::: {.dossier-research-photo}
+```{=html}
+<figure>
+  <div class="dossier-photo-shell">
+    <picture>
+      <source srcset="images/austin-p-morrissey-sebe-poster.webp" type="image/webp">
+      <img src="images/austin-p-morrissey-sebe-poster.jpg" alt="Austin P. Morrissey beside his Standardized Elicitation for Biosecurity Evaluations (SEBE) research poster." width="1186" height="1280" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <figcaption>
+    <span>Standardized Elicitation for Biosecurity Evaluations</span>
+    <span>SEBE</span>
+  </figcaption>
+</figure>
+```
 :::
 :::
 :::
 
-## Latest writing
+::: {.home-selected}
+::: {.home-selected-heading}
+## Selected work {#featured}
 
-::: {#latest-writing}
+[All writing →](/writing/){.home-all-writing .no-external}
+:::
+
+::: {#homepage-featured}
+:::
 :::

@@ -15,42 +15,39 @@ project:
     - "related-index.json"
     - "link-index.json"
     - "assets/interlink.js"
+    - "assets/site-ui.js"
+    - "images/austin-p-morrissey-sebe-poster.webp"
 
 website:
   title: "Austin P. Morrissey"
   site-url: https://austinmorrissey.com
   favicon: images/favicon.png
-  description: "AI safety research on biosecurity capability evaluations. Pivotal Research Fellow."
+  description: "AI safety research focused on biosecurity capability evaluations."
   open-graph: true
   twitter-card: true
   search:
     location: navbar
-    type: textbox
+    type: overlay
 
+  # Quarto's navbar remains as a progressive fallback and supplies its tested
+  # search/theme machinery. site-ui.js replaces only its visible presentation.
   navbar:
-    pinned: true
-    background: primary
-    title: false
+    pinned: false
+    background: body
+    title: "Austin P. Morrissey"
+    collapse-below: sm
+    toggle-position: right
+    tools-collapse: true
     right:
       - text: Writing
         href: writing/index.qmd
       - text: About
         href: about.qmd
-      - text: Substack
-        href: https://austinpatrick.substack.com
-      - icon: github
-        href: https://github.com/gvmfhy
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/austin-p-morrissey/
-        aria-label: LinkedIn
 
   page-footer:
     border: false
-    left: |
-      © 2026 Austin P. Morrissey · [RSS](/writing/index.xml)
     center: |
-      This site is in development; to learn more, take a look at my [Substack](https://austinpatrick.substack.com), or [reach out to meet](https://www.linkedin.com/in/austin-p-morrissey/)!
+      © 2026 Austin P. Morrissey · [RSS](/writing/index.xml) · [About](/about.html)
 
 format:
   html:
@@ -65,7 +62,9 @@ format:
         - styles/_brand.scss
         - styles/custom-light.scss
         - styles/interlink.scss
-    respect-user-color-scheme: true
+    # Keep the first-listed (dark) theme as the site's first-visit default.
+    # A visitor can still switch themes; Quarto persists that choice locally.
+    respect-user-color-scheme: false
     grid:
       sidebar-width: 240px
       body-width: 720px
@@ -90,6 +89,8 @@ format:
     citation-location: margin
     include-in-header:
       - _includes/json-ld-person.html
+    include-before-body:
+      - _includes/site-ui.html
     include-after-body:
       - _includes/footer-meta.html
       - _includes/interlink.html

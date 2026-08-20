@@ -1,0 +1,60 @@
+---
+title: "Mentorship and Death a Decade Later"
+subtitle: "Shilem, Shalom, Salaam"
+date: 2025-06-06
+categories: [mentorship, science, personal, philosophy]
+image: /images/writing/mentorship-and-death-a-decade-later/01.png
+canonical-url: https://austinpatrick.substack.com/p/mentorship-and-death-a-decade-later
+---
+
+::: {.dropcap}
+\"I feel like I\'m drawing from an empty well. Do you know what I mean?\"
+:::
+
+My principle investigator looked up from his desk, considering. We were in his office at the end of my master\'s program, discussing my future. The walls were lined with publications, ontop his file cabinet were thoughtful cards from mentees.
+
+\"No,\" he replied. \"I don\'t.\"
+
+\"So you want to step away from bench work, is that correct?\" he continued, returning to safer ground.
+
+\"Yes.\"
+
+The conversation ended shortly after.Typing this makes me laugh now, but at the time it was devastating.
+
+I had come to Boston to pursue medicine. The master\'s program was my pathway---its curriculum was geared toward garnering admission by overlapping with the coursework of Boston University School of Medicine. For context, a decade ago I had an overdose that almost killed me. I spent three days in a coma. I was eighteen, pursuing a degree in finance.
+
+There was a unique, gripping fear of regret in the moments of consciousness on the way to the hospital. Of the heartbeat rising. Of the breath becoming more and more labored. Many write of seeing their lives flash before them. I saw projected futures. The present moment fractured at its core, and from that break sprawled different branching paths---all the directions I could have taken my life. I grieved for those branches, knowing they would wither.
+
+What do you imagine was the fear that arose amidst this physical crisis? That born from slow suffocation and a blurring vision?
+
+The dread was having done so little. Arriving at the threshold of the void carrying nothing of weight. I wanted to become someone who could meet death differently---who could offer some variation of \'Shalom, Salaam, Shilem\' instead of silence. Medicine seemed like the path to earn that greeting.
+
+It took me a few months to reorganize my mind following this. I turned to the work of Viktor Frankl, the psychiatrist who detailed his experience as a Jew in a concentration camp. The book is *Man\'s Search for Meaning*.
+
+In it, Frankl describes a dying woman who, despite her suffering, felt grateful. Through her window, she could see just one branch of a chestnut tree with two blossoms, which she called her only friend in her loneliness. When Frankl asked if the tree replied to her, she said yes, and that the tree said to her: \"I am here---I am here---I am life, eternal life.\"
+
+She found eternal life in two blossoms; I found only emptiness in all those unlived branches of time.
+
+When I returned to college after recovering, that emptiness drove everything. Finance became biology. Biology became biochemistry. A little success breeds disproportionate ambition. Each shift moving closer to the source---to repaying what had been given. Society had granted me another chance. I would learn to grant the same.
+
+Once I graduated, I moved to Boston for a master\'s. The first day, they handed us red folders. I cut snippets from my overdose charts and taped them to mine. CODE STATUS: Full. DISPOSITION: ICU.
+
+![](/images/writing/mentorship-and-death-a-decade-later/01.png){fig-alt="Red medical teaching display with a stethoscope and patient-status labels."}
+
+The pace of the program was brutal---molecular cascades don\'t curve for existential awakening. I adapted, found my footing, even fell in love with histology and immunology. But lab work was harder. By the end of my second year, I had co-authored a few publications, had a degree, but had no medical school acceptance. I was depressed, and again, drawing from an empty well.
+
+That summer I applied to 169 jobs, scrambling to pay my student loans. I drove for Uber Eats, Instacart, whatever would pay.
+
+One night at 12:30 AM, I\'m standing outside a McDonald\'s on Boston\'s Methadone Mile. This is the intersection where the city\'s opioid crisis lives in the open. People shoot up on the sidewalk. Men with hollowed faces lean against buildings at impossible angles with an unmistakable heroin lean. I had come to this street to pick up an order. For perspective, this McDonald\'s has bouncers. They keep the doors locked because it is too dangerous to let anyone inside. Orders get passed through a window like contraband.
+
+Within a few months of that McDonald\'s on Methadone Mile, I joined an mRNA team at a Japanese pharmaceutical firm. To say the working atmosphere was different would be a comical understatement. This experience changed my life and my relationship to science. And this was due to meeting a good mentor. Her name was Lei.
+
+The impact that this woman made on me was remarkable. When I joined her team, I still saw science as a means to an end---a stepping stone to medical school. I was skeptical of pharma, too. I saw it as cold, profit-driven, disconnected from real patients. But watching a real scientific leader changed that. Unconsciously, we observe very closely the behavior of those we respect. We may not recognize our perception until we look at ourselves and realize whose behavior we\'re modeling.
+
+Her behavior was unique in how she cared about the science, about her team, and about the patients we\'d never meet. She\'d light up reviewing data, this blend of scientific rigor and genuine delight. There was joy in her curiosity, precision in her questions, and a kind of moral clarity that made you want to match her thoughtful integrity.
+
+You could see her mind working---connecting dots, asking questions---while radiating the kind of joy that made you want to think alongside her. There was a striking absence of deference to authority. She respected ideas and would evaluate each independently, based only on merit and truth, not on their speakers or titles. Speaking colloquially, this is a punk-rock attitude.
+
+The impact of a true mentor is often impossible to articulate because it touches everything: how you think, how you approach problems, your confidence, your career trajectory. They shape who you become as a professional and as a person. Writing of it precisely feels futile, and I think this is true of genuine mentoring relationships. They become so woven into who you are that separating their impact from your own growth becomes impossible. It begins with what they taught you, but extends through how they believed in you, how they challenged you, how they modeled excellence and integrity. Such mentors often have no idea of the full scope of their impact on the life of their mentees. They give so naturally they often are blissfully unaware of their positive impact on those around them.
+
+![](/images/writing/mentorship-and-death-a-decade-later/02.png){fig-alt="Two people standing together in a laboratory."}

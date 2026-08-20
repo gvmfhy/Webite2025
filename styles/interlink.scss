@@ -1,7 +1,7 @@
 /*-- scss:rules --*/
 
 // =========================================================================
-// INTERLINKING — Related reading block + gwern-style hover link previews
+// INTERLINKING — Related reading, hover previews, and full-size figures
 // =========================================================================
 // Injected at runtime by assets/interlink.js on essay pages only.
 // Styling keys off Bootstrap CSS custom properties (--bs-body-bg,
@@ -30,6 +30,11 @@ body.quarto-dark,
 
 // --- Related reading block (before the footer, inside the reading column) ---
 .related-reading {
+  // Quarto turns the document body into a named-column grid as soon as an
+  // essay has a margin caption. Pin this block to the reading column so it
+  // remains an end-of-article handoff rather than drifting into the margin.
+  grid-column: body-start / body-end;
+  width: 100%;
   margin-top: 3.5rem;
   padding-top: 1.75rem;
   border-top: 1px solid var(--bs-border-color, #E8E2D7);
@@ -132,6 +137,23 @@ body.quarto-dark,
   line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+// --- Full-size article figures -------------------------------------------
+// The source platforms allow detailed figures to be opened at their native
+// resolution. Preserve that affordance without adding a modal dependency.
+.essay-image-link {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+  border-radius: 2px;
+
+  img { cursor: zoom-in; }
+
+  &:focus-visible {
+    outline: 2px solid var(--interlink-accent);
+    outline-offset: 4px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
