@@ -16,7 +16,7 @@ My research focuses on assessing whether AI systems might meaningfully lower the
 
 I began this work at [Pivotal Research](https://www.pivotal-research.org/) as a research fellow mentored by [SecureBio](https://securebio.org/). My first project focused on automating the measurement of refusal robustness within [Inspect](https://inspect.aisi.org.uk/). When a model won’t answer a hazardous question, how do you get around it? I currently mentor [a SPAR project on AI-enabled cyber-bio offense](https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity), examining how agentic cyber capabilities could expand the attack surface for biological weaponization and create novel, severe harms.
 
-I also occasionally facilitate [BlueDot Impact’s AGI Strategy course](https://bluedot.org/courses/agi-strategy). If you’re looking to transition into AI safety, I highly recommend it.
+On occasion, I am a facilitator for the [AGI Strategy course at BlueDot](https://bluedot.org/courses/agi-strategy). If you are looking to transition to this space, I highly recommend taking this course.
 
 Before this I was an mRNA scientist, doing wet-lab R&D. I hold an MSc in Medical Science from Boston University (2023) and a BSc in Biochemistry from UMass Amherst (2020).
 
