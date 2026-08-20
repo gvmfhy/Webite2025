@@ -34,21 +34,6 @@
     "blurb": "Eight observations",
     "date": "2026-04-21"
   },
-  "/writing/inference-time-compute.html": {
-    "title": "Inference time compute helps agents but hurts writing",
-    "blurb": "AI performance tends to improve with inference time compute, but not with writing. On agentic tasks in cybersecurity, increasing your budget from 10 million…",
-    "date": "2026-04-05"
-  },
-  "/writing/rostam-shadow.html": {
-    "title": "The Sun and the Shadow of Rostam",
-    "blurb": "Know yourself, or be destroyed.",
-    "date": "2026-03-27"
-  },
-  "/writing/london-and-ai.html": {
-    "title": "London & Artificial Intelligence",
-    "blurb": "It's a strange world",
-    "date": "2026-02-23"
-  },
   "/writing/evaluating-llm-hypothesis-generation.html": {
     "title": "Evaluating LLM hypothesis generation in biology is hard.",
     "blurb": "Is it useful, is it true, and a story about mRNA.",
@@ -84,11 +69,6 @@
     "blurb": "LLMs Beyond the Anglosphere",
     "date": "2025-10-18"
   },
-  "/writing/autonomous-web-browsing-comet.html": {
-    "title": "Autonomous Web Browsing with Comet",
-    "blurb": "Quick impressions and a look at Comet's Chain of Thought Reasoning",
-    "date": "2025-10-13"
-  },
   "/writing/alignment-problem-isnt-theoretical.html": {
     "title": "The Alignment Problem Isn't Theoretical",
     "blurb": "Deception, deployment, and automated testing with PETRI",
@@ -123,10 +103,5 @@
     "title": "Stop Thinking About Science (Start Doing It)",
     "blurb": "The Hidden Cost of Overthinking in Scientific Practice",
     "date": "2024-11-21"
-  },
-  "/writing/the-azad-tree-a-tale-of-two-freedoms.html": {
-    "title": "The Azad Tree: A Tale of Two Freedoms",
-    "blurb": "From the Gardens of Persia to the Shelters of Boston",
-    "date": "2024-05-04"
   }
 }

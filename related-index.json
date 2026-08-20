@@ -221,91 +221,6 @@
       ]
     }
   ],
-  "inference-time-compute": [
-    {
-      "title": "The Dialogical Approach to Language Models",
-      "url": "/writing/the-dialogical-approach-to-language.html",
-      "date": "2025-03-25",
-      "categories": [
-        "ai",
-        "dialogue",
-        "philosophy",
-        "self-knowledge"
-      ]
-    }
-  ],
-  "rostam-shadow": [
-    {
-      "title": "The Dialogical Approach to Language Models",
-      "url": "/writing/the-dialogical-approach-to-language.html",
-      "date": "2025-03-25",
-      "categories": [
-        "ai",
-        "dialogue",
-        "philosophy",
-        "self-knowledge"
-      ]
-    },
-    {
-      "title": "The Azad Tree: A Tale of Two Freedoms",
-      "url": "/writing/the-azad-tree-a-tale-of-two-freedoms.html",
-      "date": "2024-05-04",
-      "categories": [
-        "literary",
-        "political",
-        "philosophy",
-        "personal"
-      ]
-    },
-    {
-      "title": "On Thinking About the Unthinkable",
-      "url": "/writing/thinking-about-the-unthinkable.html",
-      "date": "2026-04-28",
-      "categories": [
-        "biosecurity",
-        "voice",
-        "philosophy"
-      ]
-    }
-  ],
-  "london-and-ai": [
-    {
-      "title": "Whoever Colonizes This Peak Will Rule the World",
-      "url": "/writing/cognition-men-on-the-frontier-cyber.html",
-      "date": "2026-07-25",
-      "categories": [
-        "ai-safety",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "fiction",
-        "research-proposal"
-      ]
-    },
-    {
-      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
-      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
-      "date": "2026-06-11",
-      "categories": [
-        "ai-safety",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "satire"
-      ]
-    },
-    {
-      "title": "SecureMaxx: A Lightweight Sequence Screening Tool for Agents",
-      "url": "/writing/securemaxx.html",
-      "date": "2026-04-28",
-      "categories": [
-        "ai-safety",
-        "biosecurity",
-        "ai-evals",
-        "agents"
-      ]
-    }
-  ],
   "evaluating-llm-hypothesis-generation": [
     {
       "title": "SecureMaxx: A Lightweight Sequence Screening Tool for Agents",
@@ -473,17 +388,6 @@
         "personal",
         "philosophy"
       ]
-    },
-    {
-      "title": "The Azad Tree: A Tale of Two Freedoms",
-      "url": "/writing/the-azad-tree-a-tale-of-two-freedoms.html",
-      "date": "2024-05-04",
-      "categories": [
-        "literary",
-        "political",
-        "philosophy",
-        "personal"
-      ]
     }
   ],
   "networking-for-spies": [
@@ -495,44 +399,6 @@
         "ai-tools",
         "software",
         "productivity"
-      ]
-    }
-  ],
-  "autonomous-web-browsing-comet": [
-    {
-      "title": "Who wins in a fight, our (good) AI, or the (bad) AI?",
-      "url": "/writing/who-wins-in-a-fight-our-good-ai-or.html",
-      "date": "2026-06-07",
-      "categories": [
-        "ai-safety",
-        "agents",
-        "security",
-        "dual-use"
-      ]
-    },
-    {
-      "title": "Whoever Colonizes This Peak Will Rule the World",
-      "url": "/writing/cognition-men-on-the-frontier-cyber.html",
-      "date": "2026-07-25",
-      "categories": [
-        "ai-safety",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "fiction",
-        "research-proposal"
-      ]
-    },
-    {
-      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
-      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
-      "date": "2026-06-11",
-      "categories": [
-        "ai-safety",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "satire"
       ]
     }
   ],
@@ -596,13 +462,14 @@
       ]
     },
     {
-      "title": "The Sun and the Shadow of Rostam",
-      "url": "/writing/rostam-shadow.html",
-      "date": "2026-03-27",
+      "title": "Mentorship and Death a Decade Later",
+      "url": "/writing/mentorship-and-death-a-decade-later.html",
+      "date": "2025-06-06",
       "categories": [
-        "philosophy",
-        "self-knowledge",
-        "literary"
+        "mentorship",
+        "science",
+        "personal",
+        "philosophy"
       ]
     }
   ],
@@ -665,28 +532,17 @@
       ]
     },
     {
-      "title": "The Azad Tree: A Tale of Two Freedoms",
-      "url": "/writing/the-azad-tree-a-tale-of-two-freedoms.html",
-      "date": "2024-05-04",
+      "title": "On Thinking About the Unthinkable",
+      "url": "/writing/thinking-about-the-unthinkable.html",
+      "date": "2026-04-28",
       "categories": [
-        "literary",
-        "political",
-        "philosophy",
-        "personal"
+        "biosecurity",
+        "voice",
+        "philosophy"
       ]
     }
   ],
   "the-dialogical-approach-to-language": [
-    {
-      "title": "The Sun and the Shadow of Rostam",
-      "url": "/writing/rostam-shadow.html",
-      "date": "2026-03-27",
-      "categories": [
-        "philosophy",
-        "self-knowledge",
-        "literary"
-      ]
-    },
     {
       "title": "On Thinking About the Unthinkable",
       "url": "/writing/thinking-about-the-unthinkable.html",
@@ -698,13 +554,23 @@
       ]
     },
     {
-      "title": "Inference time compute helps agents but hurts writing",
-      "url": "/writing/inference-time-compute.html",
-      "date": "2026-04-05",
+      "title": "In Good Company, a Letter to [Redacted]",
+      "url": "/writing/in-good-company-letter-to-redacted.html",
+      "date": "2025-10-28",
       "categories": [
-        "ai",
-        "writing",
-        "prose"
+        "political",
+        "voice",
+        "dialogue"
+      ]
+    },
+    {
+      "title": "Keeping our Teeth in Biotech; prelude",
+      "url": "/writing/keeping-our-teeth-biotech.html",
+      "date": "2025-09-24",
+      "categories": [
+        "biotech",
+        "philosophy",
+        "vision"
       ]
     }
   ],
@@ -771,39 +637,6 @@
         "science",
         "philosophy",
         "epistemics"
-      ]
-    }
-  ],
-  "the-azad-tree-a-tale-of-two-freedoms": [
-    {
-      "title": "The Sun and the Shadow of Rostam",
-      "url": "/writing/rostam-shadow.html",
-      "date": "2026-03-27",
-      "categories": [
-        "philosophy",
-        "self-knowledge",
-        "literary"
-      ]
-    },
-    {
-      "title": "Mentorship and Death a Decade Later",
-      "url": "/writing/mentorship-and-death-a-decade-later.html",
-      "date": "2025-06-06",
-      "categories": [
-        "mentorship",
-        "science",
-        "personal",
-        "philosophy"
-      ]
-    },
-    {
-      "title": "On Thinking About the Unthinkable",
-      "url": "/writing/thinking-about-the-unthinkable.html",
-      "date": "2026-04-28",
-      "categories": [
-        "biosecurity",
-        "voice",
-        "philosophy"
       ]
     }
   ]
