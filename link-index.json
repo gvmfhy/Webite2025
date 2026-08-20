@@ -34,6 +34,11 @@
     "blurb": "Eight observations",
     "date": "2026-04-21"
   },
+  "/writing/london-and-ai.html": {
+    "title": "London & Artificial Intelligence",
+    "blurb": "It's a strange world",
+    "date": "2026-02-23"
+  },
   "/writing/evaluating-llm-hypothesis-generation.html": {
     "title": "Evaluating LLM hypothesis generation in biology is hard.",
     "blurb": "Is it useful, is it true, and a story about mRNA.",

@@ -221,6 +221,44 @@
       ]
     }
   ],
+  "london-and-ai": [
+    {
+      "title": "Whoever Colonizes This Peak Will Rule the World",
+      "url": "/writing/cognition-men-on-the-frontier-cyber.html",
+      "date": "2026-07-25",
+      "categories": [
+        "ai-safety",
+        "biosecurity",
+        "security",
+        "dual-use",
+        "fiction",
+        "research-proposal"
+      ]
+    },
+    {
+      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
+      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
+      "date": "2026-06-11",
+      "categories": [
+        "ai-safety",
+        "biosecurity",
+        "security",
+        "dual-use",
+        "satire"
+      ]
+    },
+    {
+      "title": "SecureMaxx: A Lightweight Sequence Screening Tool for Agents",
+      "url": "/writing/securemaxx.html",
+      "date": "2026-04-28",
+      "categories": [
+        "ai-safety",
+        "biosecurity",
+        "ai-evals",
+        "agents"
+      ]
+    }
+  ],
   "evaluating-llm-hypothesis-generation": [
     {
       "title": "SecureMaxx: A Lightweight Sequence Screening Tool for Agents",
