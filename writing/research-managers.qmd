@@ -9,6 +9,8 @@ image-alt: "Austin Morrissey and a colleague presenting research at the London I
 canonical-url: https://austinpatrick.substack.com/p/what-makes-for-good-research-managers
 featured: true
 featured-order: 5
+related:
+  - thinking-about-the-unthinkable
 ---
 
 ::: {.dropcap}
