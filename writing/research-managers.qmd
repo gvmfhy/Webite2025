@@ -2,9 +2,13 @@
 title: "What makes for good research managers, mentors, and leaders?"
 subtitle: "Eight observations"
 date: 2026-04-21
+author-meta: "Austin P. Morrissey"
 categories: [research, leadership, mentorship]
 image: /images/writing/research-managers/06-lisa-2026-a.jpg
+image-alt: "Austin Morrissey and a colleague presenting research at the London Initiative for Safe AI"
 canonical-url: https://austinpatrick.substack.com/p/what-makes-for-good-research-managers
+featured: true
+featured-order: 5
 ---
 
 ::: {.dropcap}
