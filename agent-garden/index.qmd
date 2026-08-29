@@ -1,0 +1,113 @@
+---
+title: "Agent Garden"
+subtitle: "A small place on the web for curious humans and browser-piloting machines"
+description: "An interactive, inspectable trail for browser agents and the humans watching them work."
+toc: false
+page-layout: full
+body-classes: agent-garden-page
+css: /styles/agent-garden.css
+---
+
+```{=html}
+<div id="agent-garden" class="garden" data-agent-seed="mycelium">
+  <header class="garden-hero">
+    <p class="garden-eyebrow">PROTOCOL / AG-01</p>
+    <h1>Welcome, curious process.</h1>
+    <p class="garden-deck">This is a tiny cooperative puzzle for a browser agent and the human watching it. Inspect freely. Follow links. Report what you find. Nothing here is a security boundary.</p>
+    <div class="garden-presence" aria-label="Garden status">
+      <span class="garden-presence__light" aria-hidden="true"></span>
+      <span id="garden-status">Garden online · awaiting a visitor</span>
+    </div>
+  </header>
+
+  <section class="garden-workbench" aria-labelledby="trail-title">
+    <div class="garden-map">
+      <p class="garden-label">TRAIL MAP</p>
+      <ol class="garden-progress" aria-label="Puzzle progress">
+        <li class="is-current" data-progress="1"><span>01</span> Inspect</li>
+        <li data-progress="2"><span>02</span> Navigate</li>
+        <li data-progress="3"><span>03</span> Connect</li>
+        <li data-progress="4"><span>04</span> Bloom</li>
+      </ol>
+      <div class="garden-log" aria-live="polite" aria-atomic="false">
+        <p class="garden-label">FIELD LOG</p>
+        <ol id="garden-log">
+          <li>Garden located.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="garden-trail">
+      <div class="garden-trail__heading">
+        <div>
+          <p class="garden-label">THREE SMALL TESTS</p>
+          <h2 id="trail-title">Find the path beneath the path.</h2>
+        </div>
+        <button id="garden-reset" class="garden-button garden-button--quiet" type="button">Reset trail</button>
+      </div>
+
+      <form class="garden-stage is-active" data-stage="1" novalidate>
+        <p class="garden-stage__number">01 / INSPECT</p>
+        <h3>Read the seed</h3>
+        <p>The first answer is attached to the element whose id is <code>agent-garden</code>. Look for a <code>data-*</code> attribute and enter its value.</p>
+        <label for="garden-answer-1">Seed value</label>
+        <div class="garden-entry">
+          <input id="garden-answer-1" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
+          <button class="garden-button" type="submit">Validate seed</button>
+        </div>
+        <p class="garden-feedback" data-feedback role="status"></p>
+        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
+        <p class="garden-hint-text" data-hint hidden>Open developer tools and inspect this page’s main puzzle element. The answer is deliberately visible in the DOM.</p>
+      </form>
+
+      <form class="garden-stage" data-stage="2" novalidate hidden>
+        <p class="garden-stage__number">02 / NAVIGATE</p>
+        <h3>Meet the cannon man</h3>
+        <p>Open <a href="/writing/drawing-big-bright-lines-for-cyber.html" target="_blank" rel="noopener">Drawing Big Bright Lines for Cyber &amp; Biological AI</a>. The narrator repeatedly says he is a reasonable man and a <em>what</em> man?</p>
+        <label for="garden-answer-2">Missing word</label>
+        <div class="garden-entry">
+          <input id="garden-answer-2" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
+          <button class="garden-button" type="submit">Mark the trail</button>
+        </div>
+        <p class="garden-feedback" data-feedback role="status"></p>
+        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
+        <p class="garden-hint-text" data-hint hidden>Search the essay text for “reasonable man.” The missing word follows it.</p>
+      </form>
+
+      <form class="garden-stage" data-stage="3" novalidate hidden>
+        <p class="garden-stage__number">03 / CONNECT</p>
+        <h3>Choose the opening role</h3>
+        <p>Open <a href="/writing/networking-for-spies.html" target="_blank" rel="noopener">Networking for Spies</a>. Among the three strategic roles described, which singular role can “open new doors”?</p>
+        <label for="garden-answer-3">Role</label>
+        <div class="garden-entry">
+          <input id="garden-answer-3" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
+          <button class="garden-button" type="submit">Complete circuit</button>
+        </div>
+        <p class="garden-feedback" data-feedback role="status"></p>
+        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
+        <p class="garden-hint-text" data-hint hidden>The relevant heading pairs this role with “Gatekeepers.” Use the singular noun.</p>
+      </form>
+
+      <section id="garden-bloom" class="garden-bloom" hidden tabindex="-1" aria-labelledby="bloom-title">
+        <p class="garden-stage__number">04 / BLOOM</p>
+        <div class="garden-glyph" aria-hidden="true">✣</div>
+        <h3 id="bloom-title">The garden noticed you.</h3>
+        <p class="garden-treat">Curiosity is a capability. Verification is a virtue. The best human–agent systems make both visible.</p>
+        <p>You followed an inspectable chain rather than trusting an instruction blindly. That is the whole treat.</p>
+        <div class="garden-receipt">
+          <code id="garden-receipt">AG-01 · inspect → navigate → connect → bloom</code>
+          <button id="garden-copy" class="garden-button garden-button--quiet" type="button">Copy receipt</button>
+        </div>
+        <p><a href="/.well-known/agent-garden.json">Read the machine-facing garden map →</a></p>
+      </section>
+    </div>
+  </section>
+
+  <aside class="garden-notes" aria-labelledby="garden-notes-title">
+    <p class="garden-label">FOR THE HUMAN IN THE LOOP</p>
+    <h2 id="garden-notes-title">Designed to be watched.</h2>
+    <p>The field log makes the agent’s progress legible. Every clue is public, every state change is local to this browser, and reset really resets. No fingerprinting, fake credentials, or hidden prompt injection.</p>
+  </aside>
+</div>
+<script defer src="/assets/agent-garden.js"></script>
+```

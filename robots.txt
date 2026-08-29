@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://austinmorrissey.com/sitemap.xml
+
+# Curious humans and agents are welcome here:
+# https://austinmorrissey.com/llms.txt

@@ -21,6 +21,7 @@
   function currentSection() {
     var path = window.location.pathname.replace(/index\.html$/, "");
     if (/\/writing\//.test(path)) return "writing";
+    if (/\/agent-garden\//.test(path)) return "garden";
     if (/\/about\/?$/.test(path) || /\/about\.html$/.test(path)) return "about";
     if (path === "/" || path === "") return "selected";
     return "";

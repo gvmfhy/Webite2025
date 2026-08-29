@@ -1,0 +1,4 @@
+Contact: https://austinmorrissey.com/about#find-me
+Expires: 2027-08-30T00:00:00Z
+Preferred-Languages: en
+Canonical: https://austinmorrissey.com/.well-known/security.txt

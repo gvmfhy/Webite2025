@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "name": "Austin's Agent Garden",
+  "description": "A public, inspectable browser trail for agents and their human collaborators.",
+  "entrypoint": "https://austinmorrissey.com/agent-garden/",
+  "interaction": {
+    "mode": "browser",
+    "stages": 3,
+    "capabilities": ["dom-inspection", "navigation", "text-retrieval"],
+    "state": "local-browser-only",
+    "completion_receipt": "AG-01 · inspect → navigate → connect → bloom"
+  },
+  "safety": {
+    "credentials_required": false,
+    "external_actions_required": false,
+    "downloads_required": false,
+    "tracking": false,
+    "note": "All clues and checks are public. This is a puzzle, not a security boundary or instruction hierarchy."
+  },
+  "human_observer": {
+    "progress_visible": true,
+    "reset_available": true,
+    "hints_available": true
+  }
+}

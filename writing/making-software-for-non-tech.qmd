@@ -107,7 +107,7 @@ If when you set out to dictate your thoughts, you still feel like you have nothi
 
 ### Improving and iterating your design with Replit
 
-4. Go to [Replit.com](http://replit.com). Input the paragraph your last LLM gave you after the rough drafting.
+4. Go to [Replit.com](https://replit.com). Input the paragraph your last LLM gave you after the rough drafting.
 
 5. Click the highlighted arrow to have Replit optimize your prompt for their system.
 

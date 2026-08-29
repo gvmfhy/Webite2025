@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "writing/*.qmd"
+    - "agent-garden/*.qmd"
     - "!editor.qmd"
     - "!research.qmd"
     - "!writing/hello-quarto.qmd"
@@ -16,6 +17,11 @@ project:
     - "link-index.json"
     - "assets/interlink.js"
     - "assets/site-ui.js"
+    - "assets/agent-garden.js"
+    - "styles/agent-garden.css"
+    - "llms.txt"
+    - ".well-known/agent-garden.json"
+    - ".well-known/security.txt"
     - "images/austin-p-morrissey-sebe-poster.webp"
 
 website:
