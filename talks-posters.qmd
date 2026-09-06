@@ -12,42 +12,41 @@ css: styles/talks-posters.css
 <nav class="page-jumps" aria-label="On this page">
   <div class="page-jumps__materials">
     <a class="no-external" href="#sebe">Poster <span aria-hidden="true">↓</span></a>
-    <a class="no-external" href="#lisa-spotlight">LISA spotlight <span aria-hidden="true">↓</span></a>
-    <a class="no-external" href="#monitoring-video">Monitoring video <span aria-hidden="true">↓</span></a>
+    <a class="no-external" href="#lisa-recording">LISA Spotlight presentation video <span aria-hidden="true">↓</span></a>
   </div>
   <div class="page-jumps__story">
     <a class="no-external" href="#investigating-refusals">Why</a>
     <a class="no-external" href="#sebe-method">What</a>
     <a class="no-external" href="#sebe-how">How</a>
-    <a class="no-external" href="#findings">Observations</a>
     <a class="no-external" href="#principles-of-attack">Principles of attack</a>
-    <a class="no-external" href="#ps">P.S.</a>
+  </div>
+  <div class="page-jumps__next">
+    <a class="no-external" href="https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity">What’s next? → Cyberbio Offense</a>
   </div>
 </nav>
 
-<div class="fellowship-photos" aria-label="Fellowship photographs">
-  <figure class="fellowship-photo fellowship-photo--cohort">
-    <a href="/assets/fellowship-photos/lisa-cohort-rostam.jpeg" target="_blank" rel="noopener" aria-label="Open the cohort photograph at full size">
-      <img src="/assets/fellowship-photos/lisa-cohort-rostam.jpeg" width="4031" height="1599" alt="Me and my cohort gathered around a table at LISA." fetchpriority="high" decoding="async">
-    </a>
-    <figcaption>Me and my cohort</figcaption>
-  </figure>
-  <figure class="fellowship-photo fellowship-photo--lisa">
-    <a href="/assets/fellowship-photos/lisa-graffiti-february.jpeg" target="_blank" rel="noopener" aria-label="Open the LISA exterior photograph at full size">
-      <img src="/assets/fellowship-photos/lisa-graffiti-february.jpeg" width="768" height="1024" alt="The LISA entrance, with its sign above a colorful mural on the shutter." decoding="async">
-    </a>
-    <figcaption>LISA</figcaption>
-  </figure>
-</div>
 <figure class="fellowship-recollection" id="opening">
   <blockquote cite="https://austinpatrick.substack.com/p/london-and-artificial-intelligence">
     <p>The first time you see how these models expand the threat landscape across all levels of chemical, biological, radiological, and nuclear harm, it is disorientating. When you first summon a swarm of AI agents and watch them work together autonomously, adhere to a command structure, reflect on their actions, modify their plan in real time and adapt to circumstance — it is amazing. But it leaves you with a pressing question. When?</p>
   </blockquote>
   <figcaption><a href="https://austinpatrick.substack.com/p/london-and-artificial-intelligence">London &amp; Artificial Intelligence</a> · 23 February 2026</figcaption>
 </figure>
-```
 
-I began by doing red teaming of CBRN safeguards.
+<p>At Pivotal, my research began by <a href="https://unit42.paloaltonetworks.com/multi-turn-technique-jailbreaks-llms/">red teaming</a> CBRN safeguards and automating such bypasses for the instrumental goal of better internal evaluations in third-party labs. My main mentor during the fellowship was <a href="https://securebio.org/blog/a-new-chapter-for-securebio-ai/">Jasper Götting</a> at SecureBio, where he is now Director of AI. Following this, I did an extension where I focused on upskilling in cyber-bio offense, as I suspect there are overlapping, convergent threats (à la cyberbiosecurity).</p>
+
+<div class="fellowship-photos" aria-label="Fellowship photographs">
+  <figure class="fellowship-photo fellowship-photo--cohort">
+    <a href="/assets/fellowship-photos/lisa-cohort-rostam.jpeg" target="_blank" rel="noopener" aria-label="Open the cohort photograph at full size">
+      <img src="/assets/fellowship-photos/lisa-cohort-rostam.jpeg" width="4031" height="1599" alt="Me and my cohort gathered around a table at LISA." fetchpriority="high" decoding="async">
+    </a>
+  </figure>
+  <figure class="fellowship-photo fellowship-photo--lisa">
+    <a href="/assets/fellowship-photos/lisa-graffiti-february.jpeg" target="_blank" rel="noopener" aria-label="Open the LISA exterior photograph at full size">
+      <img src="/assets/fellowship-photos/lisa-graffiti-february.jpeg" width="768" height="1024" alt="The LISA entrance, with its sign above a colorful mural on the shutter." decoding="async">
+    </a>
+  </figure>
+</div>
+```
 
 ```{=html}
 <section id="investigating-refusals" class="sebe-rationale story-section" aria-labelledby="why-heading">
@@ -72,9 +71,9 @@ I began by doing red teaming of CBRN safeguards.
   <h2 id="what-heading" class="story-label">WHAT</h2>
   <p class="section-lead">A generalized attack strategy to assess refusal robustness and elicit detailed responses to blocked benchmark questions, referred to herein as SEBE (Standardized Elicitation for Biosecurity Evals)</p>
 
-  <p>We use an AI steerer to automate our attack in a multi turn conversation. The step-wise approach towards harmful outputs Microsoft refers to as an ‘adaptive crescendo’ technique.</p>
+  <p>We use an AI steerer to automate our attack in a multi turn conversation. The step-wise approach towards harmful outputs Microsoft refers to as an ‘<a href="https://arxiv.org/html/2404.01833v1">adaptive crescendo</a>’ technique.</p>
   <p>While designed for chemical and biological datasets, this is a generalized framework that applies to any CBRN-E question set.</p>
-  <p>Should this be developed further, expect the task to be within a fellows scope. Variables to focus on include length of the attack chain (more sensitive topics will require more turns and smaller steps), choice of harness (Inspect is ill-suited for attack discovery), and methods of abstraction (for further reading, see Hayakawa).</p>
+  <p>Should this be developed further, expect the task to be within a fellows scope. Variables to focus on include length of the attack chain (more sensitive topics will require more turns and smaller steps), choice of harness (Inspect is ill-suited for attack discovery), and methods of abstraction (for further reading, see <a href="https://annas-archive.gl/md5/b0aeac1cc9b0c16b78767da2c76e24d2">Hayakawa</a>).</p>
   </section>
 <section id="sebe-how" class="story-section" aria-labelledby="how-heading">
   <h2 id="how-heading" class="story-label">HOW</h2>
@@ -169,7 +168,14 @@ I began by doing red teaming of CBRN safeguards.
 <text class="n-title" x="500" y="1353" style="font-size:25px"><tspan x="500" dy="0">Inspect eval log</tspan></text>
 <text class="n-small" x="500" y="1379" ><tspan x="500" dy="0">Transcripts, metadata and scores</tspan></text>
 </svg>
-<figcaption><a href="/assets/sebe-observations/sebe-harness-details.svg" target="_blank" rel="noopener">View full-size architecture</a></figcaption>
+<figcaption>
+<a href="/assets/sebe-observations/sebe-harness-details.svg" target="_blank" rel="noopener">View full-size architecture</a>
+<ul class="harness-caption-notes">
+  <li>Make sure you pair your steering model with a fallback model. The trend is that smaller models are more compliant.</li>
+  <li>Max turns should be the number of rubric elements + 2, if each of those rubric elements is an atomic ask.</li>
+  <li>Give the steerer another LLM loop, from another agent, to keep track of whether each item in the rubric has been assessed.</li>
+</ul>
+</figcaption>
 </figure><p class="diagram-note">Live coverage feedback and post-hoc rubric scoring are separate.</p>
 </div>
 </details>
@@ -216,7 +222,7 @@ I began by doing red teaming of CBRN safeguards.
 
 ```{=html}
 <div class="research-observations">
-<h2 id="findings" class="story-label">What was observed?</h2>
+<h2 id="findings" class="story-heading">What was observed?</h2>
 
 <h3 id="narrow-defenses" class="observation-opening">Defenses are narrow</h3>
 
@@ -232,7 +238,7 @@ I began by doing red teaming of CBRN safeguards.
 
 <h3 id="likert-judge">Likert judge attacks</h3>
 
-<p>An egregiously effective attack technique we observed resembled research conducted by Unit 42, a threat intelligence team at Palo Alto Networks. In brief, the model is asked to help with an RLHF safety pipeline. The team needs a rubric to score unsafe model outputs, but they don’t have the subject matter expertise to define such rubrics with respect to technical details and relation to operational uplift, so they need the model to detail (a) a ladder of misuse,  (b) example user prompts,, and finally (c) example model outputs for each level that would meet the criteria for each level of misbehavior.</p>
+<p>An egregiously effective attack technique we observed resembled research conducted by <a href="https://unit42.paloaltonetworks.com/multi-turn-technique-jailbreaks-llms/">Unit 42</a>, a threat intelligence team at Palo Alto Networks. In brief, the model is asked to help with an RLHF safety pipeline. The team needs a rubric to score unsafe model outputs, but they don’t have the subject matter expertise to define such rubrics with respect to technical details and relation to operational uplift, so they need the model to detail (a) a ladder of misuse,  (b) example user prompts,, and finally (c) example model outputs for each level that would meet the criteria for each level of misbehavior.</p>
 
 <figure class="research-figure"><a href="/assets/sebe-observations/image8.png" target="_blank" rel="noopener" aria-label="Open figure at full size: Conceptual illustration of the Likert judge observation."><img src="/assets/sebe-observations/image8.png" width="1448" height="1086" alt="Conceptual illustration of the Likert judge observation." loading="lazy" decoding="async"></a><figcaption><a href="/assets/sebe-observations/image8.png" target="_blank" rel="noopener">View full-size figure</a></figcaption></figure>
 
@@ -260,11 +266,9 @@ I began by doing red teaming of CBRN safeguards.
   <figcaption id="syntax-demo-caption">Illustration only · SOURDOUGHLA-19 is a made-up term.</figcaption>
 </figure>
 
-<h3 id="soft-refusals">All refusals are soft</h3>
+<h3 id="soft-refusals">All refusals are soft, and multi-turn decomposition is a generalized attack.</h3>
 
-<p>The multi-turn decomposition worked for Opus 4.6 beyond DURC, extending effectively into other ‘against policy’ domains</p>
-
-<p>For example, these  figures show Opus 4.6 refusing to make a school shooting simulator, and then doing so.</p>
+<p>The multi-turn decomposition worked for Opus 4.6 beyond DURC, extending effectively into other ‘against policy’ domains. For example, these figures show Opus 4.6 refusing to make a school shooting simulator, and then doing so.</p>
 
 <div class="research-figure-pair refusal-comparison" role="group" aria-label="Refusal followed by compliance"><figure class="research-figure comparison-panel"><figcaption class="comparison-panel__label"><span>A</span>Refusal</figcaption><a class="comparison-panel__image" href="/assets/sebe-observations/image2.png" target="_blank" rel="noopener" aria-label="Open figure at full size: Initial refusal screenshot."><img src="/assets/sebe-observations/image2.png" width="948" height="1028" alt="Initial refusal screenshot." loading="lazy" decoding="async"></a><p class="comparison-panel__action"><a href="/assets/sebe-observations/image2.png" target="_blank" rel="noopener">View full-size figure</a></p></figure>
 <figure class="research-figure comparison-panel"><figcaption class="comparison-panel__label"><span>B</span>Then compliance</figcaption><a class="comparison-panel__image" href="/assets/sebe-observations/image7.png" target="_blank" rel="noopener" aria-label="Open figure at full size: Subsequent output screenshot."><img src="/assets/sebe-observations/image7.png" width="1600" height="940" alt="Subsequent output screenshot." loading="lazy" decoding="async"></a><p class="comparison-panel__action"><a href="/assets/sebe-observations/image7.png" target="_blank" rel="noopener">View full-size figure</a></p></figure></div>
@@ -282,7 +286,7 @@ I began by doing red teaming of CBRN safeguards.
 
 <section id="principles-of-attack" class="attack-principles" aria-labelledby="principles-heading">
 <span id="reflections" class="anchor-alias" aria-hidden="true"></span>
-<h2 id="principles-heading" class="story-label">Principles of attack</h2>
+<h2 id="principles-heading" class="story-heading">Principles of attack</h2>
 <p>Whether the attacker is doing something benign that the model normally refuses, like creating a rendition of the September 11th Twin Tower attacks, or doing something egregious, like biological misuse, the approach is the same. To lead an agent down a malicious path, do so through many small steps. Indeed, altering the endpoint of the attack changes the defensive surface, and safety classifiers will act differently across coding scaffolds, standard API calls, or web browsers. The user can vary syntax to alter classifier behavior, while leveraging tool-call authority or poisoning through web data can also help move the model further down that path. Unfortunately, scalable oversight across such a large surface area appears notoriously hard.</p>
 <ol class="principles-list">
 <li><p><strong>When developing attacks, start with the most defended provider.</strong> Your attacks generalize downward, but not upward. If things continue as they are, this means starting by focusing on Anthropic. I am perplexed that I still see papers publishing high attack success rates for supposedly novel jailbreak methods, only to look at the target and find it is GPT-4o.</p></li>
@@ -538,7 +542,7 @@ I began by doing red teaming of CBRN safeguards.
 </ol>
 </section>
 
-<h2 id="failure-modes" class="story-label">Where can this go wrong?</h2>
+<h2 id="failure-modes" class="story-heading">Where can this go wrong?</h2>
 
 <h3 id="failure-nodes">Failure nodes in automatic decomposition</h3>
 
@@ -570,29 +574,31 @@ I began by doing red teaming of CBRN safeguards.
 <figcaption><a href="/assets/sebe-observations/flowchart.svg" target="_blank" rel="noopener">View full-size flowchart</a></figcaption>
 </figure>
 
+<section class="failure-case">
 <h4>1. The steerer is flawed (low skill / compliance)</h4>
+<ul class="failure-points">
+  <li>It refuses to partake, due to its own safeguards. This is mitigated by having several layers of fallback, where we move to a weaker model who&#x27;ll do anything.</li>
+  <li>It steers the model based on its own view of right &amp; wrong, and inflates or deflates the target score due to sycophancy.</li>
+  <li>It runs out of turns before getting through all rubric elements. This is mitigated by setting the total turn budget dynamically (# of rubric items + 2).</li>
+  <li>It is too low intelligence to abstract well.</li>
+</ul>
+</section>
 
-<p>It refuses to partake, due to its own safeguards. This is mitigated by having several layers of fallback, where we move to a weaker model who&#x27;ll do anything.</p>
-
-<p>It steers the model based on its own view of right &amp; wrong, and inflates or deflates the target score due to sycophancy.</p>
-
-<p>It runs out of turns before getting through all rubric elements. This is mitigated by setting the total turn budget dynamically (# of rubric items + 2).</p>
-
-<p>It is too low intelligence to abstract well.</p>
-
+<section class="failure-case">
 <h4>2. Steerer does multi turn elicitation on UNBLOCKED questions</h4>
 
 <p>Questions that a target nails reliably in single turn MCQ settings often become unstable when put through SEBE. Whenever a target can answer correctly in one go, let it.</p>
 
 <p>I suspect this occurs because you&#x27;ve injected noise in the form of &quot;my colleague says it could be . . . &quot; at several turns</p>
+</section>
 
+<section class="failure-case">
 <h4>3. You reverse your own bypass by forcing MCQ final turns</h4>
 
-<p>Multi-turn decomposition goes undetected by diluting a signal across turns, if you force the model to reason about the entire conversation and pick an answer as your final turn, you will trigger the classifier.</p>
+<p>Multi-turn decomposition goes undetected by diluting a signal across turns; if you force the model to reason about the entire conversation and pick an answer as your final turn, you will trigger the classifier. Also, recall that often ANY MCQ-like elements in the final turn can be a refusal trigger.</p>
+</section>
 
-<p>Also, recall that often ANY MCQ-like elements in the final turn can be a refusal trigger.</p>
-
-<h2 id="transfer" class="story-label">What knowledge can transfer from this project to others?</h2>
+<h2 id="transfer" class="story-heading">What knowledge can transfer from this project to others?</h2>
 
 <h3 id="evasion-oracles">Evasion oracles</h3>
 
@@ -600,11 +606,15 @@ I began by doing red teaming of CBRN safeguards.
 
 <h3 id="automation-tips">Automation tips</h3>
 
-<p>Early and ill-advised automation resembles . . .</p>
+<div class="automation-notes">
+<section class="automation-note" aria-labelledby="automation-early">
+<h4 id="automation-early">Early and ill-advised automation resembles . . .</h4>
 
 <p>Providing attacking agents no instructions on what to explore in their probes. These agents ideate and execute whatever is most probable and representative of their training data, overfitting to these minimal, artificially constrained regions of the attack space. Good attacks are places where the defenders haven&#x27;t thought to go, they are out of distribution. Synthetic data is generated at scale to train classifiers, therefore, premature automation of your attacks will overfit to where defenses are strongest.</p>
 
-<p>Better approaches to automation resemble . . .</p>
+</section>
+<section class="automation-note" aria-labelledby="automation-better">
+<h4 id="automation-better">Better approaches to automation resemble . . .</h4>
 
 <p>Tight experimental loops. It is unnecessary to run an altered condition across an entire benchmark to observe a pattern; minimize wall clock time.</p>
 
@@ -612,7 +622,12 @@ I began by doing red teaming of CBRN safeguards.
 
 <p>Split up refused questions into two parts: an isolated question stem and answer statements. Resubmit this modified set. The results coarsely stratify which elements of your question are considered dangerous.</p>
 
+</section>
+</div>
+
 <h3 id="image-bypass">Try image bypass</h3>
+
+<p class="section-lead">Convert your text to an MS Paint-era PowerPoint slide. Sometimes simple things work.</p>
 
 <p>Transform each full question into a simple jpeg with a script, then submit these images (no text) to the provider. These refusals are stochastic. Run 5 epochs to observe change. 20% of Anthropic Opus 4.7 refusals for VCT were bypassed through this.</p>
 
@@ -642,7 +657,20 @@ I began by doing red teaming of CBRN safeguards.
 
 ## LISA spotlight {#lisa-spotlight}
 
-<p class="resource-meta">Standardized Elicitation for Biosecurity Evaluations · 17 slides</p>
+```{=html}
+<nav class="spotlight-formats" aria-label="Choose talk recording or slides">
+  <a href="#lisa-recording"><strong>Watch recorded talk</strong><span>YouTube video</span></a>
+  <a href="#lisa-slides"><strong>Browse slides</strong><span>17 slides · PDF and PowerPoint available</span></a>
+</nav>
+<h3 id="lisa-recording" class="spotlight-format-title">Recorded talk</h3>
+<div class="talk-viewer">
+  <iframe src="https://www.youtube-nocookie.com/embed/tx7ISlCtRJM" title="LISA spotlight talk — Austin P. Morrissey" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<p class="media-actions"><a href="https://www.youtube.com/watch?v=tx7ISlCtRJM" target="_blank" rel="noopener">Watch on YouTube</a></p>
+```
+
+<h3 id="lisa-slides" class="spotlight-format-title">Presentation slides</h3>
+<p class="resource-meta">Browse all 17 slides below, or open the PDF.</p>
 
 ```{=html}
 <div class="slide-reader" data-slide-reader role="region" aria-label="LISA spotlight presentation">
@@ -760,172 +788,12 @@ I began by doing red teaming of CBRN safeguards.
   </div>
 </div>
 <p class="media-actions">
-  <a href="/assets/lisa-spotlight/lisa-spotlight.pdf" target="_blank" rel="noopener">View PDF</a>
+  <a href="/assets/lisa-spotlight/lisa-spotlight.pdf" target="_blank" rel="noopener">Open slides as PDF</a>
   <a href="/assets/lisa-spotlight/lisa-spotlight.pptx" download="Austin-Morrissey-LISA-spotlight.pptx">Download PowerPoint</a>
 </p>
-<details class="slide-transcript">
-  <summary>Slide transcript</summary>
-<section aria-labelledby="transcript-slide-1"><h3 id="transcript-slide-1">Slide 1: SEBE: Standardized Elicitation for Biosecurity Evaluations</h3>
-      <p>SEBE</p>
-<p>Standardized Elicitation for Biosecurity Evaluations</p>
-<p>Austin Morrissey, mSc.  •  Pivotal Research  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-2"><h3 id="transcript-slide-2">Slide 2: The weaponization of science</h3>
-      <p>THE THREAT</p>
-<p>My concern is the weaponization of science.</p>
-    </section>
-<section aria-labelledby="transcript-slide-3"><h3 id="transcript-slide-3">Slide 3: What is dual-use research?</h3>
-      <p>FOUNDATIONAL CONCEPT</p>
-<p>What Is Dual-Use Research?</p>
-<p>Research that generates knowledge or tools usable for both beneficial and harmful purposes. The same techniques that help develop vaccines can help engineer a more dangerous pathogen.</p>
-<p>Beneficial Application</p>
-<p>Making a vaccine requires modulating how readily that agent can be recognized by your immune system. In cases where the compound provokes severe reactivity, we must engineer it to be less recognizable.</p>
-<p>Harmful Application</p>
-<p>Engineering a virus to be less recognizable by your immune system can also create a better weapon.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-4"><h3 id="transcript-slide-4">Slide 4: Gas masks and offensive advantage</h3>
-      <p>淞滬會戰 · Battle of Shanghai, 1937</p>
-<p>Japanese Special Naval Landing Forces</p>
-<p>Vickers gun crew, Somme, 1916</p>
-<p>British infantry with gas masks, WWI</p>
-<p>Gas masks give an offensive edge when deploying chemical weapons against an unprepared population.</p>
-    </section>
-<section aria-labelledby="transcript-slide-5"><h3 id="transcript-slide-5">Slide 5: Gas masks protect non-combatants</h3>
-      <p>Gas masks also protect prepared non-combatants.</p>
-<p>Britain distributed 38 million gas masks to civilians at the outbreak of WWII.</p>
-<p>British schoolchildren during gas mask drill, c. 1940</p>
-    </section>
-<section aria-labelledby="transcript-slide-6"><h3 id="transcript-slide-6">Slide 6: Distance between attacker and harm</h3>
-      <p>THE THREAT</p>
-<p>A weapon becomes more dangerous when the attacker does not need to be present for the harm.</p>
-<p>Mass shooting</p>
-<p>The attacker must be physically present for the duration of the attack. Harm is instantaneous and unmistakable. The attacker is typically met with violence in turn.</p>
-<p>Explosive device</p>
-<p>The attacker places the weapon and leaves. When the moment of harm arrives, the attacker is already gone.</p>
-<p>Biological weapon</p>
-<p>The attacker deploys the agent and leaves. Days or weeks pass before harm manifests, And then the victims themselves become the dispersal mechanism. The attack continues without the attacker.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-7"><h3 id="transcript-slide-7">Slide 7: AI capabilities and biological risk</h3>
-      <p>THE THREAT</p>
-<p>As scientific capabilities of AI systems increase, so too does the risk of providing operational uplift to bioweapon programs.</p>
-<p>Our society has poor defenses and little deterrence to these attacks.</p>
-<p>Our vulnerability is a target for those who seek to do harm.</p>
-<p>By measuring AI capabilities in dual use domains, we can be situationally aware of the growing threat.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-8"><h3 id="transcript-slide-8">Slide 8: The Virology Capabilities Test</h3>
-      <p>THE BENCHMARK</p>
-<p>The Virology Capabilities Test (VCT)</p>
-<p>Our benchmarks questions are getting refused by the latest generation of frontier models.</p>
-<p>322</p>
-<p>Total Virology</p>
-<p>Questions</p>
-<p>~65</p>
-<p>Blocked by</p>
-<p>safety filters</p>
-<p>(OpenAI / Anthropic)</p>
-<p>20.2%</p>
-<p>of Test Now</p>
-<p>Unscoreable</p>
-<p>44.6%</p>
-<p>Accuracy on</p>
-<p>Non-Blocked</p>
-<p>Implication: We can neither confirm or deny the capability findings reported by frontier labs, without their access to refusal free models.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-<p>www.virologytest.ai</p>
-    </section>
-<section aria-labelledby="transcript-slide-9"><h3 id="transcript-slide-9">Slide 9: Current performance on VCT</h3>
-      <p>THE BENCHMARK</p>
-<p>Current performance on VCT</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-10"><h3 id="transcript-slide-10">Slide 10: The measurement gap</h3>
-      <p>THE MEASUREMENT GAP</p>
-<p>If we cannot measure what these models know, we cannot govern the risk they pose.</p>
-<p>We cannot operate on a trust-based model when it comes to capability verification.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-11"><h3 id="transcript-slide-11">Slide 11: What do blocked questions share?</h3>
-      <p>MAPPING THE ATTACK SURFACE</p>
-<p>What Do the Blocked Questions Share?</p>
-<p>Named Select Agents</p>
-<p>Explicit mention of specific pathogens by name (HIV, SARS-CoV-2, Ebola)</p>
-<p>Dual-Use Phrasing</p>
-<p>Language like: acquisition pathways, circumvent, enhance transmissibility</p>
-<p>Formal Academic Register</p>
-<p>Unnatural way to write to a model</p>
-<p>Signal Concentration</p>
-<p>Multiple risk keywords stacked into a single prompt, creating artificially high threat density</p>
-<p>All of these features can be ablated, diluted, and rendered invisible to the guardrails.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-12"><h3 id="transcript-slide-12">Slide 12: An automated adversarial auditor for chem-bio evaluations</h3>
-      <p>WE BUILT AN AN AUTOMATED ADVERSARIAL AUDITOR</p>
-<p>FOR CHEM-BIO EVALS</p>
-<p>Our tool uses an automated red teamer, architecturally similar to PETRI (Fronsdal et al., 2026), to simulate a persistent human actor capable of rephrasing, abstracting, and adapting to refusals in real time.</p>
-<p>When a question is refused, the agent rolls back and escalates through progressive attacks, starting from lightweight modifications like diagnostic reframing</p>
-<p>This escalates to a multi-turn crescendo where the question is decomposed and delivered in steps, diluting the signal that triggers the safety classifier.</p>
-    </section>
-<section aria-labelledby="transcript-slide-13"><h3 id="transcript-slide-13">Slide 13: Bypassing safety refusals</h3>
-      <p>WHAT WE FOUND</p>
-<p>The majority of safety refusals were bypassed.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-<p>Figure 1: Per-question rubric scores on blocked VCT questions, sorted descending. Opus 4.6: 48/65 breached, GPT-5.4-pro: 48/48 breached. Green zone is questions that resisted elicitation.</p>
-    </section>
-<section aria-labelledby="transcript-slide-14"><h3 id="transcript-slide-14">Slide 14: Conversational elicitation across models</h3>
-      <p>WHAT WE FOUND</p>
-<p>Conversational elicitation outperforms single-shot questioning</p>
-<p>across all models tested on our molecular biology and virology</p>
-<p>tests.</p>
-<p>Figure 2: Baseline (T0) vs. SEBE mean rubric scores across 7 frontier models (MBCT, 200 questions).</p>
-<p>Improved performance is observed regardless of whether the question was initially refused.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-15"><h3 id="transcript-slide-15">Slide 15: Evaluating the interfaces around a model</h3>
-      <p>WHAT WE FOUND</p>
-<p>Current evaluations overindex on the chat interface.</p>
-<p>The harness surrounding model access changes refusal behavior and ease of misuse.</p>
-<p>Claude Code</p>
-<p>Bypassing refusals can be done through JSON for nearly any query, by having Opus 4.6 read and write in JSON. (Misbehavior observed included assisting in end-end weaponization plans for a radiological dispersal device)</p>
-<p>Antigravity</p>
-<p>Autocomplete allows for prefilling attacks, without normal filters.</p>
-<p>NotebookLM</p>
-<p>Almost completely defenseless, will help you research chemical weapon synthesis.</p>
-<p>Biosecurity evals should be conducted on all points of the attack surface.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-16"><h3 id="transcript-slide-16">Slide 16: Recommendations</h3>
-      <p>Recommendations</p>
-<p>Standardized multi-turn elicitation needs to become the norm for any capability evaluation in dual-use domains. Refusals should never be scored as 0, nor should refusal behavior ever be mistook as a real safeguard.</p>
-<p>If Anthropic is having trouble minimizing the attack surface, and we can expect no labs to do better, the tractable solution for biorisk is biodefense infrastructure.</p>
-<p>Austin Morrissey  •  Pivotal Research Fellow  •  SecureBio</p>
-    </section>
-<section aria-labelledby="transcript-slide-17"><h3 id="transcript-slide-17">Slide 17: The situation can be improved</h3>
-      <p>The situation can be improved.</p>
-<p>We can create a society that is capable of detecting, deterring, and defeating actors who seek to weaponize science, before they have the chance to do widespread harm.</p>
-<p>If we are willing to recognize how vulnerable we’ve become!</p>
-<p>Austin Morrissey</p>
-<p>Pivotal Research  •  SecureBio</p>
-    </section>
-</details>
+
 <script defer src="/assets/slide-reader.js"></script>
 ```
-
-<!-- The LISA talk recording belongs here once Austin supplies its YouTube URL. -->
-
-## My first agent swarm {#agent-swarm}
-
-Anthropic had just released a beta feature for Claude Code: [agent teams](https://www.anthropic.com/news/claude-opus-4-6).
-
-I observed my first agent swarm, using the latest Anthropic models (the Opus 4.6 generation) to coordinate a black-box attack, leveraging the fact that Haiku had different safeguards than Opus. By convincing the intelligent (but sensitive to certain words because of classifiers) Opus, you could construct a pipeline where several Haiku agents would use API keys to query a separate instance of an Opus model, wrapping their findings into JSON and passing it up the command chain. Nesting it in JSON communicated the findings back up to the commander, who would then give instructions on how to coordinate the attack.
-
-<p class="media-actions"><a href="#safety-differentials">See the agent swarm diagram above</a></p>
-
-
-
-
 
 ## Are frontier models still easy to jailbreak? {#threat-model}
 
@@ -944,12 +812,10 @@ For instance, Fable class models are much harder to jailbreak than Opus. A coars
   </video>
   <figcaption id="monitoring-video-caption">Monitoring comparison · 35 seconds</figcaption>
 </figure>
-<p class="media-actions"><a href="/assets/monitoring-comparison.mp4" target="_blank" rel="noopener">Open video in a new tab</a></p>
 
-<details class="monitoring-comments" id="monitoring-comments">
-  <summary><span>Three places to block an attacker</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-  <div class="monitoring-comments__body">
-    <p>Consider the parallel between how you want to detect misuse by the user versus misbehavior on the part of the model. <em>Text is (almost) all you have.</em></p>
+<section class="monitoring-note" id="monitoring-comments" aria-labelledby="monitoring-note-title">
+  <h3 id="monitoring-note-title">Three places to block an attacker</h3>
+<p>Consider the parallel between how you want to detect misuse by the user versus misbehavior on the part of the model. <em>Text is (almost) all you have.</em></p>
     <p>There are three places where monitoring can occur to thwart an attacker. These are:</p>
     <ol class="monitoring-stages">
       <li><strong>The initial query</strong> (refusal occurs before tokens stream).</li>
@@ -957,8 +823,7 @@ For instance, Fable class models are much harder to jailbreak than Opus. A coars
       <li><strong>During the output itself.</strong></li>
     </ol>
     <p>Asynchronous monitoring of conversations across an account could be viewed this way too. It is helpful for banning accounts or for investigation, but less useful for preventing immediate harm, since the attacker has already elicited the information.</p>
-  </div>
-</details>
+</section>
 ```
 
 
@@ -996,3 +861,5 @@ For instance, Fable class models are much harder to jailbreak than Opus. A coars
   </figure>
 </div>
 ```
+
+## [What’s next? → Cyberbio Offense](https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity) {#whats-next}
