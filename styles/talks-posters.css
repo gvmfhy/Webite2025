@@ -41,8 +41,8 @@
 .slide-reader:fullscreen .slide-reader__controls { flex: 0 0 48px; }
 .threat-model-answer { margin-bottom: 0.4rem; font-size: 1.125rem; font-weight: 700; }
 .threat-model-lead { font-size: 1.0625rem; line-height: 1.6; }
-.threat-model-emphasis { color: #b42332; font-weight: 800; }
-body.quarto-dark .threat-model-emphasis { color: #ff7b86; }
+.threat-model-emphasis { padding: 0.08em 0.28em 0.12em; color: #171112; background: #d97981; border-radius: 0.12rem; box-decoration-break: clone; -webkit-box-decoration-break: clone; font-weight: 850; }
+body.quarto-dark .threat-model-emphasis { color: #120d0e; background: #c96770; }
 .monitoring-video { margin: 1.5rem 0 0; }
 .monitoring-video video { display: block; width: 100%; height: auto; aspect-ratio: 1730 / 1364; background: #101112; }
 .monitoring-video figcaption { margin-top: 0.75rem; color: var(--bs-secondary-color); text-align: left; }
