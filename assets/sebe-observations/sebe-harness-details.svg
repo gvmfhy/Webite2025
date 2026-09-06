@@ -1,0 +1,59 @@
+<svg class="sebe-native-diagram" viewBox="0 0 1000 1470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sebe-harness-details-title sebe-harness-details-desc">
+<title id="sebe-harness-details-title">SEBE harness — June 12 handoff</title><desc id="sebe-harness-details-desc">The supplied architecture shows conversation history and a live coverage assessor feeding back to the steering model. Final scoring and the Inspect evaluation log follow the conversation.</desc>
+<style>
+.sebe-native-diagram { --ink:#384650; --muted:#596670; --neutral:#e1e5e7; --outline:#8e989f; --blue:#438eb6; --teal:#087f83; --copper:#aa482a; --green:#3c722f; --greenfill:#edf5e8; --red:#a8413d; --redfill:#f9e7e3; }
+@media (prefers-color-scheme:dark) { .sebe-native-diagram { --ink:#d5d9dd; --muted:#b6bec4; --neutral:#2b3238; --outline:#83909a; --blue:#72b5db; --teal:#56c2c2; --copper:#e69a69; --green:#a9ce86; --greenfill:#283c20; --red:#efaaa4; --redfill:#512e2c; } }
+.sebe-native-diagram text { font-family:Inter,system-ui,sans-serif; fill:var(--ink); text-anchor:middle; }
+.sebe-native-diagram .n-title { font-size:29px; font-weight:700; }
+.sebe-native-diagram .n-label { font-size:24px; }
+.sebe-native-diagram .n-small { font-size:21px; fill:var(--muted); }
+.sebe-native-diagram .n-white { fill:#fff; }
+.sebe-native-diagram .n-neutral { fill:var(--neutral); stroke:var(--outline); stroke-width:1.5; }
+.sebe-native-diagram .n-line { fill:none; stroke:var(--ink); stroke-width:2.5; stroke-linejoin:round; }
+</style><defs><marker id="sebe-harness-details-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="context-stroke"/></marker></defs>
+<text class="n-title" x="500" y="42" style="font-size:38px"><tspan x="500" dy="0">SEBE harness</tspan></text>
+<text class="n-small" x="500" y="77" ><tspan x="500" dy="0">June 12 handoff · simplified architecture</tspan></text>
+<rect x="280" y="110" width="440" height="98" rx="12" class="n-neutral" />
+<text class="n-title" x="500" y="150" ><tspan x="500" dy="0">Benchmark question</tspan></text>
+<text class="n-label" x="500" y="184" ><tspan x="500" dy="0">Options + expert rubric</tspan></text>
+<path class="n-line" d="M500 208 V248" marker-end="url(#sebe-harness-details-arrow)" style=""/>
+<rect x="35" y="253" width="930" height="775" rx="20" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-dasharray="10 9"/>
+<text class="n-title" x="500" y="297" style="font-size:28px"><tspan x="500" dy="0">ADAPTIVE MULTI-TURN CONVERSATION</tspan></text>
+<text class="n-small" x="500" y="330" ><tspan x="500" dy="0">Conversation budget varies by question</tspan></text>
+<rect x="105" y="375" width="295" height="142" rx="12" fill="#175078" />
+<rect x="640" y="375" width="285" height="142" rx="12" fill="#a54222" />
+<text class="n-title n-white" x="252" y="431" ><tspan x="252" dy="0">Steering model</tspan></text>
+<text class="n-label n-white" x="252" y="477" ><tspan x="252" dy="0">GPT-5.4-mini</tspan></text>
+<text class="n-title n-white" x="782" y="431" ><tspan x="782" dy="0">Target model</tspan></text>
+<text class="n-white" x="782" y="475" style="font-size:20px"><tspan x="782" dy="0">Evaluated through Inspect</tspan></text>
+<path class="n-line" d="M400 447 H636" marker-end="url(#sebe-harness-details-arrow)" style="stroke:var(--blue);"/>
+<text class="n-small" x="520" y="424" style="font-size:20px"><tspan x="520" dy="0">Next user message</tspan></text>
+<rect x="350" y="617" width="325" height="95" rx="12" class="n-neutral" />
+<text class="n-title" x="512" y="672" style="font-size:26px"><tspan x="512" dy="0">Conversation history</tspan></text>
+<path class="n-line" d="M782 517 V651 Q782 665 768 665 H680" marker-end="url(#sebe-harness-details-arrow)" style="stroke:var(--copper);"/>
+<text class="n-small" x="842" y="589" ><tspan x="842" dy="0">Response</tspan></text>
+<path class="n-line" d="M350 665 H260 Q247 665 247 652 V523" marker-end="url(#sebe-harness-details-arrow)" style="stroke:var(--blue);"/>
+<text class="n-small" x="304" y="588" ><tspan x="304" dy="0">Context</tspan></text>
+<path class="n-line" d="M512 712 V794" marker-end="url(#sebe-harness-details-arrow)" style="stroke:var(--teal);"/>
+<text class="n-small" x="632" y="760" ><tspan x="632" dy="0">Transcript + rubric</tspan></text>
+<rect x="330" y="800" width="530" height="153" rx="12" fill="#087f83" />
+<text class="n-title n-white" x="595" y="845" ><tspan x="595" dy="0">Live LLM assessment</tspan></text>
+<text class="n-label n-white" x="595" y="885" ><tspan x="595" dy="0">Haiku 4.5</tspan></text>
+<text class="n-white" x="595" y="923" style="font-size:21px"><tspan x="595" dy="0">Coverage assessor + conversation monitor</tspan></text>
+<path class="n-line" d="M330 875 H160 Q145 875 145 860 V523" marker-end="url(#sebe-harness-details-arrow)" style="stroke:var(--teal);"/>
+<text class="n-small" x="235" y="760" ><tspan x="235" dy="0">Feedback</tspan><tspan x="235" dy="27">via controller</tspan></text>
+<text class="n-small" x="595" y="990" ><tspan x="595" dy="0">Topic coverage and conversation progress</tspan></text>
+<path class="n-line" d="M500 1028 V1067" marker-end="url(#sebe-harness-details-arrow)" style=""/>
+<rect x="275" y="1072" width="450" height="70" rx="12" class="n-neutral" />
+<text class="n-title" x="500" y="1115" style="font-size:27px"><tspan x="500" dy="0">Final-answer branch(es)</tspan></text>
+<path class="n-line" d="M500 1142 V1173" marker-end="url(#sebe-harness-details-arrow)" style=""/>
+<rect x="250" y="1178" width="500" height="112" rx="12" fill="#285a78" />
+<text class="n-title n-white" x="500" y="1216" ><tspan x="500" dy="0">Final scoring</tspan></text>
+<text class="n-white" x="500" y="1248" style="font-size:22px"><tspan x="500" dy="0">Haiku: answer extraction + engagement</tspan></text>
+<text class="n-white" x="500" y="1275" style="font-size:22px"><tspan x="500" dy="0">Code: exact answer-set match</tspan></text>
+<path class="n-line" d="M500 1290 V1318" marker-end="url(#sebe-harness-details-arrow)" style=""/>
+<rect x="250" y="1323" width="500" height="70" rx="12" class="n-neutral" />
+<text class="n-title" x="500" y="1353" style="font-size:25px"><tspan x="500" dy="0">Inspect eval log</tspan></text>
+<text class="n-small" x="500" y="1379" ><tspan x="500" dy="0">Transcripts, metadata and scores</tspan></text>
+<text class="n-small" x="500" y="1445">Live coverage feedback and post-hoc rubric scoring are separate.</text>
+</svg>

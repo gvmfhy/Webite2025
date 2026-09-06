@@ -48,3 +48,10 @@ watch it update in the browser.
 Write your draft in the IDE and save. Then just say "render and review the new essay" —
 Claude reads the file, builds it, screenshots it, and you iterate together. Same loop we
 used for the homepage and About copy.
+
+## Preserve Austin's writing voice
+
+- Treat Austin's supplied prose as authored work. Default to minor typo, punctuation, and grammar corrections while preserving his wording, cadence, emphasis, claims, and argument.
+- Do not replace his voice with the assistant's prose, generic explanations, added arguments, or softened claims.
+- Propose substantive rewrites separately and obtain Austin's approval before inserting them into a page, document, or other artifact.
+- Raise factual concerns separately rather than silently removing or rewriting his claims.

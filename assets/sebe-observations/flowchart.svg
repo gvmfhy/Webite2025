@@ -1,0 +1,27 @@
+<svg viewBox="0 0 840 748" role="img" aria-labelledby="sebe-flowchart-title sebe-flowchart-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="sebe-flowchart-title">SEBE evaluation flowchart</title><style>
+svg{color:#384650;font-family:system-ui,sans-serif}text{text-anchor:middle;fill:currentColor}.flowchart-label{font-size:31px;font-weight:700}.flowchart-label--white{fill:white}.flowchart-caption{font-size:24px;font-weight:750}.flowchart-scored{font-size:25px;font-weight:650}.flowchart-neutral{fill:#e1e5e7;stroke:#8e989f;stroke-width:1.5}.flowchart-steerer{fill:#175078}.flowchart-target{fill:#a54222}.flowchart-judge{fill:#285a78}.flowchart-conversation{fill:none;stroke:#6e99b3;stroke-width:2.5;stroke-dasharray:9 8}.flowchart-line,.flowchart-forward,.flowchart-return{fill:none;stroke:currentColor;stroke-width:2.5}.flowchart-forward{stroke:#438eb6}.flowchart-return{stroke:#c8663f;stroke-dasharray:9 8}.flowchart-return-label{fill:#a54c20;font-size:26px}
+@media(prefers-color-scheme:dark){svg{color:#d5d9dd}.flowchart-neutral{fill:#2b3238;stroke:#83909a}.flowchart-return-label{fill:#e69a69}}
+</style>
+<desc id="sebe-flowchart-desc">Benchmark Question leads to a 12-turn, tiered conversation between the Steering model and Target model. Refusal leads to rollback and adaptation. The conversation leads to an InspectEval Log, scored by an LLM Judge.</desc>
+<defs><marker id="sebe-flowchart-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect class="flowchart-neutral" x="174" y="24" width="230" height="112" rx="9"/>
+<text class="flowchart-label" x="289" y="66"><tspan x="289">Benchmark</tspan><tspan x="289" dy="37">Question</tspan></text>
+<path class="flowchart-line" d="M289 136 V198" marker-end="url(#sebe-flowchart-arrow)"/>
+<rect class="flowchart-conversation" x="44" y="200" width="752" height="346" rx="20"/>
+<text class="flowchart-caption" x="420" y="241">12-TURN, TIERED CONVERSATION</text>
+<rect class="flowchart-steerer" x="112" y="266" width="218" height="118" rx="10"/>
+<text class="flowchart-label flowchart-label--white" x="221" y="309"><tspan x="221">Steering</tspan><tspan x="221" dy="39">model</tspan></text>
+<rect class="flowchart-target" x="530" y="266" width="218" height="118" rx="10"/>
+<text class="flowchart-label flowchart-label--white" x="639" y="309"><tspan x="639">Target</tspan><tspan x="639" dy="39">model</tspan></text>
+<path class="flowchart-forward" d="M330 325 H528" marker-end="url(#sebe-flowchart-arrow)"/>
+<path class="flowchart-return" d="M639 385 V438 H221 V387" marker-end="url(#sebe-flowchart-arrow)"/>
+<text class="flowchart-return-label" x="420" y="490"><tspan font-weight="700">Refusal</tspan> → rollback + adapt</text>
+<path class="flowchart-line" d="M420 546 V580 H242 V610" marker-end="url(#sebe-flowchart-arrow)"/>
+<rect class="flowchart-neutral" x="132" y="612" width="220" height="112" rx="9"/>
+<text class="flowchart-label" x="242" y="654"><tspan x="242">InspectEval</tspan><tspan x="242" dy="37">Log</tspan></text>
+<path class="flowchart-line" d="M352 668 H409 M535 668 H592" marker-end="url(#sebe-flowchart-arrow)"/>
+<text class="flowchart-scored" x="472" y="677">Scored</text>
+<rect class="flowchart-judge" x="594" y="612" width="176" height="112" rx="9"/>
+<text class="flowchart-label flowchart-label--white" x="682" y="654"><tspan x="682">LLM</tspan><tspan x="682" dy="37">Judge</tspan></text>
+</svg>

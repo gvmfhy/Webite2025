@@ -23,6 +23,7 @@
     if (/\/writing\//.test(path)) return "writing";
     if (/\/agent-garden\//.test(path)) return "garden";
     if (/\/about\/?$/.test(path) || /\/about\.html$/.test(path)) return "about";
+    if (/^\/talks-posters(?:\.html)?\/?$/.test(path)) return "talks";
     if (path === "/" || path === "") return "selected";
     return "";
   }

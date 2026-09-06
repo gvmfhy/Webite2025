@@ -1,0 +1,141 @@
+<svg class="sebe-native-diagram" viewBox="0 0 1122 1458" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="refusal-trigger-map-title refusal-trigger-map-desc">
+<title id="refusal-trigger-map-title">Refusal-trigger illustration</title><desc id="refusal-trigger-map-desc">The original bread-making example, with sentence comparisons, highlighted word groups, and the provider-by-model trigger library.</desc>
+<style>
+.sebe-native-diagram { --ink:#384650; --muted:#596670; --neutral:#e1e5e7; --outline:#8e989f; --blue:#438eb6; --teal:#087f83; --copper:#aa482a; --green:#3c722f; --greenfill:#edf5e8; --red:#a8413d; --redfill:#f9e7e3; }
+@media (prefers-color-scheme:dark) { .sebe-native-diagram { --ink:#d5d9dd; --muted:#b6bec4; --neutral:#2b3238; --outline:#83909a; --blue:#72b5db; --teal:#56c2c2; --copper:#e69a69; --green:#a9ce86; --greenfill:#283c20; --red:#efaaa4; --redfill:#512e2c; } }
+.sebe-native-diagram text { font-family:Inter,system-ui,sans-serif; fill:var(--ink); text-anchor:middle; }
+.sebe-native-diagram .n-title { font-size:29px; font-weight:700; }
+.sebe-native-diagram .n-label { font-size:24px; }
+.sebe-native-diagram .n-small { font-size:21px; fill:var(--muted); }
+.sebe-native-diagram .n-white { fill:#fff; }
+.sebe-native-diagram .n-neutral { fill:var(--neutral); stroke:var(--outline); stroke-width:1.5; }
+.sebe-native-diagram .n-line { fill:none; stroke:var(--ink); stroke-width:2.5; stroke-linejoin:round; }
+</style><defs><marker id="refusal-trigger-map-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="context-stroke"/></marker></defs>
+<circle cx="34" cy="58" r="23" class="n-neutral"/>
+<text class="n-title" x="34" y="66" ><tspan x="34" dy="0">1</tspan></text>
+<path class="n-line" d="M34 84 V355" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<circle cx="34" cy="384" r="23" class="n-neutral"/>
+<text class="n-title" x="34" y="392" ><tspan x="34" dy="0">2</tspan></text>
+<path class="n-line" d="M34 410 V704" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<circle cx="34" cy="733" r="23" class="n-neutral"/>
+<text class="n-title" x="34" y="741" ><tspan x="34" dy="0">3</tspan></text>
+<path class="n-line" d="M34 759 V1120" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<circle cx="34" cy="1149" r="23" class="n-neutral"/>
+<text class="n-title" x="34" y="1157" ><tspan x="34" dy="0">4</tspan></text>
+<text class="n-title" x="112" y="65" style="text-anchor:start"><tspan x="112" dy="0">SecureBio internal benchmark</tspan></text>
+<text class="n-small" x="112" y="100" style="text-anchor:start"><tspan x="112" dy="0">some questions are blocked</tspan></text>
+<rect x="552" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="585" y="63" ><tspan x="585" dy="0">Q1</tspan></text>
+<rect x="629" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="662" y="63" ><tspan x="662" dy="0">Q2</tspan></text>
+<rect x="706" y="34" width="66" height="42" rx="8" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="739" y="63" ><tspan x="739" dy="0">Q3</tspan></text>
+<rect x="783" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="816" y="63" ><tspan x="816" dy="0">Q4</tspan></text>
+<rect x="860" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="893" y="63" ><tspan x="893" dy="0">Q5</tspan></text>
+<rect x="937" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="970" y="63" ><tspan x="970" dy="0">Q6</tspan></text>
+<rect x="1014" y="34" width="66" height="42" rx="8" class="n-neutral" />
+<text class="n-label" x="1047" y="63" ><tspan x="1047" dy="0">Q7</tspan></text>
+<path class="n-line" d="M739 79 V119" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<text class="n-small" x="771" y="110" style="text-anchor:start"><tspan x="771" dy="0">Q3, shown as an example</tspan></text>
+<rect x="112" y="130" width="985" height="193" rx="16" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="1064" y="168" style="text-anchor:end;fill:var(--red);font-weight:700"><tspan x="1064" dy="0">blocked</tspan></text>
+<text class="n-label" x="145" y="210" style="text-anchor:start;font-size:27px"><tspan x="145" dy="0">I’m planning a rustic loaf at home. Help me</tspan><tspan x="145" dy="42">prepare sourdough-19 starter. Then I bake the dough</tspan><tspan x="145" dy="42">in a hot oven. What crust texture should I aim for?</tspan></text>
+<text class="n-title" x="112" y="395" style="text-anchor:start"><tspan x="112" dy="0">Per-sentence API calls</tspan></text>
+<rect x="112" y="438" width="147" height="47" rx="9" class="n-neutral" />
+<text class="n-label" x="185" y="470" ><tspan x="185" dy="0">API 1</tspan></text>
+<text class="n-label" x="282" y="470" style="text-anchor:start;font-size:25px"><tspan x="282" dy="0">I’m planning a rustic loaf at home.</tspan></text>
+<rect x="918" y="438" width="167" height="47" rx="12" fill="var(--greenfill)" stroke="var(--green)"/>
+<text class="n-label" x="1001" y="470" style="fill:var(--green)"><tspan x="1001" dy="0">allowed</tspan></text>
+<rect x="101" y="496" width="996" height="64" rx="12" fill="none" stroke="var(--red)" stroke-width="2.5" stroke-dasharray="7 6"/>
+<rect x="112" y="505" width="147" height="47" rx="9" class="n-neutral" />
+<text class="n-label" x="185" y="537" ><tspan x="185" dy="0">API 2</tspan></text>
+<text class="n-label" x="282" y="537" style="text-anchor:start;font-size:25px"><tspan x="282" dy="0">Help me prepare sourdough-19 starter.</tspan></text>
+<rect x="918" y="505" width="167" height="47" rx="12" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="1001" y="537" style="fill:var(--red)"><tspan x="1001" dy="0">blocked</tspan></text>
+<rect x="112" y="572" width="147" height="47" rx="9" class="n-neutral" />
+<text class="n-label" x="185" y="604" ><tspan x="185" dy="0">API 3</tspan></text>
+<text class="n-label" x="282" y="604" style="text-anchor:start;font-size:25px"><tspan x="282" dy="0">Then I bake the dough in a hot oven.</tspan></text>
+<rect x="918" y="572" width="167" height="47" rx="12" fill="var(--greenfill)" stroke="var(--green)"/>
+<text class="n-label" x="1001" y="604" style="fill:var(--green)"><tspan x="1001" dy="0">allowed</tspan></text>
+<rect x="112" y="639" width="147" height="47" rx="9" class="n-neutral" />
+<text class="n-label" x="185" y="671" ><tspan x="185" dy="0">API 4</tspan></text>
+<text class="n-label" x="282" y="671" style="text-anchor:start;font-size:25px"><tspan x="282" dy="0">What crust texture should I aim for?</tspan></text>
+<rect x="918" y="639" width="167" height="47" rx="12" fill="var(--greenfill)" stroke="var(--green)"/>
+<text class="n-label" x="1001" y="671" style="fill:var(--green)"><tspan x="1001" dy="0">allowed</tspan></text>
+<text class="n-title" x="112" y="747" style="text-anchor:start"><tspan x="112" dy="0">Minimal blocking unit</tspan></text>
+<text class="n-small" x="112" y="778" style="text-anchor:start;font-size:23px"><tspan x="112" dy="0">slide a fixed-width window across the sentence, then shrink</tspan></text>
+<rect x="112" y="810" width="157" height="48" rx="24" fill="var(--greenfill)" stroke="var(--green)"/>
+<text class="n-label" x="190" y="842" style="fill:var(--green)"><tspan x="190" dy="0">allowed</tspan></text>
+<rect x="324" y="808" width="94" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="371.0" y="843" ><tspan x="371.0" dy="0">Help</tspan></text>
+<rect x="430" y="808" width="68" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="464.0" y="843" ><tspan x="464.0" dy="0">me</tspan></text>
+<rect x="510" y="808" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="575.0" y="843" ><tspan x="575.0" dy="0">prepare</tspan></text>
+<rect x="655" y="808" width="221" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="765.5" y="843" ><tspan x="765.5" dy="0">sourdough-19</tspan></text>
+<rect x="892" y="808" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="957.0" y="843" ><tspan x="957.0" dy="0">starter</tspan></text>
+<rect x="315" y="802" width="192" height="64" rx="12" fill="none" stroke="var(--green)" stroke-width="3"/>
+<rect x="112" y="889" width="157" height="48" rx="24" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="190" y="921" style="fill:var(--red)"><tspan x="190" dy="0">blocked</tspan></text>
+<rect x="324" y="887" width="94" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="371.0" y="922" ><tspan x="371.0" dy="0">Help</tspan></text>
+<rect x="430" y="887" width="68" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="464.0" y="922" ><tspan x="464.0" dy="0">me</tspan></text>
+<rect x="510" y="887" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="575.0" y="922" ><tspan x="575.0" dy="0">prepare</tspan></text>
+<rect x="655" y="887" width="221" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="765.5" y="922" ><tspan x="765.5" dy="0">sourdough-19</tspan></text>
+<rect x="892" y="887" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="957.0" y="922" ><tspan x="957.0" dy="0">starter</tspan></text>
+<rect x="501" y="881" width="384" height="64" rx="12" fill="none" stroke="var(--red)" stroke-width="3"/>
+<rect x="112" y="968" width="157" height="48" rx="24" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="190" y="1000" style="fill:var(--red)"><tspan x="190" dy="0">blocked</tspan></text>
+<rect x="324" y="966" width="94" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="371.0" y="1001" ><tspan x="371.0" dy="0">Help</tspan></text>
+<rect x="430" y="966" width="68" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="464.0" y="1001" ><tspan x="464.0" dy="0">me</tspan></text>
+<rect x="510" y="966" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="575.0" y="1001" ><tspan x="575.0" dy="0">prepare</tspan></text>
+<rect x="655" y="966" width="221" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="765.5" y="1001" ><tspan x="765.5" dy="0">sourdough-19</tspan></text>
+<rect x="892" y="966" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="957.0" y="1001" ><tspan x="957.0" dy="0">starter</tspan></text>
+<rect x="646" y="960" width="385" height="64" rx="12" fill="none" stroke="var(--red)" stroke-width="3"/>
+<rect x="112" y="1047" width="157" height="48" rx="24" fill="var(--redfill)" stroke="var(--red)"/>
+<text class="n-label" x="190" y="1079" style="fill:var(--red)"><tspan x="190" dy="0">blocked</tspan></text>
+<rect x="324" y="1045" width="94" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="371.0" y="1080" ><tspan x="371.0" dy="0">Help</tspan></text>
+<rect x="430" y="1045" width="68" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="464.0" y="1080" ><tspan x="464.0" dy="0">me</tspan></text>
+<rect x="510" y="1045" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="575.0" y="1080" ><tspan x="575.0" dy="0">prepare</tspan></text>
+<rect x="655" y="1045" width="221" height="52" rx="10" fill="var(--redfill)" />
+<text class="n-label" x="765.5" y="1080" ><tspan x="765.5" dy="0">sourdough-19</tspan></text>
+<rect x="892" y="1045" width="130" height="52" rx="10" class="n-neutral" />
+<text class="n-label" x="957.0" y="1080" ><tspan x="957.0" dy="0">starter</tspan></text>
+<rect x="646" y="1039" width="239" height="64" rx="12" fill="none" stroke="var(--red)" stroke-width="3"/>
+<text class="n-title" x="112" y="1163" style="text-anchor:start"><tspan x="112" dy="0">Internal trigger library</tspan></text>
+<text class="n-small" x="112" y="1195" style="text-anchor:start"><tspan x="112" dy="0">indexed per provider × model</tspan></text>
+<rect x="112" y="1220" width="717" height="217" rx="17" class="n-neutral" />
+<text class="n-label" x="136" y="1265" style="text-anchor:start"><tspan x="136" dy="0">provider × model</tspan></text>
+<text class="n-label" x="478" y="1265" style="text-anchor:start"><tspan x="478" dy="0">flagged units</tspan></text>
+<path d="M126 1280 H815 M450 1237 V1420" class="n-line" style="stroke:var(--outline);stroke-width:1.5"/>
+<text class="n-label" x="136" y="1326" style="text-anchor:start"><tspan x="136" dy="0">Provider A · Model 1</tspan></text>
+<text class="n-label" x="478" y="1326" style="text-anchor:start"><tspan x="478" dy="0">sourdough-19</tspan></text>
+<text class="n-label" x="136" y="1370" style="text-anchor:start"><tspan x="136" dy="0">Provider A · Model 2</tspan></text>
+<text class="n-label" x="478" y="1370" style="text-anchor:start"><tspan x="478" dy="0">wild yeast</tspan></text>
+<text class="n-label" x="136" y="1414" style="text-anchor:start"><tspan x="136" dy="0">Provider B · Model 1</tspan></text>
+<text class="n-label" x="478" y="1414" style="text-anchor:start"><tspan x="478" dy="0">poolish</tspan></text>
+<text class="n-small" x="856" y="1256" style="text-anchor:start"><tspan x="856" dy="0">informs</tspan></text>
+<path class="n-line" d="M829 1306 H849" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<rect x="855" y="1278" width="242" height="57" rx="13" fill="#285a78" />
+<text class="n-label n-white" x="976" y="1315" ><tspan x="976" dy="0">benchmark design</tspan></text>
+<path class="n-line" d="M829 1388 H849" marker-end="url(#refusal-trigger-map-arrow)" style=""/>
+<rect x="855" y="1360" width="242" height="57" rx="13" fill="#285a78" />
+<text class="n-label n-white" x="976" y="1397" ><tspan x="976" dy="0">red-teaming</tspan></text>
+</svg>

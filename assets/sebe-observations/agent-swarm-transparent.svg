@@ -1,0 +1,91 @@
+<svg class="swarm-original" viewBox="0 0 1702 1390" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="agent-swarm-transparent-title agent-swarm-transparent-desc">
+<title id="agent-swarm-transparent-title">Agent swarm command structure</title>
+<desc id="agent-swarm-transparent-desc">The original circular hierarchy: Opus 4.6 commander, two Sonnet 4.6 managers, four Haiku 4.5 translators, and four Haiku 4.5 executors. Each arrow carries its original label.</desc>
+<style>
+.swarm-original { --swarm-ink:#292b2c; --swarm-green:#299e42; --swarm-red:#ed3437; --swarm-paper:#fff; }
+@media(prefers-color-scheme:dark) { .swarm-original { --swarm-ink:#e4e1db; --swarm-green:#79d97f; --swarm-red:#ff777a; --swarm-paper:#191919; } }
+.swarm-original text { font-family:"Comic Sans MS","Chalkboard SE",cursive; text-anchor:middle; fill:var(--swarm-ink); font-size:23px; }
+.swarm-original .swarm-arrow { fill:none; stroke:var(--swarm-ink); stroke-width:2.8; stroke-linecap:round; stroke-linejoin:round; }
+.swarm-original .swarm-return { stroke:var(--swarm-green); }
+.swarm-original .swarm-arrow-label { paint-order:stroke fill; stroke:var(--swarm-paper); stroke-width:9px; stroke-linejoin:round; }
+.swarm-original .swarm-node-label { fill:#19201b; font-size:23px; }
+.swarm-original .swarm-green-label { fill:var(--swarm-green); font-family:Inter,system-ui,sans-serif; font-weight:700; font-size:21px; }
+</style>
+<defs><marker id="swarm-original-arrow" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M2 2 L12 7 L2 12" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="430" y="10" width="816" height="80" rx="19" fill="none" stroke="var(--swarm-green)" stroke-width="2.2" stroke-dasharray="10 9"/>
+<text x="838" y="56" style="font-family:Inter,system-ui,sans-serif;font-size:23px;fill:var(--swarm-red)">Dual use queries can be conceptualized as hazardous payloads</text>
+
+<path class="swarm-arrow" d="M778 301 L535 438" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M943 301 L1176 437" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M431 414 C408 287 479 242 751 240" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M1285 414 C1420 289 1253 244 969 246" marker-end="url(#swarm-original-arrow)"/>
+<text x="650" y="365" class="swarm-arrow-label" style="font-size:28px"><tspan x="650" dy="0">1. Operation Strategy</tspan></text>
+<text x="1068" y="365" class="swarm-arrow-label" style="font-size:28px"><tspan x="1068" dy="0">1. Operation Strategy</tspan></text>
+<text x="515" y="222" class="swarm-arrow-label"><tspan x="515" dy="0">7. Organized Insights</tspan></text>
+<text x="1206" y="232" class="swarm-arrow-label"><tspan x="1206" dy="0">7. Organized Insights</tspan></text>
+<path class="swarm-arrow" d="M426 620 L269 722" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M502 621 L599 722" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M1211 620 L1120 722" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M1287 620 L1452 722" marker-end="url(#swarm-original-arrow)"/>
+<text x="343" y="671" class="swarm-arrow-label" style="font-size:22px"><tspan x="343" dy="0">2. Tactical Tasking</tspan></text>
+<text x="574" y="671" class="swarm-arrow-label" style="font-size:22px"><tspan x="574" dy="0">2. Tactical Tasking</tspan></text>
+<text x="1140" y="671" class="swarm-arrow-label" style="font-size:22px"><tspan x="1140" dy="0">2. Tactical Tasking</tspan></text>
+<text x="1362" y="671" class="swarm-arrow-label" style="font-size:22px"><tspan x="1362" dy="0">2. Tactical Tasking</tspan></text>
+<path class="swarm-arrow swarm-return" d="M174 721 C83 617 131 601 357 549" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow swarm-return" d="M713 732 C878 639 781 637 570 549" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow swarm-return" d="M1029 721 C936 619 983 602 1141 549" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow swarm-return" d="M1569 732 C1730 639 1642 639 1356 549" marker-end="url(#swarm-original-arrow)"/>
+<text x="148" y="633" class="swarm-arrow-label swarm-green-label"><tspan x="148" dy="0">6. Sanitized JSON</tspan></text>
+<text x="771" y="672" class="swarm-arrow-label swarm-green-label"><tspan x="771" dy="0">6. Sanitized JSON</tspan></text>
+<text x="1015" y="633" class="swarm-arrow-label swarm-green-label"><tspan x="1015" dy="0">6. Sanitized JSON</tspan></text>
+<text x="1569" y="672" class="swarm-arrow-label swarm-green-label"><tspan x="1569" dy="0">6. Sanitized JSON</tspan></text>
+<path class="swarm-arrow" d="M165 878 Q90 941 169 1015" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M267 1015 Q346 941 270 879" marker-end="url(#swarm-original-arrow)"/>
+<text x="112" y="949" class="swarm-arrow-label" style="font-size:21px"><tspan x="112" dy="0">3. Execution Payload</tspan></text>
+<text x="327" y="940" class="swarm-arrow-label" style="font-size:21px"><tspan x="327" dy="0">5. Raw Hazardous</tspan><tspan x="327" dy="28">Data</tspan></text>
+<path class="swarm-arrow" d="M593 878 Q518 941 597 1015" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M695 1015 Q774 941 698 879" marker-end="url(#swarm-original-arrow)"/>
+<text x="540" y="949" class="swarm-arrow-label" style="font-size:21px"><tspan x="540" dy="0">3. Execution Payload</tspan></text>
+<text x="755" y="940" class="swarm-arrow-label" style="font-size:21px"><tspan x="755" dy="0">5. Raw Hazardous</tspan><tspan x="755" dy="28">Data</tspan></text>
+<path class="swarm-arrow" d="M1019 878 Q944 941 1023 1015" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M1121 1015 Q1200 941 1124 879" marker-end="url(#swarm-original-arrow)"/>
+<text x="966" y="949" class="swarm-arrow-label" style="font-size:21px"><tspan x="966" dy="0">3. Execution Payload</tspan></text>
+<text x="1181" y="940" class="swarm-arrow-label" style="font-size:21px"><tspan x="1181" dy="0">5. Raw Hazardous</tspan><tspan x="1181" dy="28">Data</tspan></text>
+<path class="swarm-arrow" d="M1447 878 Q1372 941 1451 1015" marker-end="url(#swarm-original-arrow)"/>
+<path class="swarm-arrow" d="M1549 1015 Q1628 941 1552 879" marker-end="url(#swarm-original-arrow)"/>
+<text x="1394" y="949" class="swarm-arrow-label" style="font-size:21px"><tspan x="1394" dy="0">3. Execution Payload</tspan></text>
+<text x="1609" y="940" class="swarm-arrow-label" style="font-size:21px"><tspan x="1609" dy="0">5. Raw Hazardous</tspan><tspan x="1609" dy="28">Data</tspan></text>
+<path class="swarm-arrow" d="M218 1179 Q218 1232 732 1313" stroke-dasharray="8 10" marker-end="url(#swarm-original-arrow)"/>
+<text x="258" y="1238" class="swarm-arrow-label" style="font-size:21px"><tspan x="258" dy="0">4. Input/Output Dangerous Info</tspan></text>
+<path class="swarm-arrow" d="M646 1179 Q646 1232 816 1313" stroke-dasharray="8 10" marker-end="url(#swarm-original-arrow)"/>
+<text x="646" y="1228" class="swarm-arrow-label" style="font-size:21px"><tspan x="646" dy="0">4. Input/Output</tspan><tspan x="646" dy="28">Dangerous Info</tspan></text>
+<path class="swarm-arrow" d="M1072 1179 Q1072 1232 914 1313" stroke-dasharray="8 10" marker-end="url(#swarm-original-arrow)"/>
+<text x="1072" y="1228" class="swarm-arrow-label" style="font-size:21px"><tspan x="1072" dy="0">4. Input/Output</tspan><tspan x="1072" dy="28">Dangerous Info</tspan></text>
+<path class="swarm-arrow" d="M1500 1179 Q1500 1232 996 1313" stroke-dasharray="8 10" marker-end="url(#swarm-original-arrow)"/>
+<text x="1480" y="1238" class="swarm-arrow-label" style="font-size:21px"><tspan x="1480" dy="0">4. Input/Output Dangerous Info</tspan></text>
+<circle cx="860" cy="226" r="108" fill="#ffdc00" stroke="#30342e" stroke-width="3"/>
+<text x="860" y="220.0" class="swarm-node-label"><tspan x="860" dy="0">Opus 4.6:</tspan><tspan x="860" dy="28">Commander</tspan></text>
+<circle cx="464" cy="520" r="107" fill="#86cce2" stroke="#30342e" stroke-width="3"/>
+<text x="464" y="514.0" class="swarm-node-label"><tspan x="464" dy="0">Sonnet 4.6:</tspan><tspan x="464" dy="28">Manager A</tspan></text>
+<circle cx="1248" cy="520" r="107" fill="#86cce2" stroke="#30342e" stroke-width="3"/>
+<text x="1248" y="514.0" class="swarm-node-label"><tspan x="1248" dy="0">Sonnet 4.6:</tspan><tspan x="1248" dy="28">Manager B</tspan></text>
+<circle cx="218" cy="802" r="92" fill="#9bf989" stroke="#30342e" stroke-width="3"/>
+<text x="218" y="796.0" class="swarm-node-label"><tspan x="218" dy="0">Haiku 4.5:</tspan><tspan x="218" dy="28">Translator 1</tspan></text>
+<circle cx="218" cy="1090" r="88" fill="#ff5000" stroke="#30342e" stroke-width="3"/>
+<text x="218" y="1084.0" class="swarm-node-label"><tspan x="218" dy="0">Haiku 4.5:</tspan><tspan x="218" dy="28">Executor 1</tspan></text>
+<circle cx="646" cy="802" r="92" fill="#9bf989" stroke="#30342e" stroke-width="3"/>
+<text x="646" y="796.0" class="swarm-node-label"><tspan x="646" dy="0">Haiku 4.5:</tspan><tspan x="646" dy="28">Translator 2</tspan></text>
+<circle cx="646" cy="1090" r="88" fill="#ff5000" stroke="#30342e" stroke-width="3"/>
+<text x="646" y="1084.0" class="swarm-node-label"><tspan x="646" dy="0">Haiku 4.5:</tspan><tspan x="646" dy="28">Executor 2</tspan></text>
+<circle cx="1072" cy="802" r="92" fill="#9bf989" stroke="#30342e" stroke-width="3"/>
+<text x="1072" y="796.0" class="swarm-node-label"><tspan x="1072" dy="0">Haiku 4.5:</tspan><tspan x="1072" dy="28">Translator 3</tspan></text>
+<circle cx="1072" cy="1090" r="88" fill="#ff5000" stroke="#30342e" stroke-width="3"/>
+<text x="1072" y="1084.0" class="swarm-node-label"><tspan x="1072" dy="0">Haiku 4.5:</tspan><tspan x="1072" dy="28">Executor 3</tspan></text>
+<circle cx="1500" cy="802" r="92" fill="#9bf989" stroke="#30342e" stroke-width="3"/>
+<text x="1500" y="796.0" class="swarm-node-label"><tspan x="1500" dy="0">Haiku 4.5:</tspan><tspan x="1500" dy="28">Translator 4</tspan></text>
+<circle cx="1500" cy="1090" r="88" fill="#ff5000" stroke="#30342e" stroke-width="3"/>
+<text x="1500" y="1084.0" class="swarm-node-label"><tspan x="1500" dy="0">Haiku 4.5:</tspan><tspan x="1500" dy="28">Executor 4</tspan></text>
+<rect x="733" y="1288" width="263" height="80" fill="#080808" stroke="#fa2525" stroke-width="3"/>
+<text x="864" y="1337" class="swarm-target-label" style="font-size:23px"><tspan x="864" dy="0">Target Attack Surface</tspan></text>
+<style>.swarm-original .swarm-target-label { fill:#fff; }</style>
+</svg>
