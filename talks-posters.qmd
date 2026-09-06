@@ -1,7 +1,7 @@
 ---
 title: "What did I get up to during my Pivotal Fellowship at the London Initiative for Safe AI?"
 subtitle: "Standardized Elicitation for Biosecurity Evals (SEBE)"
-description: "My Pivotal Fellowship at the London Initiative for Safe AI: the SEBE rationale, SEBE poster, spotlight slides, and monitoring video."
+description: "My research on AI safety and biosecurity during my Pivotal Fellowship at the London Initiative for Safe AI."
 toc: false
 sidebar: false
 body-classes: talks-posters-page
