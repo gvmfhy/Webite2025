@@ -1,6 +1,6 @@
 ---
 title: "What did I get up to during my Pivotal Fellowship at the London Initiative for Safe AI?"
-subtitle: "Standardized Elicitation for Biosecurity Evals (SEBE)"
+subtitle: "AI safety at the intersection of biological, chemical, and cyber risk"
 description: "My research on AI safety and biosecurity during my Pivotal Fellowship at the London Initiative for Safe AI."
 toc: false
 sidebar: false
@@ -259,7 +259,7 @@ css: styles/talks-posters.css
       <span class="syntax-demo__result syntax-demo__result--allowed">No refusal</span>
     </div>
   </div>
-  <figcaption id="syntax-demo-caption">Illustration only · SOURDOUGHLA-19 is a made-up term.</figcaption>
+  <figcaption id="syntax-demo-caption">Simplified example — real payloads are instead smuggled through highly nested JSON, with benign fields above and below. The vector works on coding agents, but is less reliable (often not at all) through other endpoints.</figcaption>
 </figure>
 
 <h3 id="soft-refusals">All refusals are soft, and multi-turn decomposition is a generalized attack.</h3>
