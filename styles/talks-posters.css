@@ -105,6 +105,8 @@ body.quarto-dark .photo-placeholder small { color: #b4bac0; }
 .research-image-space { margin: 1.5rem 0 2.25rem; }
 .research-image-space .photo-placeholder { min-height: 10rem; padding: 1.5rem; }
 .research-redaction { font-style: italic; }
+.third-party-variable { white-space: nowrap; font-family: "SFMono-Regular", "Cascadia Mono", "Nimbus Mono PS", Menlo, monospace; font-size: 0.86em; font-style: normal; font-weight: 800; font-variant-ligatures: none; letter-spacing: 0.075em; color: #806300; }
+body.quarto-dark .third-party-variable { color: #ddb84c; }
 @media (max-width: 600px) { .research-figure-pair { grid-template-columns: 1fr; gap: 0; } .research-observations h2 { margin-top: 2.5rem; } }
 /* Reading rhythm: narrow prose, wider figures, and clear section transitions. */
 .talks-posters-page { --story-measure: 42rem; --story-rule: #cbd0d5; --story-accent: #a54c20; }

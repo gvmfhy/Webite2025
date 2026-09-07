@@ -52,8 +52,8 @@ css: styles/talks-posters.css
 <section id="investigating-refusals" class="sebe-rationale story-section" aria-labelledby="why-heading">
 <h2 id="why-heading" class="story-label">WHY</h2>
 <p class="section-lead">We need a way to bypass refusals for our evaluations, in order to understand capabilities and ease of access to the hazardous information for an adversary.</p>
-    <p>Safeguards deployed by frontier labs, while sound in spirit, create challenges for groups who seek to confirm or deny findings in model cards. As it stands, third-party evaluators may, at a lab's discretion, be granted time-restricted access to a rails-free API key for pre-deployment evaluation. That it happens at all is evidence <em>[Third party org]</em> has done well obtaining trust and creating goodwill collaborations with these companies.</p>
-<p>Whether it will continue is ambiguous, and contingent on events hard to control. Consider what happens when a lab provides <em>[Third party org]</em> such a key. Can you guarantee that:</p>
+    <p>Safeguards deployed by frontier labs, while sound in spirit, create challenges for groups who seek to confirm or deny findings in model cards. As it stands, third-party evaluators may, at a lab's discretion, be granted time-restricted access to a rails-free API key for pre-deployment evaluation. That it happens at all is evidence <span class="third-party-variable">[third party org]</span> has done well obtaining trust and creating goodwill collaborations with these companies.</p>
+<p>Whether it will continue is ambiguous, and contingent on events hard to control. Consider what happens when a lab provides <span class="third-party-variable">[third party org]</span> such a key. Can you guarantee that:</p>
     <ol type="a">
       <li>The model behind that key is what you think it is?</li>
       <li>What we evaluate is not a sandbagged variant meant to deceive and undermine the audit?</li>
