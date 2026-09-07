@@ -17,6 +17,7 @@ project:
     - "assets/sebe-poster.pdf"
     - "assets/sebe-poster-preview.webp"
     - "assets/monitoring-comparison.mp4"
+    - "assets/monitoring-preview.jpg"
     - "assets/lisa-spotlight/"
     - "assets/slide-reader.js"
     # Interlinking: committed static data + runtime script copied into _site/.

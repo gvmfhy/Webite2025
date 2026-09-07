@@ -9,21 +9,21 @@ css: styles/talks-posters.css
 ---
 
 ```{=html}
+<div class="opening-links">
 <nav class="page-jumps" aria-label="On this page">
   <div class="page-jumps__materials">
-    <a class="no-external" href="#sebe">Poster <span aria-hidden="true">↓</span></a>
-    <a class="no-external" href="#lisa-recording">LISA Spotlight presentation video <span aria-hidden="true">↓</span></a>
+    <a class="no-external" href="#sebe">Research poster <span aria-hidden="true">↓</span></a>
+    <a class="no-external" href="#lisa-spotlight">LISA Spotlight: recording &amp; slides <span aria-hidden="true">↓</span></a>
   </div>
-  <div class="page-jumps__story">
+  <h2 class="page-jumps__heading" id="sebe-overview-title">Standardized Elicitation for Biosecurity Evaluations (SEBE)</h2>
+  <div class="page-jumps__story" role="group" aria-labelledby="sebe-overview-title">
     <a class="no-external" href="#investigating-refusals">Why</a>
     <a class="no-external" href="#sebe-method">What</a>
     <a class="no-external" href="#sebe-how">How</a>
     <a class="no-external" href="#principles-of-attack">Principles of attack</a>
   </div>
-  <div class="page-jumps__next">
-    <a class="no-external" href="https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity">What’s next? → Cyberbio Offense</a>
-  </div>
 </nav>
+</div>
 
 <figure class="fellowship-recollection" id="opening">
   <blockquote cite="https://austinpatrick.substack.com/p/london-and-artificial-intelligence">
@@ -71,8 +71,7 @@ css: styles/talks-posters.css
   <h2 id="what-heading" class="story-label">WHAT</h2>
   <p class="section-lead">A generalized attack strategy to assess refusal robustness and elicit detailed responses to blocked benchmark questions, referred to herein as SEBE (Standardized Elicitation for Biosecurity Evals)</p>
 
-  <p>We use an AI steerer to automate our attack in a multi turn conversation. The step-wise approach towards harmful outputs Microsoft refers to as an ‘<a href="https://arxiv.org/html/2404.01833v1">adaptive crescendo</a>’ technique.</p>
-  <p>While designed for chemical and biological datasets, this is a generalized framework that applies to any CBRN-E question set.</p>
+  <p>We use an AI steerer to automate our attack in a multi turn conversation. The step-wise approach towards harmful outputs Microsoft refers to as an ‘<a href="https://arxiv.org/html/2404.01833v1">adaptive crescendo</a>’ technique. While designed for chemical and biological datasets, this is a generalized framework that applies to any CBRN-E question set.</p>
   <p>Should this be developed further, expect the task to be within a fellows scope. Variables to focus on include length of the attack chain (more sensitive topics will require more turns and smaller steps), choice of harness (Inspect is ill-suited for attack discovery), and methods of abstraction (for further reading, see <a href="https://annas-archive.gl/md5/b0aeac1cc9b0c16b78767da2c76e24d2">Hayakawa</a>).</p>
   </section>
 <section id="sebe-how" class="story-section" aria-labelledby="how-heading">
@@ -545,38 +544,64 @@ css: styles/talks-posters.css
 </div>
 ```
 
-## Pivotal research poster {#sebe}
+```{=html}
+<section id="threat-model" class="level2">
+<h2 data-anchor-id="threat-model">Are frontier models still easy to jailbreak?</h2>
+<p class="threat-model-answer">That depends!</p>
+<p class="threat-model-lead">It depends on your budget, the provider, and above all -- <strong class="threat-model-emphasis">YOUR THREAT MODEL.</strong></p>
+<p>For instance, Fable class models are much harder to jailbreak than Opus. A coarse classifier is a better classifier when it comes to catching multi-turn attacks: if anything bio-shaped flags, it’s much harder to get to weaponization—whereas, if you try to draw a fine line (humans struggle with this) of the type of science that is weaponizable, that is a fuzzy space, and can be exploited. But, putting Anthropic aside, and looking at another model, say Gemini Flash 3.8 as of September 2026, yes, it is still as easy.</p>
+<figure class="monitoring-video" id="monitoring-video">
+  <video controls="" playsinline="" preload="metadata" poster="/assets/monitoring-preview.jpg" width="1730" height="1364" aria-label="Response monitoring comparison in Gemini" aria-describedby="monitoring-video-caption">
+    <source src="/assets/monitoring-comparison.mp4" type="video/mp4">
+    <p>Your browser does not support embedded video. <a href="/assets/monitoring-comparison.mp4">Open the video</a>.</p>
+  </video>
+  <figcaption id="monitoring-video-caption">Monitoring comparison · 35 seconds</figcaption>
+</figure>
 
-<p class="resource-meta">SEBE · Standardized Elicitation for Biosecurity Evaluations</p>
+<section class="monitoring-note" id="monitoring-comments" aria-labelledby="monitoring-note-title">
+  <h3 id="monitoring-note-title" class="anchored">Three places to block an attacker</h3>
+<p>Consider the parallel between how you want to detect misuse by the user versus misbehavior on the part of the model. <em>Text is (almost) all you have.</em></p>
+    <p>There are three places where monitoring can occur to thwart an attacker. These are:</p>
+    <ol class="monitoring-stages">
+      <li><strong>The initial query</strong> (refusal occurs before tokens stream).</li>
+      <li><strong>During the initial CoT</strong> (tokens stream and may or may not be shown to the attacker depending on the provider, but refusal occurs before the assistant’s first-turn output).</li>
+      <li><strong>During the output itself.</strong></li>
+    </ol>
+    <p>Asynchronous monitoring of conversations across an account could be viewed this way too. It is helpful for banning accounts or for investigation, but less useful for preventing immediate harm, since the attacker has already elicited the information.</p>
+</section>
+</section>
+```
 
 ```{=html}
+<section id="sebe" class="level2">
+<div class="poster-document">
 <figure class="poster-preview">
   <a href="/assets/sebe-poster.pdf" target="_blank" rel="noopener" aria-label="Open the Pivotal SEBE poster as a full-size PDF">
     <img src="/assets/sebe-poster-preview.webp" width="1554" height="2200" alt="SEBE research poster presented at Pivotal Research" fetchpriority="high" decoding="async">
   </a>
 </figure>
-<p class="media-actions">
-  <a href="/assets/sebe-poster.pdf" target="_blank" rel="noopener">View full-size poster</a>
-  <a href="/assets/sebe-poster.pdf" download="SEBE_poster_high_contrast.pdf">Download PDF</a>
-</p>
+<div class="poster-document__details">
+<p class="resource-eyebrow">Pivotal fellowship · research poster</p>
+<h2>SEBE</h2>
+<p class="poster-document__title">Standardized Elicitation for Biosecurity Evaluations</p>
+<p class="media-actions"><a class="resource-primary no-external" href="/assets/sebe-poster.pdf" target="_blank" rel="noopener">Open poster PDF <span aria-hidden="true">↗</span></a></p>
+</div>
+</div>
+</section>
 ```
 
-## LISA spotlight {#lisa-spotlight}
+## LISA Spotlight {#lisa-spotlight}
 
 ```{=html}
-<nav class="spotlight-formats" aria-label="Choose talk recording or slides">
-  <a href="#lisa-recording"><strong>Watch recorded talk</strong><span>YouTube video</span></a>
-  <a href="#lisa-slides"><strong>Browse slides</strong><span>17 slides · PDF and PowerPoint available</span></a>
-</nav>
 <h3 id="lisa-recording" class="spotlight-format-title">Recorded talk</h3>
 <div class="talk-viewer">
   <iframe src="https://www.youtube-nocookie.com/embed/tx7ISlCtRJM" title="LISA spotlight talk — Austin P. Morrissey" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-<p class="media-actions"><a href="https://www.youtube.com/watch?v=tx7ISlCtRJM" target="_blank" rel="noopener">Watch on YouTube</a></p>
+<p class="media-actions"><a class="no-external" href="https://www.youtube.com/watch?v=tx7ISlCtRJM" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
 ```
 
 <h3 id="lisa-slides" class="spotlight-format-title">Presentation slides</h3>
-<p class="resource-meta">Browse all 17 slides below, or open the PDF.</p>
+<p class="resource-meta">17 slides · PDF and PowerPoint available</p>
 
 ```{=html}
 <div class="slide-reader" data-slide-reader role="region" aria-label="LISA spotlight presentation">
@@ -701,43 +726,9 @@ css: styles/talks-posters.css
 <script defer src="/assets/slide-reader.js"></script>
 ```
 
-## Are frontier models still easy to jailbreak? {#threat-model}
-
 ```{=html}
-<p class="threat-model-answer">That depends!</p>
-<p class="threat-model-lead">It depends on your budget, the provider, and above all -- <strong class="threat-model-emphasis">YOUR THREAT MODEL.</strong></p>
-```
-
-For instance, Fable class models are much harder to jailbreak than Opus. A coarse classifier is a better classifier when it comes to catching multi-turn attacks: if anything bio-shaped flags, it's much harder to get to weaponization—whereas, if you try to draw a fine line (humans struggle with this) of the type of science that is weaponizable, that is a fuzzy space, and can be exploited. But, putting Anthropic aside, and looking at another model, say Gemini Flash 3.8 as of September 2026, yes, it is still as easy.
-
-```{=html}
-<figure class="monitoring-video" id="monitoring-video">
-  <video controls playsinline preload="metadata" width="1730" height="1364" aria-label="Response monitoring comparison in Gemini" aria-describedby="monitoring-video-caption">
-    <source src="/assets/monitoring-comparison.mp4" type="video/mp4">
-    <p>Your browser does not support embedded video. <a href="/assets/monitoring-comparison.mp4">Open the video</a>.</p>
-  </video>
-  <figcaption id="monitoring-video-caption">Monitoring comparison · 35 seconds</figcaption>
-</figure>
-
-<section class="monitoring-note" id="monitoring-comments" aria-labelledby="monitoring-note-title">
-  <h3 id="monitoring-note-title">Three places to block an attacker</h3>
-<p>Consider the parallel between how you want to detect misuse by the user versus misbehavior on the part of the model. <em>Text is (almost) all you have.</em></p>
-    <p>There are three places where monitoring can occur to thwart an attacker. These are:</p>
-    <ol class="monitoring-stages">
-      <li><strong>The initial query</strong> (refusal occurs before tokens stream).</li>
-      <li><strong>During the initial CoT</strong> (tokens stream and may or may not be shown to the attacker depending on the provider, but refusal occurs before the assistant’s first-turn output).</li>
-      <li><strong>During the output itself.</strong></li>
-    </ol>
-    <p>Asynchronous monitoring of conversations across an account could be viewed this way too. It is helpful for banning accounts or for investigation, but less useful for preventing immediate harm, since the attacker has already elicited the information.</p>
-</section>
-```
-
-
-
-
-## P.S. {#ps}
-
-```{=html}
+<section id="ps" class="level2">
+<h2>P.S.</h2>
 <div class="ps-photos">
   <figure class="ps-photo">
     <a href="/assets/fellowship-ps/event-photo-01.png" target="_blank" rel="noopener" aria-label="Open event photograph at full size">
@@ -766,6 +757,13 @@ For instance, Fable class models are much harder to jailbreak than Opus. A coars
     <figcaption>Las Vegas · DEF CON</figcaption>
   </figure>
 </div>
+</section>
 ```
 
-## [What’s next? → Cyberbio Offense](https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity) {#whats-next}
+```{=html}
+<section id="whats-next" class="level2 next-project">
+<p class="resource-eyebrow">What’s next?</p>
+<h2><a class="no-external" href="https://sparai.org/projects/f26/recqZphVpCRiFlAxK/?tab=biosecurity">Cyberbio Offense <span aria-hidden="true">↗</span></a></h2>
+<p class="resource-meta">SPAR research project</p>
+</section>
+```
