@@ -896,6 +896,17 @@ blockquote {
   line-height: 1.55;
 }
 
+// Threat-model emphasis in SecureMaxx: upright type and a readable red accent.
+.threat-quote blockquote {
+  color: #A83238;
+  border-left-color: currentColor;
+  font-style: normal;
+
+  strong { font-weight: 600; }
+}
+
+body.quarto-dark .threat-quote blockquote { color: #E88484; }
+
 // A larger pull-quote variant for editorial emphasis
 .pullquote {
   font-family: $font-family-serif;

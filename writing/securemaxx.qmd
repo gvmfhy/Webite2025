@@ -42,7 +42,9 @@ In the near future, biological capabilities including the design of pathogens mo
 
 Given this untenable, worsening situation, it is of utmost importance to map out steps within a kill chain for a biological attack, and to identify threat-agnostic, early intervention points that enable us to interject friction within the adversary’s path.
 
+::: {.threat-quote}
 > **The first step of an attack, foregoing setting an intention and choosing a target, involves weapon choice, design, and acquisition. It is at this stage where manipulation of genetic sequences occurs in silico, spanning tasks such as information retrieval (obtaining your sequences of concern), alteration (obfuscating the sequence to circumvent detection), and molecular biology tradecraft (construct design). LLMs can provide exceptional assistance across all of these steps.**
+:::
 
 Therefore, in any conversational context (between an agent and a human) where genetic material appears, we are presented with an early opportunity to detect and deter. However, the majority of users within these contexts will have legitimate relation to the global research community, with professional demographics spanning clinicians, scientists, and hordes of student trainees. Should we become overzealous and haphazard in our detection policies, we’d lean towards blanketed blocks for all such queries. In doing so, we’d needlessly curtail the rate of scientific progress, while also creating perverse, adversarial incentives for normal use — as given these tools are so useful, legitimate users will direct effort toward bypassing them, share their successful approaches with their colleagues, and thus in turn also empower our adversaries.
 
