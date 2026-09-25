@@ -734,13 +734,13 @@ css: styles/talks-posters.css
     <a href="/assets/fellowship-ps/event-photo-01.png" target="_blank" rel="noopener" aria-label="Open event photograph at full size">
       <img src="/assets/fellowship-ps/event-photo-01.png" width="2048" height="1536" alt="Two people seated together at an event." loading="lazy" decoding="async">
     </a>
-    <!-- Caption to be supplied by Austin. -->
+    <figcaption>Geoffrey Irving!</figcaption>
   </figure>
   <figure class="ps-photo ps-photo--graduation">
     <a class="ps-photo__crop" href="/assets/fellowship-ps/pivotal-graduation.jpeg" target="_blank" rel="noopener" aria-label="Open the original Pivotal graduation photograph at full size">
       <img src="/assets/fellowship-ps/pivotal-graduation.jpeg" width="3024" height="4032" alt="Three people standing in front of a Pivotal graduation screen, one holding a certificate." loading="lazy" decoding="async">
     </a>
-    <!-- Caption to be supplied by Austin. -->
+    <figcaption>Pivotal Fellow Graduation · With <a href="https://www.linkedin.com/in/tilman-raeuker/" target="_blank" rel="noopener">Tilman Räuker</a> and <a href="https://www.linkedin.com/in/tobias-h%C3%A4berli/" target="_blank" rel="noopener">Tobias Häberli</a></figcaption>
   </figure>
 </div>
 <div class="ps-photos ps-photos--travel" id="ps-travel-photos">
