@@ -896,6 +896,17 @@ blockquote {
   line-height: 1.55;
 }
 
+// Upright subheadings make the SecureMaxx article easier to scan.
+body.securemaxx-article :is(h3, h4) { font-style: normal; }
+
+// Results summary follows the article text color: white in dark mode, dark in light mode.
+body.securemaxx-article .results-quote blockquote {
+  color: inherit;
+  font-style: normal;
+
+  strong { font-weight: 700; }
+}
+
 // Threat-model emphasis in SecureMaxx: upright type and a readable red accent.
 .threat-quote blockquote {
   color: #A83238;

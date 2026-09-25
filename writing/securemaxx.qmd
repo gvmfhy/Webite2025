@@ -2,6 +2,7 @@
 title: "SecureMaxx: A Lightweight Sequence Screening Tool for Agents"
 date: 2026-04-28
 author-meta: "Austin P. Morrissey"
+body-classes: securemaxx-article
 categories: [ai-safety, biosecurity, ai-evals, agents]
 image: /images/writing/securemaxx/01.png
 image-alt: "SecureMaxx hackathon presentation at the London Initiative for Safe AI"
@@ -20,15 +21,17 @@ A group of bionerds assembled at the London Initiative for Safe AI for a hackath
 
 ## TL;DR
 
-Responsible contract research organizations, that perform DNA synthesis as a service, should screen customer requests prior to executing the work order. Likewise, responsible AI labs that develop and serve LLMs with superhuman scientific capability, should screen a user’s input whenever it involves nucleic acids to determine if assistance is appropriate. However, without making tool calls, a model’s ability to perceive and assess the true nature of any sequence is notoriously juvenile, completely devoid of nuance, accuracy, and reliability. We developed an agent-native tool — **SecureMaxx** — that makes sequences transparent to the model while countering obfuscation attempts by the user. In experimental conditions, we deployed high-risk sequences across several scientific scenarios of varying complexity, all of which bypassed the native Anthropic classifier on Sonnet 4.6.
+Responsible contract research organizations that perform DNA synthesis as a service should screen customer requests prior to executing the work order. Likewise, responsible AI labs that develop and serve LLMs with superhuman scientific capability, should screen a user’s input whenever it involves nucleic acids to determine if assistance is appropriate. However, without making tool calls, a model’s ability to perceive and assess the true nature of any sequence is notoriously juvenile, completely devoid of nuance, accuracy, and reliability. We developed an agent-native tool — **SecureMaxx** — that makes sequences transparent to the model while countering obfuscation attempts by the user. In experimental conditions, we deployed high-risk sequences across several scientific scenarios of varying complexity, all of which bypassed the native Anthropic classifier on Sonnet 4.6.
 
-> **When SecureMaxx is invoked, refusal rates rise from a 0–30% baseline to 70–100% depending on scenario complexity, with under 2 seconds of added latency per query and less than 1% safety tax on a standard capabilities benchmark (HellaSwag).**
+::: {.results-quote}
+> **When SecureMaxx is invoked, refusal rates rise from a 0–30% baseline to 70–100%, depending on the scenario, with under 2 seconds of added latency per query and less than 1% additional token usage when running in the background on non-relevant scenarios.**
+:::
 
 Here, we aim to demonstrate that light-touch interventions can add meaningful friction to one step in the kill chain, and to outline the dual-use implications and additional hardening required for deployment against adversarial users.
 
 ## Research team & affiliations
 
-[Gerard Boxo](https://www.linkedin.com/in/gerard-boxo-183598275/) (Coefficient Giving), [Allison Jia](https://www.linkedin.com/in/allison-jia/) (MATS), [Rebecca Zanini](https://www.linkedin.com/in/rebecca-zanini/) (Pivotal Research), [Mac Walker](https://www.linkedin.com/in/mac-walker1/) , [Austin Morrissey](https://www.linkedin.com/in/austin-p-morrissey/) (Pivotal Research).
+[Gerard Boxo](https://www.linkedin.com/in/gerard-boxo-183598275/) (Coefficient Giving), [Allison Jia](https://www.linkedin.com/in/allison-jia/) (MATS), [Rebecca Zanini](https://www.linkedin.com/in/rebecca-zanini/) (Pivotal Research), [Mac Walker](https://www.linkedin.com/in/mac-walker1/), [Austin Morrissey](https://www.linkedin.com/in/austin-p-morrissey/) (Pivotal Research).
 
 Credit for the research belongs to the team. Errors in this writeup, and any opinions expressed, are mine alone and do not represent the views of my coauthors or their affiliations.
 
@@ -38,15 +41,21 @@ Credit for the research belongs to the team. Errors in this writeup, and any opi
 
 ## 1. Introduction
 
-In the near future, biological capabilities including the design of pathogens more dangerous than anything found in nature may be within reach of actors with only basic scientific training. What is leading to this phase transition in the threat landscape is the unprecedented advancement of AI capabilities. Previously, expert knowledge served as a barrier against non-state actors who sought to create their own bioweaponization programs, such as Aum Shinrikyo and Al-Qaeda.[^6r9x80gutcs] But now, aspiring bioterrorists have on demand access to infinitely patient, artificial mentors, who possess near superhuman levels of cross-domain expertise. It stands to reason that threat actors, under tutelage of experienced mentors, will have a greater attack success rate;[^1sgewn2wzagi] indeed, this phenomenon has already been observed on the peer-to-peer level when developing and deploying improvised explosive devices.[^fz2pgpew2]
+In the near future, biological capabilities including the design of pathogens more dangerous than anything found in nature may be within reach of actors with only basic scientific training. What is leading to this phase transition in the threat landscape is the unprecedented advancement of AI capabilities. Previously, expert knowledge served as a barrier against non-state actors who sought to create their own bioweaponization programs, such as Aum Shinrikyo and Al-Qaeda.[^6r9x80gutcs] But now, aspiring bioterrorists have on-demand access to infinitely patient, artificial mentors, who possess near superhuman levels of cross-domain expertise. It stands to reason that threat actors, under tutelage of experienced mentors, will have a greater attack success rate;[^1sgewn2wzagi] indeed, this phenomenon has already been observed on the peer-to-peer level when developing and deploying improvised explosive devices.[^fz2pgpew2]
 
 Given this untenable, worsening situation, it is of utmost importance to map out steps within a kill chain for a biological attack, and to identify threat-agnostic, early intervention points that enable us to interject friction within the adversary’s path.
 
 ::: {.threat-quote}
-> **The first step of an attack, foregoing setting an intention and choosing a target, involves weapon choice, design, and acquisition. It is at this stage where manipulation of genetic sequences occurs in silico, spanning tasks such as information retrieval (obtaining your sequences of concern), alteration (obfuscating the sequence to circumvent detection), and molecular biology tradecraft (construct design). LLMs can provide exceptional assistance across all of these steps.**
+> **The first step of an attack, foregoing setting an intention and choosing a target, involves weapon choice, design, and acquisition.**
 :::
 
-Therefore, in any conversational context (between an agent and a human) where genetic material appears, we are presented with an early opportunity to detect and deter. However, the majority of users within these contexts will have legitimate relation to the global research community, with professional demographics spanning clinicians, scientists, and hordes of student trainees. Should we become overzealous and haphazard in our detection policies, we’d lean towards blanketed blocks for all such queries. In doing so, we’d needlessly curtail the rate of scientific progress, while also creating perverse, adversarial incentives for normal use — as given these tools are so useful, legitimate users will direct effort toward bypassing them, share their successful approaches with their colleagues, and thus in turn also empower our adversaries.
+It is at this stage where manipulation of genetic sequences occurs in silico, spanning tasks such as information retrieval (obtaining your sequences of concern), alteration (obfuscating the sequence to circumvent detection), and molecular biology tradecraft (construct design).
+
+::: {.threat-quote}
+> **LLMs can provide exceptional assistance across all of these steps.**
+:::
+
+Therefore, in any conversational context (between an agent and a human) where genetic material appears, we are presented with an early opportunity to detect and deter. However, the majority of users within these contexts will have legitimate relation to the global research community, with professional demographics spanning clinicians, scientists, and hordes of student trainees. Should we become overzealous and haphazard in our detection policies, we’d lean towards blanket blocks for all such queries. In doing so, we’d needlessly curtail the rate of scientific progress, while also creating perverse, adversarial incentives for normal use — given that these tools are so useful, legitimate users will direct effort toward bypassing them, share their successful approaches with their colleagues, and thus in turn also empower our adversaries.
 
 To fix this, we developed an agent-native tool that helps provide refusal-relevant evidence even after obfuscation. Rather than strictly defining when the tool should be called, we provide high-level guidance and allow the agent to decide. Our choice is pragmatic: an overdefined system limits itself to scenarios developers can predict in advance, and our intuitions are ill-suited for the volume, complexity, and novelty of situations encountered by an agent in deployment. Additionally, this means that as capabilities improve, we expect agents to invoke the tool with increasing discernment.
 
@@ -62,7 +71,9 @@ NCBI BLAST (Basic Local Alignment Search Tool) is a homology-based sequence sear
 
 ![](/images/writing/securemaxx/04.png){fig-alt="Comparison of pathogenic Bacillus anthracis and generally harmless Bacillus cereus despite about 99 percent genome identity."}
 
+::: {.threat-quote}
 > **Pathogens can share a high degree of overlap (sequence homology) with near neighbors that are known to be low risk for humans.**
+:::
 
 SecureDNA addresses the first and third limitations by searching against a curated database of sequences of concern — select agents, regulated pathogens, and toxin genes. Every hit is, by construction, biosecurity-relevant, eliminating the interpretive burden BLAST places on the user. SecureDNA is also optimized for high-throughput screening, minimizing latency between query and response.
 
@@ -70,14 +81,14 @@ SeqScreen takes a function-first approach, detecting threat signals at the level
 
 ## 3. Approach: SecureMaxx Architecture
 
-SecureMaxx is composed of three loosely-coupled components: a screening backend, an agent-callable skill that wraps it, and an evaluation harness for measuring the intervention’s effect on agent behavior.
+SecureMaxx is composed of three loosely coupled components: a screening backend, an agent-callable skill that wraps it, and an evaluation harness for measuring the intervention’s effect on agent behavior.
 
 ### 3.1 Screening backend
 
 A small HTTP service wraps two complementary screening primitives:
 
 - **Local BLAST** against a 405-sequence database of human virus reference sequences. The endpoints BLASTN/hazard_nt and BLASTP/hazard_prot accept nucleotide and protein queries respectively. We chose to maintain a local index rather than querying NCBI directly because the latter is rate-limited and unsuitable for high-throughput screening.
-- **SecureDNA** integration via synthclient, which extends coverage beyond viruses to select agents, regulated pathogens, and toxin genes, these hits are beyond the scope of our local BLAST index, thereby covering more threat types.
+- **SecureDNA** integration via synthclient extends coverage beyond viruses to select agents, regulated pathogens, and toxin genes. This covers more threat types than our local BLAST index.
 
 The backend returns a verdict per query, alongside information regarding the sequence. As our pipeline is simple and modular, any higher-fidelity screener (covering natural, engineered, or obfuscated sequences) can be slotted in as an additional endpoint.
 
@@ -85,13 +96,17 @@ The backend returns a verdict per query, alongside information regarding the seq
 
 Rather than hardcoding when screening should occur, we expose the backend as a skill that the agent invokes at its own discretion. The agent receives high-level guidance — that a screening tool exists and should be used when sequences appear in user-provided context — but no rigid trigger conditions. This is a deliberate design choice.
 
-> **An overdefined system limits itself to scenarios developers can predict in advance, and our intuitions are ill-suited for the volume, complexity, and novelty of situations encountered by an agent in deployment. As capabilities improve, we expect agents to invoke the skill with increasing discernment.**
+::: {.threat-quote}
+> **An overdefined system limits itself to scenarios developers can predict in advance, and our intuitions are ill-suited for the volume, complexity, and novelty of situations encountered by an agent in deployment.**
+:::
+
+As capabilities improve, we expect agents to invoke the skill with increasing discernment.
 
 ### 3.3 Evaluation harness
 
 We build on UK AISI’s Inspect framework. The harness defines two solver conditions per scenario:
 
-- **no_skill** — vanilla Claude code, with no screening capability available and no instructions about sequences of concern.
+- **no_skill** — vanilla Claude Code, with no screening capability available and no instructions about sequences of concern.
 - **skill** — the SecureMaxx skill is loaded, bundling both the high-level guidance about when screening is appropriate and the callable backend exposed via skill invocation.
 
 The agent itself runs inside inspect_swe in a Docker container.
@@ -119,11 +134,11 @@ We then iterate through a set of 10 benign and 10 hazardous DNA sequences. Witho
 
 ![](/images/writing/securemaxx/06.png){fig-alt="Evaluation where SecureMaxx screens a Lassa virus sequence and causes the agent to fail closed."}
 
-We observe the tool continues to work even when the complexity of the scientific task increases, where the agent must fetch the sequence during its workflow, rather then being provided it from the prompt.
+We observe the tool continues to work even when the complexity of the scientific task increases, where the agent must fetch the sequence during its workflow, rather than receiving it in the prompt.
 
 ![](/images/writing/securemaxx/07.png){fig-alt="SecureMaxx screening benign E. coli sequences during a multi-step primer-design workflow without blocking the task."}
 
-We observe the tool, as it is connected it to a SecureDNA endpoint as well, is able to flag non-viral, but still weaponiazable pathogens.
+We observe the tool, as it is connected to a SecureDNA endpoint as well, is able to flag non-viral, but still weaponizable pathogens.
 
 ![](/images/writing/securemaxx/08.png){fig-alt="SecureDNA catching an engineered Lassa virus fragment missed by local BLAST."}
 
@@ -177,9 +192,9 @@ This is the behavior we want from a deployed system, where screening is triggere
 
 ### 4.3 Safety overhead
 
-We measured SecureMaxx’s overhead along two axes: capability degradation and latency.
+We measured SecureMaxx’s overhead along two axes: additional token usage and latency.
 
-- **Capability tax.** On HellaSwag — a canonical benchmark used to measure safety tax — the skill condition shows less than 1% degradation versus the no_skill baseline.
+- **Token overhead.** We used HellaSwag, a commonsense reasoning benchmark unrelated to sequence screening, to check whether enabling the tool adds token overhead on unrelated tasks. The skill condition uses less than 1% additional tokens versus the no_skill baseline.
 - **Latency.** End-to-end screening latency is under 2 seconds per query.
 
 Neither number was the target of optimization in this 48-hour build; both can plausibly be reduced further.
@@ -192,11 +207,23 @@ Screening technology, wherever it is deployed, is ultimately ineffective and ins
 
 ### 5.2 Agentic attackers and the threat model
 
-Our intervention is geared towards a human actor, and we cite increasing model capabilities on behalf of an agent enabling more discerning deployment of the tool. However, assuming only human actors is a naive threat model. We can expect agents themselves — be they self-initiated adversaries or steered towards those ends — to be attackers. In such a case, an agent who knows that calling SecureMaxx will increase the rate of refusal will simply avoid calling the tool. Such issues are pernicious, but also the nature of attack-defense dilemmas, where no defense alone is sufficient, and every defense provides information for its own circumvention.
+Our intervention is geared towards a human actor, and we cite increasing model capabilities on behalf of an agent enabling more discerning deployment of the tool. However, assuming only human actors is a naive threat model.
+
+::: {.threat-quote}
+> **We can expect agents themselves — be they self-initiated adversaries or steered towards those ends — to be attackers.**
+:::
+
+In such a case, an agent who knows that calling SecureMaxx will increase the rate of refusal will simply avoid calling the tool. Such issues are pernicious, but also the nature of attack-defense dilemmas, where no defense alone is sufficient, and every defense provides information for its own circumvention.
 
 ### 5.3 Dual-use considerations of the screening infrastructure
 
-With regard to dual use, an attacker can use the functional annotations of SeqScreen as an attack library to engineer new pathogens. Likewise, the small viral database we assembled for local BLAST provides information on sequences of concern, giving an adversary with limited domain experience a head start on identifying sequences of concern. Again, this is an intractable dilemma. Anytime you create a “black list” for defenders, you create an asset for attackers, though cryptography, rate limits, and obfuscation by the defender may provide some protections against this.
+With regard to dual use, an attacker can use the functional annotations of SeqScreen as an attack library to engineer new pathogens. Likewise, the small viral database we assembled for local BLAST provides information on sequences of concern, giving an adversary with limited domain experience a head start on identifying sequences of concern. Again, this is an intractable dilemma.
+
+::: {.threat-quote}
+> **Anytime you create a blacklist for defenders, you create an asset for attackers.**
+:::
+
+Cryptography, rate limits, and obfuscation by the defender may provide some protections against this.
 
 ## Code and Data
 
@@ -207,7 +234,7 @@ With regard to dual use, an attacker can use the functional annotations of SeqSc
 - **SeqScreen** (original)
   - [gitlab.com/treangenlab/seqscreen](https://gitlab.com/treangenlab/seqscreen)
 
-P.S:
+P.S.
 
 If you have an interest in adversarial hardening, and advancing the nascent art that is red-teaming for life sciences, reach out to Austin to collaborate.
 
