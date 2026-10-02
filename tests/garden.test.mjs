@@ -158,6 +158,25 @@ test('fixed-window limits stop repeated requests', async () => {
   const { garden } = await fixture(); for (let i = 0; i < 20; i++) await garden.limit('visitor-fixture', 'challenge');
   await assert.rejects(garden.limit('visitor-fixture', 'challenge'), { status: 429 });
 });
+test('production accepts Vercel Marketplace KV credentials and still requires complete configuration', async () => {
+  const keys = ['GARDEN_PRIVATE_KEY', 'GARDEN_TOKEN_SECRET', 'UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN', 'KV_REST_API_URL', 'KV_REST_API_TOKEN'];
+  const previous = Object.fromEntries(keys.map(key => [key, process.env[key]]));
+  try {
+    for (const key of keys) delete process.env[key];
+    const { getGarden } = await import('../api/garden.js?marketplace-fixture');
+    assert.throws(() => getGarden(), { status: 503 });
+    process.env.GARDEN_PRIVATE_KEY = generated.privateKey;
+    process.env.GARDEN_TOKEN_SECRET = 'marketplace-test-secret-'.repeat(3);
+    process.env.KV_REST_API_URL = 'https://redis-fixture.invalid';
+    assert.throws(() => getGarden(), { status: 503 });
+    process.env.KV_REST_API_TOKEN = 'write-capable-test-token';
+    const garden = await getGarden();
+    assert.ok(garden.challenge().message.includes('nonce='));
+    assert.equal(garden.fingerprint, (await openpgp.readKey({ armoredKey: generated.publicKey })).getFingerprint());
+  } finally {
+    for (const key of keys) previous[key] === undefined ? delete process.env[key] : process.env[key] = previous[key];
+  }
+});
 test('HTTP rejects malformed envelopes, large submissions, wrong methods, and foreign origins', async () => {
   const { garden } = await fixture(); globalThis.__gardenPreview = garden;
   async function request(overrides = {}) {

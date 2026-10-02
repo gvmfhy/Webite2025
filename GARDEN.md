@@ -40,6 +40,10 @@ Required server environment variables:
 - `UPSTASH_REDIS_REST_URL`: the durable Redis REST endpoint.
 - `UPSTASH_REDIS_REST_TOKEN`: its write-capable server token.
 
+The Vercel Marketplace integration supplies `KV_REST_API_URL` and
+`KV_REST_API_TOKEN` instead; these are accepted aliases. Connect the database
+and Garden secrets to Production only. The read-only token is not sufficient.
+
 The private key and Redis token never enter Quarto assets. Without all four
 variables the API returns 503; the threshold stays closed. Use the same key,
 token secret and Redis database across function instances. A production key

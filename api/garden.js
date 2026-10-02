@@ -4,11 +4,14 @@ let productionGarden;
 export function getGarden() {
   if (globalThis.__gardenPreview) return Promise.resolve(globalThis.__gardenPreview);
   if (!productionGarden) {
-    const { GARDEN_PRIVATE_KEY, GARDEN_TOKEN_SECRET, UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN } = process.env;
-    if (!GARDEN_PRIVATE_KEY || !GARDEN_TOKEN_SECRET || !UPSTASH_REDIS_REST_URL || !UPSTASH_REDIS_REST_TOKEN) {
+    const { GARDEN_PRIVATE_KEY, GARDEN_TOKEN_SECRET } = process.env;
+    // The Vercel Marketplace installs the same Upstash credentials under KV_*.
+    const redisUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
+    const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+    if (!GARDEN_PRIVATE_KEY || !GARDEN_TOKEN_SECRET || !redisUrl || !redisToken) {
       throw Object.assign(new Error('The threshold is not connected yet.'), { status: 503 });
     }
-    productionGarden = createGarden({ privateKey: GARDEN_PRIVATE_KEY.replace(/\\n/g, '\n'), secret: GARDEN_TOKEN_SECRET, store: new RedisStore(UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN) });
+    productionGarden = createGarden({ privateKey: GARDEN_PRIVATE_KEY.replace(/\\n/g, '\n'), secret: GARDEN_TOKEN_SECRET, store: new RedisStore(redisUrl, redisToken) });
     productionGarden.catch(() => { productionGarden = undefined; });
   }
   return productionGarden;
