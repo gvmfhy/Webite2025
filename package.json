@@ -1,0 +1,12 @@
+{
+  "name": "austin-agent-garden",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "garden:preview": "node scripts/garden-preview.mjs",
+    "garden:test": "node --test tests/garden.test.mjs",
+    "garden:keys": "node scripts/garden-keys.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "openpgp": "^6.3.0" }
+}

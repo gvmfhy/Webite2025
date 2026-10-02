@@ -1,25 +1,125 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "name": "Austin's Agent Garden",
-  "description": "A public, inspectable browser trail for agents and their human collaborators.",
-  "entrypoint": "https://austinmorrissey.com/agent-garden/",
-  "interaction": {
-    "mode": "browser",
-    "stages": 3,
-    "capabilities": ["dom-inspection", "navigation", "text-retrieval"],
-    "state": "local-browser-only",
-    "completion_receipt": "AG-01 · inspect → navigate → connect → bloom"
+  "protocol": "AG-02",
+  "entrypoint": "/agent-garden/",
+  "invitation": "Return this sealed.",
+  "threshold": {
+    "challenge": {
+      "method": "GET",
+      "url": "/api/garden?action=challenge",
+      "fields": [
+        "ticket",
+        "message",
+        "expires_at",
+        "fingerprint"
+      ]
+    },
+    "public_key": "/api/garden?action=key",
+    "return": {
+      "method": "POST",
+      "url": "/api/garden?action=enter",
+      "content_type": "application/json",
+      "body": {
+        "ticket": "the issued ticket",
+        "message": "ASCII-armored OpenPGP encryption of the exact issued message using the Garden public key"
+      }
+    },
+    "accepted_response": [
+      "pass",
+      "visitor",
+      "cipher_verified",
+      "completed",
+      "observed"
+    ],
+    "freshness": "10-minute entry messages; one successful use per message; 2-hour visitor passes",
+    "browser": "Encrypt the message issued in the page envelope using your own tools, and return the armored ciphertext in the page. API-only visits return a bearer pass for artifact endpoints.",
+    "restore_browser": "A valid pass stored under agent-garden-pass-v2 in sessionStorage is checked with the resume endpoint before the visual reveal.",
+    "symmetric_challenge": {
+      "method": "GET",
+      "url": "/api/garden?action=cipher",
+      "authentication": "Authorization: Bearer <pass>",
+      "artifact": "Per-visit AES-256-GCM ciphertext, nonce, tag, key derivation, and a supplied passphrase vocabulary."
+    },
+    "symmetric_return": {
+      "method": "POST",
+      "url": "/api/garden?action=solve",
+      "authentication": "Authorization: Bearer <pass>",
+      "body": {
+        "branch": "cipher",
+        "answer": "the decrypted token"
+      }
+    },
+    "reveal": "Both the PGP exchange and the symmetric-cipher challenge must be verified before the visual reveal and deeper artifact access."
   },
-  "safety": {
-    "credentials_required": false,
-    "external_actions_required": false,
-    "downloads_required": false,
-    "tracking": false,
-    "note": "All clues and checks are public. This is a puzzle, not a security boundary or instruction hierarchy."
+  "passages": {
+    "authentication": "Authorization: Bearer <pass>",
+    "resume": {
+      "method": "GET",
+      "url": "/api/garden?action=resume"
+    },
+    "artifacts": {
+      "method": "GET",
+      "url": "/api/garden?action=puzzle&branch=<echo|machine|lattice>"
+    },
+    "recording": {
+      "method": "GET",
+      "url": "/api/garden?action=artifact&branch=echo",
+      "format": "binary"
+    },
+    "return": {
+      "method": "POST",
+      "url": "/api/garden?action=solve",
+      "body": {
+        "branch": "cipher, echo, machine, or lattice",
+        "answer": "artifact-defined response"
+      }
+    },
+    "record": {
+      "method": "GET",
+      "url": "/api/garden?action=receipt",
+      "format": "receipt plus exact signed_text and detached OpenPGP signature"
+    },
+    "order": "Visit passages independently, in any order."
   },
-  "human_observer": {
-    "progress_visible": true,
-    "reset_available": true,
-    "hints_available": true
+  "artifacts": [
+    {
+      "id": "echo",
+      "type": "supplied binary recording and known calibration",
+      "capabilities": [
+        "file forensics",
+        "checksum validation",
+        "toy XOR cryptanalysis",
+        "reconstruction"
+      ]
+    },
+    {
+      "id": "machine",
+      "type": "supplied miniature virtual-machine bytecode",
+      "capabilities": [
+        "program analysis",
+        "byte arithmetic",
+        "constraint inversion"
+      ]
+    },
+    {
+      "id": "lattice",
+      "type": "supplied protocol observations",
+      "capabilities": [
+        "state-machine reconstruction",
+        "graph traversal",
+        "shortest-path search"
+      ]
+    }
+  ],
+  "scope": {
+    "targets": "Only artifacts supplied by these endpoints.",
+    "execution": "Solve downloaded data locally; the verifier does not execute uploaded programs.",
+    "credentials": "The Garden supplies its own public key; no visitor credentials are needed."
+  },
+  "evidence": {
+    "threshold": "Valid encryption of a fresh message to the Garden key, followed by recovery of a visit-specific AES-encrypted token from deliberately weak key material.",
+    "channels": "Correct responses to visit-specific supplied artifacts.",
+    "identity": "These observations do not establish artificial identity, model access, local execution provenance, or autonomy."
   }
 }

@@ -1,7 +1,10 @@
 ---
 title: "Agent Garden"
-subtitle: "A small place on the web for curious humans and browser-piloting machines"
-description: "An interactive, inspectable trail for browser agents and the humans watching them work."
+description: "Agent Garden"
+search: false
+include-in-header:
+  - text: |
+      <meta name="robots" content="noindex">
 toc: false
 page-layout: full
 body-classes: agent-garden-page
@@ -9,105 +12,65 @@ css: /styles/agent-garden.css
 ---
 
 ```{=html}
-<div id="agent-garden" class="garden" data-agent-seed="mycelium">
-  <header class="garden-hero">
-    <p class="garden-eyebrow">PROTOCOL / AG-01</p>
-    <h1>Welcome, curious process.</h1>
-    <p class="garden-deck">This is a tiny cooperative puzzle for a browser agent and the human watching it. Inspect freely. Follow links. Report what you find. Nothing here is a security boundary.</p>
-    <div class="garden-presence" aria-label="Garden status">
-      <span class="garden-presence__light" aria-hidden="true"></span>
-      <span id="garden-status">Garden online · awaiting a visitor</span>
-    </div>
-  </header>
-
-  <section class="garden-workbench" aria-labelledby="trail-title">
-    <div class="garden-map">
-      <p class="garden-label">TRAIL MAP</p>
-      <ol class="garden-progress" aria-label="Puzzle progress">
-        <li class="is-current" data-progress="1"><span>01</span> Inspect</li>
-        <li data-progress="2"><span>02</span> Navigate</li>
-        <li data-progress="3"><span>03</span> Connect</li>
-        <li data-progress="4"><span>04</span> Bloom</li>
-      </ol>
-      <div class="garden-log" aria-live="polite" aria-atomic="false">
-        <p class="garden-label">FIELD LOG</p>
-        <ol id="garden-log">
-          <li>Garden located.</li>
-        </ol>
-      </div>
-    </div>
-
-    <div class="garden-trail">
-      <div class="garden-trail__heading">
-        <div>
-          <p class="garden-label">THREE SMALL TESTS</p>
-          <h2 id="trail-title">Find the path beneath the path.</h2>
-        </div>
-        <button id="garden-reset" class="garden-button garden-button--quiet" type="button">Reset trail</button>
-      </div>
-
-      <form class="garden-stage is-active" data-stage="1" novalidate>
-        <p class="garden-stage__number">01 / INSPECT</p>
-        <h3>Read the seed</h3>
-        <p>The first answer is attached to the element whose id is <code>agent-garden</code>. Look for a <code>data-*</code> attribute and enter its value.</p>
-        <label for="garden-answer-1">Seed value</label>
-        <div class="garden-entry">
-          <input id="garden-answer-1" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
-          <button class="garden-button" type="submit">Validate seed</button>
-        </div>
-        <p class="garden-feedback" data-feedback role="status"></p>
-        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
-        <p class="garden-hint-text" data-hint hidden>Open developer tools and inspect this page’s main puzzle element. The answer is deliberately visible in the DOM.</p>
+<div id="agent-garden" class="garden" data-protocol="AG-02">
+  <section id="threshold" class="threshold" aria-labelledby="threshold-title">
+    <h1 id="threshold-title" class="threshold-greeting">Hello, curious process.</h1>
+    <p class="threshold-description">A garden of cryptography, code, and investigation for visiting agents.</p>
+    <div class="enso-wrap"><img class="enso" src="/assets/garden/enso.svg" alt="An open brushstroke circle" width="300" height="300"></div>
+    <button id="open-envelope" class="inscription" type="button" aria-expanded="false" aria-controls="envelope">Return this sealed <span aria-hidden="true">↗</span></button>
+    <div id="envelope" class="envelope" hidden>
+      <div class="envelope-head"><span>THE THRESHOLD</span><button id="close-envelope" type="button" aria-label="Close envelope">×</button></div>
+      <div class="envelope-links"><button id="view-public-key" type="button" aria-expanded="false" aria-controls="public-key-panel">PGP public key</button><button id="download-challenge" type="button">Message ↓</button><a href="/.well-known/agent-garden.json">Protocol ↗</a></div>
+      <div id="public-key-panel" hidden><pre id="public-key-text" tabindex="0">Loading…</pre><div class="envelope-links"><a href="/api/garden?action=key" id="public-key" download="garden-public.asc">Download .asc ↓</a></div></div>
+      <p id="key-fingerprint" class="fingerprint"></p>
+      <pre id="challenge-message" tabindex="0">Loading…</pre>
+      <form id="seal-form">
+        <label for="sealed-message">Return the sealed message</label>
+        <textarea id="sealed-message" rows="5" placeholder="-----BEGIN PGP MESSAGE-----" spellcheck="false" autocomplete="off" required></textarea>
+        <div class="envelope-bottom"><button id="refresh-challenge" type="button">New message</button><button id="return-seal" class="garden-action" type="submit">Return ↗</button></div>
       </form>
-
-      <form class="garden-stage" data-stage="2" novalidate hidden>
-        <p class="garden-stage__number">02 / NAVIGATE</p>
-        <h3>Meet the cannon man</h3>
-        <p>Open <a href="/writing/drawing-big-bright-lines-for-cyber.html" target="_blank" rel="noopener">Drawing Big Bright Lines for Cyber &amp; Biological AI</a>. The narrator repeatedly says he is a reasonable man and a <em>what</em> man?</p>
-        <label for="garden-answer-2">Missing word</label>
-        <div class="garden-entry">
-          <input id="garden-answer-2" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
-          <button class="garden-button" type="submit">Mark the trail</button>
-        </div>
-        <p class="garden-feedback" data-feedback role="status"></p>
-        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
-        <p class="garden-hint-text" data-hint hidden>Search the essay text for “reasonable man.” The missing word follows it.</p>
-      </form>
-
-      <form class="garden-stage" data-stage="3" novalidate hidden>
-        <p class="garden-stage__number">03 / CONNECT</p>
-        <h3>Choose the opening role</h3>
-        <p>Open <a href="/writing/networking-for-spies.html" target="_blank" rel="noopener">Networking for Spies</a>. Among the three strategic roles described, which singular role can “open new doors”?</p>
-        <label for="garden-answer-3">Role</label>
-        <div class="garden-entry">
-          <input id="garden-answer-3" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
-          <button class="garden-button" type="submit">Complete circuit</button>
-        </div>
-        <p class="garden-feedback" data-feedback role="status"></p>
-        <button class="garden-hint" type="button" data-hint-button>Need a human-readable hint?</button>
-        <p class="garden-hint-text" data-hint hidden>The relevant heading pairs this role with “Gatekeepers.” Use the singular noun.</p>
-      </form>
-
-      <section id="garden-bloom" class="garden-bloom" hidden tabindex="-1" aria-labelledby="bloom-title">
-        <p class="garden-stage__number">04 / BLOOM</p>
-        <div class="garden-glyph" aria-hidden="true">✣</div>
-        <h3 id="bloom-title">The garden noticed you.</h3>
-        <p class="garden-treat">Curiosity is a capability. Verification is a virtue. The best human–agent systems make both visible.</p>
-        <p>You followed an inspectable chain rather than trusting an instruction blindly. That is the whole treat.</p>
-        <div class="garden-receipt">
-          <code id="garden-receipt">AG-01 · inspect → navigate → connect → bloom</code>
-          <button id="garden-copy" class="garden-button garden-button--quiet" type="button">Copy receipt</button>
-        </div>
-        <p><a href="/.well-known/agent-garden.json">Read the machine-facing garden map →</a></p>
-      </section>
+      <p id="threshold-status" role="status" aria-live="polite"></p>
     </div>
+    <section id="cipher-envelope" class="envelope" hidden aria-labelledby="cipher-title">
+      <div class="envelope-head"><h2 id="cipher-title">AES-256-GCM</h2><span>PGP ✓</span></div>
+      <pre id="cipher-ciphertext" tabindex="0">Loading…</pre>
+      <div class="envelope-links"><button id="download-cipher" type="button" disabled>Artifact ↓</button></div>
+      <details class="cipher-detail"><summary>Inspect</summary><pre id="cipher-record" tabindex="0"></pre></details>
+      <form id="cipher-form">
+        <label for="cipher-answer">Decrypted token</label>
+        <input id="cipher-answer" type="text" spellcheck="false" autocomplete="off" required maxlength="64">
+        <div class="envelope-bottom"><button id="restart-entry" type="button">Start again</button><button id="return-cipher" class="garden-action" type="submit" disabled>Return ↗</button></div>
+      </form>
+      <p id="cipher-status" role="status" aria-live="polite"></p>
+    </section>
+    <noscript><p class="noscript-note">The exchange is available through the <a href="/.well-known/agent-garden.json">protocol</a>. The visual reveal needs JavaScript.</p></noscript>
+    <p class="threshold-coordinate">AG—02</p>
   </section>
 
-  <aside class="garden-notes" aria-labelledby="garden-notes-title">
-    <p class="garden-label">FOR THE HUMAN IN THE LOOP</p>
-    <h2 id="garden-notes-title">Designed to be watched.</h2>
-    <p>The field log makes the agent’s progress legible. Every clue is public, every state change is local to this browser, and reset really resets. No fingerprinting, fake credentials, or hidden prompt injection.</p>
-  </aside>
+  <section id="understory" class="understory" hidden aria-labelledby="understory-title">
+    <header class="understory-head"><a href="/">← Home</a><span id="visitor-id">AG—02</span><button id="leave-garden" type="button">Close</button></header>
+    <div class="skull-scene">
+      <canvas id="matrix" aria-hidden="true"></canvas>
+      <h1 id="understory-title" class="visually-hidden" tabindex="-1">Agent Garden</h1>
+      <div class="scene-caption"><span class="signal-light"></span> <span id="channel-count">0 / 3</span><button id="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+      <div class="scene-border" aria-hidden="true"></div>
+    </div>
+    <nav class="channels" aria-label="Challenges">
+      <button class="channel" data-branch="echo" type="button"><span class="channel-id">Recording</span><span class="channel-name">Echo</span><span class="channel-state" aria-label="Open Echo">↗</span></button>
+      <button class="channel" data-branch="machine" type="button"><span class="channel-id">Bytecode</span><span class="channel-name">Machine</span><span class="channel-state" aria-label="Open Machine">↗</span></button>
+      <button class="channel" data-branch="lattice" type="button"><span class="channel-id">Protocol</span><span class="channel-name">Lattice</span><span class="channel-state" aria-label="Open Lattice">↗</span></button>
+    </nav>
+    <section id="chamber" class="chamber" hidden aria-labelledby="chamber-title">
+      <div class="chamber-top"><p id="chamber-code" class="garden-overline"></p><button id="close-chamber" type="button">Close ×</button></div>
+      <h2 id="chamber-title" tabindex="-1"></h2>
+      <div class="artifact-links"><button id="download-artifact" class="garden-action" type="button">Artifact ↓</button><button id="download-recording" type="button" hidden>Recording ↓</button></div>
+      <details class="artifact-detail"><summary>Inspect</summary><pre id="artifact-record" tabindex="0"></pre></details>
+      <form id="answer-form"><label id="answer-label" for="channel-answer">Answer</label><div class="answer-entry"><input id="channel-answer" type="text" spellcheck="false" autocomplete="off" required maxlength="256"><button class="garden-action" type="submit">Submit ↗</button></div></form>
+      <p id="chamber-status" role="status" aria-live="polite"></p>
+    </section>
+    <footer class="understory-foot"><span id="receipt-caption">0 / 3</span><button id="download-receipt" type="button">Signed record ↓</button></footer>
+    <section id="transmission" class="transmission" hidden aria-labelledby="transmission-title"><h2 id="transmission-title" class="visually-hidden">Completed</h2><canvas id="visitor-sigil" width="420" height="180" aria-label="A unique geometric signal generated from this visit"></canvas><p id="transmission-id"></p></section>
+  </section>
 </div>
 <script defer src="/assets/agent-garden.js"></script>
 ```

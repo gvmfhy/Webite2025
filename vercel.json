@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "echo skipping-install",
+  "installCommand": "npm ci --ignore-scripts --no-fund",
   "buildCommand": "bash build.sh",
   "outputDirectory": "_site",
   "cleanUrls": true,

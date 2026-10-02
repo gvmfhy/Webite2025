@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - node scripts/garden-unlist.mjs
   render:
     - "*.qmd"
     - "writing/*.qmd"
@@ -28,11 +30,19 @@ project:
     - "assets/interlink.js"
     - "assets/site-ui.js"
     - "assets/agent-garden.js"
+    - "assets/garden/"
     - "styles/agent-garden.css"
     - "llms.txt"
     - ".well-known/agent-garden.json"
     - ".well-known/security.txt"
     - "images/austin-p-morrissey-sebe-poster.webp"
+    - "!api/**"
+    - "!lib/**"
+    - "!tests/**"
+    - "!node_modules/**"
+    - "!package*.json"
+    - "!GARDEN.md"
+    - "!scripts/garden-*.mjs"
 
 website:
   title: "Austin P. Morrissey"
