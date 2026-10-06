@@ -2,7 +2,7 @@
 title: "GPT-5, Verbal Judo of Sam Altman, and the First Censored Safety Report"
 subtitle: "A disturbing preview of emerging AI risk"
 date: 2025-08-22
-categories: [ai-safety, openai, evals]
+categories: [ai-security, openai, evals]
 image: /images/writing/gpt-5-verbal-judo/01-altman-statement.jpeg
 canonical-url: https://austinpatrick.substack.com/p/gpt-5-verbal-judo-of-sam-altman-and
 ---
@@ -17,7 +17,7 @@ There is a dearth of reliable information on closed-source frontier AI models. P
 
 Without understanding the particular quirks of any given model, industry leaders, policymakers, and regulatory stakeholders cannot make informed decisions. And as these models deploy at scale throughout society, it takes no leap of imagination to see where this leads. To remedy this, the authors urged pairing each AI model with standardized documentation that enables both technical and nontechnical stakeholders to decide whether, where, and when to deploy. Think of these as package inserts that come with prescription medications.
 
-This practice has been adopted by most frontier labs and is known as the model card. These documents are rich sources of insight that don't require technical expertise to parse. So interesting are these documents, I advise any reader with interest in AI to read them directly. Better this than watching live streams or reading summaries, which market rather than inform. For those tracking AI safety, model cards offer the closest thing to ground truth that companies are willing to share. Below are hyperlinks to the latest model cards for your convenience.
+This practice has been adopted by most frontier labs and is known as the model card. These documents are rich sources of insight that don't require technical expertise to parse. So interesting are these documents, I advise any reader with interest in AI to read them directly. Better this than watching live streams or reading summaries, which market rather than inform. For those tracking AI security, model cards offer the closest thing to ground truth that companies are willing to share. Below are hyperlinks to the latest model cards for your convenience.
 
 - **GPT-5** — OpenAI (Aug 2025) — [PDF](https://cdn.openai.com/pdf/8124a3ce-ab78-4f06-96eb-49ea29ffb52f/gpt5-system-card-aug7.pdf)
 - **Gemini 2.5 Pro** — Google DeepMind (Jun 2025) — [PDF](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro.pdf)

@@ -48,7 +48,7 @@ website:
   title: "Austin P. Morrissey"
   site-url: https://austinmorrissey.com
   favicon: images/favicon.png
-  description: "AI safety research focused on biosecurity capability evaluations."
+  description: "AI security research focused on biosecurity capability evaluations."
   open-graph: true
   twitter-card: true
   search:

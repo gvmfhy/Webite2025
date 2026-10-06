@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Austin P. Morrissey is an AI-safety researcher building capability evaluations that test whether AI lowers the barrier to biological misuse."
+description: "Austin P. Morrissey is an AI security researcher building capability evaluations that test whether AI lowers the barrier to biological misuse."
 toc: false
 body-classes: utility-page about-page
 image: images/austin-p-morrissey-professional-headshot.jpg

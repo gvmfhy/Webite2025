@@ -2,7 +2,7 @@
 title: "Whoever Colonizes This Peak Will Rule the World"
 subtitle: "A short story and research proposal"
 date: 2026-07-25
-categories: [ai-safety, biosecurity, security, dual-use, fiction, research-proposal]
+categories: [ai-security, biosecurity, security, dual-use, fiction, research-proposal]
 image: /images/writing/cognition-men-on-the-frontier-cyber/01.webp
 canonical-url: https://austinpatrick.substack.com/p/cognition-men-on-the-frontier-cyber
 ---
@@ -105,7 +105,7 @@ Pharmaceutical companies, well-resourced academic labs, and contract research or
 
 To create model evaluations that assess an agent's skill across an attack pathway, from an initial cyber foothold to a biological consequence, a threat model must first be established. You will identify which paths matter most for national security and define the capabilities each path requires. For this project, you will focus on bioinfrastructure in the United States, though you need not be based there. Your national affiliation and location will have no bearing on mentee selection.
 
-#### **How does the project advance AI safety?**
+#### **How does the project advance AI security?**
 
 By assessing the intersection of two of the highest-impact near-term risks posed by AI, agentic cyberattacks and biological weaponization, the project will reveal threat pathways overlooked in the current risk landscape. In doing so, the project will provide a basis for prioritizing where and how evaluations combining these domains should be conducted, while also identifying choke points along these new threat pathways.
 

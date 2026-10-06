@@ -315,7 +315,7 @@ include-after-body:
   <label>title <input id="fm-title" type="text" placeholder="Essay title" /></label>
   <label>subtitle <input id="fm-subtitle" type="text" placeholder="A short dek" /></label>
   <label>date <input id="fm-date" type="date" /></label>
-  <label>categories (comma-sep) <input id="fm-categories" type="text" placeholder="ai-safety, biosecurity" /></label>
+  <label>categories (comma-sep) <input id="fm-categories" type="text" placeholder="ai-security, biosecurity" /></label>
 </div>
 
 <div class="editor-toolbar">

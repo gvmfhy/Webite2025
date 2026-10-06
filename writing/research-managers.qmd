@@ -23,7 +23,7 @@ Soon, I will be an old man! As we grow, we begin to contribute beyond our own te
 
 ---
 
-A recent 80,000 Hours article named a shortage of research managers as a bottleneck in AI safety. Capabilities are developing fast, and timelines for career development may become compressed. Encouraging such discussion collectively is within our interests.
+A recent 80,000 Hours article named a shortage of research managers as a bottleneck in AI security. Capabilities are developing fast, and timelines for career development may become compressed. Encouraging such discussion collectively is within our interests.
 
 ---
 

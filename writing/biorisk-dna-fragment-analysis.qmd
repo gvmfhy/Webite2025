@@ -2,7 +2,7 @@
 title: "Biorisk & DNA fragment analysis with Claude"
 subtitle: "Forbidden Questions and Their Answers"
 date: 2025-11-18
-categories: [biosecurity, dual-use, ai-safety]
+categories: [biosecurity, dual-use, ai-security]
 image: /images/writing/biorisk-dna-fragment-analysis/01.png
 image-alt: "Terminal screenshot of a sequence-analysis approach"
 canonical-url: https://austinpatrick.substack.com/p/one-sure-way-to-get-banned-from-openai

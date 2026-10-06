@@ -2,7 +2,7 @@
 title: "London & Artificial Intelligence"
 subtitle: "It's a strange world"
 date: 2026-02-23
-categories: [ai-safety, london, biosecurity]
+categories: [ai-security, london, biosecurity]
 image: /images/writing/london-and-ai/01-lisa-street-art.jpg
 canonical-url: https://austinpatrick.substack.com/p/london-and-artificial-intelligence
 ---
@@ -11,7 +11,7 @@ canonical-url: https://austinpatrick.substack.com/p/london-and-artificial-intell
 The last couple months of my life have whirled by me, change has come at an extraordinary pace. A series of small decisions has led me overseas to London. There is a place here, in the east of the city, where a narrow road forks at a green pub. Go left. You'll come to a large, metal panel covered with striking, street-style art. There is a door-shaped cutout and a keycard panel. Go in.
 :::
 
-Welcome to LISA, a hub for AI safety research.
+Welcome to LISA, a hub for AI security research.
 
 ![](/images/writing/london-and-ai/01-lisa-street-art.jpg)
 

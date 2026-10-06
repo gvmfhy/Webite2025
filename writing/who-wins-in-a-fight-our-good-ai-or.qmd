@@ -3,7 +3,7 @@ title: "Who wins in a fight, our (good) AI, or the (bad) AI?"
 subtitle: "Bad question, OK answer."
 date: 2026-06-07
 author-meta: "Austin P. Morrissey"
-categories: [ai-safety, agents, security, dual-use]
+categories: [ai-security, agents, security, dual-use]
 image: /images/austin-p-morrissey-headshot.jpg
 image-alt: "ASCII-style portrait of Austin Morrissey in warm tones on a dark background"
 canonical-url: https://austinpatrick.substack.com/p/who-wins-in-a-fight-our-good-ai-or

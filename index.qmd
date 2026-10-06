@@ -1,7 +1,7 @@
 ---
 title: "Austin P. Morrissey"
-subtitle: "AI safety research focused on biosecurity capability evaluations"
-description: "AI safety research focused on biosecurity capability evaluations."
+subtitle: "AI security research focused on biosecurity capability evaluations"
+description: "AI security research focused on biosecurity capability evaluations."
 toc: false
 page-layout: full
 body-classes: home-page
@@ -27,11 +27,11 @@ listing:
 :::
 ::: {.dossier-inner}
 ::: {.dossier-copy}
-<p class="dossier-kicker">AI Safety / Biosecurity</p>
+<p class="dossier-kicker">AI Security / Biosecurity</p>
 
 # How much could today’s AI help someone trying to weaponize biology? {.dossier-question}
 
-<p class="dossier-summary">AI safety research focused on biosecurity capability evaluations.</p>
+<p class="dossier-summary">AI security research focused on biosecurity capability evaluations.</p>
 
 <p class="dossier-actions">
   <a class="dossier-work-link no-external" href="#featured">View selected work <span aria-hidden="true">↓</span></a>

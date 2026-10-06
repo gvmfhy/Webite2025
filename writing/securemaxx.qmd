@@ -3,7 +3,7 @@ title: "SecureMaxx: A Lightweight Sequence Screening Tool for Agents"
 date: 2026-04-28
 author-meta: "Austin P. Morrissey"
 body-classes: securemaxx-article
-categories: [ai-safety, biosecurity, ai-evals, agents]
+categories: [ai-security, biosecurity, ai-evals, agents]
 image: /images/writing/securemaxx/01.png
 image-alt: "SecureMaxx hackathon presentation at the London Initiative for Safe AI"
 canonical-url: https://www.lesswrong.com/posts/jaBQM5pyPaicF3pfA/securemaxx-a-lightweight-sequence-screening-tool-for-agents-1

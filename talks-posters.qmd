@@ -1,7 +1,7 @@
 ---
 title: "What did I get up to during my Pivotal Fellowship at the London Initiative for Safe AI?"
-subtitle: "AI safety at the intersection of biological, chemical, and cyber risk"
-description: "My research on AI safety and biosecurity during my Pivotal Fellowship at the London Initiative for Safe AI."
+subtitle: "AI security at the intersection of biological, chemical, and cyber risk"
+description: "My research on AI security and biosecurity during my Pivotal Fellowship at the London Initiative for Safe AI."
 toc: false
 sidebar: false
 body-classes: talks-posters-page

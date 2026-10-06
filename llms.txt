@@ -1,6 +1,6 @@
 # Austin P. Morrissey
 
-> Personal site and writing on AI safety, biosecurity capability evaluations, applied AI, and scientific practice.
+> Personal site and writing on AI security, biosecurity capability evaluations, applied AI, and scientific practice.
 
 Canonical site: https://austinmorrissey.com/
 Writing index: https://austinmorrissey.com/writing/

@@ -2,7 +2,7 @@
 title: "The Alignment Problem Isn't Theoretical"
 subtitle: "Deception, deployment, and automated testing with PETRI"
 date: 2025-10-11
-categories: [ai-safety, alignment, evals]
+categories: [ai-security, alignment, evals]
 image: /images/writing/alignment-problem/01-petri-workflow.jpeg
 image-alt: "Diagram of the PETRI auditing pipeline"
 canonical-url: https://austinpatrick.substack.com/p/the-alignment-problem-isnt-theoretical
@@ -40,7 +40,7 @@ The path of progress leads us to a threshold, where if anyone steps forward no o
 
 If you are unfamiliar with the discourse surrounding this, you may mistake me as taking an artistic liberty to a rhetorical extreme, stressing a point of argument that surely, for serious people does not exist, bears no relationship to our day to day, and will have no impact that manifests within the mundane of our lives. But this is not my intention, and I seek to leave you with a better picture of the space than when you began, so let me then venture to be precise. **These are not fringe concerns.**
 
-In June, [BlueDot Impact](https://bluedot.org/) raised $25 million to train professionals in AI safety. Their graduates work at NATO, the United Nations, Harvard Kennedy School, OpenAI, and Anthropic. For the past six weeks, I've been part of a pilot cohort studying how advanced AI systems could escape human control, and what interventions might prevent it. These courses are facilitated by technical researchers, and leading my group of six was John Teichman from [M.L Alignment & Theory Scholars](https://www.matsprogram.org/) (MATS).
+In June, [BlueDot Impact](https://bluedot.org/) raised $25 million to train professionals in AI security. Their graduates work at NATO, the United Nations, Harvard Kennedy School, OpenAI, and Anthropic. For the past six weeks, I've been part of a pilot cohort studying how advanced AI systems could escape human control, and what interventions might prevent it. These courses are facilitated by technical researchers, and leading my group of six was John Teichman from [M.L Alignment & Theory Scholars](https://www.matsprogram.org/) (MATS).
 
 We are in a perilous bind, one without historic precedent, for which there are no clear answers, nor consensus on how to frame the questions. [Jack Clark](https://open.substack.com/users/44606-jack-clark?utm_source=mentions), head of policy of Anthropic, has a practice of ending each of his newsletters with a piece of creative writing. In his last, he wrote:
 

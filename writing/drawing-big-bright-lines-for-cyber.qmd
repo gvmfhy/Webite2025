@@ -2,7 +2,7 @@
 title: "Drawing Big Bright Lines for Cyber & Biological AI"
 subtitle: "Notes from a Cannon Man"
 date: 2026-06-11
-categories: [ai-safety, biosecurity, security, dual-use, satire]
+categories: [ai-security, biosecurity, security, dual-use, satire]
 image: /images/writing/drawing-big-bright-lines-for-cyber/01.png
 canonical-url: https://austinpatrick.substack.com/p/drawing-big-bright-lines-for-cyber
 ---
