@@ -1,4 +1,42 @@
 {
+  "electric-times": [
+    {
+      "title": "Whoever Colonizes This Peak Will Rule the World",
+      "url": "/writing/cognition-men-on-the-frontier-cyber.html",
+      "date": "2026-07-25",
+      "categories": [
+        "ai-security",
+        "biosecurity",
+        "security",
+        "dual-use",
+        "fiction",
+        "research-proposal"
+      ]
+    },
+    {
+      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
+      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
+      "date": "2026-06-11",
+      "categories": [
+        "ai-security",
+        "biosecurity",
+        "security",
+        "dual-use",
+        "satire"
+      ]
+    },
+    {
+      "title": "Who wins in a fight, our (good) AI, or the (bad) AI?",
+      "url": "/writing/who-wins-in-a-fight-our-good-ai-or.html",
+      "date": "2026-06-07",
+      "categories": [
+        "ai-security",
+        "agents",
+        "security",
+        "dual-use"
+      ]
+    }
+  ],
   "cognition-men-on-the-frontier-cyber": [
     {
       "title": "Drawing Big Bright Lines for Cyber & Biological AI",
@@ -451,6 +489,15 @@
       ]
     },
     {
+      "title": "Electric Times",
+      "url": "/writing/electric-times.html",
+      "date": "2026-10-07",
+      "categories": [
+        "ai-security",
+        "fiction"
+      ]
+    },
+    {
       "title": "Whoever Colonizes This Peak Will Rule the World",
       "url": "/writing/cognition-men-on-the-frontier-cyber.html",
       "date": "2026-07-25",
@@ -461,18 +508,6 @@
         "dual-use",
         "fiction",
         "research-proposal"
-      ]
-    },
-    {
-      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
-      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
-      "date": "2026-06-11",
-      "categories": [
-        "ai-security",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "satire"
       ]
     }
   ],
@@ -522,6 +557,15 @@
       ]
     },
     {
+      "title": "Electric Times",
+      "url": "/writing/electric-times.html",
+      "date": "2026-10-07",
+      "categories": [
+        "ai-security",
+        "fiction"
+      ]
+    },
+    {
       "title": "Whoever Colonizes This Peak Will Rule the World",
       "url": "/writing/cognition-men-on-the-frontier-cyber.html",
       "date": "2026-07-25",
@@ -532,18 +576,6 @@
         "dual-use",
         "fiction",
         "research-proposal"
-      ]
-    },
-    {
-      "title": "Drawing Big Bright Lines for Cyber & Biological AI",
-      "url": "/writing/drawing-big-bright-lines-for-cyber.html",
-      "date": "2026-06-11",
-      "categories": [
-        "ai-security",
-        "biosecurity",
-        "security",
-        "dual-use",
-        "satire"
       ]
     }
   ],

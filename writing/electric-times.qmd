@@ -1,0 +1,71 @@
+---
+title: "Electric Times"
+subtitle: "A letter from the future"
+date: 2026-10-07
+toc: false
+categories: [ai-security, fiction]
+image: /images/writing/electric-times/02.png
+canonical-url: https://austinpatrick.substack.com/p/electric-times
+---
+
+::: {.dropcap}
+"What was it like living through the liftoff?" the boy asked.
+:::
+
+The father smiled. "Have you begun to learn about it in school?" The boy nodded, and his father continued.
+
+"It was electric."
+
+"What do you mean?"
+
+"It wasn't clear how it would all play out. The stakes were grave. For most of history men would gamble with only their own lives. But for a time it felt as if we were playing for keeps, double or nothing, triple or nothing, and then suddenly we were all in --- willing or unwilling. Not only staking ourselves but staking the human future. Our right to retain the power of self-determination. When the stakes are high but the outcome is still malleable --- these moments, my son, are electric. You have seen the experiments of learned helplessness, have you?"
+
+The boy shook his head.
+
+"Take a group of dogs and split them into two groups. Each is placed into a harness in its own box with a metal floor. You electrify the floor, but give some dogs a button that, if pressed, terminates the current --- alleviates the pain. In the other box there is nothing the dog can do."
+
+![](/images/writing/electric-times/01.png){fig-alt="Diagram comparing dogs exposed to controllable and uncontrollable shocks; a head press stops the shock only in the controllable condition."}
+
+The boy grimaced. The father grimaced for the grimace of his son, and in anticipation of how the boy would feel once he learned about vivisection.
+
+"When you put those same dogs in new boxes without a harness --- and you apply that sustained electric pulse, what happens? The dog who has learned to act will act. The dog who has learned he cannot act will lie down and whimper --- he will suffer needlessly --- even if his circumstances have changed. His thinking narrows; so bound by the past, he will fail to explore the possibility space of the present."
+
+![](/images/writing/electric-times/02.png){fig-alt="Diagram of a dog able to cross a low barrier from an electrified floor into an escape compartment 24 hours later."}
+
+The father looked at him. "Do you understand?
+
+"Dogged persistence can be learned. What we cannot change, we accept. You will age, it is your nature. You will be ill, it is your nature. And you, one day, one day you will die. It is our nature.
+
+"But listen. Between now and then, much can be done.
+
+"So I will tell you what it was like, but I cannot expect you to understand. We interpret only through our experience, my son. You are too young to know the phrase 'national security' beyond its ugliest form. Too young to feel the rhetorical power of the word --- 'homeland' --- in your chest. Too young to understand that the electric feeling of expanse that gives rise to nations is the very same force that leads them to their downfall. Too young to feel how, as we reach upward we sink downward too. Not yet have you felt how the collective energy of a group which drives a man towards a target can disorient him; he can lose himself, his bearings, his wits, and then his head.
+
+"Do not put yourself above the madness your nation finds itself in --- or think yourself exempt from that madness. And most of all, do not do yourself the disservice of a lukewarm life, one without a forceful expression of will, without a gamble of complete conviction."
+
+"How do I know what is right?"
+
+"I can't say. The method, if there is one, is to attune to yourself, to perceive the moment, to atone in flashing moments of awareness amidst weeks of somnolence --- to work with the moment you are in. You must learn to sense, like a good instrument, artistic or scientific. It serves us well to increase the dynamic range. When you exert a little will, and get a little response from the environment it trains you to take larger leaps. Pay close attention."
+
+"Are we still talking about the liftoff?"
+
+"Oh. Right. I think so. What were you asking?"
+
+"What was the craziest part?"
+
+"When the state began to wake up to what was occurring. When things are ubiquitous, we don't notice them. How often do you pay attention to the sensation of air on your fingertips? So it was with computers. We had created thinking machines and forgotten how much of our life already ran through the unthinking ones. Suddenly some of us, then more of us, realized we were surrounded by loaded guns. You could be shot without anyone behind the trigger.
+
+"There was a war in Ukraine at the time. Even then the drones were fast. The airspace was contested to disrupt the remote pilots, and so the drones had software to handle the last 300 meters --- to track, catch, and kill the target. But these are not the machines I am talking about. A drone then was nothing but a killing machine -- a luddite compared to the thinking machines I am referring to. So I will tell you what was most dangerous. As a man cannot outrun a drone, so it was unclear whether the state could stay ahead of the thinking machines or keep control. To remain supple and dynamic is no easy task for a behemoth. The pace was lightning fast.
+
+"You know how we used to identify state cyberattacks before then? Things like working hours and shared attacker infrastructure --- since nation states are large and bureaucracies are slow, back then they would do the same types of attacks, from the same place, at the same time! Then attribution became harder. At all times of day, throughout the country, we started getting hammered by attacks, a barrage of requests, sometimes from foreign data centers and then increasingly masked by a botnet of residential addresses and mobile IPs, making the sources hard to locate and shut down --- they crawled our systems like fire ants --- and what could we do? Sometimes there would be someone behind it, a person or a group. But sometimes it was just a computer. What can you do then, son? How can you hold a computer responsible for an attack? How can you kill something that does not live?
+
+"Some of us began to engage in our civic, political, and commercial institutions --- to do what we could to warn about the incoming attacks --- and to try to persuade our fellows that yes, we must find the vulnerabilities first. Billion-dollar infrastructure and national security assets in the country are built on straw, and if they can be compromised by anyone working with an AI agent, we need to know now. Preferably yesterday and at the very latest tomorrow. At first this sounded crazy --- as if you were suggesting self-harm to a state-machine. But people started to come around to it. It was a matter of national survival. It was a matter of reducing technical surprise. It was a matter of competition and unrelenting contest. It was uncertain. It was charged and ambiguous. Like I said, it was electric."
+
+"So what did you do?" the boy asked.
+
+"I orientated myself, through the help of others, to where the most impactful place would be to work. Was there any group with the technical skills, the legal standing, and the institutional backing needed to meet the moment?"
+
+"And then?"
+
+------------------------------------------------------------------------
+
+![](/images/writing/electric-times/03.png){fig-alt="The Washington Monument behind a white van, a tan military vehicle, and pedestrians."}
